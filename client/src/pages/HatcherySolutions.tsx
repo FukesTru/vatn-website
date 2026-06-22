@@ -40,59 +40,59 @@ const hatcheryPriorities = [
   {
     icon: <Shield size={20} />,
     title: "Fish Health & Production Reliability",
-    desc: "Dissolved gas levels directly affect fish physiology. Maintaining appropriate dissolved oxygen, CO₂, and total gas pressure is not optional — it determines whether fish survive and grow.",
+    desc: "DO, CO₂, and total gas pressure determine whether fish survive and grow. Getting these right is not optional.",
   },
   {
     icon: <Leaf size={20} />,
     title: "Conservation & Restoration Outcomes",
-    desc: "Federal and state hatcheries are often responsible for native species recovery, broodstock management, and stocking programs with defined biological objectives. Water quality systems must support these goals reliably.",
+    desc: "Native species recovery and broodstock programs require water quality systems that support defined biological objectives reliably.",
   },
   {
     icon: <DollarSign size={20} />,
-    title: "Energy & Water Efficiency",
-    desc: "Hatchery budgets are constrained. Equipment that consumes excess oxygen, requires frequent maintenance, or operates inefficiently adds cost that compounds over years of operation.",
+    title: "Energy & Budget Efficiency",
+    desc: "Equipment that consumes excess oxygen or requires frequent maintenance adds cost that compounds over years of operation.",
   },
   {
     icon: <Clock size={20} />,
     title: "Seasonal Flexibility",
-    desc: "Source-water conditions change seasonally. Dissolved oxygen, temperature, and barometric pressure all vary. Treatment systems must perform reliably across the full range of operating conditions.",
+    desc: "Source-water conditions change year-round. Systems must perform reliably across the full range of seasonal operating conditions.",
   },
   {
     icon: <Wrench size={20} />,
     title: "Long-Term Maintainability",
-    desc: "Hatchery staff are not always equipment engineers. Systems must be simple to operate, reliable in the field, and maintainable with limited technical resources.",
+    desc: "Systems must be simple to operate and maintainable by hatchery staff with limited access to technical support.",
   },
   {
     icon: <BarChart3 size={20} />,
-    title: "Regulatory & Program Accountability",
-    desc: "Federal and state programs operate under agency oversight and performance requirements. Equipment must meet treatment objectives consistently and support documentation of water quality conditions.",
+    title: "Regulatory Accountability",
+    desc: "Agency programs require equipment that meets treatment objectives consistently and supports documentation of water quality conditions.",
   },
 ];
 
 const hatcheryApplications = [
   {
     title: "Broodstock Systems",
-    desc: "Broodstock require precise water quality management to support reproductive conditioning and egg quality. Dissolved oxygen and CO₂ control are critical in these high-value production areas.",
+    desc: "Precise DO and CO₂ control for reproductive conditioning and egg quality in high-value production areas.",
   },
   {
     title: "Egg Incubation",
-    desc: "Incubation water must maintain specific dissolved oxygen levels and low CO₂ to support embryo development and minimize early mortality. Flow rates and gas exchange requirements differ significantly from grow-out systems.",
+    desc: "Specific DO and low CO₂ to support embryo development and minimize early mortality.",
   },
   {
     title: "Juvenile Rearing",
-    desc: "Juvenile fish are particularly sensitive to dissolved gas conditions. Oxygenation and degassing systems must maintain appropriate conditions across variable stocking densities and seasonal flow changes.",
+    desc: "Maintain appropriate dissolved gas conditions across variable stocking densities and seasonal flow changes.",
   },
   {
     title: "Raceway Systems",
-    desc: "Raceway-based hatcheries depend on flow-through oxygenation and degassing to maintain water quality along the length of each raceway. VATN's LHO technology was developed specifically for raceway applications.",
+    desc: "Flow-through oxygenation and degassing along the full raceway length. VATN's LHO technology was developed for raceway applications.",
   },
   {
     title: "Recirculating Aquaculture Systems (RAS)",
-    desc: "RAS environments accumulate CO₂ and nitrogen rapidly. Effective CO₂ stripping, oxygenation, and total gas pressure management are essential to system stability and fish health.",
+    desc: "CO₂ stripping, oxygenation, and total gas pressure management for RAS stability and fish health.",
   },
   {
     title: "Oxygenation Upgrades & Retrofits",
-    desc: "Many existing hatcheries operate with outdated or undersized oxygenation equipment. VATN evaluates existing infrastructure and designs upgrade solutions that work within available head, space, and budget constraints.",
+    desc: "Upgrade solutions designed to work within your existing head, space, and budget constraints.",
   },
 ];
 
@@ -133,8 +133,8 @@ export default function HatcherySolutions() {
               Water Treatment &amp; Gas Management<br />
               <span style={{ color: "#0E9B8A" }}>for Federal &amp; State Fish Hatcheries</span>
             </h1>
-            <p className="font-body text-white/70 max-w-2xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
-              VATN Science and Technology has direct experience supporting federal and state hatchery programs with site-specific oxygenation, degassing, CO₂ control, and water treatment solutions designed around the real constraints of hatchery infrastructure and fish production objectives.
+            <p className="font-body text-white/70 max-w-xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+              Site-specific oxygenation, degassing, and CO₂ control designed around the real constraints of hatchery infrastructure and fish production objectives.
             </p>
             <div className="flex flex-wrap gap-3">
               <a href="#contact" className="btn-primary">
@@ -160,7 +160,7 @@ export default function HatcherySolutions() {
                 The Priorities That Drive Hatchery Water Treatment Decisions
               </h2>
               <p className="font-body mt-4" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Federal and state hatcheries operate under a different set of constraints than commercial aquaculture. Production goals are tied to conservation and restoration mandates, budgets are fixed, and the consequences of equipment failure extend beyond financial loss.
+                Federal and state hatcheries operate under different constraints than commercial aquaculture. Budgets are fixed, mandates are defined, and equipment failure has consequences beyond financial loss.
               </p>
             </div>
           </RevealSection>
@@ -247,10 +247,10 @@ export default function HatcherySolutions() {
                 Technical Support for Agency and Engineering Teams
               </h2>
               <p className="font-body text-white/65 mb-5" style={{ fontSize: "0.92rem", lineHeight: "1.7" }}>
-                VATN works directly with hatchery managers, fisheries biologists, agency decision-makers, and outside engineering firms. Whether a project involves a straightforward oxygenation upgrade or a comprehensive water treatment system evaluation, VATN provides the technical input needed to make informed decisions.
+                VATN works directly with hatchery managers, biologists, agency decision-makers, and engineering firms — providing the technical input needed to make informed equipment decisions.
               </p>
               <p className="font-body text-white/65" style={{ fontSize: "0.92rem", lineHeight: "1.7" }}>
-                VATN's Director of Sales brings 35 years of experience supporting state and federal hatchery programs in the private sector, with a background in site assessment, equipment selection, and vendor-agency coordination. This experience means VATN understands how hatchery procurement and project approval processes work — and can support your team through them.
+                VATN's Director of Sales brings 35 years of experience supporting state and federal hatchery programs — including direct knowledge of how hatchery procurement and project approval processes work.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
@@ -283,7 +283,7 @@ export default function HatcherySolutions() {
                 Plan a Hatchery System Evaluation
               </h2>
               <p className="font-body mb-8" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Contact VATN to discuss your facility's water treatment objectives, existing infrastructure, and the specific challenges you are trying to address. VATN will provide a technical assessment of the options available for your site.
+                Describe your facility, species, and the water treatment challenge you're facing. VATN will provide a technical assessment of the options for your site.
               </p>
             </RevealSection>
             <RevealSection delay={80}>

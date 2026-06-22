@@ -40,69 +40,69 @@ const collaborationAreas = [
   {
     icon: <Ruler size={22} />,
     title: "Concept Development",
-    desc: "VATN can engage early in the design process to help engineering teams define gas-transfer requirements, evaluate treatment approaches, and establish equipment parameters before detailed design begins.",
+    desc: "Define gas-transfer requirements and establish equipment parameters before detailed design begins.",
   },
   {
     icon: <Calculator size={22} />,
     title: "Equipment Sizing & Modeling",
-    desc: "Using site-specific water chemistry, hydraulic conditions, and treatment objectives, VATN applies proprietary modeling software to size oxygenation and degassing equipment accurately — avoiding both undersized systems and unnecessary overbuilding.",
+    desc: "Proprietary modeling software sizes oxygenation and degassing equipment accurately against your site conditions.",
   },
   {
     icon: <Settings size={22} />,
     title: "Oxygenation & Degassing Modeling",
-    desc: "VATN evaluates reactor performance against inlet dissolved oxygen and nitrogen concentrations, temperature, barometric pressure, alpha factor, operating pressures, gas feed rates, and mass-transfer parameters specific to the project site.",
+    desc: "Reactor performance evaluated against DO, N₂, temperature, barometric pressure, alpha factor, and hydraulic gradient.",
   },
   {
     icon: <Wind size={22} />,
     title: "CO₂ Stripping Evaluations",
-    desc: "CO₂ accumulation in RAS and high-density systems is often underestimated in early design. VATN provides stripping evaluations that account for the full range of operating conditions and help engineering teams select the appropriate treatment approach.",
+    desc: "CO₂ is often underestimated in early RAS design. VATN evaluates stripping options across the full range of operating conditions.",
   },
   {
     icon: <RefreshCw size={22} />,
     title: "Retrofit & Upgrade Planning",
-    desc: "For projects involving existing facilities, VATN evaluates current equipment performance, identifies limiting factors, and develops upgrade recommendations that work within existing infrastructure constraints.",
+    desc: "Evaluate existing equipment performance and develop upgrade recommendations within current infrastructure constraints.",
   },
   {
     icon: <FileText size={22} />,
     title: "Technical Documentation",
-    desc: "VATN can provide technical documentation supporting equipment selection decisions, including performance modeling outputs, equipment specifications, and design rationale for inclusion in project deliverables.",
+    desc: "Modeling outputs, equipment specifications, and design rationale for inclusion in project deliverables.",
   },
   {
     icon: <ClipboardList size={22} />,
     title: "Procurement & Specification Support",
-    desc: "VATN can assist engineering teams in developing equipment specifications, evaluating vendor proposals, and supporting procurement processes for gas management and water treatment equipment.",
+    desc: "Equipment specifications, vendor proposal evaluation, and procurement support for gas management systems.",
   },
   {
     icon: <Layers size={22} />,
     title: "RAS & Raceway System Support",
-    desc: "VATN has extensive applied experience with both recirculating aquaculture systems and raceway-based hatcheries. This includes dissolved gas management across the full production cycle — from broodstock through grow-out.",
+    desc: "Applied experience across the full production cycle — broodstock through grow-out — in both RAS and raceway environments.",
   },
 ];
 
 const whyEarly = [
   {
     title: "Avoid Overbuilt Systems",
-    desc: "Without site-specific modeling, gas management systems are often sized conservatively — resulting in unnecessary capital cost, larger footprints, and higher operating expenses. VATN's modeling approach right-sizes equipment from the start.",
+    desc: "Conservative sizing without modeling results in unnecessary capital cost and larger footprints. VATN right-sizes equipment from the start.",
   },
   {
     title: "Reduce Footprint Requirements",
-    desc: "VATN's LHO technology and side-stream treatment approaches can significantly reduce the physical footprint required for oxygenation and degassing compared to conventional equipment. This matters in constrained hatchery environments.",
+    desc: "LHO technology and side-stream approaches significantly reduce the footprint required vs. conventional equipment.",
   },
   {
     title: "Reduce Operating Costs",
-    desc: "Equipment selected without modeling often consumes more oxygen, energy, and maintenance resources than necessary. VATN's approach identifies configurations that minimize ongoing operating costs — a benefit that compounds over the facility's operating life.",
+    desc: "Modeling identifies configurations that minimize oxygen use, energy, and maintenance — a benefit that compounds over the facility's operating life.",
   },
   {
     title: "Improve Treatment Performance",
-    desc: "Generic equipment selections may achieve minimum treatment targets under average conditions but fail during seasonal extremes. Site-specific modeling ensures performance across the full range of operating conditions.",
+    desc: "Generic selections may meet targets under average conditions but fail at seasonal extremes. Site-specific modeling ensures performance across the full range.",
   },
   {
-    title: "Account for Site-Specific Dissolved Gas Conditions",
-    desc: "Dissolved gas conditions vary significantly by geography, elevation, source-water type, and season. Equipment that performs well at one site may be inadequate or inappropriate at another. VATN's modeling accounts for these differences.",
+    title: "Account for Site-Specific Gas Conditions",
+    desc: "Dissolved gas conditions vary by geography, elevation, and source-water type. Equipment that performs at one site may be inadequate at another.",
   },
   {
     title: "Support Long-Term Maintainability",
-    desc: "VATN's designs prioritize simplicity and reliability. Systems with fewer moving parts, appropriate automation, and straightforward maintenance requirements are better suited to the operational realities of hatchery environments.",
+    desc: "Fewer moving parts, appropriate automation, and straightforward maintenance — suited to the operational realities of hatchery environments.",
   },
 ];
 
@@ -169,10 +169,10 @@ export default function EngineeringPartners() {
                 A Technical Partner for Gas-Transfer Design Challenges
               </h2>
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.7" }}>
-                Gas management in aquaculture and hatchery systems involves a level of technical complexity that goes beyond standard water treatment design. Dissolved oxygen, nitrogen, CO₂, and total gas pressure interact in ways that are highly dependent on site-specific conditions — and equipment that is not sized and configured against those conditions will either underperform or be unnecessarily expensive to build and operate.
+                DO, N₂, CO₂, and total gas pressure interact in ways that are highly site-dependent. Equipment not sized against those conditions will underperform or be unnecessarily expensive to build and operate.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.7" }}>
-                VATN provides engineering firms with the specialized gas-transfer expertise needed to make informed equipment decisions. This includes proprietary modeling software, extensive applied experience across reactor types, and direct knowledge of the hatchery and aquaculture environments where this equipment operates.
+                VATN provides the specialized gas-transfer expertise to make informed equipment decisions — proprietary modeling software, applied experience across reactor types, and direct knowledge of the environments where this equipment operates.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
@@ -229,7 +229,7 @@ export default function EngineeringPartners() {
                 Why Engineering Firms Should Involve VATN Early in the Design Process
               </h2>
               <p className="font-body text-white/60 mt-4" style={{ fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Gas management decisions made early in a project have downstream consequences for capital cost, operating cost, footprint, and long-term performance. Involving VATN at the concept stage — rather than during equipment procurement — produces better outcomes across all of these dimensions.
+                Gas management decisions made early have downstream consequences for capital cost, footprint, and long-term performance. Involving VATN at concept — not procurement — produces better outcomes.
               </p>
             </div>
           </RevealSection>
@@ -292,7 +292,7 @@ export default function EngineeringPartners() {
                 Collaborate With VATN on a Project
               </h2>
               <p className="font-body mb-8" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Describe your project — the facility type, the gas management challenge, and the stage of design you are in. VATN will respond with an assessment of how we can support your team and what information would be needed to begin a technical evaluation.
+                Describe your project and the gas management challenge you're working through. VATN will respond with an assessment of how we can support your team.
               </p>
             </RevealSection>
             <RevealSection delay={80}>

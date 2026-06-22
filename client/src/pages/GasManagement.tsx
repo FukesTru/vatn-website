@@ -49,37 +49,37 @@ const technologies = [
   {
     icon: <Droplets size={24} />,
     title: "Oxygenation & Degassing Equipment",
-    body: "VATN has demonstrated that reactor performance is related to a number of site-specific conditions including inlet dissolved oxygen and N₂ concentrations, temperature, local barometric pressure, alpha factor, operating pressures, gas feed rates, gas composition, and the gas-liquid interfacial areas and linked mass transfer coefficients established within a specific reactor type. VATN's proprietary software and modeling approach identifies reactor operating conditions that minimize capital and variable costs while achieving target dissolved gas levels.",
+    body: "Reactor performance is modeled against your site's actual DO, N₂, temperature, barometric pressure, alpha factor, and hydraulic conditions. VATN's proprietary software identifies operating conditions that minimize capital and variable costs while hitting target dissolved gas levels.",
     specs: ["Spray towers", "Hooded surface agitators", "Packed columns", "U-tubes", "Vacuum degassers"],
   },
   {
     icon: <Layers size={24} />,
     title: "Low Head Oxygenators (LHO)",
-    body: "VATN's multi-stage Low Head Oxygenator technology was developed and patented in 1989 and has been applied successfully at hundreds of RAS and raceway sites within and outside the United States. LHOs have no moving parts and have been designed to operate with hydraulic gradients as low as 9 inches, making them suitable for sites with minimal available head.",
+    body: "Developed and patented in 1989. No moving parts. Operates on hydraulic gradients as low as 9 inches. Applied at hundreds of RAS and raceway sites across the United States and internationally.",
     specs: ["No moving parts", "Operates on 9\" hydraulic gradient", "Multi-stage configuration", "Applied at hundreds of sites", "RAS and raceway compatible"],
   },
   {
     icon: <Wind size={24} />,
     title: "CO₂ Control Methods",
-    body: "VATN staff have extensive experience in CO₂ stripping operations including theory of removal, new equipment designs, and field evaluations. Forced air packed beds, spray nozzle reactors, surface agitators, and oxygen absorption equipment modified for concurrent hydroxide base scrubbing of CO₂ are all within VATN's applied experience. Scrubber use provides savings in RAS oxygenation costs through linked reductions in dissolved N₂ concentrations.",
+    body: "Forced air packed beds, spray nozzle reactors, surface agitators, and hydroxide base scrubbing — each evaluated against your site conditions. Scrubber use also reduces dissolved N₂, lowering oxygenation costs.",
     specs: ["Forced air packed beds", "Spray nozzle reactors", "Surface agitators", "Hydroxide base scrubbing", "Concurrent N₂ reduction"],
   },
   {
     icon: <FlaskConical size={24} />,
     title: "Vacuum Degassing",
-    body: "VATN's vacuum degassing approach uses a computer model to predict performance under each unique application's water chemistry and physical plant characteristics. The process employs an eductor to remove off-gas from the column, eliminating the need for mechanical vacuum pumps. Configurations typically operate at 3–5 feet of water vacuum. Alternative packed bed equipment operating at 13–15 feet of vacuum allows for side-stream treatment with blending, reducing equipment scale by approximately 70–75%.",
+    body: "Computer-modeled for each site. Eductor-based off-gas removal eliminates mechanical vacuum pumps. Portable and fixed configurations. Side-stream blending reduces equipment scale by approximately 70–75%.",
     specs: ["Eductor-based off-gas removal", "3–5 ft. standard vacuum operation", "13–15 ft. side-stream configurations", "Portable designs available", "Automated performance control"],
   },
   {
     icon: <Zap size={24} />,
     title: "Side-Stream Treatment",
-    body: "Side-stream designs treat a portion of the bulk flow at elevated vacuum or pressure levels, producing an over-treated product that is then blended back with untreated bulk flow. This approach dramatically reduces the required equipment scale. Typically just 25–30% of the bulk flow needs to be routed through the treatment unit. VATN's new low-profile side-stream reactor reduces volume requirements by approximately 50% while maintaining packing-free operation.",
+    body: "Treat 25–30% of bulk flow at high intensity. Blend back with untreated flow to hit targets. Reduces required equipment scale by ~70%. New low-profile reactor reduces volume requirements by an additional 50%.",
     specs: ["25–30% of bulk flow treated", "~70% reduction in equipment scale", "Packing-free operation", "O₂, O₃, CO₂, and N₂ capable", "New low-profile reactor design"],
   },
   {
     icon: <BarChart3 size={24} />,
     title: "Packed Columns",
-    body: "Packed column technology provides efficient gas transfer across a range of applications. VATN evaluates packed column performance against site-specific conditions and selects packing type, column dimensions, and operating parameters to achieve treatment objectives at minimum cost. New reactor designs under development eliminate plastic packing use, operate at 1/3 the footprint and 40% of the height of conventional equipment, and induce air flow without blower assist over a G/L range of approximately 4.5 to 6.0.",
+    body: "Packing type, column dimensions, and operating parameters are selected against your site conditions. New designs in development eliminate plastic packing, operate at 1/3 the footprint, and induce air flow without blower assist.",
     specs: ["Site-specific sizing", "Multiple packing options", "New packing-free designs in development", "Reduced footprint configurations", "Low blower back-pressure requirements"],
   },
 ];
@@ -150,7 +150,7 @@ export default function GasManagement() {
                 The Water Quality Problems VATN Is Built to Solve
               </h2>
               <p className="font-body mt-4" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Gas management failures in aquaculture and hatchery systems have direct consequences for fish health, production efficiency, and operating costs. These are the challenges VATN addresses through site-specific equipment design and modeling.
+                These are the dissolved gas challenges VATN is built to solve — through site-specific equipment design and modeling.
               </p>
             </div>
           </RevealSection>
@@ -225,10 +225,7 @@ export default function GasManagement() {
                 Modeled for Your Site,<br />Not Guessed
               </h2>
               <p className="font-body text-white/65 mb-6" style={{ fontSize: "0.92rem", lineHeight: "1.7" }}>
-                VATN's proprietary software and modeling approach is used to identify reactor operating conditions that minimize capital and variable costs while achieving target levels of dissolved gases and total gas pressures in the reactor's discharge. Equipment is not selected from a catalog — it is sized and configured against the specific conditions of your site.
-              </p>
-              <p className="font-body text-white/65" style={{ fontSize: "0.92rem", lineHeight: "1.7" }}>
-                This approach ensures that treatment systems are neither undersized nor overbuilt, and that operating costs — including oxygen consumption, energy use, and maintenance burden — are minimized from the outset.
+                Equipment is not selected from a catalog. Every system is sized and configured against the specific conditions of your site — ensuring treatment systems are neither undersized nor overbuilt, and that oxygen use, energy, and maintenance burden are minimized from day one.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
@@ -269,7 +266,7 @@ export default function GasManagement() {
                 Supporting Design Teams with Technical Gas-Transfer Expertise
               </h3>
               <p className="font-body text-white/65" style={{ fontSize: "0.88rem", lineHeight: "1.6" }}>
-                VATN can provide engineering firms with technical input on gas-transfer requirements, equipment selection, oxygenation and degassing modeling, and CO₂ stripping evaluations — from concept through procurement support.
+                Technical input on gas-transfer requirements, equipment selection, oxygenation and degassing modeling, and CO₂ stripping evaluations — from concept through procurement.
               </p>
             </div>
             <Link href="/engineering-partners">
@@ -293,7 +290,7 @@ export default function GasManagement() {
                 Send Us Your Water Treatment Challenge
               </h2>
               <p className="font-body mb-8" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Describe your facility, the dissolved gas challenge you are facing, and your treatment objectives. VATN will review your situation and respond with a technical assessment of the available options.
+                Describe your facility and the challenge you're facing. VATN will respond with a technical assessment of the options for your site.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
