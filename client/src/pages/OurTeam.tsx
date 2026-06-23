@@ -194,6 +194,7 @@ export default function OurTeam() {
                   Ph.D. Fisheries &amp; Allied Aquacultures — Auburn University, 1989
                 </p>
                 {/* Animated stat row */}
+                <p className="font-display mb-4" style={{ fontSize: "0.72rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                   {barnabyStats.map((s, i) => (
                     <div key={s.label} className="text-center">
@@ -347,11 +348,12 @@ export default function OurTeam() {
                 <p className="font-body mb-8" style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.88rem" }}>
                   B.S. &amp; MBA — Tulane University (1980, 1989)
                 </p>
+                <p className="font-display mb-4" style={{ fontSize: "0.72rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
                 <div className="grid grid-cols-3 gap-6">
                   {[
                     { val: 35, suffix: "+", label: "Years in Aquaculture", sub: "Industry experience" },
                     { val: 1994, suffix: "", label: "Founded WMT", sub: "Sold to Innovasea 2018" },
-                    { val: 10000, suffix: "+", label: "UV Systems (Ultraqua)", sub: "120+ countries" },
+                    { val: 24, suffix: "+", label: "Years Running WMT", sub: "State & federal hatcheries" },
                   ].map((s, i) => (
                     <div key={s.label} className="text-center">
                       <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#0E9B8A", lineHeight: 1 }}>
