@@ -11,7 +11,7 @@ const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N
 
 const navLinks = [
   { label: "Home", href: "/" },
-  { label: "Gas Management", href: "/gas-management" },
+  { label: "Products", href: "/products" },
   { label: "Hatchery Solutions", href: "/hatchery-solutions" },
   { label: "Engineering Partners", href: "/engineering-partners" },
   { label: "Our Team", href: "/our-team" },

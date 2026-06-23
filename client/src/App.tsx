@@ -9,6 +9,7 @@ import GasManagement from "./pages/GasManagement";
 import HatcherySolutions from "./pages/HatcherySolutions";
 import EngineeringPartners from "./pages/EngineeringPartners";
 import OurTeam from "./pages/OurTeam";
+import Products from "./pages/Products";
 
 function Router() {
   return (
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/hatchery-solutions" component={HatcherySolutions} />
       <Route path="/engineering-partners" component={EngineeringPartners} />
       <Route path="/our-team" component={OurTeam} />
+      <Route path="/products" component={Products} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
