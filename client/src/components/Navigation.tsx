@@ -14,6 +14,7 @@ const navLinks = [
   { label: "Gas Management", href: "/gas-management" },
   { label: "Hatchery Solutions", href: "/hatchery-solutions" },
   { label: "Engineering Partners", href: "/engineering-partners" },
+  { label: "Our Team", href: "/our-team" },
 ];
 
 export default function Navigation() {
