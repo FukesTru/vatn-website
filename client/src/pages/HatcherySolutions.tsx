@@ -250,7 +250,7 @@ export default function HatcherySolutions() {
                 VATN works directly with hatchery managers, biologists, agency decision-makers, and engineering firms — providing the technical input needed to make informed equipment decisions.
               </p>
               <p className="font-body text-white/65" style={{ fontSize: "0.92rem", lineHeight: "1.7" }}>
-                VATN's Director of Sales brings 35 years of experience supporting state and federal hatchery programs — including direct knowledge of how hatchery procurement and project approval processes work.
+                VATN's Director of Sales brings 32+ years of experience supporting state and federal hatchery programs — including direct knowledge of how hatchery procurement and project approval processes work.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
