@@ -23,9 +23,9 @@ const solutions = [
 
 const whyVATN = [
   { num: "01", title: "Site-Specific Modeling", desc: "Every system is modeled against your actual DO, N₂, temperature, pressure, and hydraulic conditions." },
-  { num: "02", title: "80+ Years Combined Experience", desc: "Direct experience with USFWS National Fish Hatchery programs and hundreds of commercial sites." },
+  { num: "02", title: "80+ Years Combined Experience", desc: "Direct experience with USFWS National Fish Hatchery programs and state and federal aquaculture facilities." },
   { num: "03", title: "Lower Operating Costs", desc: "Equipment is selected to minimize oxygen use, energy, footprint, and maintenance — not just meet targets." },
-  { num: "04", title: "Field-Tested at Scale", desc: "Applied at hundreds of RAS and raceway facilities across the United States and internationally." },
+  { num: "04", title: "Field-Tested at Scale", desc: "Equipment developed and applied through decades of USFWS research and private-sector hatchery programs." },
   { num: "05", title: "Active R&D Program", desc: "In-house development of next-generation CO₂ stripping and side-stream reactors." },
   { num: "06", title: "Engineering Partner Support", desc: "Technical input, sizing, and modeling support for engineering firms from concept through procurement." },
 ];
@@ -146,7 +146,7 @@ export default function Home() {
                 <img src={HATCHERY_IMG} alt="Aquaculture oxygenation equipment" className="w-full object-cover" style={{ borderRadius: "2px", aspectRatio: "4/3" }} />
                 <div className="absolute -bottom-4 -left-4 p-5" style={{ backgroundColor: "#0A1628", borderLeft: "3px solid #0E9B8A", maxWidth: "260px" }}>
                   <p className="font-display text-white font-bold" style={{ fontSize: "1.5rem" }}>LHO Technology</p>
-                  <p className="font-body text-white/60 mt-1" style={{ fontSize: "0.78rem", lineHeight: "1.5" }}>Patented 1989. No moving parts. Applied at hundreds of sites.</p>
+                  <p className="font-body text-white/60 mt-1" style={{ fontSize: "0.78rem", lineHeight: "1.5" }}>Patented 1989. No moving parts. Operates on 9" hydraulic gradient.</p>
                 </div>
               </div>
             </RevealSection>

@@ -55,8 +55,8 @@ const technologies = [
   {
     icon: <Layers size={24} />,
     title: "Low Head Oxygenators (LHO)",
-    body: "Developed and patented in 1989. No moving parts. Operates on hydraulic gradients as low as 9 inches. Applied at hundreds of RAS and raceway sites across the United States and internationally.",
-    specs: ["No moving parts", "Operates on 9\" hydraulic gradient", "Multi-stage configuration", "Applied at hundreds of sites", "RAS and raceway compatible"],
+    body: "Developed and patented in 1989. No moving parts. Operates on hydraulic gradients as low as 9 inches. Widely applied at RAS and raceway facilities across the United States.",
+    specs: ["No moving parts", "Operates on 9\" hydraulic gradient", "Multi-stage configuration", "Patented 1989", "RAS and raceway compatible"],
   },
   {
     icon: <Wind size={24} />,

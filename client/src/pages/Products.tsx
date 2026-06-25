@@ -42,10 +42,10 @@ const products = [
     body: [
       "Reactor performance is related to a number of site-specific conditions including inlet dissolved oxygen and N₂ concentrations, temperature, local barometric pressure, alpha, operating pressures, gas feed rates, gas composition, and the gas-liquid interfacial areas and linked mass transfer coefficients established within a specific reactor type.",
       "VATN's proprietary software and modeling approach identifies reactor operating conditions that minimize capital and variable costs while achieving target levels of dissolved gases and total gas pressures in the reactor's discharge.",
-      "VATN's extensive experience includes the development and patenting (1989) of the multi-stage low head oxygenator (LHO), which has been applied successfully at hundreds of RAS and raceway sites within and outside of the United States. LHOs have no moving parts and have been designed to operate with hydraulic gradients as low as 9 inches.",
+      "VATN's extensive experience includes the development and patenting (1989) of the multi-stage low head oxygenator (LHO). LHOs have no moving parts and have been designed to operate with hydraulic gradients as low as 9 inches.",
     ],
     technologies: [
-      { name: "Multi-Stage Low Head Oxygenator (LHO)", desc: "No moving parts. Operates with hydraulic gradients as low as 9 inches. Applied at hundreds of RAS and raceway sites worldwide." },
+      { name: "Multi-Stage Low Head Oxygenator (LHO)", desc: "No moving parts. Operates with hydraulic gradients as low as 9 inches. Patented 1989." },
       { name: "Vacuum Degassing", desc: "Barnaby Watten's computer model predicts performance under each unique application's water chemistry and physical plant characteristics. Employs an eductor to remove off-gas from the column. Side-stream designs operating at 13–15 feet of vacuum allow for over-treatment with blending, reducing equipment scale by approximately 70%." },
       { name: "Packed Columns", desc: "Evaluated, modeled, and applied for oxygenation and degassing applications." },
       { name: "Spray Towers", desc: "Evaluated and modeled for site-specific gas transfer applications." },
@@ -83,11 +83,11 @@ const products = [
     title: "Utraqua UV Disinfection",
     subtitle: "Advanced UV Systems for Aquaculture",
     tag: "Disinfection",
-    summary: "Ultraqua is an international manufacturer of advanced UV disinfection systems with over 10,000 systems supplied in more than 120 countries.",
+    summary: "Ultraqua is an international UV disinfection manufacturer. VATN represents Ultraqua systems for aquaculture applications.",
     body: [
       "Ultraqua's UV product line offers low pressure and medium pressure UV contactors. Reactors can be sourced in stainless steel or polypropylene in various closed vessel styles, as well as channel UV systems for vertical or 45-degree installation.",
       "Aquaculture applications include influent pretreatment and recirculating aquaculture system (RAS) disinfection.",
-      "Terry McCarthy began working with Ultraqua in 2008. His experience with Ultraqua systems spans aquaculture, potable water treatment in developing countries, and recreational water applications including indoor swimming pools.",
+      "Terry McCarthy's experience with Ultraqua systems spans aquaculture influent pretreatment, RAS disinfection, and related water treatment applications.",
     ],
     technologies: [
       { name: "Low Pressure UV Contactors", desc: "Stainless steel or polypropylene construction. Suitable for aquaculture influent pretreatment and RAS disinfection." },

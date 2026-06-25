@@ -140,7 +140,7 @@ export default function OurTeam() {
               Our Team
             </h1>
             <p className="font-body text-white/70 max-w-2xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-              VATN was founded by two professionals whose careers have been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States and internationally.
+              VATN was founded by two professionals whose careers have been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States.
             </p>
             <a href="#contact" className="btn-primary">
               Contact Our Team <ArrowRight size={15} />
