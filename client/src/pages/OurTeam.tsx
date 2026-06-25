@@ -6,7 +6,7 @@
  */
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen, Award, FlaskConical, Briefcase, GraduationCap, Users, ChevronDown } from "lucide-react";
+import { ArrowRight, BookOpen, Award, FlaskConical, Briefcase, GraduationCap, Users, ChevronDown, Phone } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -506,7 +506,7 @@ export default function OurTeam() {
       {/* ── CTA ── */}
       <section id="contact" className="py-20 lg:py-24" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <div className="max-w-2xl">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
             <RevealSection>
               <p className="section-label mb-3">Get in Touch</p>
               <span className="teal-rule mb-5" />
@@ -530,6 +530,32 @@ export default function OurTeam() {
                     Send Your Inquiry <ArrowRight size={15} />
                   </button>
                 </form>
+              </div>
+            </RevealSection>
+
+            {/* Direct Contact Cards */}
+            <RevealSection delay={120}>
+              <div className="flex flex-col gap-5">
+                <p className="section-label" style={{ color: "#0E9B8A" }}>Direct Contact</p>
+                <span className="teal-rule" />
+                {/* Terry */}
+                <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #0E9B8A" }}>
+                  <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Terry McCarthy</p>
+                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.75rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Director of Sales</p>
+                  <a href="tel:2252294711" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
+                    <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
+                    (225) 229-4711
+                  </a>
+                </div>
+                {/* Barnaby */}
+                <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #0E9B8A" }}>
+                  <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Dr. Barnaby J. Watten</p>
+                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.75rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Co-Founder &amp; Principal Scientist</p>
+                  <a href="tel:5403336859" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
+                    <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
+                    (540) 333-6859
+                  </a>
+                </div>
               </div>
             </RevealSection>
           </div>

@@ -28,9 +28,9 @@ export default function Footer() {
                 Discuss Your Site Requirements
                 <ArrowRight size={15} />
               </a>
-              <a href="tel:5403336859" className="btn-outline">
+              <a href="tel:2252294711" className="btn-outline">
                 <Phone size={14} />
-                (540) 333-6859
+                (225) 229-4711
               </a>
             </div>
           </div>
@@ -53,9 +53,13 @@ export default function Footer() {
               Engineered gas management and water treatment solutions for aquaculture, fish hatcheries, and wastewater applications.
             </p>
             <div className="mt-5 flex flex-col gap-2.5">
+              <a href="tel:2252294711" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem" }}>
+                <Phone size={13} style={{ color: "#0E9B8A" }} />
+                Terry McCarthy: (225) 229-4711
+              </a>
               <a href="tel:5403336859" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem" }}>
                 <Phone size={13} style={{ color: "#0E9B8A" }} />
-                (540) 333-6859
+                Dr. Barnaby Watten: (540) 333-6859
               </a>
               <a href="mailto:info@vatnusa.com" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem" }}>
                 <Mail size={13} style={{ color: "#0E9B8A" }} />

@@ -102,12 +102,12 @@ export default function Navigation() {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-4">
               <a
-                href="tel:5403336859"
+                href="tel:2252294711"
                 className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
                 style={{ fontSize: "0.8rem", fontFamily: "Inter, sans-serif" }}
               >
                 <Phone size={13} />
-                (540) 333-6859
+                (225) 229-4711
               </a>
               <a href="#contact" className="btn-primary" style={{ padding: "0.55rem 1.25rem", fontSize: "0.78rem" }}>
                 Discuss Your Site
@@ -149,9 +149,9 @@ export default function Navigation() {
               </Link>
             ))}
             <div className="pt-4 flex flex-col gap-3">
-              <a href="tel:5403336859" className="flex items-center gap-2 text-white/60" style={{ fontSize: "0.9rem" }}>
+              <a href="tel:2252294711" className="flex items-center gap-2 text-white/60" style={{ fontSize: "0.9rem" }}>
                 <Phone size={14} />
-                (540) 333-6859
+                (225) 229-4711
               </a>
               <a href="#contact" className="btn-primary w-fit">
                 Discuss Your Site Requirements
