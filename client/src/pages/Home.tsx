@@ -78,7 +78,7 @@ export default function Home() {
             <RevealSection delay={80}>
               <h1 className="font-display text-white mb-6" style={{ fontSize: "clamp(2.8rem, 6vw, 4.5rem)", fontWeight: 800, lineHeight: 1.0 }}>
                 Engineered for Hatcheries<br />
-                <span style={{ color: "#0E9B8A" }}>That Cannot Afford Failure</span>
+                <span style={{ color: "#0E9B8A" }}>That Can't Afford Failure</span>
               </h1>
             </RevealSection>
             <RevealSection delay={160}>
@@ -138,7 +138,7 @@ export default function Home() {
                 Standard water treatment equipment is not designed for fish hatcheries. Species-specific gas pressure limits, seasonal source-water swings, limited hydraulic head, aging infrastructure, and remote sites demand a different approach.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                VATN starts with your site conditions — not a product catalog. Every system is modeled against your actual inlet parameters before any equipment recommendation is made.
+                VATN starts with your site conditions, not a product catalog. Every system is modeled against your actual inlet parameters before any equipment recommendation is made.
               </p>
             </RevealSection>
             <RevealSection delay={100}>
