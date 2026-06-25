@@ -5,6 +5,8 @@
  * No text has been altered, reworded, condensed, or reformatted.
  */
 import { useEffect, useRef, useState } from "react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 function useReveal() {
   const ref = useRef<HTMLDivElement>(null);
@@ -188,6 +190,7 @@ export default function Publications() {
 
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F7F9FB" }}>
+      <Navigation />
       {/* Hero */}
       <section
         style={{
@@ -329,11 +332,11 @@ export default function Publications() {
                       key={ei}
                       className="flex gap-4"
                       style={{
-                        padding: "14px 16px",
+                        padding: "14px 18px",
                         backgroundColor: "#FFFFFF",
-                        borderLeft: "3px solid rgba(14,155,138,0.3)",
-                        borderRadius: "0 4px 4px 0",
-                        boxShadow: "0 1px 4px rgba(0,0,0,0.06)",
+                        borderLeft: "3px solid #0E9B8A",
+                        borderRadius: "0 6px 6px 0",
+                        boxShadow: "0 1px 6px rgba(0,0,0,0.07)",
                       }}
                     >
                       <span
@@ -383,6 +386,7 @@ export default function Publications() {
           </RevealSection>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }
