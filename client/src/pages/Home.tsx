@@ -24,7 +24,7 @@ const solutions = [
   { icon: <FlaskConical size={22} />, label: "Pressure Control", title: "Vacuum Degassing", desc: "Computer-modeled vacuum degassers. Portable or fixed. Eductor-based off-gas removal.", href: "/gas-management" },
   { icon: <Layers size={22} />, label: "Proven Design", title: "Low Head Oxygenators", desc: "Patented 1989. No moving parts. Operates on as little as 9 inches of head.", href: "/gas-management" },
   { icon: <Zap size={22} />, label: "Efficiency", title: "Side-Stream Treatment", desc: "Treat 20–30% of flow at high intensity. Reduce equipment scale by ~70%.", href: "/gas-management" },
-  { icon: <Filter size={22} />, label: "Full Program", title: "Solids, Biofiltration & UV", desc: "Microscreens, biofilters, and UV disinfection to complete your water quality program.", href: "/products" },
+  { icon: <Filter size={22} />, label: "Full Program", title: "Solids, Biofiltration & UV", desc: "Microscreens, biofilters, and UV disinfection to complete your water quality program.", href: "/our-team#contact" },
 ];
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -272,8 +272,8 @@ export default function Home() {
               <Link href="/gas-management">
                 <span className="btn-primary">Gas Management Solutions <ArrowRight size={15} /></span>
               </Link>
-              <Link href="/products">
-                <span className="btn-outline">All Products &amp; Systems <ArrowRight size={15} /></span>
+              <Link href="/our-team#contact">
+                <span className="btn-outline">Discuss Your Requirements <ArrowRight size={15} /></span>
               </Link>
             </div>
           </RevealSection>

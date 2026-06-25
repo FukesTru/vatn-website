@@ -2,25 +2,17 @@
  * VATN Navigation Component
  * Style: Field-Grade Precision — deep navy, teal accent, Barlow Condensed
  * Behavior: Transparent over hero, transitions to solid navy on scroll
- * Products dropdown with all 7 product categories
+ * No Products page — removed entirely
  */
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone, ChevronDown } from "lucide-react";
+import { Menu, X, Phone } from "lucide-react";
 
 const LOGO_URL = "/manus-storage/vatn-logo-white-text_fbb8237d.png";
 
-const productLinks = [
-  { label: "Gas Management", href: "/gas-management" },
-  { label: "NP Drum & Disc Filters", href: "/products#np-drum-disc-filters" },
-  { label: "Utraqua UV Systems", href: "/products#utraqua-uv" },
-  { label: "Bio Media", href: "/products#bio-media" },
-  { label: "Advanced Fish Tank Design", href: "/products#advanced-fish-tank-design" },
-  { label: "Alkalinity Enhancement", href: "/products#alkalinity-enhancement" },
-  { label: "Invasive Species Control", href: "/products#invasive-species-control" },
-];
-
 const navLinks = [
+  { label: "Home", href: "/" },
+  { label: "Gas Management", href: "/gas-management" },
   { label: "Hatchery Solutions", href: "/hatchery-solutions" },
   { label: "Engineering Partners", href: "/engineering-partners" },
   { label: "Our Team", href: "/our-team" },
@@ -31,10 +23,7 @@ const navLinks = [
 export default function Navigation() {
   const [scrolled, setScrolled] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [productsOpen, setProductsOpen] = useState(false);
-  const [mobileProductsOpen, setMobileProductsOpen] = useState(false);
   const [location] = useLocation();
-  const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 40);
@@ -44,21 +33,7 @@ export default function Navigation() {
 
   useEffect(() => {
     setMenuOpen(false);
-    setProductsOpen(false);
   }, [location]);
-
-  useEffect(() => {
-    function handleClickOutside(e: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(e.target as Node)) {
-        setProductsOpen(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => document.removeEventListener("mousedown", handleClickOutside);
-  }, []);
-
-  const isProductsActive = location === "/products" || location === "/gas-management" ||
-    productLinks.some(p => location === p.href);
 
   return (
     <>
@@ -84,117 +59,13 @@ export default function Navigation() {
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-6">
-
-              {/* Home link — always first */}
-              <Link href="/">
-                <span
-                  className="font-display font-semibold transition-colors duration-200"
-                  style={{
-                    fontSize: "0.85rem",
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase",
-                    color: location === "/" ? "#0E9B8A" : "rgba(255,255,255,0.85)",
-                  }}
-                >
-                  Home
-                </span>
-              </Link>
-
-              {/* Products Dropdown */}
-              <div ref={dropdownRef} className="relative">
-                <button
-                  onClick={() => setProductsOpen(!productsOpen)}
-                  className="flex items-center gap-1 font-display font-semibold transition-colors duration-200"
-                  style={{
-                    fontSize: "0.85rem",
-                    letterSpacing: "0.08em",
-                    textTransform: "uppercase",
-                    color: isProductsActive ? "#0E9B8A" : "rgba(255,255,255,0.85)",
-                    background: "none",
-                    border: "none",
-                    cursor: "pointer",
-                    padding: 0,
-                  }}
-                >
-                  Products
-                  <ChevronDown
-                    size={13}
-                    style={{
-                      transform: productsOpen ? "rotate(180deg)" : "rotate(0deg)",
-                      transition: "transform 0.2s ease",
-                      marginTop: "1px",
-                    }}
-                  />
-                </button>
-
-                {/* Dropdown panel */}
-                {productsOpen && (
-                  <div
-                    style={{
-                      position: "absolute",
-                      top: "calc(100% + 12px)",
-                      left: "50%",
-                      transform: "translateX(-50%)",
-                      backgroundColor: "rgba(10, 22, 40, 0.98)",
-                      backdropFilter: "blur(16px)",
-                      border: "1px solid rgba(14,155,138,0.2)",
-                      borderRadius: "6px",
-                      padding: "8px 0",
-                      minWidth: "240px",
-                      boxShadow: "0 16px 40px rgba(0,0,0,0.4)",
-                      zIndex: 100,
-                    }}
-                  >
-                    {/* All Products link */}
-                    <Link href="/products">
-                      <div
-                        className="font-display font-semibold transition-colors duration-150"
-                        style={{
-                          display: "block",
-                          padding: "10px 20px",
-                          fontSize: "0.72rem",
-                          letterSpacing: "0.1em",
-                          textTransform: "uppercase",
-                          color: "#0E9B8A",
-                          borderBottom: "1px solid rgba(14,155,138,0.15)",
-                          marginBottom: "4px",
-                          cursor: "pointer",
-                        }}
-                      >
-                        All Products & Solutions
-                      </div>
-                    </Link>
-
-                    {productLinks.map((p) => (
-                      <Link key={p.href} href={p.href}>
-                        <div
-                          className="font-body transition-colors duration-150"
-                          style={{
-                            display: "block",
-                            padding: "9px 20px",
-                            fontSize: "0.85rem",
-                            color: "rgba(255,255,255,0.75)",
-                            cursor: "pointer",
-                          }}
-                          onMouseEnter={e => (e.currentTarget.style.color = "#0E9B8A")}
-                          onMouseLeave={e => (e.currentTarget.style.color = "rgba(255,255,255,0.75)")}
-                        >
-                          {p.label}
-                        </div>
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-
-              {/* Other nav links */}
+            <nav className="hidden lg:flex items-center gap-5">
               {navLinks.map((link) => (
                 <Link key={link.href} href={link.href}>
                   <span
                     className="font-display font-semibold transition-colors duration-200"
                     style={{
-                      fontSize: "0.85rem",
+                      fontSize: "0.82rem",
                       letterSpacing: "0.08em",
                       textTransform: "uppercase",
                       color: location === link.href ? "#0E9B8A" : "rgba(255,255,255,0.85)",
@@ -240,72 +111,6 @@ export default function Navigation() {
           style={{ backgroundColor: "rgba(10, 22, 40, 0.98)", backdropFilter: "blur(16px)" }}
         >
           <div className="container py-8 flex flex-col gap-2">
-
-            {/* Home link in mobile */}
-            <Link href="/">
-              <span
-                className="font-display font-bold block py-3 border-b border-white/10"
-                style={{
-                  fontSize: "1.5rem",
-                  letterSpacing: "0.04em",
-                  color: location === "/" ? "#0E9B8A" : "rgba(255,255,255,0.9)",
-                }}
-              >
-                Home
-              </span>
-            </Link>
-
-            {/* Products accordion in mobile */}
-            <div>
-              <button
-                onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
-                className="font-display font-bold flex items-center justify-between w-full py-3 border-b border-white/10"
-                style={{
-                  fontSize: "1.5rem",
-                  letterSpacing: "0.04em",
-                  color: isProductsActive ? "#0E9B8A" : "rgba(255,255,255,0.9)",
-                  background: "none",
-                  border: "none",
-                  borderBottom: "1px solid rgba(255,255,255,0.1)",
-                  cursor: "pointer",
-                  textAlign: "left",
-                }}
-              >
-                Products
-                <ChevronDown
-                  size={18}
-                  style={{
-                    transform: mobileProductsOpen ? "rotate(180deg)" : "rotate(0deg)",
-                    transition: "transform 0.2s ease",
-                    color: "#0E9B8A",
-                  }}
-                />
-              </button>
-
-              {mobileProductsOpen && (
-                <div className="flex flex-col pl-4 py-2 gap-1">
-                  <Link href="/products">
-                    <span
-                      className="font-display font-semibold block py-2"
-                      style={{ fontSize: "0.85rem", letterSpacing: "0.08em", textTransform: "uppercase", color: "#0E9B8A" }}
-                    >
-                      All Products
-                    </span>
-                  </Link>
-                  {productLinks.map((p) => (
-                    <Link key={p.href} href={p.href}>
-                      <span
-                        className="font-body block py-2"
-                        style={{ fontSize: "1rem", color: "rgba(255,255,255,0.7)" }}
-                      >
-                        {p.label}
-                      </span>
-                    </Link>
-                  ))}
-                </div>
-              )}
-            </div>
-
             {navLinks.map((link, i) => (
               <Link key={link.href} href={link.href}>
                 <span
