@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/vatn-logo-transparent_469923f9.webp";
+const LOGO_URL = "/manus-storage/vatn-logo-white-text_fbb8237d.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
