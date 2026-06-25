@@ -52,6 +52,7 @@ export default function Navigation() {
                     src={LOGO_URL}
                     alt="VATN Science and Technology"
                     className="h-10 w-10 object-contain"
+                    style={{ filter: "brightness(0) invert(1)" }}
                   />
                 </div>
                 <div className="flex flex-col leading-none gap-0.5">
