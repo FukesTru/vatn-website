@@ -15,6 +15,8 @@ const navLinks = [
   { label: "Hatchery Solutions", href: "/hatchery-solutions" },
   { label: "Engineering Partners", href: "/engineering-partners" },
   { label: "Our Team", href: "/our-team" },
+  { label: "Publications", href: "/publications" },
+  { label: "News", href: "/news" },
 ];
 
 export default function Navigation() {
@@ -50,7 +52,7 @@ export default function Navigation() {
                 <img
                   src={LOGO_URL}
                   alt="VATN Science and Technology"
-                  style={{ height: "44px", width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }}
+                  style={{ height: "44px", width: "auto", objectFit: "contain" }}
                 />
               </div>
             </Link>

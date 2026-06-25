@@ -10,6 +10,8 @@ import HatcherySolutions from "./pages/HatcherySolutions";
 import EngineeringPartners from "./pages/EngineeringPartners";
 import OurTeam from "./pages/OurTeam";
 import Products from "./pages/Products";
+import Publications from "./pages/Publications";
+import News from "./pages/News";
 
 function Router() {
   return (
@@ -20,6 +22,8 @@ function Router() {
       <Route path="/engineering-partners" component={EngineeringPartners} />
       <Route path="/our-team" component={OurTeam} />
       <Route path="/products" component={Products} />
+      <Route path="/publications" component={Publications} />
+      <Route path="/news" component={News} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>

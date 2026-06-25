@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-5">
-              <img src={LOGO_URL} alt="VATN Science and Technology" style={{ height: "40px", width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
+              <img src={LOGO_URL} alt="VATN Science and Technology" style={{ height: "40px", width: "auto", objectFit: "contain" }} />
             </div>
             <p className="font-body text-white/50" style={{ fontSize: "0.82rem", lineHeight: "1.65" }}>
               Engineered gas management and water treatment solutions for aquaculture, fish hatcheries, and wastewater applications.
@@ -121,6 +121,9 @@ export default function Footer() {
                 { label: "Gas Management Solutions", href: "/gas-management" },
                 { label: "Federal & State Hatcheries", href: "/hatchery-solutions" },
                 { label: "Engineering Partners", href: "/engineering-partners" },
+                { label: "Our Team", href: "/our-team" },
+                { label: "Publications", href: "/publications" },
+                { label: "News & Events", href: "/news" },
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}>
