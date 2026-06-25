@@ -21,7 +21,6 @@ const productLinks = [
 ];
 
 const navLinks = [
-  { label: "Home", href: "/" },
   { label: "Hatchery Solutions", href: "/hatchery-solutions" },
   { label: "Engineering Partners", href: "/engineering-partners" },
   { label: "Our Team", href: "/our-team" },
@@ -86,6 +85,21 @@ export default function Navigation() {
 
             {/* Desktop Nav */}
             <nav className="hidden lg:flex items-center gap-6">
+
+              {/* Home link — always first */}
+              <Link href="/">
+                <span
+                  className="font-display font-semibold transition-colors duration-200"
+                  style={{
+                    fontSize: "0.85rem",
+                    letterSpacing: "0.08em",
+                    textTransform: "uppercase",
+                    color: location === "/" ? "#0E9B8A" : "rgba(255,255,255,0.85)",
+                  }}
+                >
+                  Home
+                </span>
+              </Link>
 
               {/* Products Dropdown */}
               <div ref={dropdownRef} className="relative">
@@ -226,6 +240,20 @@ export default function Navigation() {
           style={{ backgroundColor: "rgba(10, 22, 40, 0.98)", backdropFilter: "blur(16px)" }}
         >
           <div className="container py-8 flex flex-col gap-2">
+
+            {/* Home link in mobile */}
+            <Link href="/">
+              <span
+                className="font-display font-bold block py-3 border-b border-white/10"
+                style={{
+                  fontSize: "1.5rem",
+                  letterSpacing: "0.04em",
+                  color: location === "/" ? "#0E9B8A" : "rgba(255,255,255,0.9)",
+                }}
+              >
+                Home
+              </span>
+            </Link>
 
             {/* Products accordion in mobile */}
             <div>
