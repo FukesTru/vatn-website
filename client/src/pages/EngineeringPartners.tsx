@@ -158,6 +158,24 @@ export default function EngineeringPartners() {
         </div>
       </section>
 
+      {/* ── EXPERT CREDIBILITY INTRO ── */}
+      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+        <div className="container">
+          <RevealSection>
+            <div className="max-w-3xl">
+              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Who You Are Working With</p>
+              <span className="teal-rule mb-5" />
+              <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
+                When engineering firms bring VATN into a project, they are working directly with Dr. Barnaby Watten — the researcher who developed and patented the Low Head Oxygenator in 1989, authored 87+ peer-reviewed publications on aquaculture gas management, and spent 31 years as a research engineer within the USFWS. His computer modeling approach for oxygenation and degassing equipment is the same methodology that has been applied and refined through decades of field research.
+              </p>
+              <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
+                Terry McCarthy brings 32+ years of practical experience supplying and supporting state and federal hatchery programs. He understands procurement processes, project timelines, and what engineering teams need to move a project forward efficiently.
+              </p>
+            </div>
+          </RevealSection>
+        </div>
+      </section>
+
       {/* ── INTRO ── */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
@@ -273,7 +291,7 @@ export default function EngineeringPartners() {
               <div>
                 <p className="section-label mb-2" style={{ color: "rgba(255,255,255,0.6)" }}>Experience Base</p>
                 <p className="font-display text-white font-bold" style={{ fontSize: "1.5rem" }}>
-                  80+ combined years. Federal hatchery programs. Hundreds of RAS and raceway applications.
+                  80+ combined years. Federal hatchery programs. State and federal aquaculture facilities.
                 </p>
               </div>
             </RevealSection>
@@ -297,7 +315,7 @@ export default function EngineeringPartners() {
             </RevealSection>
             <RevealSection delay={80}>
               <div className="p-7 bg-white" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #0E9B8A", borderRadius: "2px" }}>
-                <form className="flex flex-col gap-3">
+                <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                     <input type="text" placeholder="Firm Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />

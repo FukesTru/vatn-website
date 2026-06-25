@@ -139,6 +139,34 @@ export default function GasManagement() {
         </div>
       </section>
 
+      {/* ── EXPERT CREDIBILITY INTRO ── */}
+      <section className="py-14 lg:py-18" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+            <RevealSection className="lg:col-span-2">
+              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>The Expertise Behind the Engineering</p>
+              <span className="teal-rule mb-5" />
+              <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
+                VATN's gas management capabilities are built on decades of original research. Dr. Barnaby Watten spent 31 years as a research engineer with the U.S. Fish and Wildlife Service, developing and patenting the Low Head Oxygenator in 1989 and authoring more than 87 peer-reviewed publications on aquaculture water treatment. His computer modeling approach — which evaluates reactor performance against your site's specific water chemistry, hydraulic conditions, and treatment objectives — is the foundation of every VATN system recommendation.
+              </p>
+              <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
+                Terry McCarthy brings 32+ years of practical hatchery industry experience, including co-founding Water Management Technologies (WMT) in 1994 and building it into a recognized supplier of turnkey RAS systems for state and federal hatchery programs before its acquisition by Innovasea in 2018.
+              </p>
+            </RevealSection>
+            <RevealSection delay={80}>
+              <div className="p-5 coord-corner" style={{ border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px" }}>
+                <p className="data-label mb-3">Research Credentials</p>
+                <div className="spec-row"><span className="spec-key">Publications</span><span className="spec-val">87+ peer-reviewed</span></div>
+                <div className="spec-row"><span className="spec-key">Patents</span><span className="spec-val">10 U.S. Patents</span></div>
+                <div className="spec-row"><span className="spec-key">USFWS Career</span><span className="spec-val">31 years</span></div>
+                <div className="spec-row"><span className="spec-key">Ph.D.</span><span className="spec-val">Auburn University, 1989</span></div>
+                <div className="spec-row"><span className="spec-key">LHO Patent</span><span className="spec-val">1989</span></div>
+              </div>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
       {/* ── PROBLEM / SOLUTION ── */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
@@ -295,7 +323,7 @@ export default function GasManagement() {
             </RevealSection>
             <RevealSection delay={80}>
               <div className="p-7 bg-white text-left" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #0E9B8A", borderRadius: "2px" }}>
-                <form className="flex flex-col gap-3">
+                <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                     <input type="text" placeholder="Organization / Facility" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />

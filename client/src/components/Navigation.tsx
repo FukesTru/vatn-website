@@ -202,7 +202,7 @@ export default function Navigation() {
                 <Phone size={13} />
                 (225) 229-4711
               </a>
-              <a href="#contact" className="btn-primary" style={{ padding: "0.55rem 1.25rem", fontSize: "0.78rem" }}>
+              <a href="/our-team#contact" className="btn-primary" style={{ padding: "0.55rem 1.25rem", fontSize: "0.78rem" }}>
                 Discuss Your Site
               </a>
             </div>
@@ -299,7 +299,7 @@ export default function Navigation() {
                 <Phone size={14} />
                 (225) 229-4711
               </a>
-              <a href="#contact" className="btn-primary w-fit">
+              <a href="/our-team#contact" className="btn-primary w-fit">
                 Discuss Your Site Requirements
               </a>
             </div>

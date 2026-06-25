@@ -149,6 +149,40 @@ export default function HatcherySolutions() {
         </div>
       </section>
 
+      {/* ── EXPERT CREDIBILITY INTRO ── */}
+      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <RevealSection>
+              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Why VATN Understands Hatcheries</p>
+              <span className="teal-rule mb-5" />
+              <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
+                Dr. Barnaby Watten spent 31 years as a research engineer within the USFWS National Fish Hatchery program. He did not study hatcheries from the outside — he worked inside them, developing the equipment and methods that hatcheries now rely on. His 87+ peer-reviewed publications and 10 patents represent a body of work built specifically for aquaculture water treatment challenges.
+              </p>
+              <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
+                Terry McCarthy spent 32+ years supplying and supporting state and federal hatchery programs through Water Management Technologies (WMT), which he co-founded in 1994. He understands how hatchery procurement works, what hatchery managers actually need, and how to translate technical requirements into practical equipment solutions.
+              </p>
+            </RevealSection>
+            <RevealSection delay={80}>
+              <div className="grid grid-cols-2 gap-3">
+                {[
+                  { num: "31", label: "Years USFWS Research", sub: "Dr. Barnaby J. Watten" },
+                  { num: "87+", label: "Publications", sub: "Peer-reviewed research" },
+                  { num: "10", label: "U.S. Patents", sub: "Gas management innovations" },
+                  { num: "32+", label: "Years Hatchery Industry", sub: "Terry McCarthy" },
+                ].map((s) => (
+                  <div key={s.num} className="p-4 text-center" style={{ borderTop: "2px solid rgba(14,155,138,0.35)", backgroundColor: "rgba(255,255,255,0.03)" }}>
+                    <p className="font-display font-bold" style={{ fontSize: "2rem", color: "#0E9B8A", lineHeight: 1 }}>{s.num}</p>
+                    <p className="font-display text-white mt-1" style={{ fontSize: "0.82rem", lineHeight: 1.3 }}>{s.label}</p>
+                    <p className="font-body text-white/40 mt-0.5" style={{ fontSize: "0.7rem" }}>{s.sub}</p>
+                  </div>
+                ))}
+              </div>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
       {/* ── HATCHERY PRIORITIES ── */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
@@ -288,7 +322,7 @@ export default function HatcherySolutions() {
             </RevealSection>
             <RevealSection delay={80}>
               <div className="p-7 bg-white text-left" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #0E9B8A", borderRadius: "2px" }}>
-                <form className="flex flex-col gap-3">
+                <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                     <input type="text" placeholder="Hatchery / Agency Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />

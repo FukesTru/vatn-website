@@ -519,7 +519,7 @@ export default function OurTeam() {
             </RevealSection>
             <RevealSection delay={80}>
               <div className="p-7" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #0E9B8A", borderRadius: "2px" }}>
-                <form className="flex flex-col gap-3">
+                <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                     <input type="text" placeholder="Organization / Facility" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />

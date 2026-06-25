@@ -1,16 +1,16 @@
 /**
- * VATN Products & Solutions Page
+ * VATN Products & Solutions Page — Rebuilt
  * Style: Field-Grade Precision — deep navy, teal accents, Barlow Condensed
- * All product descriptions sourced directly from vatnusa.com product pages.
- * No fabricated claims.
+ * Layout: Full-section cards (always expanded, no accordion) for each of the 7 product categories
+ * All content sourced from vatnusa.com. No fabricated claims.
  */
-import { useEffect, useRef, useState } from "react";
-import { ArrowRight, Waves, Filter, Sun, Layers, Fish, Droplets, Bug } from "lucide-react";
+import { useEffect, useRef } from "react";
+import { ArrowRight, Waves, Filter, Sun, Layers, Fish, Droplets, Bug, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { Link } from "wouter";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hatchery-systems-d6qdrLqEtbQveaqmZLT9mn.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -18,8 +18,8 @@ function RevealSection({ children, delay = 0, className = "" }: { children: Reac
     const el = ref.current;
     if (!el) return;
     el.style.opacity = "0";
-    el.style.transform = "translateY(22px)";
-    el.style.transition = `opacity 0.6s cubic-bezier(0.23,1,0.32,1) ${delay}ms, transform 0.6s cubic-bezier(0.23,1,0.32,1) ${delay}ms`;
+    el.style.transform = "translateY(20px)";
+    el.style.transition = `opacity 0.55s cubic-bezier(0.23,1,0.32,1) ${delay}ms, transform 0.55s cubic-bezier(0.23,1,0.32,1) ${delay}ms`;
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) { el.style.opacity = "1"; el.style.transform = "translateY(0)"; observer.disconnect(); } },
       { threshold: 0.05 }
@@ -34,7 +34,7 @@ const products = [
   {
     id: "gas-management",
     number: "01",
-    icon: <Waves size={22} />,
+    icon: <Waves size={24} />,
     title: "Gas Management",
     subtitle: "Oxygenation, Degassing & CO₂ Control",
     tag: "Core Technology",
@@ -46,7 +46,7 @@ const products = [
     ],
     technologies: [
       { name: "Multi-Stage Low Head Oxygenator (LHO)", desc: "No moving parts. Operates with hydraulic gradients as low as 9 inches. Patented 1989." },
-      { name: "Vacuum Degassing", desc: "Barnaby Watten's computer model predicts performance under each unique application's water chemistry and physical plant characteristics. Employs an eductor to remove off-gas from the column. Side-stream designs operating at 13–15 feet of vacuum allow for over-treatment with blending, reducing equipment scale by approximately 70%." },
+      { name: "Vacuum Degassing", desc: "Computer model predicts performance under each unique application's water chemistry and physical plant characteristics. Employs an eductor to remove off-gas from the column. Side-stream designs operating at 13–15 feet of vacuum allow for over-treatment with blending, reducing equipment scale by approximately 70%." },
       { name: "Packed Columns", desc: "Evaluated, modeled, and applied for oxygenation and degassing applications." },
       { name: "Spray Towers", desc: "Evaluated and modeled for site-specific gas transfer applications." },
       { name: "Hooded Surface Agitators", desc: "Applied for oxygenation in raceway and pond systems." },
@@ -55,11 +55,12 @@ const products = [
     ],
     development: "VATN's in-house research is currently focused on a new class of reactors for CO₂ stripping and side-stream oxygenation or vacuum degassing. The CO₂ stripping reactors eliminate plastic packing, operate efficiently with 1/3 the footprint and about 40% of the height required by conventional equipment, and induce air flow for stripping without blower assist over G/L ratios of approximately 4.5 to 6.0.",
     link: "/gas-management",
+    linkLabel: "Full Gas Management Details",
   },
   {
     id: "np-drum-disc-filters",
     number: "02",
-    icon: <Filter size={22} />,
+    icon: <Filter size={24} />,
     title: "NP Drum & Disc Filters",
     subtitle: "Solids Removal for RAS and Hatchery Systems",
     tag: "Filtration",
@@ -75,11 +76,12 @@ const products = [
     ],
     development: null,
     link: null,
+    linkLabel: null,
   },
   {
     id: "utraqua-uv",
     number: "03",
-    icon: <Sun size={22} />,
+    icon: <Sun size={24} />,
     title: "Utraqua UV Disinfection",
     subtitle: "Advanced UV Systems for Aquaculture",
     tag: "Disinfection",
@@ -96,11 +98,12 @@ const products = [
     ],
     development: null,
     link: null,
+    linkLabel: null,
   },
   {
     id: "bio-media",
     number: "04",
-    icon: <Layers size={22} />,
+    icon: <Layers size={24} />,
     title: "B100 Bio Media",
     subtitle: "Biological Filtration Support for RAS",
     tag: "Biological Filtration",
@@ -116,11 +119,12 @@ const products = [
     ],
     development: null,
     link: null,
+    linkLabel: null,
   },
   {
     id: "advanced-fish-tank-design",
     number: "05",
-    icon: <Fish size={22} />,
+    icon: <Fish size={24} />,
     title: "Advanced Fish Tank Design",
     subtitle: "Mixed-Cell Raceway Systems",
     tag: "Rearing Unit Design",
@@ -135,11 +139,12 @@ const products = [
     ],
     development: null,
     link: null,
+    linkLabel: null,
   },
   {
     id: "alkalinity-enhancement",
     number: "06",
-    icon: <Droplets size={22} />,
+    icon: <Droplets size={24} />,
     title: "Alkalinity Enhancement",
     subtitle: "Limestone-Based Fluidized Bed Systems",
     tag: "Water Chemistry",
@@ -154,11 +159,12 @@ const products = [
     ],
     development: null,
     link: null,
+    linkLabel: null,
   },
   {
     id: "invasive-species-control",
     number: "07",
-    icon: <Bug size={22} />,
+    icon: <Bug size={24} />,
     title: "Invasive Species Control",
     subtitle: "Aquatic Invasive Species Removal via Water Management",
     tag: "Biosecurity",
@@ -173,12 +179,11 @@ const products = [
     ],
     development: null,
     link: null,
+    linkLabel: null,
   },
 ];
 
 export default function Products() {
-  const [activeProduct, setActiveProduct] = useState<string | null>(null);
-
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F4F6F8" }}>
       <Navigation />
@@ -194,7 +199,7 @@ export default function Products() {
           paddingBottom: "5rem",
         }}
       >
-        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(6,14,26,0.92) 0%, rgba(10,22,40,0.85) 60%, rgba(10,22,40,0.7) 100%)" }} />
+        <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(6,14,26,0.93) 0%, rgba(10,22,40,0.86) 60%, rgba(10,22,40,0.72) 100%)" }} />
         <div className="absolute inset-0 blueprint-grid opacity-15" />
         <div className="container relative z-10">
           <RevealSection>
@@ -203,38 +208,45 @@ export default function Products() {
             <h1 className="font-display text-white mb-4" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
               Products &amp; Solutions
             </h1>
-            <p className="font-body text-white/70 max-w-2xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-              Proper management of dissolved gas levels — particularly dissolved oxygen, nitrogen, and CO₂ — is critical in determining the success of both aquaculture and wastewater operations. VATN products address these needs with equipment developed and proven through decades of applied research.
+            <p className="font-body text-white/70 max-w-2xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
+              Proper management of dissolved gas levels — particularly dissolved oxygen, nitrogen, and CO₂ — is critical in determining the success of aquaculture operations. VATN products address these needs with equipment developed and proven through decades of applied research.
             </p>
-            <a href="#products" className="btn-primary">
-              View All Products <ArrowRight size={15} />
-            </a>
+            <div className="flex flex-wrap gap-3">
+              <a href="#gas-management" className="btn-primary">
+                Gas Management <ArrowRight size={15} />
+              </a>
+              <a href="#contact" className="btn-outline">
+                Discuss Your Requirements
+              </a>
+            </div>
           </RevealSection>
         </div>
       </section>
 
-      {/* ── PRODUCT OVERVIEW STRIP ── */}
+      {/* ── QUICK NAV STRIP ── */}
       <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
         <div className="container py-4">
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             {products.map((p) => (
               <a key={p.id} href={`#${p.id}`} className="flex items-center gap-2 group">
-                <div className="w-1 h-1 rounded-full shrink-0 transition-colors" style={{ backgroundColor: "#0E9B8A" }} />
-                <span className="font-body text-white/60 group-hover:text-white/90 transition-colors" style={{ fontSize: "0.75rem" }}>{p.title}</span>
+                <div className="w-1.5 h-1.5 rounded-full shrink-0" style={{ backgroundColor: "#0E9B8A" }} />
+                <span className="font-body text-white/60 group-hover:text-white/90 transition-colors" style={{ fontSize: "0.75rem" }}>
+                  {p.title}
+                </span>
               </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* ── PRODUCT INTRO ── */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: "#ffffff" }}>
+      {/* ── INTRO ── */}
+      <section className="py-14 lg:py-18" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <RevealSection>
             <div className="max-w-3xl">
               <p className="section-label mb-3">Product Overview</p>
               <span className="teal-rule mb-5" />
-              <h2 className="font-display mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
+              <h2 className="font-display mb-4" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
                 Systems Engineered for Aquaculture Water Quality
               </h2>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
@@ -245,116 +257,111 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── PRODUCT CARDS ── */}
-      <section id="products" className="pb-20 lg:pb-28" style={{ backgroundColor: "#F4F6F8" }}>
-        <div className="container">
-          <div className="flex flex-col gap-6">
-            {products.map((product, idx) => (
-              <RevealSection key={product.id} delay={idx * 40}>
-                <div
-                  id={product.id}
-                  className="overflow-hidden"
-                  style={{
-                    backgroundColor: "#ffffff",
-                    borderRadius: "3px",
-                    boxShadow: "0 2px 12px rgba(10,22,40,0.07)",
-                    border: "1px solid #E0E8F0",
-                  }}
-                >
-                  {/* Card Header — always visible */}
-                  <button
-                    className="w-full text-left"
-                    onClick={() => setActiveProduct(activeProduct === product.id ? null : product.id)}
-                  >
-                    <div className="flex items-start gap-5 p-6 lg:p-8">
-                      {/* Number */}
-                      <div className="shrink-0 font-display font-bold" style={{ fontSize: "2.5rem", color: "rgba(14,155,138,0.2)", lineHeight: 1, minWidth: "3rem" }}>
-                        {product.number}
+      {/* ── PRODUCT SECTIONS ── */}
+      <div style={{ backgroundColor: "#F4F6F8" }}>
+        {products.map((product, idx) => (
+          <section
+            key={product.id}
+            id={product.id}
+            className="py-14 lg:py-20"
+            style={{ backgroundColor: idx % 2 === 0 ? "#F4F6F8" : "#ffffff", scrollMarginTop: "80px" }}
+          >
+            <div className="container">
+              <RevealSection>
+                {/* Section header */}
+                <div className="flex flex-wrap items-start gap-4 mb-8 pb-6" style={{ borderBottom: "1px solid #E0E8F0" }}>
+                  <div className="font-display font-bold shrink-0" style={{ fontSize: "3rem", color: "rgba(14,155,138,0.18)", lineHeight: 1, minWidth: "3.5rem" }}>
+                    {product.number}
+                  </div>
+                  <div className="flex-1">
+                    <div className="flex flex-wrap items-center gap-3 mb-1">
+                      <div className="p-2 shrink-0" style={{ backgroundColor: "rgba(14,155,138,0.1)", color: "#0E9B8A", borderRadius: "2px" }}>
+                        {product.icon}
                       </div>
-                      {/* Icon + Title */}
-                      <div className="flex-1 min-w-0">
-                        <div className="flex flex-wrap items-center gap-3 mb-2">
-                          <div className="p-2 shrink-0" style={{ backgroundColor: "rgba(14,155,138,0.1)", color: "#0E9B8A", borderRadius: "2px" }}>
-                            {product.icon}
-                          </div>
-                          <div>
-                            <div className="flex flex-wrap items-center gap-2">
-                              <h3 className="font-display font-bold" style={{ fontSize: "1.25rem", color: "#1C2B3A", lineHeight: 1.1 }}>{product.title}</h3>
-                              <span className="font-body" style={{ fontSize: "0.68rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#0E9B8A", backgroundColor: "rgba(14,155,138,0.08)", padding: "2px 8px", borderRadius: "1px" }}>{product.tag}</span>
-                            </div>
-                            <div className="font-body" style={{ fontSize: "0.84rem", color: "#5A7080", marginTop: "2px" }}>{product.subtitle}</div>
-                          </div>
+                      <div>
+                        <div className="flex flex-wrap items-center gap-2">
+                          <h2 className="font-display font-bold" style={{ fontSize: "clamp(1.5rem, 3vw, 2rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
+                            {product.title}
+                          </h2>
+                          <span className="font-body" style={{ fontSize: "0.68rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#0E9B8A", backgroundColor: "rgba(14,155,138,0.08)", padding: "2px 8px", borderRadius: "1px" }}>
+                            {product.tag}
+                          </span>
                         </div>
-                        <p className="font-body" style={{ fontSize: "0.88rem", color: "#3A5068", lineHeight: "1.6" }}>{product.summary}</p>
-                      </div>
-                      {/* Expand indicator */}
-                      <div
-                        className="shrink-0 mt-1 transition-transform duration-300"
-                        style={{
-                          transform: activeProduct === product.id ? "rotate(180deg)" : "rotate(0deg)",
-                          color: "#0E9B8A",
-                        }}
-                      >
-                        <ArrowRight size={18} style={{ transform: "rotate(90deg)" }} />
+                        <p className="font-body" style={{ fontSize: "0.88rem", color: "#5A7080", marginTop: "3px" }}>{product.subtitle}</p>
                       </div>
                     </div>
-                  </button>
+                    <p className="font-body mt-3" style={{ fontSize: "0.95rem", color: "#3A5068", lineHeight: "1.65", maxWidth: "680px" }}>
+                      {product.summary}
+                    </p>
+                  </div>
+                </div>
 
-                  {/* Expanded content */}
-                  {activeProduct === product.id && (
-                    <div style={{ borderTop: "1px solid #E8EEF4" }}>
-                      {/* Body paragraphs */}
-                      <div className="p-6 lg:p-8 pt-6" style={{ backgroundColor: "#FAFBFC" }}>
-                        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-                          <div className="lg:col-span-2">
-                            <h4 className="font-display mb-4" style={{ fontSize: "0.85rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Overview</h4>
-                            <div className="flex flex-col gap-3">
-                              {product.body.map((para, i) => (
-                                <p key={i} className="font-body" style={{ fontSize: "0.88rem", color: "#3A5068", lineHeight: "1.7" }}>{para}</p>
-                              ))}
-                            </div>
-                            {product.development && (
-                              <div className="mt-6 p-4" style={{ backgroundColor: "rgba(14,155,138,0.06)", borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
-                                <div className="font-display mb-2" style={{ fontSize: "0.75rem", color: "#0E9B8A", letterSpacing: "0.1em", textTransform: "uppercase" }}>Under Development</div>
-                                <p className="font-body" style={{ fontSize: "0.85rem", color: "#3A5068", lineHeight: "1.65" }}>{product.development}</p>
-                              </div>
-                            )}
-                          </div>
-                          {/* Technology list */}
-                          <div>
-                            <h4 className="font-display mb-4" style={{ fontSize: "0.85rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Technologies &amp; Equipment</h4>
-                            <div className="flex flex-col gap-3">
-                              {product.technologies.map((tech) => (
-                                <div key={tech.name} className="p-4 bg-white" style={{ borderLeft: "2px solid rgba(14,155,138,0.4)", borderRadius: "2px", boxShadow: "0 1px 4px rgba(10,22,40,0.04)" }}>
-                                  <div className="font-display font-bold mb-1" style={{ fontSize: "0.88rem", color: "#1C2B3A" }}>{tech.name}</div>
-                                  <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", lineHeight: "1.55" }}>{tech.desc}</p>
-                                </div>
-                              ))}
-                            </div>
-                          </div>
-                        </div>
-                        {/* CTA row */}
-                        <div className="mt-8 pt-6 flex flex-wrap items-center gap-4" style={{ borderTop: "1px solid #E8EEF4" }}>
-                          {product.link ? (
-                            <Link href={product.link}>
-                              <span className="btn-primary" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
-                                Full {product.title} Details <ArrowRight size={14} />
-                              </span>
-                            </Link>
-                          ) : null}
-                          <a href="#contact" className="font-body" style={{ fontSize: "0.85rem", color: "#0E9B8A", textDecoration: "underline", textUnderlineOffset: "3px" }}>
-                            Discuss this product with our team
-                          </a>
-                        </div>
-                      </div>
+                {/* Body + Technologies */}
+                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                  {/* Body paragraphs */}
+                  <div className="lg:col-span-2">
+                    <h3 className="font-display mb-4" style={{ fontSize: "0.78rem", color: "#8A9BB0", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+                      Overview
+                    </h3>
+                    <div className="flex flex-col gap-3">
+                      {product.body.map((para, i) => (
+                        <p key={i} className="font-body" style={{ fontSize: "0.9rem", color: "#3A5068", lineHeight: "1.75" }}>
+                          {para}
+                        </p>
+                      ))}
                     </div>
-                  )}
+                    {product.development && (
+                      <div className="mt-6 p-5" style={{ backgroundColor: "rgba(14,155,138,0.06)", borderLeft: "3px solid #0E9B8A", borderRadius: "0 2px 2px 0" }}>
+                        <div className="font-display mb-2" style={{ fontSize: "0.72rem", color: "#0E9B8A", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+                          Active R&amp;D
+                        </div>
+                        <p className="font-body" style={{ fontSize: "0.87rem", color: "#3A5068", lineHeight: "1.7" }}>
+                          {product.development}
+                        </p>
+                      </div>
+                    )}
+                    {/* CTA row */}
+                    <div className="mt-7 flex flex-wrap items-center gap-4">
+                      {product.link && product.linkLabel ? (
+                        <Link href={product.link}>
+                          <span className="btn-primary" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+                            {product.linkLabel} <ArrowRight size={14} />
+                          </span>
+                        </Link>
+                      ) : null}
+                      <a href="#contact" className="font-body" style={{ fontSize: "0.85rem", color: "#0E9B8A", textDecoration: "underline", textUnderlineOffset: "3px" }}>
+                        Discuss this with our team
+                      </a>
+                    </div>
+                  </div>
+
+                  {/* Technologies */}
+                  <div>
+                    <h3 className="font-display mb-4" style={{ fontSize: "0.78rem", color: "#8A9BB0", letterSpacing: "0.1em", textTransform: "uppercase" }}>
+                      Technologies &amp; Equipment
+                    </h3>
+                    <div className="flex flex-col gap-3">
+                      {product.technologies.map((tech) => (
+                        <div key={tech.name} className="p-4" style={{ backgroundColor: "#ffffff", borderLeft: "2px solid rgba(14,155,138,0.4)", borderRadius: "0 2px 2px 0", boxShadow: "0 1px 4px rgba(10,22,40,0.05)" }}>
+                          <div className="flex items-start gap-2 mb-1">
+                            <CheckCircle2 size={13} style={{ color: "#0E9B8A", marginTop: "2px", flexShrink: 0 }} />
+                            <div className="font-display font-bold" style={{ fontSize: "0.88rem", color: "#1C2B3A", lineHeight: 1.3 }}>
+                              {tech.name}
+                            </div>
+                          </div>
+                          <p className="font-body pl-5" style={{ fontSize: "0.8rem", color: "#5A7080", lineHeight: "1.55" }}>
+                            {tech.desc}
+                          </p>
+                        </div>
+                      ))}
+                    </div>
+                  </div>
                 </div>
               </RevealSection>
-            ))}
-          </div>
-        </div>
-      </section>
+            </div>
+          </section>
+        ))}
+      </div>
 
       {/* ── DARK CTA SECTION ── */}
       <section className="py-20 relative" style={{ backgroundColor: "#060E1A" }}>
@@ -383,7 +390,7 @@ export default function Products() {
                   { label: "Temperature & barometric pressure", desc: "Local environmental conditions" },
                   { label: "Operating pressures & gas feed rates", desc: "System-specific parameters" },
                   { label: "Capital & variable cost minimization", desc: "Optimized for your budget and goals" },
-                ].map((item, i) => (
+                ].map((item) => (
                   <div key={item.label} className="p-4" style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(14,155,138,0.15)", borderRadius: "2px" }}>
                     <div className="font-display font-bold text-white mb-1" style={{ fontSize: "0.82rem", lineHeight: "1.3" }}>{item.label}</div>
                     <div className="font-body text-white/45" style={{ fontSize: "0.75rem" }}>{item.desc}</div>
@@ -395,7 +402,7 @@ export default function Products() {
         </div>
       </section>
 
-      {/* ── CONTACT CTA ── */}
+      {/* ── CONTACT FORM ── */}
       <section id="contact" className="py-20 lg:py-24" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <div className="max-w-2xl">
@@ -405,13 +412,13 @@ export default function Products() {
               <h2 className="font-display mb-3" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", color: "#1C2B3A", lineHeight: 1.05 }}>
                 Discuss Your Requirements
               </h2>
-              <p className="font-body mb-8" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.6" }}>
-                Describe your facility, species, flow rates, and the water quality challenge you're working through. VATN will respond with an assessment of the most appropriate equipment and approach.
+              <p className="font-body mb-8" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
+                Describe your facility, species, flow rates, and the water quality challenge you are working through. VATN will respond with an assessment of the most appropriate equipment and approach.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
               <div className="p-7" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #0E9B8A", borderRadius: "2px" }}>
-                <form className="flex flex-col gap-3">
+                <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                     <input type="text" placeholder="Organization / Facility" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
@@ -429,7 +436,7 @@ export default function Products() {
                       <option value="general">General Inquiry</option>
                     </select>
                   </div>
-                  <textarea rows={3} placeholder="Describe your facility, species, flow rates, and the challenge you're working through..." className="font-body px-4 py-3 bg-white outline-none resize-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                  <textarea rows={4} placeholder="Describe your facility, species, flow rates, and the challenge you are working through..." className="font-body px-4 py-3 bg-white outline-none resize-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                   <button type="submit" className="btn-primary w-fit">
                     Send Product Inquiry <ArrowRight size={15} />
                   </button>
