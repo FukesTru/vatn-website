@@ -3,7 +3,9 @@
  * Style: Field-Grade Precision — deep navy, teal accent, Barlow Condensed
  */
 import { useEffect, useRef, useState } from "react";
-import { Calendar, MapPin, ArrowRight } from "lucide-react";
+import { Calendar, MapPin } from "lucide-react";
+import Navigation from "@/components/Navigation";
+import Footer from "@/components/Footer";
 
 function useReveal() {
   const ref = useRef<HTMLDivElement>(null);
@@ -40,6 +42,8 @@ function RevealSection({ children, delay = 0 }: { children: React.ReactNode; del
 export default function News() {
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F7F9FB" }}>
+      <Navigation />
+
       {/* Hero */}
       <section
         style={{
@@ -80,7 +84,7 @@ export default function News() {
       <div className="container py-16">
         <div className="max-w-3xl">
 
-          {/* Featured article — RASTECH 2026 */}
+          {/* RASTECH 2026 article */}
           <RevealSection>
             <article
               style={{
@@ -116,15 +120,15 @@ export default function News() {
                     border: "1px solid rgba(14,155,138,0.25)",
                   }}
                 >
-                  Conference Announcement
+                  Conference
                 </span>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <Calendar size={13} />
-                  <span className="font-body">2026</span>
+                  <span className="font-body">May 19 – 21, 2026</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <MapPin size={13} />
-                  <span className="font-body">Reno, Nevada</span>
+                  <span className="font-body">St. Augustine, FL, USA</span>
                 </div>
               </div>
 
@@ -138,7 +142,7 @@ export default function News() {
                     lineHeight: 1.15,
                   }}
                 >
-                  VATN Science and Technology at RASTECH 2026
+                  VATN at RASTECH 2026
                 </h2>
 
                 <div
@@ -152,97 +156,11 @@ export default function News() {
                 />
 
                 <p
-                  className="font-body mb-5"
-                  style={{ fontSize: "0.95rem", lineHeight: "1.75", color: "#2A3F52" }}
+                  className="font-body"
+                  style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}
                 >
-                  VATN Science and Technology will be exhibiting at RASTECH 2026, the premier technical conference and trade show for the recirculating aquaculture systems industry. RASTECH brings together engineers, hatchery managers, researchers, and equipment suppliers from across the aquaculture sector.
+                  Terry McCarthy, VATN's Sales Manager, attended RASTECH 2026 in St. Augustine, FL, USA and caught up with many industry leaders and good friends. Many people found VATN's new gas management products dynamic and robust. More information on VATN's new products to follow.
                 </p>
-
-                <p
-                  className="font-body mb-5"
-                  style={{ fontSize: "0.95rem", lineHeight: "1.75", color: "#2A3F52" }}
-                >
-                  VATN will be showcasing its full line of gas management solutions — including Low Head Oxygenation (LHO) systems, vacuum degassing technology, CO₂ scrubbing equipment, and alkalinity enhancement systems — specifically engineered for federal and state fish hatchery programs and high-density recirculating aquaculture operations.
-                </p>
-
-                <p
-                  className="font-body mb-8"
-                  style={{ fontSize: "0.95rem", lineHeight: "1.75", color: "#2A3F52" }}
-                >
-                  Dr. Barnaby Watten and Terry McCarthy will be on-site to discuss site-specific water quality challenges, system modeling, and equipment selection. If you are attending RASTECH 2026, we welcome the opportunity to connect in person.
-                </p>
-
-                {/* Event detail block */}
-                <div
-                  style={{
-                    backgroundColor: "#F7F9FB",
-                    border: "1px solid rgba(14,155,138,0.15)",
-                    borderLeft: "4px solid #0E9B8A",
-                    borderRadius: "0 4px 4px 0",
-                    padding: "20px 24px",
-                    marginBottom: "24px",
-                  }}
-                >
-                  <p
-                    className="font-display font-bold mb-3"
-                    style={{ fontSize: "0.72rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#0E9B8A" }}
-                  >
-                    Event Details
-                  </p>
-                  <div className="flex flex-col gap-2">
-                    {[
-                      { label: "Event", value: "RASTECH 2026 — Recirculating Aquaculture Systems Technology Conference & Expo" },
-                      { label: "Location", value: "Reno, Nevada" },
-                      { label: "Exhibitor", value: "VATN Science and Technology, LLC" },
-                      { label: "Representatives", value: "Dr. Barnaby J. Watten & Terry McCarthy" },
-                    ].map((item) => (
-                      <div key={item.label} className="flex gap-3" style={{ fontSize: "0.875rem" }}>
-                        <span className="font-display font-semibold shrink-0" style={{ color: "#3A5068", minWidth: "120px" }}>
-                          {item.label}
-                        </span>
-                        <span className="font-body" style={{ color: "#1E2D3D" }}>{item.value}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-
-                {/* CTA */}
-                <div className="flex flex-wrap gap-3">
-                  <a
-                    href="/contact"
-                    className="font-display font-bold flex items-center gap-2 transition-all duration-200"
-                    style={{
-                      backgroundColor: "#0E9B8A",
-                      color: "#FFFFFF",
-                      padding: "12px 24px",
-                      borderRadius: "3px",
-                      fontSize: "0.8rem",
-                      letterSpacing: "0.06em",
-                      textTransform: "uppercase",
-                      textDecoration: "none",
-                    }}
-                  >
-                    Schedule a Meeting at RASTECH
-                    <ArrowRight size={14} />
-                  </a>
-                  <a
-                    href="tel:2252294711"
-                    className="font-display font-semibold flex items-center gap-2 transition-all duration-200"
-                    style={{
-                      backgroundColor: "transparent",
-                      color: "#0A1628",
-                      padding: "12px 24px",
-                      borderRadius: "3px",
-                      fontSize: "0.8rem",
-                      letterSpacing: "0.06em",
-                      textTransform: "uppercase",
-                      textDecoration: "none",
-                      border: "1px solid rgba(10,22,40,0.2)",
-                    }}
-                  >
-                    Call Terry: (225) 229-4711
-                  </a>
-                </div>
               </div>
             </article>
           </RevealSection>
@@ -285,7 +203,7 @@ export default function News() {
                   VATN regularly participates in aquaculture engineering conferences and industry events. Reach out directly to learn about upcoming appearances or to arrange a technical consultation.
                 </p>
                 <a
-                  href="/contact"
+                  href="tel:2252294711"
                   className="font-display font-bold inline-flex items-center gap-2 transition-all duration-200"
                   style={{
                     backgroundColor: "#0E9B8A",
@@ -298,8 +216,7 @@ export default function News() {
                     textDecoration: "none",
                   }}
                 >
-                  Contact VATN
-                  <ArrowRight size={14} />
+                  Call Terry: (225) 229-4711
                 </a>
               </div>
             </div>
@@ -307,6 +224,7 @@ export default function News() {
 
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

@@ -299,10 +299,11 @@ export default function Publications() {
                   style={{ borderBottom: "2px solid #0E9B8A" }}
                 >
                   <div
-                    className="font-display font-bold text-white"
+                    className="font-display font-bold"
                     style={{
                       fontSize: "clamp(1.1rem, 2.5vw, 1.4rem)",
                       letterSpacing: "0.02em",
+                      color: "#060E1A",
                     }}
                   >
                     {section.title}
