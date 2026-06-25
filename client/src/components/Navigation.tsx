@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone } from "lucide-react";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-logo-mark-n3CY3gHHYbH4DDkguT9gCJ.webp";
+const LOGO_URL = "/manus-storage/vatn-real-logo_48a85009.png";
 
 const navLinks = [
   { label: "Home", href: "/" },
@@ -46,38 +46,12 @@ export default function Navigation() {
           <div className="flex items-center justify-between h-16 lg:h-18">
             {/* Logo */}
             <Link href="/">
-              <div className="flex items-center gap-3 group">
-                <div className="relative">
-                  <img
-                    src={LOGO_URL}
-                    alt="VATN Science and Technology"
-                    className="h-10 w-10 object-contain"
-                    style={{ filter: "brightness(0) invert(1)" }}
-                  />
-                </div>
-                <div className="flex flex-col leading-none gap-0.5">
-                  <div className="flex items-baseline gap-1.5">
-                    <span
-                      className="font-display text-white font-bold"
-                      style={{ fontSize: "1.4rem", letterSpacing: "0.12em", lineHeight: 1 }}
-                    >
-                      VATN
-                    </span>
-                    <span
-                      className="font-display"
-                      style={{ fontSize: "0.62rem", letterSpacing: "0.06em", color: "#0E9B8A", fontWeight: 700, textTransform: "uppercase" }}
-                    >
-                      Science &amp; Technology
-                    </span>
-                  </div>
-                  <div style={{ height: "1px", background: "linear-gradient(to right, #0E9B8A, transparent)", width: "100%" }} />
-                  <span
-                    className="font-body"
-                    style={{ fontSize: "0.55rem", letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}
-                  >
-                    Aquaculture Gas Management
-                  </span>
-                </div>
+              <div className="flex items-center group">
+                <img
+                  src={LOGO_URL}
+                  alt="VATN Science and Technology"
+                  style={{ height: "44px", width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }}
+                />
               </div>
             </Link>
 

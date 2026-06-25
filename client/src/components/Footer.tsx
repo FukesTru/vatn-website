@@ -5,7 +5,7 @@
 import { Link } from "wouter";
 import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
 
-const LOGO_URL = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-logo-mark-n3CY3gHHYbH4DDkguT9gCJ.webp";
+const LOGO_URL = "/manus-storage/vatn-real-logo_48a85009.png";
 
 export default function Footer() {
   return (
@@ -42,12 +42,8 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-5">
-              <img src={LOGO_URL} alt="VATN" className="h-10 w-10 object-contain" />
-              <div>
-                <div className="font-display text-white font-bold" style={{ fontSize: "1.1rem", letterSpacing: "0.05em" }}>VATN</div>
-                <div className="text-white/40 font-body" style={{ fontSize: "0.6rem", letterSpacing: "0.1em", textTransform: "uppercase" }}>Science &amp; Technology</div>
-              </div>
+            <div className="mb-5">
+              <img src={LOGO_URL} alt="VATN Science and Technology" style={{ height: "40px", width: "auto", objectFit: "contain", filter: "brightness(0) invert(1)" }} />
             </div>
             <p className="font-body text-white/50" style={{ fontSize: "0.82rem", lineHeight: "1.65" }}>
               Engineered gas management and water treatment solutions for aquaculture, fish hatcheries, and wastewater applications.
