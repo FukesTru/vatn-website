@@ -119,6 +119,31 @@ export default function SolidsManagement() {
         </div>
       </section>
 
+      {/* NP Innovation Partner Link */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: "#F4F6F8", borderTop: "1px solid #E0E8F0" }}>
+        <div className="container">
+          <div className="max-w-2xl mx-auto text-center">
+            <p className="section-label mb-3">Manufacturer Resource</p>
+            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
+            <h2 className="font-display mb-4" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
+              Learn More About NP Innovation
+            </h2>
+            <p className="font-body mb-8" style={{ color: "#5A7080", fontSize: "0.95rem", lineHeight: "1.7" }}>
+              For more detailed product information, technical specifications, and the full range of drum and disc filter configurations, visit NP Innovation's official website.
+            </p>
+            <a
+              href="https://www.npinnovation.se"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary"
+            >
+              Visit NP Innovation's Website
+              <ArrowRight size={15} />
+            </a>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
