@@ -12,6 +12,15 @@ import EngineeringPartners from "./pages/EngineeringPartners";
 import OurTeam from "./pages/OurTeam";
 import Publications from "./pages/Publications";
 import News from "./pages/News";
+// Products & Solutions pages
+import ProductOverview from "./pages/products/ProductOverview";
+import GasManagementProduct from "./pages/products/GasManagementProduct";
+import UVDisinfection from "./pages/products/UVDisinfection";
+import BioMedia from "./pages/products/BioMedia";
+import FishRearingTankDesign from "./pages/products/FishRearingTankDesign";
+import AlkalinityEnhancement from "./pages/products/AlkalinityEnhancement";
+import SolidsManagement from "./pages/products/SolidsManagement";
+import CustomSolutions from "./pages/products/CustomSolutions";
 
 // Scroll to top whenever the route changes
 function ScrollToTop() {
@@ -34,6 +43,15 @@ function Router() {
         <Route path="/our-team" component={OurTeam} />
         <Route path="/publications" component={Publications} />
         <Route path="/news" component={News} />
+        {/* Products & Solutions */}
+        <Route path="/products" component={ProductOverview} />
+        <Route path="/products/gas-management" component={GasManagementProduct} />
+        <Route path="/products/uv-disinfection" component={UVDisinfection} />
+        <Route path="/products/bio-media" component={BioMedia} />
+        <Route path="/products/fish-rearing-tank-design" component={FishRearingTankDesign} />
+        <Route path="/products/alkalinity-enhancement" component={AlkalinityEnhancement} />
+        <Route path="/products/solids-management" component={SolidsManagement} />
+        <Route path="/products/custom-solutions" component={CustomSolutions} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>
