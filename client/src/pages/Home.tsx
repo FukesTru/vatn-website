@@ -99,7 +99,7 @@ export default function Home() {
             {[
               "90+ Peer-Reviewed Publications",
               "10 Patents",
-              "31 Years USFWS Research",
+              "65+ Yrs Industry Experience",
               "Federal & State Hatchery Programs",
               "Site-Specific Engineering",
             ].map((item, i) => (
