@@ -58,24 +58,24 @@ export default function Home() {
         <div className="absolute inset-0" style={{ background: "linear-gradient(105deg, rgba(6,14,26,0.95) 0%, rgba(10,22,40,0.82) 55%, rgba(10,22,40,0.45) 100%)" }} />
         <div className="absolute inset-0 blueprint-grid opacity-20" />
         <div className="container relative z-10 pt-24 pb-16">
-          <div className="max-w-3xl">
+          <div style={{ maxWidth: "860px", margin: "0 auto", textAlign: "center" }}>
             <RevealSection delay={0}>
               <p className="section-label mb-4">Aquaculture Gas Management &amp; Water Treatment</p>
-              <span className="teal-rule mb-6" />
+              <span className="teal-rule mb-6" style={{ margin: "0 auto 1.5rem" }} />
             </RevealSection>
             <RevealSection delay={80}>
-              <h1 className="font-display text-white mb-6" style={{ fontSize: "clamp(2.8rem, 6vw, 4.5rem)", fontWeight: 800, lineHeight: 1.0 }}>
+              <h1 className="font-display text-white mb-6" style={{ fontSize: "clamp(3.2rem, 7vw, 5.5rem)", fontWeight: 800, lineHeight: 1.0 }}>
                 Science-Driven Experts.<br />
                 <span style={{ color: "#0E9B8A" }}>Real Hatchery Solutions.</span>
               </h1>
             </RevealSection>
             <RevealSection delay={160}>
-              <p className="font-body text-white/75 mb-8 max-w-2xl" style={{ fontSize: "1.05rem", lineHeight: "1.65" }}>
+              <p className="font-body text-white/75 mb-8" style={{ fontSize: "1.15rem", lineHeight: "1.7", maxWidth: "680px", margin: "0 auto 2rem" }}>
                 VATN is led by two of the most published researchers in aquaculture water treatment. With 90+ peer-reviewed publications, 10 patents, and decades of hands-on hatchery work, they bring a depth of expertise that no equipment catalog can replicate.
               </p>
             </RevealSection>
             <RevealSection delay={220}>
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap gap-3" style={{ justifyContent: "center" }}>
                 <a href="#contact" className="btn-primary">
                   Discuss Your Project <ArrowRight size={16} />
                 </a>
