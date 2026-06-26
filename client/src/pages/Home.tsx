@@ -71,7 +71,7 @@ export default function Home() {
             </RevealSection>
             <RevealSection delay={160}>
               <p className="font-body text-white/75 mb-8" style={{ fontSize: "1.15rem", lineHeight: "1.7", maxWidth: "680px", margin: "0 auto 2rem" }}>
-                VATN is led by two of the most published researchers in aquaculture water treatment. With 90+ peer-reviewed publications, 10 patents, and decades of hands-on hatchery work, they bring a depth of expertise that no equipment catalog can replicate.
+                VATN is led by two of the most published researchers in aquaculture water treatment. With 90+ peer-reviewed publications, 10 patents, and over half a century of hands-on hatchery work, they bring a depth of expertise that no equipment catalog can replicate.
               </p>
             </RevealSection>
             <RevealSection delay={220}>
