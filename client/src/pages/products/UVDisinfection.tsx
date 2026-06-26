@@ -55,19 +55,19 @@ export default function UVDisinfection() {
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <Link href="/products">
-            <span className="flex items-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
+            <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
               ← Products &amp; Solutions
             </span>
           </Link>
           <p className="section-label mb-3">UV Disinfection</p>
-          <span className="teal-rule mb-5" />
+          <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Ultraqua UV Systems<br />
             <span style={{ color: "#0E9B8A" }}>for Hatchery Water Treatment</span>
           </h1>
-          <p className="font-body text-white/70 max-w-xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
+          <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Chemical-free pathogen control for fish hatchery and aquaculture water supplies. Ultraqua UV systems inactivate bacteria, viruses, and parasites without altering water chemistry or leaving residuals.
           </p>
           <a href="/our-team#contact" className="btn-primary">
@@ -121,7 +121,7 @@ export default function UVDisinfection() {
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 UV system sizing depends on your specific flow rate, water quality (UV transmittance), target log reduction, and the organisms of concern. VATN evaluates these parameters for each application before recommending a system configuration.
               </p>
-              <p className="font-body text-white/50" style={{ fontSize: "0.83rem", lineHeight: "1.65" }}>
+              <p className="font-body text-white/50" style={{ fontSize: "0.9rem", lineHeight: "1.65" }}>
                 Contact VATN to discuss your facility's water source, flow requirements, and disinfection objectives. We will provide an honest assessment of what UV can and cannot accomplish for your specific situation.
               </p>
             </div>

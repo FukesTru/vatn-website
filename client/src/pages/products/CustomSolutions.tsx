@@ -63,19 +63,19 @@ export default function CustomSolutions() {
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <Link href="/products">
-            <span className="flex items-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
+            <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
               ← Products &amp; Solutions
             </span>
           </Link>
           <p className="section-label mb-3">Site-Specific Engineering</p>
-          <span className="teal-rule mb-5" />
+          <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Other &amp; Custom Solutions<br />
             <span style={{ color: "#0E9B8A" }}>When the Problem Doesn't Fit a Catalog</span>
           </h1>
-          <p className="font-body text-white/70 max-w-xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
+          <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Some hatchery and aquaculture problems do not fit neatly into a standard product category. VATN evaluates site-specific water quality, gas management, hydraulic, solids, disinfection, biofiltration, and treatment challenges and develops solutions appropriate to the actual conditions.
           </p>
           <a href="/our-team#contact" className="btn-primary">
@@ -129,7 +129,7 @@ export default function CustomSolutions() {
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 VATN does not sell solutions before understanding the problem. For non-standard challenges, the process starts with a conversation about your facility, your water quality conditions, your constraints, and your objectives. From there, VATN evaluates what approaches are technically feasible and what the tradeoffs are.
               </p>
-              <p className="font-body text-white/50 mb-5" style={{ fontSize: "0.83rem", lineHeight: "1.65" }}>
+              <p className="font-body text-white/50 mb-5" style={{ fontSize: "0.9rem", lineHeight: "1.65" }}>
                 If a problem is outside VATN's scope, we will tell you that directly rather than recommend a solution that is not appropriate for your situation.
               </p>
               <a href="/our-team#contact" className="flex items-center gap-1 font-display font-semibold" style={{ fontSize: "0.78rem", color: "#0E9B8A", letterSpacing: "0.06em", textTransform: "uppercase" }}>

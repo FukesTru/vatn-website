@@ -56,19 +56,19 @@ export default function FishRearingTankDesign() {
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <Link href="/products">
-            <span className="flex items-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
+            <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
               ← Products &amp; Solutions
             </span>
           </Link>
           <p className="section-label mb-3">Rearing Unit Design</p>
-          <span className="teal-rule mb-5" />
+          <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Fish Rearing Tank Design<br />
             <span style={{ color: "#0E9B8A" }}>Hydraulics &amp; Water Quality</span>
           </h1>
-          <p className="font-body text-white/70 max-w-xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
+          <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Mixed-cell raceway and rearing unit design based on decades of hydraulic research. Uniform water quality distribution, effective solids removal, and practical hatchery operation.
           </p>
           <a href="/our-team#contact" className="btn-primary">
@@ -122,7 +122,7 @@ export default function FishRearingTankDesign() {
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 Dr. Barnaby Watten's published research on rearing unit hydraulics includes peer-reviewed studies on rectangular cross-flow rearing units, mixed-cell raceway design, and the relationship between tank hydraulics, fish behavior, growth, and metabolism. This research forms the technical foundation for VATN's rearing unit design work.
               </p>
-              <p className="font-body text-white/50" style={{ fontSize: "0.83rem", lineHeight: "1.65" }}>
+              <p className="font-body text-white/50" style={{ fontSize: "0.9rem", lineHeight: "1.65" }}>
                 Selected publications are available on the Publications page. Contact VATN to discuss how this research applies to your specific facility and production objectives.
               </p>
               <div className="mt-4">

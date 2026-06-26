@@ -45,23 +45,23 @@ export default function Footer() {
             <div className="mb-5">
               <img src={LOGO_URL} alt="VATN Science and Technology" style={{ height: "40px", width: "auto", objectFit: "contain" }} />
             </div>
-            <p className="font-body text-white/50" style={{ fontSize: "0.82rem", lineHeight: "1.65" }}>
+            <p className="font-body text-white/50" style={{ fontSize: "0.88rem", lineHeight: "1.65" }}>
               Engineered gas management and water treatment solutions for aquaculture, fish hatcheries, and wastewater applications.
             </p>
             <div className="mt-5 flex flex-col gap-2.5">
-              <a href="tel:2252294711" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem" }}>
+              <a href="tel:2252294711" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.88rem" }}>
                 <Phone size={13} style={{ color: "#0E9B8A" }} />
                 Terry McCarthy: (225) 229-4711
               </a>
-              <a href="tel:5403336859" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem" }}>
+              <a href="tel:5403336859" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.88rem" }}>
                 <Phone size={13} style={{ color: "#0E9B8A" }} />
                 Dr. Barnaby Watten: (540) 333-6859
               </a>
-              <a href="mailto:info@vatnusa.com" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem" }}>
+              <a href="mailto:info@vatnusa.com" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.88rem" }}>
                 <Mail size={13} style={{ color: "#0E9B8A" }} />
                 info@vatnusa.com
               </a>
-              <div className="flex items-start gap-2.5 text-white/50" style={{ fontSize: "0.82rem" }}>
+              <div className="flex items-start gap-2.5 text-white/50" style={{ fontSize: "0.88rem" }}>
                 <MapPin size={13} style={{ color: "#0E9B8A", marginTop: "2px", flexShrink: 0 }} />
                 124 Rockwall Trail<br />Winchester, VA 22602
               </div>
@@ -83,7 +83,7 @@ export default function Footer() {
               ].map((item) => (
                 <li key={item}>
                   <Link href="/gas-management">
-                    <span className="font-body text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem" }}>
+                    <span className="font-body text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.88rem" }}>
                       {item}
                     </span>
                   </Link>
@@ -106,7 +106,7 @@ export default function Footer() {
                 "Conservation Programs",
               ].map((item) => (
                 <li key={item}>
-                  <span className="font-body text-white/50" style={{ fontSize: "0.82rem" }}>{item}</span>
+                  <span className="font-body text-white/50" style={{ fontSize: "0.88rem" }}>{item}</span>
                 </li>
               ))}
             </ul>
@@ -127,7 +127,7 @@ export default function Footer() {
               ].map((link) => (
                 <li key={link.href}>
                   <Link href={link.href}>
-                    <span className="font-body text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem" }}>
+                    <span className="font-body text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.88rem" }}>
                       {link.label}
                     </span>
                   </Link>
@@ -139,10 +139,10 @@ export default function Footer() {
 
         {/* Bottom Bar */}
         <div className="mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3" style={{ borderTop: "1px solid rgba(255,255,255,0.06)" }}>
-          <p className="font-body text-white/30" style={{ fontSize: "0.75rem" }}>
+          <p className="font-body text-white/30" style={{ fontSize: "0.82rem" }}>
             &copy; 2026 VATN Science and Technology, LLC. All rights reserved.
           </p>
-          <p className="font-body text-white/30" style={{ fontSize: "0.75rem" }}>
+          <p className="font-body text-white/30" style={{ fontSize: "0.82rem" }}>
             Winchester, VA 22602 &nbsp;|&nbsp; vatnusa.com
           </p>
         </div>

@@ -188,7 +188,7 @@ export default function Navigation() {
                       <Link href="/products">
                         <span
                           className="flex items-center gap-1 font-body text-white/50 hover:text-white/80 transition-colors"
-                          style={{ fontSize: "0.72rem" }}
+                          style={{ fontSize: "0.8rem" }}
                         >
                           View All <ArrowRight size={11} />
                         </span>
@@ -221,7 +221,7 @@ export default function Navigation() {
                             </span>
                             <span
                               className="font-body"
-                              style={{ fontSize: "0.72rem", color: "rgba(255,255,255,0.4)", lineHeight: "1.4" }}
+                              style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.4)", lineHeight: "1.4" }}
                             >
                               {item.desc}
                             </span>

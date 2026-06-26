@@ -66,22 +66,22 @@ export default function GasManagementProduct() {
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <Link href="/products">
-            <span className="flex items-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
+            <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
               ← Products &amp; Solutions
             </span>
           </Link>
           <p className="section-label mb-3">Aquaculture Gas Management</p>
-          <span className="teal-rule mb-5" />
+          <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Gas Management<br />
             <span style={{ color: "#0E9B8A" }}>for Hatchery &amp; RAS Systems</span>
           </h1>
-          <p className="font-body text-white/70 max-w-xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
+          <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Oxygenation, degassing, CO₂ control, and total dissolved gas pressure management — modeled and sized for your site's actual water chemistry, hydraulic constraints, and production objectives.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 justify-center">
             <a href="/our-team#contact" className="btn-primary">
               Discuss Your Gas Management Challenge
               <ArrowRight size={15} />
@@ -136,7 +136,7 @@ export default function GasManagementProduct() {
                 <p className="font-body mb-4" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{tech.body}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {tech.specs.map((s) => (
-                    <span key={s} className="font-body" style={{ fontSize: "0.68rem", color: "#0E9B8A", backgroundColor: "rgba(14,155,138,0.08)", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", padding: "2px 8px" }}>
+                    <span key={s} className="font-body" style={{ fontSize: "0.78rem", color: "#0E9B8A", backgroundColor: "rgba(14,155,138,0.08)", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", padding: "2px 8px" }}>
                       {s}
                     </span>
                   ))}

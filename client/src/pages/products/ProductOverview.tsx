@@ -81,19 +81,19 @@ export default function ProductOverview() {
             backgroundSize: "48px 48px",
           }}
         />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <p className="section-label mb-3">Aquaculture &amp; Hatchery Water Treatment</p>
-          <span className="teal-rule mb-5" />
+          <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1
             className="font-display text-white mb-5"
             style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}
           >
             Products &amp; Solutions
           </h1>
-          <p className="font-body text-white/70 max-w-xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
+          <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             VATN provides equipment, engineering evaluation, and technical support for gas management, water treatment, and hatchery infrastructure challenges. Every solution is sized and selected for the actual conditions at your site.
           </p>
-          <div className="flex flex-wrap gap-3">
+          <div className="flex flex-wrap gap-3 justify-center">
             <a href="/our-team#contact" className="btn-primary">
               Discuss Your Project
               <ArrowRight size={15} />
@@ -162,7 +162,7 @@ export default function ProductOverview() {
                       key={tag}
                       className="font-body"
                       style={{
-                        fontSize: "0.68rem",
+                        fontSize: "0.78rem",
                         color: "#0E9B8A",
                         backgroundColor: "rgba(14,155,138,0.08)",
                         border: "1px solid rgba(14,155,138,0.2)",

@@ -64,16 +64,17 @@ export default function News() {
             backgroundSize: "48px 48px",
           }}
         />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <RevealSection>
             <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Latest Updates</p>
+            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h1
               className="font-display text-white mb-4"
               style={{ fontSize: "clamp(2.2rem, 5vw, 3.6rem)", fontWeight: 800, lineHeight: 1.05 }}
             >
-              News & Events
+              News &amp; Events
             </h1>
-            <p className="font-body text-white/60 max-w-2xl" style={{ fontSize: "1rem", lineHeight: "1.7" }}>
+            <p className="font-body text-white/60 max-w-2xl mx-auto" style={{ fontSize: "1rem", lineHeight: "1.7" }}>
               Conference appearances, product announcements, and technical updates from VATN Science and Technology.
             </p>
           </RevealSection>

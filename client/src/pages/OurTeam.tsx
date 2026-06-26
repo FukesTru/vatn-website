@@ -132,14 +132,14 @@ export default function OurTeam() {
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to bottom, rgba(6,14,26,0.93) 0%, rgba(10,22,40,0.88) 60%, rgba(10,22,40,0.75) 100%)" }} />
         <div className="absolute inset-0 blueprint-grid opacity-15" />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <RevealSection>
             <p className="section-label mb-3">VATN Science and Technology</p>
-            <span className="teal-rule mb-5" />
+            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h1 className="font-display text-white mb-4" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
               Our Team
             </h1>
-            <p className="font-body text-white/70 max-w-2xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.6" }}>
+            <p className="font-body text-white/70 max-w-2xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.6" }}>
               VATN was founded by two professionals whose careers have been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States.
             </p>
             <a href="#contact" className="btn-primary">
@@ -156,7 +156,7 @@ export default function OurTeam() {
             {["80+ Years Combined Industry Experience", "10 Patents Awarded", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "Founded VATN 2019"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#0E9B8A" }} />
-                <span className="font-body text-white/65" style={{ fontSize: "0.75rem" }}>{item}</span>
+                <span className="font-body text-white/65" style={{ fontSize: "0.82rem" }}>{item}</span>
               </div>
             ))}
           </div>
@@ -194,15 +194,15 @@ export default function OurTeam() {
                   Ph.D. Fisheries &amp; Allied Aquacultures — Auburn University, 1989
                 </p>
                 {/* Animated stat row */}
-                <p className="font-display mb-4" style={{ fontSize: "0.72rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
+                <p className="font-display mb-4" style={{ fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                   {barnabyStats.map((s, i) => (
                     <div key={s.label} className="text-center">
                       <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#0E9B8A", lineHeight: 1 }}>
                         <CountUp target={s.val} suffix={s.suffix} duration={1600 + i * 200} />
                       </div>
-                      <div className="font-display text-white" style={{ fontSize: "0.72rem", marginTop: "3px", letterSpacing: "0.04em" }}>{s.label}</div>
-                      <div className="font-body" style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.35)", marginTop: "1px" }}>{s.sub}</div>
+                      <div className="font-display text-white" style={{ fontSize: "0.8rem", marginTop: "3px", letterSpacing: "0.04em" }}>{s.label}</div>
+                      <div className="font-body" style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.35)", marginTop: "1px" }}>{s.sub}</div>
                     </div>
                   ))}
                 </div>
@@ -239,10 +239,10 @@ export default function OurTeam() {
                 <div className="flex flex-col gap-4">
                   {barnabyAwards.map((a) => (
                     <div key={a.award + a.year} className="flex items-start gap-3">
-                      <div className="shrink-0 mt-0.5 w-8 h-8 flex items-center justify-center font-display font-bold text-white" style={{ backgroundColor: "#0E9B8A", borderRadius: "2px", fontSize: "0.65rem" }}>{a.year}</div>
+                      <div className="shrink-0 mt-0.5 w-8 h-8 flex items-center justify-center font-display font-bold text-white" style={{ backgroundColor: "#0E9B8A", borderRadius: "2px", fontSize: "0.82rem" }}>{a.year}</div>
                       <div>
                         <div className="font-body" style={{ fontSize: "0.84rem", color: "#1C2B3A", lineHeight: "1.4" }}>{a.award}</div>
-                        <div className="font-body" style={{ fontSize: "0.75rem", color: "#8A9BB0", marginTop: "2px" }}>{a.org}</div>
+                        <div className="font-body" style={{ fontSize: "0.82rem", color: "#8A9BB0", marginTop: "2px" }}>{a.org}</div>
                       </div>
                     </div>
                   ))}
@@ -310,7 +310,7 @@ export default function OurTeam() {
                 {barnabyCareer.map((item, i) => (
                   <div key={item.role + item.org} className="grid grid-cols-1 lg:grid-cols-4" style={{ borderBottom: i < barnabyCareer.length - 1 ? "1px solid #E8EEF4" : "none" }}>
                     <div className="lg:col-span-1 py-5 pr-6" style={{ borderRight: "1px solid #E8EEF4" }}>
-                      <div className="font-body" style={{ fontSize: "0.72rem", color: "#0E9B8A", letterSpacing: "0.08em", textTransform: "uppercase" }}>{item.period}</div>
+                      <div className="font-body" style={{ fontSize: "0.8rem", color: "#0E9B8A", letterSpacing: "0.08em", textTransform: "uppercase" }}>{item.period}</div>
                       <div className="font-display font-bold mt-1" style={{ fontSize: "0.92rem", color: "#1C2B3A", lineHeight: "1.3" }}>{item.role}</div>
                     </div>
                     <div className="lg:col-span-3 py-5 lg:pl-6">
@@ -348,7 +348,7 @@ export default function OurTeam() {
                 <p className="font-body mb-8" style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.88rem" }}>
                   B.S. &amp; MBA — Tulane University (1980, 1989)
                 </p>
-                <p className="font-display mb-4" style={{ fontSize: "0.72rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
+                <p className="font-display mb-4" style={{ fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
                 <div className="grid grid-cols-3 gap-6">
                   {[
                     { val: 32, suffix: "+", label: "Years of Experience", sub: "Aquaculture industry" },
@@ -359,8 +359,8 @@ export default function OurTeam() {
                       <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#0E9B8A", lineHeight: 1 }}>
                         <CountUp target={s.val} suffix={s.suffix} duration={1600 + i * 200} />
                       </div>
-                      <div className="font-display text-white" style={{ fontSize: "0.72rem", marginTop: "3px", letterSpacing: "0.04em" }}>{s.label}</div>
-                      <div className="font-body" style={{ fontSize: "0.65rem", color: "rgba(255,255,255,0.35)", marginTop: "1px" }}>{s.sub}</div>
+                      <div className="font-display text-white" style={{ fontSize: "0.8rem", marginTop: "3px", letterSpacing: "0.04em" }}>{s.label}</div>
+                      <div className="font-body" style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.35)", marginTop: "1px" }}>{s.sub}</div>
                     </div>
                   ))}
                 </div>
@@ -441,7 +441,7 @@ export default function OurTeam() {
                 {terryCareer.map((item, i) => (
                   <div key={item.role + item.org} className="grid grid-cols-1 lg:grid-cols-4" style={{ borderBottom: i < terryCareer.length - 1 ? "1px solid #E8EEF4" : "none" }}>
                     <div className="lg:col-span-1 p-5 pr-6" style={{ borderRight: "1px solid #E8EEF4" }}>
-                      <div className="font-body" style={{ fontSize: "0.72rem", color: "#0E9B8A", letterSpacing: "0.08em", textTransform: "uppercase" }}>{item.period}</div>
+                      <div className="font-body" style={{ fontSize: "0.8rem", color: "#0E9B8A", letterSpacing: "0.08em", textTransform: "uppercase" }}>{item.period}</div>
                       <div className="font-display font-bold mt-1" style={{ fontSize: "0.92rem", color: "#1C2B3A", lineHeight: "1.3" }}>{item.role}</div>
                     </div>
                     <div className="lg:col-span-3 p-5 lg:pl-6">
@@ -541,7 +541,7 @@ export default function OurTeam() {
                 {/* Terry */}
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #0E9B8A" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Terry McCarthy</p>
-                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.75rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Director of Sales</p>
+                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Director of Sales</p>
                   <a href="tel:2252294711" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
                     <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
                     (225) 229-4711
@@ -550,7 +550,7 @@ export default function OurTeam() {
                 {/* Barnaby */}
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #0E9B8A" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Dr. Barnaby J. Watten</p>
-                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.75rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Co-Founder &amp; Principal Scientist</p>
+                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Co-Founder &amp; Principal Scientist</p>
                   <a href="tel:5403336859" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
                     <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
                     (540) 333-6859

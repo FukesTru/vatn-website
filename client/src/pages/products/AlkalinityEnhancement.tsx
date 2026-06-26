@@ -52,19 +52,19 @@ export default function AlkalinityEnhancement() {
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
         <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <Link href="/products">
-            <span className="flex items-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
+            <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
               ← Products &amp; Solutions
             </span>
           </Link>
           <p className="section-label mb-3">pH &amp; Alkalinity Control</p>
-          <span className="teal-rule mb-5" />
+          <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Alkalinity Enhancement<br />
             <span style={{ color: "#0E9B8A" }}>Limestone-Based Treatment</span>
           </h1>
-          <p className="font-body text-white/70 max-w-xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
+          <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Fluidized bed and pulsed bed limestone reactors for pH and alkalinity control in acid-impacted source water. Developed and tested at federal fish hatcheries and National Park Service sites.
           </p>
           <a href="/our-team#contact" className="btn-primary">
@@ -131,7 +131,7 @@ export default function AlkalinityEnhancement() {
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 VATN's alkalinity enhancement work is backed by two U.S. patents for CO₂ pretreatment and accelerated limestone dissolution (Patent Nos. 5914046 and 5863422), plus more than a decade of published research on pulsed bed and fluidized bed reactor performance.
               </p>
-              <p className="font-body text-white/50" style={{ fontSize: "0.83rem", lineHeight: "1.65" }}>
+              <p className="font-body text-white/50" style={{ fontSize: "0.9rem", lineHeight: "1.65" }}>
                 This is not catalog equipment. System design requires evaluation of your source water chemistry, target pH and alkalinity, flow rates, and available infrastructure. Contact VATN to discuss your specific situation.
               </p>
             </div>

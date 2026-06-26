@@ -184,16 +184,17 @@ export default function Publications() {
             backgroundSize: "48px 48px",
           }}
         />
-        <div className="container relative z-10">
+        <div className="container relative z-10 text-center">
           <RevealSection>
-            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Research & Technical Record</p>
+            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Research &amp; Technical Record</p>
+            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h1
               className="font-display text-white mb-4"
               style={{ fontSize: "clamp(2.2rem, 5vw, 3.6rem)", fontWeight: 800, lineHeight: 1.05 }}
             >
-              Publications, Patents & Reports
+              Publications, Patents &amp; Reports
             </h1>
-            <p className="font-body text-white/60 max-w-2xl" style={{ fontSize: "1rem", lineHeight: "1.7" }}>
+            <p className="font-body text-white/60 max-w-2xl mx-auto" style={{ fontSize: "1rem", lineHeight: "1.7" }}>
               Dr. Barnaby J. Watten — Selected publications, patents, and technical reports organized by research topic area. {totalEntries} entries across {publications.length} topic areas.
             </p>
           </RevealSection>
