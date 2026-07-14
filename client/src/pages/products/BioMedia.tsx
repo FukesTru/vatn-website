@@ -61,6 +61,34 @@ export default function BioMedia() {
       {/* Content */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
+          {/* Photos row */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ height: "260px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img
+                  src="/manus-storage/vatn-bio-media-photo_415f2c30.jpg"
+                  alt="VATN B100 Bio Media"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </div>
+              <div style={{ padding: "0.75rem 1rem" }}>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>VATN B100 Bio Media — structured plastic media for RAS biofiltration</p>
+              </div>
+            </div>
+            <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ height: "260px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img
+                  src="/manus-storage/vatn-bio-media-usa_929c566e.png"
+                  alt="VATN B100 Bio Media — Made in the USA"
+                  style={{ width: "100%", height: "100%", objectFit: "contain", padding: "1rem" }}
+                />
+              </div>
+              <div style={{ padding: "0.75rem 1rem" }}>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>B100 Bio Media — manufactured in the United States</p>
+              </div>
+            </div>
+          </div>
+
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
             <div>
               <p className="section-label mb-3">B100 Bio Media</p>
@@ -85,6 +113,32 @@ export default function BioMedia() {
             </div>
 
             <div className="flex flex-col gap-5">
+              {/* Specs table */}
+              <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
+                <div style={{ backgroundColor: "#0A1628", padding: "0.75rem 1rem" }}>
+                  <p className="font-display text-white" style={{ fontSize: "0.9rem" }}>B100 Media Specifications</p>
+                </div>
+                <table style={{ width: "100%", borderCollapse: "collapse" }}>
+                  <tbody>
+                    <tr style={{ borderBottom: "1px solid #E8EEF4" }}>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080", width: "55%" }}>Protected Surface Area</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>500 m²/m³</td>
+                    </tr>
+                    <tr style={{ borderBottom: "1px solid #E8EEF4", backgroundColor: "#F9FAFB" }}>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Media Type</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>Structured Plastic</td>
+                    </tr>
+                    <tr style={{ borderBottom: "1px solid #E8EEF4" }}>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Compatible Configurations</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>MBBR &amp; Fixed Bed</td>
+                    </tr>
+                    <tr style={{ backgroundColor: "#F9FAFB" }}>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Origin</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#0E9B8A", fontWeight: 600 }}>Made in the USA</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
               <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>
                 <div className="flex items-center gap-3 mb-3">
                   <Layers size={20} style={{ color: "#0E9B8A" }} />

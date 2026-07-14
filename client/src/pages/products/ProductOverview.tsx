@@ -102,17 +102,14 @@ export default function ProductOverview() {
         </div>
       </section>
 
-      {/* Intro strip */}
+      {/* Intro strip — exact client-approved wording */}
       <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
         <div className="container">
-          <div className="max-w-3xl">
-            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>How VATN Approaches Projects</p>
+          <div className="max-w-4xl">
+            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Product Overview</p>
             <span className="teal-rule mb-5" />
-            <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
-              Federal and state fish hatcheries, commercial aquaculture facilities, and engineering firms face water treatment and gas management challenges that vary significantly by site. Source water chemistry, available head, infrastructure constraints, species requirements, and budget all shape what is actually feasible. VATN evaluates each project individually — selecting and sizing equipment based on your specific conditions, not a standard catalog recommendation.
-            </p>
-            <p className="font-body text-white/50 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-              Dr. Barnaby Watten's 87+ peer-reviewed publications and 10 patents, combined with Terry McCarthy's 32+ years supplying hatchery programs, mean that VATN brings both the research background and the practical field experience to evaluate problems that do not have simple off-the-shelf answers.
+            <p className="font-body text-white/80" style={{ fontSize: "0.97rem", lineHeight: "1.8" }}>
+              Proper management of dissolved gas levels, particularly dissolved oxygen (DO), nitrogen and CO₂ is critical in determining the success of both aquaculture and wastewater/environmental operations. This includes maintaining adequate DO for rapid growth of aquaculture species as well as maintenance of environmental DO levels that allow for biological wastewater treatment or transport without hydrogen sulfide generation. CO₂ is a byproduct of both fish and microbe respiration and so managing (removal) this gas is also of importance given its effect on water pH and fish health. Well and spring water sources, commonly used at federal and state fish hatcheries, often contain elevated (stressful) levels of CO₂ as well as dissolved nitrogen (N₂) that must also be managed (stripped/scrubbed) prior to aquaculture use. Dissolved gas monitoring equipment is used to control gas management equipment so that gas transfer needs match gas transfer rates. Hence dissolved gas sensors play an important role in treatment solution packages. The required manipulation of dissolved gas levels and the number of monitoring sites is related in part to fish rearing unit design (tank hydraulics) including the state-of-the-art mixed cell rearing unit, biofilter type and performance and solids removal operations. VATN products address the needs outlined above:
             </p>
           </div>
         </div>

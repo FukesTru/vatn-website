@@ -84,13 +84,41 @@ export default function SolidsManagement() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {filterTypes.map((f) => (
               <div key={f.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #0E9B8A", borderRadius: "2px" }}>
                 <h3 className="font-display mb-3" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{f.title}</h3>
                 <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{f.body}</p>
               </div>
             ))}
+          </div>
+
+          {/* NP Product Photos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
+            <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ height: "260px", overflow: "hidden", backgroundColor: "#F9FAFB", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img
+                  src="/manus-storage/vatn-np-drum-filter_b6b686dd.jpg"
+                  alt="NP Drum Filters — Family Photo"
+                  style={{ width: "100%", height: "100%", objectFit: "contain", padding: "1rem" }}
+                />
+              </div>
+              <div style={{ padding: "0.75rem 1rem" }}>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>NP Drum Filters — available in multiple sizes for varying flow rates and solids loading conditions</p>
+              </div>
+            </div>
+            <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ height: "260px", overflow: "hidden", backgroundColor: "#F9FAFB", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img
+                  src="/manus-storage/vatn-np-disc-filter_90ee3fe1.png"
+                  alt="NP Disc Filter"
+                  style={{ width: "100%", height: "100%", objectFit: "contain", padding: "1rem" }}
+                />
+              </div>
+              <div style={{ padding: "0.75rem 1rem" }}>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>NP Disc Filter — compact modular design for space-constrained RAS installations</p>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">

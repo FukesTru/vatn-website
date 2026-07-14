@@ -129,6 +129,77 @@ export default function UVDisinfection() {
         </div>
       </section>
 
+      {/* UV Product Photos Gallery */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
+        <div className="container">
+          <div className="mb-10 text-center">
+            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Ultraqua UV Product Line</p>
+            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
+            <h2 className="font-display text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", lineHeight: 1.1 }}>
+              UV System Configurations
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Vertical Channel UV */}
+            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ height: "220px", overflow: "hidden" }}>
+                <img
+                  src="/manus-storage/vatn-uv-vertical-channel_6a98b7e7.jpg"
+                  alt="Vertical Channel UV Disinfection System"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </div>
+              <div style={{ padding: "1rem 1.25rem 1.25rem" }}>
+                <p className="font-display text-white" style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Vertical Channel UV</p>
+                <p className="font-body text-white/50" style={{ fontSize: "0.8rem", lineHeight: "1.6" }}>Open channel UV system for vertical installation. Suitable for high-flow hatchery and aquaculture applications.</p>
+              </div>
+            </div>
+            {/* Incline Channel UV */}
+            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ height: "220px", overflow: "hidden" }}>
+                <img
+                  src="/manus-storage/vatn-uv-incline-channel_9a05164a.webp"
+                  alt="Incline Channel UV Disinfection System"
+                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                />
+              </div>
+              <div style={{ padding: "1rem 1.25rem 1.25rem" }}>
+                <p className="font-display text-white" style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Incline Channel UV</p>
+                <p className="font-body text-white/50" style={{ fontSize: "0.8rem", lineHeight: "1.6" }}>45-degree inclined open channel UV contactor. Designed for space-efficient installation in hatchery water supply lines.</p>
+              </div>
+            </div>
+            {/* Closed UV Reactors */}
+            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ height: "220px", overflow: "hidden", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img
+                  src="/manus-storage/vatn-uv-general-system-docx_80166a50.jpg"
+                  alt="Closed UV Reactor — ULTRAQUA Stainless Steel"
+                  style={{ width: "100%", height: "100%", objectFit: "contain", padding: "0.5rem" }}
+                />
+              </div>
+              <div style={{ padding: "1rem 1.25rem 1.25rem" }}>
+                <p className="font-display text-white" style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Closed UV Reactors</p>
+                <p className="font-body text-white/50" style={{ fontSize: "0.8rem", lineHeight: "1.6" }}>Closed vessel UV contactors in stainless steel and polypropylene. Available in low-pressure and medium-pressure lamp configurations.</p>
+              </div>
+            </div>
+            {/* General UV Disinfection System — full width on last row */}
+            <div className="md:col-span-2 lg:col-span-3" style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", overflow: "hidden", display: "flex", flexDirection: "row", alignItems: "stretch" }}>
+              <div style={{ width: "340px", flexShrink: 0, backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img
+                  src="/manus-storage/vatn-uv-open-channel-horizontal_6c69c38b.jpg"
+                  alt="Open Channel UV Disinfection System — Horizontal"
+                  style={{ width: "100%", height: "100%", objectFit: "contain", padding: "1rem" }}
+                />
+              </div>
+              <div style={{ padding: "1.5rem 1.75rem", display: "flex", flexDirection: "column", justifyContent: "center" }}>
+                <p className="font-display text-white" style={{ fontSize: "1rem", marginBottom: "0.5rem" }}>Open Channel UV — Horizontal</p>
+                <p className="font-body text-white/50" style={{ fontSize: "0.85rem", lineHeight: "1.7" }}>Horizontal open channel UV system for large-scale flow-through applications. Ultraqua's open channel series covers a wide range of flow rates and UV transmittance conditions. Terry McCarthy has worked with Ultraqua UV systems since 2008 across aquaculture, potable water, and recreational water applications.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Ultraqua Partner Link */}
       <section className="py-16 lg:py-20" style={{ backgroundColor: "#F4F6F8", borderTop: "1px solid #E0E8F0" }}>
         <div className="container">

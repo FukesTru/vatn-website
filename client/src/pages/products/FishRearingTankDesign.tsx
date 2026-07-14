@@ -137,6 +137,18 @@ export default function FishRearingTankDesign() {
         </div>
       </section>
 
+      {/* Placeholder note */}
+      <section className="py-12 lg:py-14" style={{ backgroundColor: "#F4F6F8", borderTop: "1px solid #E0E8F0" }}>
+        <div className="container">
+          <div className="max-w-2xl mx-auto p-6" style={{ backgroundColor: "#fff", border: "1px solid #E0E8F0", borderLeft: "4px solid #0E9B8A", borderRadius: "2px" }}>
+            <p className="font-display mb-2" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Illustrations Coming Soon</p>
+            <p className="font-body" style={{ fontSize: "0.85rem", color: "#5A7080", lineHeight: "1.7" }}>
+              Diagrams and illustrations of mixed-cell raceway design and rearing unit hydraulics are being prepared for this page. Contact VATN directly to discuss your facility's rearing unit configuration and hydraulic requirements.
+            </p>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">

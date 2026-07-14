@@ -147,6 +147,44 @@ export default function GasManagementProduct() {
         </div>
       </section>
 
+      {/* LHO Illustration */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
+        <div className="container">
+          <div className="mb-8 text-center">
+            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Patented Technology</p>
+            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
+            <h2 className="font-display text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", lineHeight: 1.1 }}>
+              Low Head Oxygenator (LHO)
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+            <div style={{ backgroundColor: "#fff", borderRadius: "2px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", padding: "1.5rem" }}>
+              <img
+                src="/manus-storage/vatn-lho-illustration_1d6f48c6.webp"
+                alt="Low Head Oxygenator (LHO) — patented design by Dr. Barnaby Watten"
+                style={{ width: "100%", maxHeight: "400px", objectFit: "contain" }}
+              />
+            </div>
+            <div>
+              <p className="font-body text-white/65 mb-5" style={{ fontSize: "0.92rem", lineHeight: "1.75" }}>
+                The Low Head Oxygenator was developed and patented by Dr. Barnaby Watten in 1989. It operates on hydraulic gradients as low as 9 inches — making it applicable at sites where conventional oxygenation equipment cannot be used due to limited available head.
+              </p>
+              <p className="font-body text-white/65 mb-5" style={{ fontSize: "0.92rem", lineHeight: "1.75" }}>
+                The LHO has no moving parts, requires minimal maintenance, and has been widely applied at federal, state, and private hatcheries across the United States. Multi-stage configurations allow oxygen transfer to be scaled to match production requirements.
+              </p>
+              <div className="flex flex-wrap gap-2">
+                {["No moving parts", "9\" minimum head", "Multi-stage", "Patented 1989", "RAS & raceway"].map((tag) => (
+                  <span key={tag} className="font-body" style={{ fontSize: "0.78rem", color: "#0E9B8A", backgroundColor: "rgba(14,155,138,0.08)", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", padding: "2px 8px" }}>
+                    {tag}
+                  </span>
+                ))}
+              </div>
+              <p className="font-body text-white/40 mt-4" style={{ fontSize: "0.75rem" }}>Illustration: Low Head Oxygenator — patented design by Dr. Barnaby Watten</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
