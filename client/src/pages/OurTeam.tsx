@@ -178,7 +178,7 @@ export default function OurTeam() {
                   src={BARNABY_PHOTO}
                   alt="Dr. Barnaby J. Watten"
                   className="w-full h-full object-cover object-top"
-                  style={{ minHeight: "160px", maxHeight: "240px", display: "block" }}
+                  style={{ minHeight: "320px", maxHeight: "480px", display: "block" }}
                 />
                 {/* Gradient overlay on photo */}
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to right, transparent 60%, rgba(10,22,40,0.4) 100%)" }} />
@@ -371,7 +371,7 @@ export default function OurTeam() {
                   src={TERRY_PHOTO}
                   alt="Terry McCarthy"
                   className="w-full h-full object-cover object-top"
-                  style={{ minHeight: "160px", maxHeight: "240px", display: "block" }}
+                  style={{ minHeight: "320px", maxHeight: "480px", display: "block" }}
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to left, transparent 60%, rgba(30,77,123,0.3) 100%)" }} />
               </div>
