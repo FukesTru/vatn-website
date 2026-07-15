@@ -241,6 +241,52 @@ export default function GasManagement() {
         </div>
       </section>
 
+      {/* ── VACUUM DEGASSING TOWER & WATER JET EXHAUSTER ── */}
+      <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container">
+          <RevealSection>
+            <div className="max-w-2xl mb-12">
+              <p className="section-label mb-3">Signature Product</p>
+              <span className="teal-rule mb-5" />
+              <h2 className="font-display" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
+                Vacuum Degassing Tower &amp; Water Jet Exhauster
+              </h2>
+              <p className="font-body mt-4" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
+                VATN's vacuum degassing tower, paired with a water jet exhauster, is a proven system for removing dissolved gases from hatchery water supplies. The water jet exhauster maintains vacuum within the packed column, eliminating the need for mechanical vacuum pumps and reducing maintenance requirements. This system has been in continuous operation at federal and state hatchery facilities for decades.
+              </p>
+            </div>
+          </RevealSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <RevealSection delay={60}>
+              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(14,155,138,0.12)" }}>
+                <img
+                  src="/manus-storage/vatn-vacuum-degassing-tower_04866f24.jpg"
+                  alt="Vacuum degassing tower at NARL"
+                  style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
+                />
+                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #0E9B8A" }}>
+                  <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Vacuum Degassing Tower</p>
+                  <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Vacuum degasser at NARL following modifications for enhanced radon removal.</p>
+                </div>
+              </div>
+            </RevealSection>
+            <RevealSection delay={120}>
+              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(14,155,138,0.12)" }}>
+                <img
+                  src="/manus-storage/vatn-water-jet-exhauster_c67582b9.jpg"
+                  alt="Water jet exhauster on vacuum degasser packed column"
+                  style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
+                />
+                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #0E9B8A" }}>
+                  <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Water Jet Exhauster</p>
+                  <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Water jet exhauster at an elevated position on the vacuum degasser's packed column.</p>
+                </div>
+              </div>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
       {/* ── MODELING SECTION ── */}
       <section className="py-20 lg:py-28 relative" style={{ backgroundColor: "#060E1A" }}>
         <div className="absolute inset-0 blueprint-cross" />
