@@ -62,7 +62,7 @@ function CountUp({ target, suffix = "", duration = 1800 }: { target: number; suf
 
 // ── BARNABY DATA ─────────────────────────────────────────────────────────────
 const barnabyStats = [
-  { val: 14, suffix: "", label: "Patents Awarded", sub: "+ 2 in review" },
+  { val: 15, suffix: "", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
   { val: 87, suffix: "", label: "Publications", sub: "63 peer-reviewed" },
   { val: 31, suffix: "", label: "Years at U.S. DOI", sub: "Retired 2018" },
   { val: 14, suffix: "", label: "Graduate Students", sub: "Mentored" },
@@ -79,7 +79,8 @@ const barnabyAwards = [
 const barnabyCareer = [
   { role: "Co-Founder & Principal Scientist", org: "VATN Science and Technology, LLC", period: "2019 – Present", desc: "Applied gas-transfer research and site-specific system modeling for federal and state hatchery programs and commercial aquaculture." },
   { role: "Deputy Director", org: "USGS Leetown Science Center", period: "Prior to 2018", desc: "Senior leadership at the USGS Leetown Science Center — final position in a 31-year career with the U.S. Department of the Interior." },
-  { role: "Laboratory Director", org: "Conte Anadromous Fish Research Center, MA", period: "", desc: "Directed research operations at the Conte Anadromous Fish Research Center (USFWS / USGS)." },
+  { role: "Laboratory Director", org: "Conte Anadromous Fish Research Center, MA", period: "2010 – 2016", desc: "Directed research operations at the Conte Anadromous Fish Research Center (USFWS / USGS)." },
+  { role: "Acting Assistant Center Director", org: "USGS Leetown Science Center", period: "2016 – 2018", desc: "Served as Acting Assistant Center Director at the USGS Leetown Science Center prior to retirement in 2018." },
   { role: "Branch Chief / Section Leader", org: "USFWS Wellsboro R&D Laboratory, PA", period: "1989 – c. 2000s", desc: "Managed bioengineering research on RAS components to reduce labor, energy, and water requirements of the USFWS National Fish Hatchery Program." },
   { role: "Aquacultural Engineering Researcher", org: "Pennsylvania Power and Light Company", period: "1982 – 1987", desc: "Led gas transfer and rearing unit hydraulics research at a waste heat recovery and aquaculture project." },
   { role: "Assistant Aquaculturist", org: "University of the Virgin Islands Agricultural Experiment Station", period: "c. 1978", desc: "Initiated RAS research in aquaponics. Master's research addressed ammonium selective ion exchange in trout RAS." },
@@ -95,7 +96,7 @@ const barnabyProfessional = [
 
 // ── TERRY DATA ───────────────────────────────────────────────────────────────
 const terryCareer = [
-  { role: "Director of Sales", org: "VATN Science and Technology, LLC", period: "2024 – Present", desc: "Applying 36+ years of aquaculture industry experience to business development, customer relations, and sales for VATN's gas management and water treatment systems." },
+  { role: "Director of Sales", org: "VATN Science and Technology, LLC", period: "2024 – Present", desc: "Applying 49+ years of aquaculture industry experience to business development, customer relations, and sales for VATN's gas management and water treatment systems." },
   { role: "General Manager & VP of Business Development", org: "Innovasea — Land Based Business Unit, Baton Rouge, LA", period: "2018 – Jan 2024", desc: "Managed the land-based business unit following Innovasea's acquisition of WMT. Responsibilities included R&D management for improved gas transfer methods." },
   { role: "Co-Founder & Manager", org: "Water Management Technologies (WMT)", period: "1994 – 2019", desc: "Co-founded WMT, specializing in equipment for state and federal hatchery programs. Products included turnkey RAS systems, CO₂ stripping towers, LHO oxygenation, Speece cones, microscreens, PSA oxygen generators, UV disinfection, and automated monitoring systems. WMT was sold to Innovasea in 2019." },
   { role: "Sales Manager — Equipment Division", org: "Zeigler Brothers Inc.", period: "Early career", desc: "Worked within a newly developed equipment division focused on intensive fish culture — LHO manufacturing, fish pumps and graders, microscreens, feeders, and automated water quality monitoring." },
@@ -154,7 +155,7 @@ export default function OurTeam() {
       <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
         <div className="container py-4">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-            {["80+ Years Combined Industry Experience", "14 Patents Awarded", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "Founded VATN 2019"].map((item, i) => (
+            {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "Founded VATN 2019"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#0E9B8A" }} />
                 <span className="font-body text-white/65" style={{ fontSize: "0.82rem" }}>{item}</span>
@@ -272,6 +273,7 @@ export default function OurTeam() {
                 {[
                   { d: "Ph.D.", f: "Fisheries & Allied Aquacultures", i: "Auburn University", y: "1989" },
                   { d: "M.S.", f: "Aquaculture / Ion Exchange", i: "Penn State / U. Virgin Islands", y: "1980" },
+                  { d: "B.S.", f: "Aquatic Biology / Chemistry", i: "Bemidji State University", y: "1977" },
                 ].map((e) => (
                   <div key={e.d} className="p-3 mb-2" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
                     <div className="font-display font-bold" style={{ fontSize: "0.92rem", color: "#1C2B3A" }}>{e.d} — {e.f}</div>
@@ -352,7 +354,7 @@ export default function OurTeam() {
                 <p className="font-display mb-4" style={{ fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
                 <div className="grid grid-cols-3 gap-6">
                   {[
-                    { val: 36, suffix: "+", label: "Years of Experience", sub: "Aquaculture industry" },
+                    { val: 49, suffix: "+", label: "Years of Experience", sub: "Aquaculture since 1977" },
                     { val: 1994, suffix: "", label: "Co-Founded WMT", sub: "Sold to Innovasea 2019" },
                     { val: 24, suffix: "+", label: "Years Running WMT", sub: "State & federal hatcheries" },
                   ].map((s, i) => (
@@ -475,11 +477,11 @@ export default function OurTeam() {
             {[
               {
                 label: "Dr. Watten brings",
-                points: ["31 years of USFWS / USGS research", "14 patents in gas transfer technology", "87 publications, 63 peer-reviewed", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
+                points: ["31 years of USFWS / USGS research", "15 patents and provisional patents in gas transfer technology", "87 publications, 63 peer-reviewed", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
               },
               {
                 label: "Terry McCarthy brings",
-                points: ["36+ years of aquaculture industry experience", "Co-founder of Water Management Technologies (1994–2019)", "Deep knowledge of state and federal hatchery procurement", "Manufacturing, P&L, and vendor management experience", "R&D management at Innovasea following WMT acquisition"],
+                points: ["49+ years of aquaculture industry experience (since 1977)", "Co-founder of Water Management Technologies (1994–2019)", "Deep knowledge of state and federal hatchery procurement", "Manufacturing, P&L, and vendor management experience", "R&D management at Innovasea following WMT acquisition"],
               },
               {
                 label: "Together at VATN",

@@ -204,7 +204,7 @@ export default function Publications() {
             <div className="flex flex-wrap gap-8 mt-8">
               {[
                 { value: "87+", label: "Peer-Reviewed Publications" },
-                { value: "14", label: "U.S. & International Patents" },
+                { value: "15", label: "U.S. & International Patents" },
                 { value: "6", label: "Research Topic Areas" },
                 { value: "45+", label: "Years of Research" },
               ].map((stat) => (
