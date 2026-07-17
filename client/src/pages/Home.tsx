@@ -14,7 +14,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
-const HATCHERY_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hatchery-systems-X4SD42svGcW9x6EL3d4G2s.webp";
+const HATCHERY_IMG = "/manus-storage/vatn-valve-new_84ee04f2.webp";
 const BARNABY_IMG = "/manus-storage/barnaby-headshot_5b2b5b7b.jpg";
 const TERRY_IMG = "/manus-storage/terry-headshot_a3c4d5e6.jpg";
 
