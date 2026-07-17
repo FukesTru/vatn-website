@@ -95,9 +95,9 @@ const barnabyProfessional = [
 
 // ── TERRY DATA ───────────────────────────────────────────────────────────────
 const terryCareer = [
-  { role: "Director of Sales", org: "VATN Science and Technology, LLC", period: "2024 – Present", desc: "Applying 32+ years of aquaculture industry experience to business development, customer relations, and sales for VATN's gas management and water treatment systems." },
+  { role: "Director of Sales", org: "VATN Science and Technology, LLC", period: "2024 – Present", desc: "Applying 36+ years of aquaculture industry experience to business development, customer relations, and sales for VATN's gas management and water treatment systems." },
   { role: "General Manager & VP of Business Development", org: "Innovasea — Land Based Business Unit, Baton Rouge, LA", period: "2018 – Jan 2024", desc: "Managed the land-based business unit following Innovasea's acquisition of WMT. Responsibilities included R&D management for improved gas transfer methods." },
-  { role: "Co-Founder & Manager", org: "Water Management Technologies (WMT)", period: "1994 – 2018", desc: "Co-founded WMT, specializing in equipment for state and federal hatchery programs. Products included turnkey RAS systems, CO₂ stripping towers, LHO oxygenation, Speece cones, microscreens, PSA oxygen generators, UV disinfection, and automated monitoring systems. WMT was sold to Innovasea in 2018." },
+  { role: "Co-Founder & Manager", org: "Water Management Technologies (WMT)", period: "1994 – 2019", desc: "Co-founded WMT, specializing in equipment for state and federal hatchery programs. Products included turnkey RAS systems, CO₂ stripping towers, LHO oxygenation, Speece cones, microscreens, PSA oxygen generators, UV disinfection, and automated monitoring systems. WMT was sold to Innovasea in 2019." },
   { role: "Sales Manager — Equipment Division", org: "Zeigler Brothers Inc.", period: "Early career", desc: "Worked within a newly developed equipment division focused on intensive fish culture — LHO manufacturing, fish pumps and graders, microscreens, feeders, and automated water quality monitoring." },
 ];
 
@@ -107,6 +107,7 @@ const terryExpertise = [
   "Speece cones and vacuum degassing",
   "Disk and drum microscreen solids removal",
   "PSA oxygen generation systems",
+  "VSA oxygen generation systems",
   "Automated water quality monitoring & control",
   "UV disinfection equipment",
   "Federal and state hatchery procurement",
@@ -346,13 +347,13 @@ export default function OurTeam() {
                   Terry McCarthy
                 </h2>
                 <p className="font-body mb-8" style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.88rem" }}>
-                  B.S. &amp; MBA — Tulane University (1980, 1989)
+                  B.S. &amp; MBA — Tulane University (1981, 1989)
                 </p>
                 <p className="font-display mb-4" style={{ fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
                 <div className="grid grid-cols-3 gap-6">
                   {[
-                    { val: 32, suffix: "+", label: "Years of Experience", sub: "Aquaculture industry" },
-                    { val: 1994, suffix: "", label: "Founded WMT", sub: "Sold to Innovasea 2018" },
+                    { val: 36, suffix: "+", label: "Years of Experience", sub: "Aquaculture industry" },
+                    { val: 1994, suffix: "", label: "Co-Founded WMT", sub: "Sold to Innovasea 2019" },
                     { val: 24, suffix: "+", label: "Years Running WMT", sub: "State & federal hatcheries" },
                   ].map((s, i) => (
                     <div key={s.label} className="text-center">
@@ -382,13 +383,13 @@ export default function OurTeam() {
           <RevealSection delay={60}>
             <div className="max-w-3xl mb-14">
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Terry McCarthy holds a B.S. (1980) and MBA (1989) from Tulane University. He began his career in aquaculture with Zeigler Brothers Inc. as a Sales Manager within a newly developed equipment division focused on intensive fish culture operations — including LHO manufacturing, fish pumps and graders, solids removal via microscreens, demand and belt fish feeders, and automated water quality monitoring and control instruments.
+                Terry McCarthy holds a B.S. (1981) and MBA (1989) from Tulane University. He began his career in aquaculture with Zeigler Brothers Inc. as a Sales Manager within a newly developed equipment division focused on intensive fish culture operations — including LHO manufacturing, fish pumps and graders, solids removal via microscreens, demand and belt fish feeders, and automated water quality monitoring and control instruments.
               </p>
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                In 1994, Terry co-founded Water Management Technologies (WMT), which specialized in the development, marketing, and servicing of equipment widely used in state and federal hatchery programs as well as private aquaculture. WMT's product line included turnkey RAS systems, water management towers coupling CO₂ stripping with LHO-based oxygenation, Speece cones, disk and drum microscreens, PSA oxygen generators, automated monitoring and control systems, fish rearing tanks, and UV disinfection equipment. WMT was sold to Innovasea in 2018.
+                In 1994, Terry co-founded Water Management Technologies (WMT), which specialized in the development, marketing, and servicing of equipment widely used in state and federal hatchery programs as well as private aquaculture. WMT's product line included turnkey RAS systems, water management towers coupling CO₂ stripping with LHO-based oxygenation, Speece cones, disk and drum microscreens, PSA oxygen generators, automated monitoring and control systems, fish rearing tanks, and UV disinfection equipment. WMT was sold to Innovasea in 2019.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Terry then served as General Manager and VP of Business Development of Innovasea's Land Based Business Unit in Baton Rouge, LA, retiring in January 2024. He joined VATN Science and Technology, LLC as Director of Sales, bringing 32+ years of aquaculture industry experience — including deep knowledge of state and federal hatchery procurement — to VATN's commercial operations.
+                Terry then served as General Manager and VP of Business Development of Innovasea's Land Based Business Unit in Baton Rouge, LA, retiring in January 2024. He joined VATN Science and Technology, LLC as Director of Sales, bringing 36+ years of aquaculture industry experience — including deep knowledge of state and federal hatchery procurement — to VATN's commercial operations.
               </p>
             </div>
           </RevealSection>
@@ -419,7 +420,7 @@ export default function OurTeam() {
                 </div>
                 {[
                   { d: "MBA", f: "Business Administration", i: "Tulane University", y: "1989" },
-                  { d: "B.S.", f: "Undergraduate", i: "Tulane University", y: "1980" },
+                  { d: "B.S.", f: "Undergraduate", i: "Tulane University", y: "1981" },
                 ].map((e) => (
                   <div key={e.d} className="p-4 mb-3 bg-white" style={{ borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
                     <div className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>{e.d} — {e.f}</div>
@@ -478,7 +479,7 @@ export default function OurTeam() {
               },
               {
                 label: "Terry McCarthy brings",
-                points: ["32+ years of aquaculture industry experience", "Co-founder of Water Management Technologies (1994–2018)", "Deep knowledge of state and federal hatchery procurement", "Manufacturing, P&L, and vendor management experience", "R&D management at Innovasea following WMT acquisition"],
+                points: ["36+ years of aquaculture industry experience", "Co-founder of Water Management Technologies (1994–2019)", "Deep knowledge of state and federal hatchery procurement", "Manufacturing, P&L, and vendor management experience", "R&D management at Innovasea following WMT acquisition"],
               },
               {
                 label: "Together at VATN",

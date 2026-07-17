@@ -64,15 +64,15 @@ export default function BioMedia() {
           {/* Photos row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
-              <div style={{ height: "260px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
                   src="/manus-storage/vatn-bio-media-photo_415f2c30.jpg"
-                  alt="VATN B100 Bio Media"
-                  style={{ width: "100%", height: "100%", objectFit: "cover" }}
+                  alt="VATN B100 and MB3 Bio Media — black and white"
+                  style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
                 />
               </div>
               <div style={{ padding: "0.75rem 1rem" }}>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>VATN B100 Bio Media — structured plastic media for RAS biofiltration</p>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>B 100 = Black, MB3 = White in this picture, Both available in black or white.</p>
               </div>
             </div>
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
