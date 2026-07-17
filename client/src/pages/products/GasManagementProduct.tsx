@@ -188,13 +188,13 @@ export default function GasManagementProduct() {
       {/* Vacuum Degassing Tower & Water Jet Exhauster */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <div className="mb-12">
+          <div className="mb-12 text-center">
             <p className="section-label mb-3">Signature Product</p>
-            <span className="teal-rule mb-5" />
+            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h2 className="font-display" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
               Vacuum Degassing Tower &amp; Water Jet Exhauster
             </h2>
-            <p className="font-body mt-4 max-w-3xl" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
+            <p className="font-body mt-4 max-w-3xl mx-auto" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
               In the early 90's Watten developed a vacuum degasser design for removal of gas supersaturation common in well water and spring water hatchery supplies. Design conditions including packing depth and gas (oxygen) feed rate are based on reactor theory with vacuum levels identified that result in product water TGP levels that circumvent gas bubble disease. Oxygen feed rates allow for DO levels above saturation while concurrently reducing dissolved nitrogen (N2) well below saturation. The design employs a unique method for control of column vacuum level regardless of changes in water fed rates. This method is based on a sidewall application of water jet exhausters that use a very small sidestream flow of raw water, under pressure, to remove nitrogen rich column off-gas from the operating degasser. The design has provided years of trouble free service at numerous state, federal and commercial sites.
             </p>
           </div>
