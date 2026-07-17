@@ -157,7 +157,7 @@ export default function HatcherySolutions() {
               <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Why VATN Understands Hatcheries</p>
               <span className="teal-rule mb-5" />
               <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Dr. Barnaby Watten spent 31 years as a research engineer within the USFWS National Fish Hatchery program. He did not study hatcheries from the outside — he worked inside them, developing the equipment and methods that hatcheries now rely on. His 87+ peer-reviewed publications and 10 patents represent a body of work built specifically for aquaculture water treatment challenges.
+                Dr. Barnaby Watten spent 31 years as a research engineer within the USFWS National Fish Hatchery program. He did not study hatcheries from the outside — he worked inside them, developing the equipment and methods that hatcheries now rely on. His 87+ peer-reviewed publications and 14 patents represent a body of work built specifically for aquaculture water treatment challenges.
               </p>
               <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 Terry McCarthy spent 32+ years supplying and supporting state and federal hatchery programs through Water Management Technologies (WMT), which he co-founded in 1994. He understands how hatchery procurement works, what hatchery managers actually need, and how to translate technical requirements into practical equipment solutions.
@@ -168,7 +168,7 @@ export default function HatcherySolutions() {
                 {[
                   { num: "31", label: "Years USFWS Research", sub: "Dr. Barnaby J. Watten" },
                   { num: "87+", label: "Publications", sub: "Peer-reviewed research" },
-                  { num: "10", label: "U.S. Patents", sub: "Gas management innovations" },
+                  { num: "14", label: "U.S. Patents", sub: "Gas management innovations" },
                   { num: "32+", label: "Years Hatchery Industry", sub: "Terry McCarthy" },
                 ].map((s) => (
                   <div key={s.num} className="p-4 text-center" style={{ borderTop: "2px solid rgba(14,155,138,0.35)", backgroundColor: "rgba(255,255,255,0.03)" }}>

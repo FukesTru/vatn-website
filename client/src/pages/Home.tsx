@@ -71,7 +71,7 @@ export default function Home() {
             </RevealSection>
             <RevealSection delay={160}>
               <p className="font-body text-white/75 mb-8" style={{ fontSize: "1.15rem", lineHeight: "1.7", maxWidth: "680px", margin: "0 auto 2rem" }}>
-                VATN is led by one of the most published researchers in aquaculture water treatment. With 90+ peer-reviewed publications, 10 patents, and over half a century of hands-on hatchery work, VATN's team brings a depth of expertise that no equipment catalog can replicate.
+                VATN is led by one of the most published researchers in aquaculture water treatment. With 90+ peer-reviewed publications, 14 patents, and over half a century of hands-on hatchery work, VATN's team brings a depth of expertise that no equipment catalog can replicate.
               </p>
             </RevealSection>
             <RevealSection delay={220}>
@@ -98,7 +98,7 @@ export default function Home() {
           <div className="flex flex-wrap items-center justify-between gap-4">
             {[
               "90+ Peer-Reviewed Publications",
-              "10 Patents",
+              "14 Patents",
               "65+ Yrs Industry Experience",
               "Federal & State Hatchery Programs",
               "Site-Specific Engineering",
@@ -126,7 +126,7 @@ export default function Home() {
                 VATN was founded in 2019 by Dr. Barnaby J. Watten and Terry McCarthy — two professionals who have spent their careers solving the water quality and gas management problems that hatcheries actually face. Their work is not theoretical. It is built from decades of field research, equipment design, and direct collaboration with federal and state fish hatchery programs.
               </p>
               <p className="font-body mb-6" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                Dr. Watten spent 31 years as a research engineer with the U.S. Fish and Wildlife Service, authoring more than 87 peer-reviewed publications and holding 10 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in 2018. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
+                Dr. Watten spent 31 years as a research engineer with the U.S. Fish and Wildlife Service, authoring more than 87 peer-reviewed publications and holding 14 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in 2018. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/our-team">
@@ -157,7 +157,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { num: "90+", label: "Peer-Reviewed Publications", sub: "Dr. Barnaby J. Watten" },
-              { num: "10", label: "U.S. Patents Held", sub: "Gas management & water treatment" },
+              { num: "14", label: "U.S. Patents Held", sub: "Gas management & water treatment" },
               { num: "31", label: "Years USFWS Research", sub: "National fish hatchery programs" },
               { num: "32+", label: "Years Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
             ].map((stat, i) => (

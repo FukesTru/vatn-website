@@ -62,7 +62,7 @@ function CountUp({ target, suffix = "", duration = 1800 }: { target: number; suf
 
 // ── BARNABY DATA ─────────────────────────────────────────────────────────────
 const barnabyStats = [
-  { val: 10, suffix: "", label: "Patents Awarded", sub: "+ 2 in review" },
+  { val: 14, suffix: "", label: "Patents Awarded", sub: "+ 2 in review" },
   { val: 87, suffix: "", label: "Publications", sub: "63 peer-reviewed" },
   { val: 31, suffix: "", label: "Years at U.S. DOI", sub: "Retired 2018" },
   { val: 14, suffix: "", label: "Graduate Students", sub: "Mentored" },
@@ -154,7 +154,7 @@ export default function OurTeam() {
       <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
         <div className="container py-4">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-            {["80+ Years Combined Industry Experience", "10 Patents Awarded", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "Founded VATN 2019"].map((item, i) => (
+            {["80+ Years Combined Industry Experience", "14 Patents Awarded", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "Founded VATN 2019"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#0E9B8A" }} />
                 <span className="font-body text-white/65" style={{ fontSize: "0.82rem" }}>{item}</span>
@@ -475,7 +475,7 @@ export default function OurTeam() {
             {[
               {
                 label: "Dr. Watten brings",
-                points: ["31 years of USFWS / USGS research", "10 patents in gas transfer technology", "87 publications, 63 peer-reviewed", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
+                points: ["31 years of USFWS / USGS research", "14 patents in gas transfer technology", "87 publications, 63 peer-reviewed", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
               },
               {
                 label: "Terry McCarthy brings",
