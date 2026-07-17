@@ -76,11 +76,11 @@ export default function BioMedia() {
               </div>
             </div>
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
-              <div style={{ height: "260px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
                   src="/manus-storage/vatn-bio-media-usa_929c566e.png"
                   alt="VATN B100 Bio Media — Made in the USA"
-                  style={{ width: "100%", height: "100%", objectFit: "contain", padding: "1rem" }}
+                  style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
                 />
               </div>
               <div style={{ padding: "0.75rem 1rem" }}>
