@@ -125,7 +125,7 @@ export default function Home() {
                 Decades of Research. Applied in the Field.
               </h2>
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                VATN was founded in 2019 by Dr. Barnaby J. Watten — a researcher whose career has been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States. Terry McCarthy joined VATN as Director of Sales, bringing decades of practical hatchery industry experience to the firm's commercial operations.
+                VATN was founded in 2019 by Dr. Barnaby J. Watten — a researcher whose career has been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States. Terry McCarthy serves as Director of Sales, bringing 36 years of practical hatchery industry experience to the firm's commercial operations.
               </p>
               <p className="font-body mb-6" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
                 Dr. Watten spent 31 years as a research engineer with the U.S. Fish and Wildlife Service, authoring more than 87 peer-reviewed publications and holding 15 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in February 2019. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
