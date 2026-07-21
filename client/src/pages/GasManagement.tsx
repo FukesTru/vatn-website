@@ -150,7 +150,7 @@ export default function GasManagement() {
                 VATN's gas management capabilities are built on decades of original research. Dr. Barnaby Watten spent 31 years as a research engineer with the U.S. Fish and Wildlife Service, developing and patenting the Low Head Oxygenator in 1989 and authoring more than 87 peer-reviewed publications on aquaculture water treatment. His computer modeling approach — which evaluates reactor performance against your site's specific water chemistry, hydraulic conditions, and treatment objectives — is the foundation of every VATN system recommendation.
               </p>
               <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-                Terry McCarthy brings 32+ years of practical hatchery industry experience, including co-founding Water Management Technologies (WMT) in 1994 and building it into a recognized supplier of turnkey RAS systems for state and federal hatchery programs before its acquisition by Innovasea in 2018.
+                Terry McCarthy brings 36+ years of practical hatchery industry experience, including co-founding Water Management Technologies (WMT) in 1994 and building it into a recognized supplier of turnkey RAS systems for state and federal hatchery programs before its acquisition by Innovasea in 2018.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
