@@ -121,8 +121,8 @@ export default function Navigation() {
                 <span
                   className="font-display font-semibold transition-colors duration-200"
                   style={{
-                    fontSize: "0.82rem",
-                    letterSpacing: "0.08em",
+                    fontSize: "0.92rem",
+                    letterSpacing: "0.07em",
                     textTransform: "uppercase",
                     color: location === "/" ? "#0E9B8A" : "rgba(255,255,255,0.85)",
                   }}
@@ -136,8 +136,8 @@ export default function Navigation() {
                 <button
                   className="flex items-center gap-1 font-display font-semibold transition-colors duration-200"
                   style={{
-                    fontSize: "0.82rem",
-                    letterSpacing: "0.08em",
+                    fontSize: "0.92rem",
+                    letterSpacing: "0.07em",
                     textTransform: "uppercase",
                     color: isProductsActive ? "#0E9B8A" : "rgba(255,255,255,0.85)",
                     background: "none",
@@ -212,16 +212,16 @@ export default function Navigation() {
                             <span
                               className="font-display font-semibold"
                               style={{
-                                fontSize: "0.82rem",
-                                color: location === item.href ? "#0E9B8A" : "rgba(255,255,255,0.9)",
-                                letterSpacing: "0.02em",
+                            fontSize: "0.9rem",
+                              color: location === item.href ? "#0E9B8A" : "rgba(255,255,255,0.9)",
+                              letterSpacing: "0.02em",
                               }}
                             >
                               {item.label}
                             </span>
                             <span
                               className="font-body"
-                              style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.4)", lineHeight: "1.4" }}
+                              style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.4)", lineHeight: "1.4" }}
                             >
                               {item.desc}
                             </span>
@@ -239,8 +239,8 @@ export default function Navigation() {
                   <span
                     className="font-display font-semibold transition-colors duration-200"
                     style={{
-                      fontSize: "0.82rem",
-                      letterSpacing: "0.08em",
+                      fontSize: "0.92rem",
+                      letterSpacing: "0.07em",
                       textTransform: "uppercase",
                       color: location === link.href ? "#0E9B8A" : "rgba(255,255,255,0.85)",
                     }}
