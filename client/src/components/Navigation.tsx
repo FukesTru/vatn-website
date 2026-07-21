@@ -252,16 +252,28 @@ export default function Navigation() {
             </nav>
 
             {/* Desktop CTA */}
-            <div className="hidden lg:flex items-center gap-4">
+            <div className="hidden lg:flex items-center gap-5">
               <a
                 href="tel:2252294711"
-                className="flex items-center gap-2 text-white/70 hover:text-white transition-colors"
-                style={{ fontSize: "0.8rem", fontFamily: "Inter, sans-serif" }}
+                className="flex items-center gap-2 transition-all duration-200"
+                style={{ fontSize: "0.95rem", fontFamily: "Inter, sans-serif", fontWeight: 600, color: "rgba(255,255,255,0.9)", letterSpacing: "0.01em" }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#0E9B8A"; }}
+                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.9)"; }}
               >
-                <Phone size={13} />
+                <Phone size={16} style={{ color: "#0E9B8A", flexShrink: 0 }} />
                 (225) 229-4711
               </a>
-              <a href="/contact" className="btn-primary" style={{ padding: "0.55rem 1.25rem", fontSize: "0.78rem" }}>
+              <a
+                href="/contact"
+                className="btn-primary"
+                style={{
+                  padding: "0.7rem 1.75rem",
+                  fontSize: "0.9rem",
+                  fontWeight: 700,
+                  letterSpacing: "0.07em",
+                  boxShadow: "0 0 0 2px rgba(14,155,138,0.4), 0 4px 18px rgba(14,155,138,0.3)",
+                }}
+              >
                 Contact
               </a>
             </div>
