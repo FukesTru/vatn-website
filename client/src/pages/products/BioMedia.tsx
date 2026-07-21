@@ -51,7 +51,7 @@ export default function BioMedia() {
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Structured bio media designed for biological filtration in recirculating aquaculture systems. High specific surface area supports stable nitrification and consistent water quality in RAS applications.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Discuss Bio Media for Your System
             <ArrowRight size={15} />
           </a>
@@ -168,7 +168,7 @@ export default function BioMedia() {
           <p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>
             Biofilter design requires site-specific information. Contact VATN to describe your system and we will evaluate the right approach for your application.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Contact VATN
             <ArrowRight size={15} />
           </a>

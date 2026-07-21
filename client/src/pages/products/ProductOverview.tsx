@@ -94,7 +94,7 @@ export default function ProductOverview() {
             VATN provides equipment, engineering evaluation, and technical support for gas management, water treatment, and hatchery infrastructure challenges. Every solution is sized and selected for the actual conditions at your site.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <a href="/our-team#contact" className="btn-primary">
+            <a href="/contact" className="btn-primary">
               Discuss Your Project
               <ArrowRight size={15} />
             </a>
@@ -200,7 +200,7 @@ export default function ProductOverview() {
           <p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>
             VATN does not sell from a catalog. Contact us to describe your facility, your water quality conditions, and the challenge you are trying to solve. We will tell you honestly what is feasible and what is not.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Contact VATN
             <ArrowRight size={15} />
           </a>

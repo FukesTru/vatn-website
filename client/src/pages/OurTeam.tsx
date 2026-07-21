@@ -6,9 +6,10 @@
  */
 import { useEffect, useRef, useState } from "react";
 import { Link } from "wouter";
-import { ArrowRight, BookOpen, Award, FlaskConical, Briefcase, GraduationCap, Users, ChevronDown, Phone } from "lucide-react";
+import { ArrowRight, BookOpen, Award, FlaskConical, Briefcase, GraduationCap, Users, ChevronDown, Phone, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import { trpc } from "@/lib/trpc";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 const BARNABY_PHOTO = "/manus-storage/barnaby-watten_38b4a593.png";
@@ -116,6 +117,40 @@ const terryExpertise = [
 ];
 
 export default function OurTeam() {
+  const [contactForm, setContactForm] = useState({ name: "", organization: "", email: "", phone: "", message: "" });
+  const [contactSubmitted, setContactSubmitted] = useState(false);
+  const [contactError, setContactError] = useState("");
+
+  const submitContact = trpc.contact.submit.useMutation({
+    onSuccess: () => {
+      setContactSubmitted(true);
+      setContactForm({ name: "", organization: "", email: "", phone: "", message: "" });
+    },
+    onError: () => {
+      setContactError("There was a problem sending your inquiry. Please try again or call us directly.");
+    },
+  });
+
+  function handleContactChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+    setContactForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setContactError("");
+  }
+
+  function handleContactSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!contactForm.name.trim() || !contactForm.email.trim()) {
+      setContactError("Please provide your name and email address.");
+      return;
+    }
+    submitContact.mutate({
+      name: contactForm.name.trim(),
+      organization: contactForm.organization.trim(),
+      email: contactForm.email.trim(),
+      phone: contactForm.phone.trim(),
+      message: contactForm.message.trim(),
+    });
+  }
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F4F6F8" }}>
       <Navigation />
@@ -521,20 +556,29 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             </RevealSection>
             <RevealSection delay={80}>
               <div className="p-7" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #0E9B8A", borderRadius: "2px" }}>
-                <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <input type="text" placeholder="Your Name" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                    <input type="text" placeholder="Organization / Facility" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                {contactSubmitted ? (
+                  <div className="flex flex-col items-start gap-3">
+                    <CheckCircle2 size={26} style={{ color: "#0E9B8A" }} />
+                    <p className="font-display font-bold" style={{ fontSize: "1.1rem", color: "#1C2B3A" }}>Inquiry Received</p>
+                    <p className="font-body" style={{ color: "#3A5068", fontSize: "0.88rem", lineHeight: "1.6" }}>Thank you for reaching out. Barnaby or Terry will be in contact with you shortly.</p>
                   </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <input type="email" placeholder="Email Address" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                    <input type="tel" placeholder="Phone Number" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                  </div>
-                  <textarea rows={3} placeholder="Describe your facility and the challenge you're working through..." className="font-body px-4 py-3 bg-white outline-none resize-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                  <button type="submit" className="btn-primary w-fit">
-                    Send Your Inquiry <ArrowRight size={15} />
-                  </button>
-                </form>
+                ) : (
+                  <form className="flex flex-col gap-3" onSubmit={handleContactSubmit}>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <input type="text" name="name" value={contactForm.name} onChange={handleContactChange} placeholder="Your Name *" required className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                      <input type="text" name="organization" value={contactForm.organization} onChange={handleContactChange} placeholder="Organization / Facility" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                    </div>
+                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                      <input type="email" name="email" value={contactForm.email} onChange={handleContactChange} placeholder="Email Address *" required className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                      <input type="tel" name="phone" value={contactForm.phone} onChange={handleContactChange} placeholder="Phone Number" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                    </div>
+                    <textarea name="message" value={contactForm.message} onChange={handleContactChange} rows={3} placeholder="Describe your facility and the challenge you're working through..." className="font-body px-4 py-3 bg-white outline-none resize-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                    {contactError && <p className="font-body" style={{ color: "#C0392B", fontSize: "0.84rem" }}>{contactError}</p>}
+                    <button type="submit" className="btn-primary w-fit" disabled={submitContact.isPending} style={{ opacity: submitContact.isPending ? 0.7 : 1 }}>
+                      {submitContact.isPending ? "Sending..." : (<>Send Your Inquiry <ArrowRight size={15} /></>)}
+                    </button>
+                  </form>
+                )}
               </div>
             </RevealSection>
 

@@ -78,7 +78,7 @@ export default function CustomSolutions() {
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Some hatchery and aquaculture problems do not fit neatly into a standard product category. VATN evaluates site-specific water quality, gas management, hydraulic, solids, disinfection, biofiltration, and treatment challenges and develops solutions appropriate to the actual conditions.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Describe Your Challenge
             <ArrowRight size={15} />
           </a>
@@ -132,7 +132,7 @@ export default function CustomSolutions() {
               <p className="font-body text-white/50 mb-5" style={{ fontSize: "0.9rem", lineHeight: "1.65" }}>
                 If a problem is outside VATN's scope, we will tell you that directly rather than recommend a solution that is not appropriate for your situation.
               </p>
-              <a href="/our-team#contact" className="flex items-center gap-1 font-display font-semibold" style={{ fontSize: "0.78rem", color: "#0E9B8A", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+              <a href="/contact" className="flex items-center gap-1 font-display font-semibold" style={{ fontSize: "0.78rem", color: "#0E9B8A", letterSpacing: "0.06em", textTransform: "uppercase" }}>
                 Start a Conversation <ArrowRight size={12} />
               </a>
             </div>
@@ -149,7 +149,7 @@ export default function CustomSolutions() {
           <p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>
             If your problem involves water quality, gas management, hydraulics, or biological treatment in an aquaculture or hatchery context, contact VATN. We will give you an honest assessment of what is feasible.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Contact VATN
             <ArrowRight size={15} />
           </a>

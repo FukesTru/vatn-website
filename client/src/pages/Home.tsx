@@ -274,7 +274,7 @@ export default function Home() {
               <Link href="/gas-management">
                 <span className="btn-primary">Gas Management Solutions <ArrowRight size={15} /></span>
               </Link>
-              <Link href="/our-team#contact">
+              <Link href="/contact">
                 <span className="btn-outline">Discuss Your Requirements <ArrowRight size={15} /></span>
               </Link>
             </div>

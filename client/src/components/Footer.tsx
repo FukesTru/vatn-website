@@ -24,7 +24,7 @@ export default function Footer() {
               </p>
             </div>
             <div className="flex flex-col sm:flex-row gap-3 shrink-0">
-              <a href="/our-team#contact" className="btn-primary">
+              <a href="/contact" className="btn-primary">
                 Discuss Your Site Requirements
                 <ArrowRight size={15} />
               </a>

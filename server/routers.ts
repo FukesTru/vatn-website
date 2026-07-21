@@ -1,4 +1,6 @@
+import { z } from "zod";
 import { COOKIE_NAME } from "@shared/const";
+import { notifyOwner } from "./_core/notification";
 import { getSessionCookieOptions } from "./_core/cookies";
 import { systemRouter } from "./_core/systemRouter";
 import { publicProcedure, router } from "./_core/trpc";
@@ -17,12 +19,33 @@ export const appRouter = router({
     }),
   }),
 
-  // TODO: add feature routers here, e.g.
-  // todo: router({
-  //   list: protectedProcedure.query(({ ctx }) =>
-  //     db.getUserTodos(ctx.user.id)
-  //   ),
-  // }),
+  contact: router({
+    submit: publicProcedure
+      .input(
+        z.object({
+          name: z.string().min(1, "Name is required"),
+          organization: z.string().optional().default(""),
+          email: z.string().email("Valid email is required"),
+          phone: z.string().optional().default(""),
+          message: z.string().optional().default(""),
+        })
+      )
+      .mutation(async ({ input }) => {
+        const lines: string[] = [
+          `Name: ${input.name}`,
+          `Organization / Facility: ${input.organization || "(not provided)"}`,
+          `Email: ${input.email}`,
+          `Phone: ${input.phone || "(not provided)"}`,
+          `Message:\n${input.message || "(no message)"}`,
+        ];
+        const content = lines.join("\n\n");
+        const delivered = await notifyOwner({
+          title: `New VATN Inquiry from ${input.name}`,
+          content,
+        });
+        return { success: true, delivered };
+      }),
+  }),
 });
 
 export type AppRouter = typeof appRouter;

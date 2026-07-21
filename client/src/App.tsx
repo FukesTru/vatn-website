@@ -21,6 +21,7 @@ import FishRearingTankDesign from "./pages/products/FishRearingTankDesign";
 import AlkalinityEnhancement from "./pages/products/AlkalinityEnhancement";
 import SolidsManagement from "./pages/products/SolidsManagement";
 import CustomSolutions from "./pages/products/CustomSolutions";
+import Contact from "./pages/Contact";
 
 // Scroll to top whenever the route changes
 function ScrollToTop() {
@@ -52,6 +53,7 @@ function Router() {
         <Route path="/products/alkalinity-enhancement" component={AlkalinityEnhancement} />
         <Route path="/products/solids-management" component={SolidsManagement} />
         <Route path="/products/custom-solutions" component={CustomSolutions} />
+        <Route path="/contact" component={Contact} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
       </Switch>

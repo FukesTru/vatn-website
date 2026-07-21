@@ -82,7 +82,7 @@ export default function GasManagementProduct() {
             Oxygenation, degassing, CO₂ control, and total dissolved gas pressure management — modeled and sized for your site's actual water chemistry, hydraulic constraints, and production objectives.
           </p>
           <div className="flex flex-wrap gap-3 justify-center">
-            <a href="/our-team#contact" className="btn-primary">
+            <a href="/contact" className="btn-primary">
               Discuss Your Gas Management Challenge
               <ArrowRight size={15} />
             </a>
@@ -234,7 +234,7 @@ export default function GasManagementProduct() {
           <p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>
             Contact VATN to describe your facility, your current water quality conditions, and the challenge you are trying to solve. We will evaluate what is feasible for your site.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Contact VATN
             <ArrowRight size={15} />
           </a>

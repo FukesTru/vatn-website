@@ -67,7 +67,7 @@ export default function AlkalinityEnhancement() {
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Fluidized bed and pulsed bed limestone reactors for pH and alkalinity control in acid-impacted source water. Developed and tested at federal fish hatcheries and National Park Service sites.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Discuss Your Alkalinity Challenge
             <ArrowRight size={15} />
           </a>
@@ -148,7 +148,7 @@ export default function AlkalinityEnhancement() {
           <p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>
             Alkalinity treatment design requires site-specific water chemistry data. Contact VATN to describe your source water conditions and treatment objectives.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Contact VATN
             <ArrowRight size={15} />
           </a>

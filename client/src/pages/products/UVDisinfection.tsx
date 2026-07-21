@@ -70,7 +70,7 @@ export default function UVDisinfection() {
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Chemical-free pathogen control for fish hatchery and aquaculture water supplies. Ultraqua UV systems inactivate bacteria, viruses, and parasites without altering water chemistry or leaving residuals.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Discuss UV Disinfection for Your Facility
             <ArrowRight size={15} />
           </a>
@@ -234,7 +234,7 @@ export default function UVDisinfection() {
           <p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>
             UV system sizing requires site-specific information. Contact VATN to describe your flow rates, water source, and disinfection objectives.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Contact VATN
             <ArrowRight size={15} />
           </a>

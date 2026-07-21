@@ -71,7 +71,7 @@ export default function FishRearingTankDesign() {
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Mixed-cell raceway and rearing unit design based on decades of hydraulic research. Uniform water quality distribution, effective solids removal, and practical hatchery operation.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Discuss Your Rearing Unit Design
             <ArrowRight size={15} />
           </a>
@@ -158,7 +158,7 @@ export default function FishRearingTankDesign() {
           <p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>
             Contact VATN to describe your facility, current rearing infrastructure, and production objectives. We will evaluate what improvements are feasible for your site.
           </p>
-          <a href="/our-team#contact" className="btn-primary">
+          <a href="/contact" className="btn-primary">
             Contact VATN
             <ArrowRight size={15} />
           </a>
