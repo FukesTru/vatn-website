@@ -9,8 +9,8 @@ import { ArrowRight, CheckCircle2, Wrench, Shield, BarChart3, Leaf, Clock, Dolla
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const AERIAL_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-engineering-bg-axr5FwHvEAGP2vXDckcJTG.webp";
-const EQUIPMENT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hatchery-systems-X4SD42svGcW9x6EL3d4G2s.webp";
+const AERIAL_BG = "/manus-storage/leavenworth-nfh-aerial-usfws_b8b9094a.jpg";
+const EQUIPMENT_IMG = "/manus-storage/vatn-exhauster-derusted_0bc86eaa.jpg";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -160,7 +160,7 @@ export default function HatcherySolutions() {
                 Dr. Barnaby Watten spent 31 years as a research engineer within the USFWS National Fish Hatchery program. He did not study hatcheries from the outside — he worked inside them, developing the equipment and methods that hatcheries now rely on. His 87+ peer-reviewed publications and 15 patents represent a body of work built specifically for aquaculture water treatment challenges.
               </p>
               <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-                Terry McCarthy spent 32+ years supplying and supporting state and federal hatchery programs through Water Management Technologies (WMT), which he co-founded in 1994. He understands how hatchery procurement works, what hatchery managers actually need, and how to translate technical requirements into practical equipment solutions.
+                Terry McCarthy spent 36+ years supplying and supporting state and federal hatchery programs through Water Management Technologies (WMT), which he co-founded in 1994. He understands how hatchery procurement works, what hatchery managers actually need, and how to translate technical requirements into practical equipment solutions.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
@@ -169,7 +169,7 @@ export default function HatcherySolutions() {
                   { num: "31", label: "Years USFWS Research", sub: "Dr. Barnaby J. Watten" },
                   { num: "87+", label: "Publications", sub: "Peer-reviewed research" },
                   { num: "15", label: "U.S. Patents", sub: "Gas management innovations" },
-                  { num: "32+", label: "Years Hatchery Industry", sub: "Terry McCarthy" },
+                  { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy" },
                 ].map((s) => (
                   <div key={s.num} className="p-4 text-center" style={{ borderTop: "2px solid rgba(14,155,138,0.35)", backgroundColor: "rgba(255,255,255,0.03)" }}>
                     <p className="font-display font-bold" style={{ fontSize: "2rem", color: "#0E9B8A", lineHeight: 1 }}>{s.num}</p>

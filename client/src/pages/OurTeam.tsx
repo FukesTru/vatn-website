@@ -77,13 +77,13 @@ const barnabyAwards = [
 ];
 
 const barnabyCareer = [
-  { role: "Co-Founder & Principal Scientist", org: "VATN Science and Technology, LLC", period: "2019 – Present", desc: "Applied gas-transfer research and site-specific system modeling for federal and state hatchery programs and commercial aquaculture." },
-  { role: "Deputy Director", org: "USGS Leetown Science Center", period: "Prior to 2018", desc: "Senior leadership at the USGS Leetown Science Center — final position in a 31-year career with the U.S. Department of the Interior." },
+  { role: "Founder & Principal Scientist", org: "VATN Science and Technology, LLC", period: "2019 – Present", desc: "Applied gas-transfer research and site-specific system modeling for federal and state hatchery programs and commercial aquaculture." },
   { role: "Laboratory Director", org: "Conte Anadromous Fish Research Center, MA", period: "2010 – 2016", desc: "Directed research operations at the Conte Anadromous Fish Research Center (USFWS / USGS)." },
   { role: "Acting Assistant Center Director", org: "USGS Leetown Science Center", period: "2016 – 2018", desc: "Served as Acting Assistant Center Director at the USGS Leetown Science Center prior to retirement in 2018." },
+  { role: "Deputy Director", org: "USGS Leetown Science Center", period: "Prior to 2018", desc: "Senior leadership at the USGS Leetown Science Center — final position in a 31-year career with the U.S. Department of the Interior." },
   { role: "Branch Chief / Section Leader", org: "USFWS Wellsboro R&D Laboratory, PA", period: "1989 – c. 2000s", desc: "Managed bioengineering research on RAS components to reduce labor, energy, and water requirements of the USFWS National Fish Hatchery Program." },
   { role: "Aquacultural Engineering Researcher", org: "Pennsylvania Power and Light Company", period: "1982 – 1987", desc: "Led gas transfer and rearing unit hydraulics research at a waste heat recovery and aquaculture project." },
-  { role: "Assistant Aquaculturist", org: "University of the Virgin Islands Agricultural Experiment Station", period: "c. 1978", desc: "Initiated RAS research in aquaponics. Master's research addressed ammonium selective ion exchange in trout RAS." },
+  { role: "Assistant Aquaculturist", org: "University of the Virgin Islands Agricultural Experiment Station", period: "1977 – 1979", desc: "Initiated RAS research in aquaponics. Master's research addressed ammonium selective ion exchange in trout RAS." },
 ];
 
 const barnabyProfessional = [
@@ -98,7 +98,7 @@ const barnabyProfessional = [
 const terryCareer = [
   { role: "Director of Sales", org: "VATN Science and Technology, LLC", period: "2024 – Present", desc: "Applying 49+ years of aquaculture industry experience to business development, customer relations, and sales for VATN's gas management and water treatment systems." },
   { role: "General Manager & VP of Business Development", org: "Innovasea — Land Based Business Unit, Baton Rouge, LA", period: "2018 – Jan 2024", desc: "Managed the land-based business unit following Innovasea's acquisition of WMT. Responsibilities included R&D management for improved gas transfer methods." },
-  { role: "Co-Founder & Manager", org: "Water Management Technologies (WMT)", period: "1994 – 2019", desc: "Co-founded WMT, specializing in equipment for state and federal hatchery programs. Products included turnkey RAS systems, CO₂ stripping towers, LHO oxygenation, Speece cones, microscreens, PSA oxygen generators, UV disinfection, and automated monitoring systems. WMT was sold to Innovasea in 2019." },
+  { role: "Co-Founder & Manager", org: "Water Management Technologies (WMT)", period: "1994 – 2019", desc: "Co-founded WMT in 1994, specializing in equipment for state and federal hatchery programs. Products included turnkey RAS systems, CO₂ stripping towers, LHO oxygenation, Speece cones, microscreens, PSA and VSA oxygen generators, UV disinfection, and automated monitoring systems. WMT was acquired by Innovasea in February 2019." },
   { role: "Sales Manager — Equipment Division", org: "Zeigler Brothers Inc.", period: "Early career", desc: "Worked within a newly developed equipment division focused on intensive fish culture — LHO manufacturing, fish pumps and graders, microscreens, feeders, and automated water quality monitoring." },
 ];
 
@@ -142,7 +142,7 @@ export default function OurTeam() {
               Our Team
             </h1>
             <p className="font-body text-white/70 max-w-2xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-              VATN was founded by two professionals whose careers have been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States.
+VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States.
             </p>
             <a href="#contact" className="btn-primary">
               Contact Our Team <ArrowRight size={15} />
@@ -155,7 +155,7 @@ export default function OurTeam() {
       <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
         <div className="container py-4">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-            {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "Founded VATN 2019"].map((item, i) => (
+            {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "VATN Founded 2019 by Dr. Watten"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#0E9B8A" }} />
                 <span className="font-body text-white/65" style={{ fontSize: "0.82rem" }}>{item}</span>
@@ -187,7 +187,7 @@ export default function OurTeam() {
               </div>
               {/* Info column */}
               <div className="lg:col-span-3 p-8 lg:p-12 flex flex-col justify-center" style={{ backgroundColor: "#060E1A" }}>
-                <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Co-Founder &amp; Principal Scientist</p>
+                <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Founder &amp; Principal Scientist</p>
                 <span className="teal-rule mb-5" />
                 <h2 className="font-display text-white mb-2" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.0 }}>
                   Barnaby J. Watten, Ph.D.
@@ -216,7 +216,7 @@ export default function OurTeam() {
           <RevealSection delay={60}>
             <div className="max-w-3xl mb-14">
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Dr. Barnaby Watten began his career in aquaculture research in 1978 as an Assistant Aquaculturist at the University of the Virgin Islands Agricultural Experiment Station, where he initiated RAS research in aquaponics. His Master's research addressed the application of ammonium selective ion exchange in trout RAS.
+                Dr. Barnaby Watten began his career in aquaculture research in 1977 as an Assistant Aquaculturist at the University of the Virgin Islands Agricultural Experiment Station, where he initiated RAS research in aquaponics. His Master's research addressed the application of ammonium selective ion exchange in trout RAS.
               </p>
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
                 From 1982 to 1987, Dr. Watten led aquacultural engineering research in gas transfer and rearing unit hydraulics at Pennsylvania Power and Light Company's waste heat recovery and aquaculture project. Following completion of his Ph.D. at Auburn University in 1989 — focused on oxygen transfer technologies — he was recruited to manage bioengineering research at the USFWS Wellsboro Research and Development Laboratory in Pennsylvania.
@@ -225,7 +225,7 @@ export default function OurTeam() {
                 Over a 31-year career with the U.S. Department of the Interior, Dr. Watten progressed from Principal Investigator to Section Leader, Branch Chief, Laboratory Director of the Conte Anadromous Fish Research Center (MA), and ultimately Deputy Director of the USGS Leetown Science Center. His research program addressed oxygenation, nitrogen and CO₂ stripping, rearing unit hydraulics, biological filtration, and dissolved gas instrumentation — all aimed at reducing the labor, energy, and water requirements of the USFWS National Fish Hatchery Program.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Dr. Watten's research also produced new methods for invasive species control in hatcheries and the international shipping industry, new approaches to improving fish passage rates around dams, fish-friendly hydropower generation methods, and low-cost treatment of acidic coal mine drainage. He retired from the U.S. DOI research program in 2018 and co-founded VATN Science and Technology, LLC in 2019.
+                Dr. Watten's research also produced new methods for invasive species control in hatcheries and the international shipping industry, new approaches to improving fish passage rates around dams, fish-friendly hydropower generation methods, and low-cost treatment of acidic coal mine drainage. He retired from the U.S. DOI research program in 2018 and founded VATN Science and Technology, LLC in 2019.
               </p>
             </div>
           </RevealSection>
@@ -273,7 +273,7 @@ export default function OurTeam() {
                 {[
                   { d: "Ph.D.", f: "Fisheries & Allied Aquacultures", i: "Auburn University", y: "1989" },
                   { d: "M.S.", f: "Aquaculture / Ion Exchange", i: "Penn State / U. Virgin Islands", y: "1980" },
-                  { d: "B.S.", f: "Aquatic Biology / Chemistry", i: "Bemidji State University", y: "1977" },
+                  { d: "B.S.", f: "Aquatic Biology / Chemistry", i: "Bemidji State University", y: "1976" },
                 ].map((e) => (
                   <div key={e.d} className="p-3 mb-2" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
                     <div className="font-display font-bold" style={{ fontSize: "0.92rem", color: "#1C2B3A" }}>{e.d} — {e.f}</div>
@@ -287,7 +287,7 @@ export default function OurTeam() {
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
                   <BookOpen size={17} style={{ color: "#0E9B8A" }} />
-                  <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Graduate Students Mentored</h3>
+                  <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Graduate Students Mentored (Engineering and Fisheries programs)</h3>
                 </div>
                 <p className="font-body mb-4" style={{ fontSize: "0.82rem", color: "#5A7080", lineHeight: "1.5" }}>14 graduate students across 6 universities (PhD and MS programs):</p>
                 <div className="flex flex-col gap-2">
@@ -388,10 +388,10 @@ export default function OurTeam() {
                 Terry McCarthy holds a B.S. (1981) and MBA (1989) from Tulane University. He began his career in aquaculture with Zeigler Brothers Inc. as a Sales Manager within a newly developed equipment division focused on intensive fish culture operations — including LHO manufacturing, fish pumps and graders, solids removal via microscreens, demand and belt fish feeders, and automated water quality monitoring and control instruments.
               </p>
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                In 1994, Terry co-founded Water Management Technologies (WMT), which specialized in the development, marketing, and servicing of equipment widely used in state and federal hatchery programs as well as private aquaculture. WMT's product line included turnkey RAS systems, water management towers coupling CO₂ stripping with LHO-based oxygenation, Speece cones, disk and drum microscreens, PSA oxygen generators, automated monitoring and control systems, fish rearing tanks, and UV disinfection equipment. WMT was sold to Innovasea in 2019.
+                In 1994, Terry co-founded Water Management Technologies (WMT), which specialized in the development, marketing, and servicing of equipment widely used in state and federal hatchery programs as well as private aquaculture. WMT's product line included turnkey RAS systems, water management towers coupling CO₂ stripping with LHO-based oxygenation, Speece cones, disk and drum microscreens, PSA and VSA oxygen generators, automated monitoring and control systems, fish rearing tanks, and UV disinfection equipment. WMT was acquired by Innovasea in February 2019.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Terry then served as General Manager and VP of Business Development of Innovasea's Land Based Business Unit in Baton Rouge, LA, retiring in January 2024. He joined VATN Science and Technology, LLC as Director of Sales, bringing 36+ years of aquaculture industry experience — including deep knowledge of state and federal hatchery procurement — to VATN's commercial operations.
+                Terry then served as General Manager and VP of Business Development of Innovasea's Land Based Business Unit in Baton Rouge, LA, retiring in January 2024. He joined VATN Science and Technology, LLC as Director of Sales, bringing 49+ years of aquaculture industry experience — including deep knowledge of state and federal hatchery procurement — to VATN's commercial operations.
               </p>
             </div>
           </RevealSection>
@@ -527,7 +527,10 @@ export default function OurTeam() {
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                     <input type="text" placeholder="Organization / Facility" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                   </div>
-                  <input type="email" placeholder="Email Address" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                    <input type="email" placeholder="Email Address" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                    <input type="tel" placeholder="Phone Number" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
+                  </div>
                   <textarea rows={3} placeholder="Describe your facility and the challenge you're working through..." className="font-body px-4 py-3 bg-white outline-none resize-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                   <button type="submit" className="btn-primary w-fit">
                     Send Your Inquiry <ArrowRight size={15} />
@@ -553,7 +556,7 @@ export default function OurTeam() {
                 {/* Barnaby */}
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #0E9B8A" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Dr. Barnaby J. Watten</p>
-                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Co-Founder &amp; Principal Scientist</p>
+                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Founder &amp; Principal Scientist</p>
                   <a href="tel:5403336859" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
                     <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
                     (540) 333-6859

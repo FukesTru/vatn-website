@@ -10,7 +10,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
-const AERIAL_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-engineering-bg-axr5FwHvEAGP2vXDckcJTG.webp";
+const AERIAL_IMG = "/manus-storage/leavenworth-nfh-aerial-usfws_b8b9094a.jpg";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -169,7 +169,7 @@ export default function EngineeringPartners() {
                 When engineering firms bring VATN into a project, they are working directly with Dr. Barnaby Watten — the researcher who developed and patented the Low Head Oxygenator in 1989, authored 87+ peer-reviewed publications on aquaculture gas management, and spent 31 years as a research engineer within the USFWS. His computer modeling approach for oxygenation and degassing equipment is the same methodology that has been applied and refined through decades of field research.
               </p>
               <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-                Terry McCarthy brings 32+ years of practical experience supplying and supporting state and federal hatchery programs. He understands procurement processes, project timelines, and what engineering teams need to move a project forward efficiently.
+                Terry McCarthy brings 36+ years of practical experience supplying and supporting state and federal hatchery programs. He understands procurement processes, project timelines, and what engineering teams need to move a project forward efficiently.
               </p>
             </div>
           </RevealSection>
@@ -194,12 +194,15 @@ export default function EngineeringPartners() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <img
-                src={AERIAL_IMG}
-                alt="Aerial view of a fish hatchery facility"
-                className="w-full object-cover"
-                style={{ borderRadius: "2px", aspectRatio: "16/10" }}
-              />
+              <div>
+                <img
+                  src={AERIAL_IMG}
+                  alt="Aerial view of Leavenworth National Fish Hatchery, Leavenworth, Washington"
+                  className="w-full object-cover"
+                  style={{ borderRadius: "2px", aspectRatio: "16/10" }}
+                />
+                <p className="font-body mt-2" style={{ fontSize: "0.72rem", color: "#8A9BAA" }}>Photo: Leavenworth National Fish Hatchery — Credit: USFWS / U.S. Fish &amp; Wildlife Service (Public Domain)</p>
+              </div>
             </RevealSection>
           </div>
         </div>

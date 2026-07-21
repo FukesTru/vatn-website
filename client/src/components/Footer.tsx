@@ -73,18 +73,20 @@ export default function Footer() {
             <p className="section-label mb-4" style={{ color: "#0E9B8A" }}>Solutions</p>
             <ul className="flex flex-col gap-2.5">
               {[
-                "Oxygenation & Degassing",
-                "CO₂ Stripping & Scrubbing",
-                "Vacuum Degassing",
-                "Low Head Oxygenators",
-                "Side-Stream Treatment",
-                "Packed Columns",
-                "Solids, Biofiltration & UV",
+                { label: "Oxygenation & Degassing", href: "/gas-management" },
+                { label: "CO₂ Stripping & Scrubbing", href: "/gas-management" },
+                { label: "Vacuum Degassing", href: "/gas-management" },
+                { label: "Low Head Oxygenators", href: "/gas-management" },
+                { label: "Side-Stream Treatment", href: "/gas-management" },
+                { label: "Packed Columns", href: "/gas-management" },
+                { label: "Solids Management", href: "/products/solids-management" },
+                { label: "Biofiltration & Bio Media", href: "/products/bio-media" },
+                { label: "UV Disinfection", href: "/products/uv-disinfection" },
               ].map((item) => (
-                <li key={item}>
-                  <Link href="/gas-management">
+                <li key={item.label}>
+                  <Link href={item.href}>
                     <span className="font-body text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.88rem" }}>
-                      {item}
+                      {item.label}
                     </span>
                   </Link>
                 </li>

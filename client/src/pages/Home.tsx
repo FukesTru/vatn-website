@@ -24,7 +24,9 @@ const solutions = [
   { icon: <FlaskConical size={22} />, label: "Pressure Control", title: "Vacuum Degassing", desc: "Computer-modeled vacuum degassers. Portable or fixed. Eductor-based off-gas removal.", href: "/gas-management" },
   { icon: <Layers size={22} />, label: "Proven Design", title: "Low Head Oxygenators", desc: "Patented 1989. No moving parts. Operates on as little as 9 inches of head.", href: "/gas-management" },
   { icon: <Zap size={22} />, label: "Efficiency", title: "Side-Stream Treatment", desc: "Treat 20–30% of flow at high intensity. Reduce equipment scale by ~70%.", href: "/gas-management" },
-  { icon: <Filter size={22} />, label: "Full Program", title: "Solids, Biofiltration & UV", desc: "Microscreens, biofilters, and UV disinfection to complete your water quality program.", href: "/our-team#contact" },
+  { icon: <Filter size={22} />, label: "Solids Removal", title: "Solids Management", desc: "NP drum and disc microscreen filters for solids removal in flow-through and RAS systems.", href: "/products/solids-management" },
+  { icon: <Layers size={22} />, label: "Biological Filtration", title: "Biofiltration & Bio Media", desc: "B100 bio media and biofiltration systems for ammonia and nitrite control in RAS.", href: "/products/bio-media" },
+  { icon: <Zap size={22} />, label: "Pathogen Control", title: "UV Disinfection", desc: "Ultraqua UV systems for pathogen control and biosecurity in hatchery water supplies.", href: "/products/uv-disinfection" },
 ];
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
@@ -123,10 +125,10 @@ export default function Home() {
                 Decades of Research. Applied in the Field.
               </h2>
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                VATN was founded in 2019 by Dr. Barnaby J. Watten and Terry McCarthy — two professionals who have spent their careers solving the water quality and gas management problems that hatcheries actually face. Their work is not theoretical. It is built from decades of field research, equipment design, and direct collaboration with federal and state fish hatchery programs.
+                VATN was founded in 2019 by Dr. Barnaby J. Watten — a researcher whose career has been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States. Terry McCarthy joined VATN as Director of Sales, bringing decades of practical hatchery industry experience to the firm's commercial operations.
               </p>
               <p className="font-body mb-6" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                Dr. Watten spent 31 years as a research engineer with the U.S. Fish and Wildlife Service, authoring more than 87 peer-reviewed publications and holding 15 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in 2018. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
+                Dr. Watten spent 31 years as a research engineer with the U.S. Fish and Wildlife Service, authoring more than 87 peer-reviewed publications and holding 15 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in February 2019. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/our-team">
@@ -159,7 +161,7 @@ export default function Home() {
               { num: "90+", label: "Peer-Reviewed Publications", sub: "Dr. Barnaby J. Watten" },
               { num: "15", label: "U.S. Patents Held", sub: "Gas management & water treatment" },
               { num: "31", label: "Years USFWS Research", sub: "National fish hatchery programs" },
-              { num: "32+", label: "Years Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
+              { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
             ].map((stat, i) => (
               <RevealSection key={stat.num} delay={i * 70}>
                 <div className="text-center p-5" style={{ borderTop: "2px solid rgba(14,155,138,0.4)" }}>
@@ -288,9 +290,9 @@ export default function Home() {
               <div className="grid grid-cols-1 gap-4">
                 {[
                   { icon: <BookOpen size={18} />, label: "Publications", value: "87+ peer-reviewed papers", desc: "Covering oxygenation, CO₂ stripping, nitrogen supersaturation, RAS design, fish physiology, and more." },
-                  { icon: <Award size={18} />, label: "Patents", value: "10 U.S. Patents", desc: "Including the patented Low Head Oxygenator (1989) and multiple gas management innovations." },
+                  { icon: <Award size={18} />, label: "Patents", value: "15 Patents and Provisional Patents", desc: "Including the patented Low Head Oxygenator (1989) and multiple gas management innovations." },
                   { icon: <Microscope size={18} />, label: "Research Background", value: "Auburn Ph.D. (1989)", desc: "Dr. Watten's doctoral research at Auburn University laid the foundation for modern aquaculture gas management." },
-                  { icon: <Users size={18} />, label: "Industry Experience", value: "32+ years, Terry McCarthy", desc: "Co-founded WMT, Inc. in 1994. Served state and federal hatchery programs for over two decades." },
+                  { icon: <Users size={18} />, label: "Industry Experience", value: "36+ years, Terry McCarthy", desc: "Co-founded WMT, Inc. in 1994. Served state and federal hatchery programs for over two decades." },
                 ].map((item, i) => (
                   <RevealSection key={item.label} delay={i * 60}>
                     <div className="flex gap-4 p-5" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #0E9B8A", borderRadius: "0 2px 2px 0" }}>
