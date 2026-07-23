@@ -140,7 +140,7 @@ export default function EngineeringPartners() {
             <span className="teal-rule mb-5" />
             <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
               Technical Gas Management Support<br />
-              <span style={{ color: "#0E9B8A" }}>for Aquaculture Engineering Firms</span>
+              <span style={{ color: "#3A8C3F" }}>for Aquaculture Engineering Firms</span>
             </h1>
             <p className="font-body text-white/70 max-w-2xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
               VATN helps engineering teams evaluate gas-transfer requirements, select treatment approaches, and design equipment around site-specific hydraulic and water-quality conditions — from concept development through procurement support.
@@ -159,11 +159,11 @@ export default function EngineeringPartners() {
       </section>
 
       {/* ── EXPERT CREDIBILITY INTRO ── */}
-      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container">
           <RevealSection>
             <div className="max-w-3xl">
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Who You Are Working With</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Who You Are Working With</p>
               <span className="teal-rule mb-5" />
               <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
                 When engineering firms bring VATN into a project, they are working directly with Dr. Barnaby Watten — the researcher who developed and patented the Low Head Oxygenator in 1989, authored 87+ peer-reviewed publications on aquaculture gas management, and spent 31 years as a research engineer within the USFWS. His computer modeling approach for oxygenation and degassing equipment is the same methodology that has been applied and refined through decades of field research.
@@ -223,9 +223,9 @@ export default function EngineeringPartners() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
             {collaborationAreas.map((area, i) => (
               <RevealSection key={area.title} delay={i * 50}>
-                <div className="p-6 h-full bg-white" style={{ borderRadius: "2px", borderLeft: "2px solid #0E9B8A", boxShadow: "0 1px 4px rgba(10,22,40,0.05)" }}>
+                <div className="p-6 h-full bg-white" style={{ borderRadius: "2px", borderLeft: "2px solid #3A8C3F", boxShadow: "0 1px 4px rgba(10,22,40,0.05)" }}>
                   <div className="flex items-start gap-4 mb-3">
-                    <div className="p-2.5 shrink-0" style={{ backgroundColor: "rgba(14,155,138,0.1)", color: "#0E9B8A", borderRadius: "2px" }}>
+                    <div className="p-2.5 shrink-0" style={{ backgroundColor: "rgba(58,140,63,0.1)", color: "#3A8C3F", borderRadius: "2px" }}>
                       {area.icon}
                     </div>
                     <h3 className="font-display" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2, paddingTop: "4px" }}>{area.title}</h3>
@@ -244,7 +244,7 @@ export default function EngineeringPartners() {
         <div className="container relative z-10">
           <RevealSection>
             <div className="max-w-2xl mb-12">
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Early Engagement</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Early Engagement</p>
               <span className="teal-rule mb-5" />
               <h2 className="font-display text-white" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", lineHeight: 1.1 }}>
                 Why Engineering Firms Should Involve VATN Early in the Design Process
@@ -257,9 +257,9 @@ export default function EngineeringPartners() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {whyEarly.map((item, i) => (
               <RevealSection key={item.title} delay={i * 55}>
-                <div className="p-6 h-full" style={{ backgroundColor: "rgba(255,255,255,0.05)", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px" }}>
+                <div className="p-6 h-full" style={{ backgroundColor: "rgba(255,255,255,0.05)", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px" }}>
                   <div className="flex items-center gap-2 mb-3">
-                    <CheckCircle2 size={15} style={{ color: "#0E9B8A", flexShrink: 0 }} />
+                    <CheckCircle2 size={15} style={{ color: "#3A8C3F", flexShrink: 0 }} />
                     <h3 className="font-display text-white" style={{ fontSize: "1.05rem", lineHeight: 1.2 }}>{item.title}</h3>
                   </div>
                   <p className="font-body text-white/55" style={{ fontSize: "0.83rem", lineHeight: "1.6" }}>{item.desc}</p>
@@ -317,7 +317,7 @@ export default function EngineeringPartners() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-7 bg-white" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #0E9B8A", borderRadius: "2px" }}>
+              <div className="p-7 bg-white" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #3A8C3F", borderRadius: "2px" }}>
                 <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />

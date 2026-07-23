@@ -65,7 +65,7 @@ export default function GasManagementProduct() {
         }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
         <div className="container relative z-10 text-center">
           <Link href="/products">
             <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
@@ -76,7 +76,7 @@ export default function GasManagementProduct() {
           <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Gas Management<br />
-            <span style={{ color: "#0E9B8A" }}>for Hatchery &amp; RAS Systems</span>
+            <span style={{ color: "#3A8C3F" }}>for Hatchery &amp; RAS Systems</span>
           </h1>
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Oxygenation, degassing, CO₂ control, and total dissolved gas pressure management — modeled and sized for your site's actual water chemistry, hydraulic constraints, and production objectives.
@@ -91,9 +91,9 @@ export default function GasManagementProduct() {
       </section>
 
       {/* Problems addressed */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+      <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container">
-          <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Common Gas Management Problems</p>
+          <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Common Gas Management Problems</p>
           <span className="teal-rule mb-8" />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
@@ -104,7 +104,7 @@ export default function GasManagementProduct() {
               { problem: "Limited Footprint", impact: "Existing infrastructure leaves minimal space for new treatment equipment. Compact solutions are required." },
               { problem: "High Oxygen or Energy Costs", impact: "Inefficient oxygenation systems consume excess oxygen and energy. Proper modeling reduces both." },
             ].map((item) => (
-              <div key={item.problem} className="p-5" style={{ backgroundColor: "rgba(255,255,255,0.04)", borderLeft: "2px solid rgba(14,155,138,0.4)", borderRadius: "2px" }}>
+              <div key={item.problem} className="p-5" style={{ backgroundColor: "rgba(255,255,255,0.04)", borderLeft: "2px solid rgba(58,140,63,0.4)", borderRadius: "2px" }}>
                 <h3 className="font-display text-white mb-2" style={{ fontSize: "1rem" }}>{item.problem}</h3>
                 <p className="font-body text-white/55" style={{ fontSize: "0.83rem", lineHeight: "1.6" }}>{item.impact}</p>
               </div>
@@ -128,15 +128,15 @@ export default function GasManagementProduct() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {technologies.map((tech) => (
-              <div key={tech.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #0E9B8A", borderRadius: "2px" }}>
+              <div key={tech.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
                 <div className="flex items-center gap-3 mb-3">
-                  <div style={{ color: "#0E9B8A" }}>{tech.icon}</div>
+                  <div style={{ color: "#3A8C3F" }}>{tech.icon}</div>
                   <h3 className="font-display" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{tech.title}</h3>
                 </div>
                 <p className="font-body mb-4" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{tech.body}</p>
                 <div className="flex flex-wrap gap-1.5">
                   {tech.specs.map((s) => (
-                    <span key={s} className="font-body" style={{ fontSize: "0.78rem", color: "#0E9B8A", backgroundColor: "rgba(14,155,138,0.08)", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", padding: "2px 8px" }}>
+                    <span key={s} className="font-body" style={{ fontSize: "0.78rem", color: "#3A8C3F", backgroundColor: "rgba(58,140,63,0.08)", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", padding: "2px 8px" }}>
                       {s}
                     </span>
                   ))}
@@ -151,7 +151,7 @@ export default function GasManagementProduct() {
       <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
         <div className="container">
           <div className="mb-8 text-center">
-            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Patented Technology</p>
+            <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Patented Technology</p>
             <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h2 className="font-display text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", lineHeight: 1.1 }}>
               Low Head Oxygenator (LHO)
@@ -174,7 +174,7 @@ export default function GasManagementProduct() {
               </p>
               <div className="flex flex-wrap gap-2">
                 {["No moving parts", "9\" minimum head", "Multi-stage", "Patented 1989", "RAS & raceway"].map((tag) => (
-                  <span key={tag} className="font-body" style={{ fontSize: "0.78rem", color: "#0E9B8A", backgroundColor: "rgba(14,155,138,0.08)", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", padding: "2px 8px" }}>
+                  <span key={tag} className="font-body" style={{ fontSize: "0.78rem", color: "#3A8C3F", backgroundColor: "rgba(58,140,63,0.08)", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", padding: "2px 8px" }}>
                     {tag}
                   </span>
                 ))}
@@ -199,24 +199,24 @@ export default function GasManagementProduct() {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(14,155,138,0.12)" }}>
+            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
                 src="/manus-storage/vatn-vacuum-degassing-tower_04866f24.jpg"
                 alt="Vacuum degassing tower at NARL"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
-              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #0E9B8A" }}>
+              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
                 <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Vacuum Degassing Tower</p>
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Vacuum degasser at NARL following modifications for enhanced radon removal.</p>
               </div>
             </div>
-            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(14,155,138,0.12)" }}>
+            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
                 src="/manus-storage/vatn-water-jet-exhauster-cropped_67e34a3a.jpg"
                 alt="Water jet exhauster (Figure 5) — sidewall application on vacuum degasser column"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
-              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #0E9B8A" }}>
+              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
                 <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Water Jet Exhauster</p>
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Figure 5 — Water jet exhauster: sidewall application using a small sidestream flow of raw water, under pressure, to remove nitrogen-rich off-gas from the operating degasser.</p>
               </div>

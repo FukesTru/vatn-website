@@ -121,7 +121,7 @@ export default function GasManagement() {
             <span className="teal-rule mb-5" />
             <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
               Gas Management Solutions<br />
-              <span style={{ color: "#0E9B8A" }}>for Hatcheries, RAS &amp; Raceway Systems</span>
+              <span style={{ color: "#3A8C3F" }}>for Hatcheries, RAS &amp; Raceway Systems</span>
             </h1>
             <p className="font-body text-white/70 max-w-2xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
               Oxygenation, degassing, CO₂ removal, total gas pressure control, and ozone transfer — engineered around your site's specific water chemistry, hydraulic conditions, and treatment objectives.
@@ -140,11 +140,11 @@ export default function GasManagement() {
       </section>
 
       {/* ── EXPERT CREDIBILITY INTRO ── */}
-      <section className="py-14 lg:py-18" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+      <section className="py-14 lg:py-18" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
             <RevealSection className="lg:col-span-2">
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>The Expertise Behind the Engineering</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>The Expertise Behind the Engineering</p>
               <span className="teal-rule mb-5" />
               <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
                 VATN's gas management capabilities are built on decades of original research. Dr. Barnaby Watten spent 31 years as a research engineer with the U.S. Fish and Wildlife Service, developing and patenting the Low Head Oxygenator in 1989 and authoring more than 87 peer-reviewed publications on aquaculture water treatment. His computer modeling approach — which evaluates reactor performance against your site's specific water chemistry, hydraulic conditions, and treatment objectives — is the foundation of every VATN system recommendation.
@@ -154,7 +154,7 @@ export default function GasManagement() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-5 coord-corner" style={{ border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px" }}>
+              <div className="p-5 coord-corner" style={{ border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px" }}>
                 <p className="data-label mb-3">Research Credentials</p>
                 <div className="spec-row"><span className="spec-key">Publications</span><span className="spec-val">87+ peer-reviewed</span></div>
                 <div className="spec-row"><span className="spec-key">Patents</span><span className="spec-val">10 U.S. Patents</span></div>
@@ -185,9 +185,9 @@ export default function GasManagement() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {problems.map((item, i) => (
               <RevealSection key={item.problem} delay={i * 55}>
-                <div className="p-5 h-full" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
+                <div className="p-5 h-full" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
                   <div className="flex items-center gap-2.5 mb-2">
-                    <AlertTriangle size={15} style={{ color: "#0E9B8A", flexShrink: 0 }} />
+                    <AlertTriangle size={15} style={{ color: "#3A8C3F", flexShrink: 0 }} />
                     <h3 className="font-display" style={{ fontSize: "1.05rem", color: "#1C2B3A" }}>{item.problem}</h3>
                   </div>
                   <p className="font-body" style={{ color: "#5A7080", fontSize: "0.83rem", lineHeight: "1.6" }}>{item.impact}</p>
@@ -216,7 +216,7 @@ export default function GasManagement() {
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-0 bg-white" style={{ borderRadius: "2px", boxShadow: "0 1px 6px rgba(10,22,40,0.07)", overflow: "hidden" }}>
                   <div className="lg:col-span-2 p-7 border-b lg:border-b-0 lg:border-r" style={{ borderColor: "#E8EEF4" }}>
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="p-2.5" style={{ backgroundColor: "rgba(14,155,138,0.1)", color: "#0E9B8A", borderRadius: "2px" }}>
+                      <div className="p-2.5" style={{ backgroundColor: "rgba(58,140,63,0.1)", color: "#3A8C3F", borderRadius: "2px" }}>
                         {tech.icon}
                       </div>
                       <h3 className="font-display" style={{ fontSize: "1.3rem", color: "#1C2B3A" }}>{tech.title}</h3>
@@ -228,7 +228,7 @@ export default function GasManagement() {
                     <ul className="flex flex-col gap-2">
                       {tech.specs.map((spec) => (
                         <li key={spec} className="flex items-start gap-2">
-                          <CheckCircle2 size={13} style={{ color: "#0E9B8A", marginTop: "3px", flexShrink: 0 }} />
+                          <CheckCircle2 size={13} style={{ color: "#3A8C3F", marginTop: "3px", flexShrink: 0 }} />
                           <span className="font-body" style={{ color: "#3A5068", fontSize: "0.82rem", lineHeight: "1.5" }}>{spec}</span>
                         </li>
                       ))}
@@ -258,26 +258,26 @@ export default function GasManagement() {
           </RevealSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <RevealSection delay={60}>
-              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(14,155,138,0.12)" }}>
+              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <img
                   src="/manus-storage/vatn-vacuum-degassing-tower_04866f24.jpg"
                   alt="Vacuum degassing tower at NARL"
                   style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
                 />
-                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #0E9B8A" }}>
+                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
                   <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Vacuum Degassing Tower</p>
                   <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Vacuum degasser at NARL following modifications for enhanced radon removal.</p>
                 </div>
               </div>
             </RevealSection>
             <RevealSection delay={120}>
-              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(14,155,138,0.12)" }}>
+              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <img
                   src="/manus-storage/vatn-water-jet-exhauster_c67582b9.jpg"
                   alt="Water jet exhauster on vacuum degasser packed column"
                   style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
                 />
-                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #0E9B8A" }}>
+                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
                   <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Water Jet Exhauster</p>
                   <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Water jet exhauster at an elevated position on the vacuum degasser's packed column.</p>
                 </div>
@@ -293,7 +293,7 @@ export default function GasManagement() {
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <RevealSection>
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>The VATN Approach</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>The VATN Approach</p>
               <span className="teal-rule mb-5" />
               <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", lineHeight: 1.1 }}>
                 Modeled for Your Site,<br />Not Guessed
@@ -303,7 +303,7 @@ export default function GasManagement() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-6 coord-corner" style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px" }}>
+              <div className="p-6 coord-corner" style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px" }}>
                 <p className="data-label mb-4">Site Parameters Evaluated in Modeling</p>
                 <div className="flex flex-col">
                   {[
@@ -368,7 +368,7 @@ export default function GasManagement() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-7 bg-white text-left" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #0E9B8A", borderRadius: "2px" }}>
+              <div className="p-7 bg-white text-left" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #3A8C3F", borderRadius: "2px" }}>
                 <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />

@@ -77,7 +77,7 @@ export default function ProductOverview() {
         <div
           className="absolute inset-0 pointer-events-none"
           style={{
-            backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)",
+            backgroundImage: "linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)",
             backgroundSize: "48px 48px",
           }}
         />
@@ -103,10 +103,10 @@ export default function ProductOverview() {
       </section>
 
       {/* Intro strip — exact client-approved wording */}
-      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container">
           <div className="max-w-4xl">
-            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Product Overview</p>
+            <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Product Overview</p>
             <span className="teal-rule mb-5" />
             <p className="font-body text-white/80" style={{ fontSize: "0.97rem", lineHeight: "1.8" }}>
               Proper management of dissolved gas levels, particularly dissolved oxygen (DO), nitrogen and CO₂ is critical in determining the success of both aquaculture and wastewater/environmental operations. This includes maintaining adequate DO for rapid growth of aquaculture species as well as maintenance of environmental DO levels that allow for biological wastewater treatment or transport without hydrogen sulfide generation. CO₂ is a byproduct of both fish and microbe respiration and so managing (removal) this gas is also of importance given its effect on water pH and fish health. Well and spring water sources, commonly used at federal and state fish hatcheries, often contain elevated (stressful) levels of CO₂ as well as dissolved nitrogen (N₂) that must also be managed (stripped/scrubbed) prior to aquaculture use. Dissolved gas monitoring equipment is used to control gas management equipment so that gas transfer needs match gas transfer rates. Hence dissolved gas sensors play an important role in treatment solution packages. The required manipulation of dissolved gas levels and the number of monitoring sites is related in part to fish rearing unit design (tank hydraulics) including the state-of-the-art mixed cell rearing unit, biofilter type and performance and solids removal operations. VATN products address the needs outlined above:
@@ -136,7 +136,7 @@ export default function ProductOverview() {
                 className="flex flex-col bg-white"
                 style={{
                   border: "1px solid #E8EEF4",
-                  borderTop: "3px solid #0E9B8A",
+                  borderTop: "3px solid #3A8C3F",
                   borderRadius: "2px",
                   padding: "1.5rem",
                 }}
@@ -160,9 +160,9 @@ export default function ProductOverview() {
                       className="font-body"
                       style={{
                         fontSize: "0.78rem",
-                        color: "#0E9B8A",
-                        backgroundColor: "rgba(14,155,138,0.08)",
-                        border: "1px solid rgba(14,155,138,0.2)",
+                        color: "#3A8C3F",
+                        backgroundColor: "rgba(58,140,63,0.08)",
+                        border: "1px solid rgba(58,140,63,0.2)",
                         borderRadius: "2px",
                         padding: "2px 8px",
                         letterSpacing: "0.04em",
@@ -175,7 +175,7 @@ export default function ProductOverview() {
                 <Link href={product.href}>
                   <span
                     className="flex items-center gap-1.5 font-display font-semibold transition-colors duration-200"
-                    style={{ fontSize: "0.8rem", color: "#0E9B8A", letterSpacing: "0.06em", textTransform: "uppercase" }}
+                    style={{ fontSize: "0.8rem", color: "#3A8C3F", letterSpacing: "0.06em", textTransform: "uppercase" }}
                   >
                     Learn More <ArrowRight size={13} />
                   </span>
@@ -189,7 +189,7 @@ export default function ProductOverview() {
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
-          <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Ready to Discuss Your Project?</p>
+          <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Ready to Discuss Your Project?</p>
           <span className="teal-rule mb-6" style={{ margin: "0 auto 1.5rem" }} />
           <h2
             className="font-display text-white mb-5"

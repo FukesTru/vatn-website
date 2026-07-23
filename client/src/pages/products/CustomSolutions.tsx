@@ -62,7 +62,7 @@ export default function CustomSolutions() {
         }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
         <div className="container relative z-10 text-center">
           <Link href="/products">
             <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
@@ -73,7 +73,7 @@ export default function CustomSolutions() {
           <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Other &amp; Custom Solutions<br />
-            <span style={{ color: "#0E9B8A" }}>When the Problem Doesn't Fit a Catalog</span>
+            <span style={{ color: "#3A8C3F" }}>When the Problem Doesn't Fit a Catalog</span>
           </h1>
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Some hatchery and aquaculture problems do not fit neatly into a standard product category. VATN evaluates site-specific water quality, gas management, hydraulic, solids, disinfection, biofiltration, and treatment challenges and develops solutions appropriate to the actual conditions.
@@ -100,7 +100,7 @@ export default function CustomSolutions() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 mb-16">
             {challengeAreas.map((c) => (
-              <div key={c.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #0E9B8A", borderRadius: "2px" }}>
+              <div key={c.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
                 <h3 className="font-display mb-3" style={{ fontSize: "1.05rem", color: "#1C2B3A", lineHeight: 1.2 }}>{c.title}</h3>
                 <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{c.body}</p>
               </div>
@@ -118,21 +118,21 @@ export default function CustomSolutions() {
               <div className="flex flex-col gap-3">
                 {examples.map((ex) => (
                   <div key={ex} className="flex items-start gap-3">
-                    <CheckCircle2 size={15} style={{ color: "#0E9B8A", marginTop: "2px", flexShrink: 0 }} />
+                    <CheckCircle2 size={15} style={{ color: "#3A8C3F", marginTop: "2px", flexShrink: 0 }} />
                     <span className="font-body" style={{ fontSize: "0.88rem", color: "#3A5068", lineHeight: "1.6" }}>{ex}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>How VATN Approaches Custom Problems</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>How VATN Approaches Custom Problems</p>
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 VATN does not sell solutions before understanding the problem. For non-standard challenges, the process starts with a conversation about your facility, your water quality conditions, your constraints, and your objectives. From there, VATN evaluates what approaches are technically feasible and what the tradeoffs are.
               </p>
               <p className="font-body text-white/50 mb-5" style={{ fontSize: "0.9rem", lineHeight: "1.65" }}>
                 If a problem is outside VATN's scope, we will tell you that directly rather than recommend a solution that is not appropriate for your situation.
               </p>
-              <a href="/contact" className="flex items-center gap-1 font-display font-semibold" style={{ fontSize: "0.78rem", color: "#0E9B8A", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+              <a href="/contact" className="flex items-center gap-1 font-display font-semibold" style={{ fontSize: "0.78rem", color: "#3A8C3F", letterSpacing: "0.06em", textTransform: "uppercase" }}>
                 Start a Conversation <ArrowRight size={12} />
               </a>
             </div>

@@ -131,7 +131,7 @@ export default function HatcherySolutions() {
             <span className="teal-rule mb-5" />
             <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
               Water Treatment &amp; Gas Management<br />
-              <span style={{ color: "#0E9B8A" }}>for Federal &amp; State Fish Hatcheries</span>
+              <span style={{ color: "#3A8C3F" }}>for Federal &amp; State Fish Hatcheries</span>
             </h1>
             <p className="font-body text-white/70 max-w-xl mb-8" style={{ fontSize: "1rem", lineHeight: "1.6" }}>
               Site-specific oxygenation, degassing, and CO₂ control designed around the real constraints of hatchery infrastructure and fish production objectives.
@@ -150,11 +150,11 @@ export default function HatcherySolutions() {
       </section>
 
       {/* ── EXPERT CREDIBILITY INTRO ── */}
-      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <RevealSection>
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Why VATN Understands Hatcheries</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Why VATN Understands Hatcheries</p>
               <span className="teal-rule mb-5" />
               <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
                 Dr. Barnaby Watten spent 31 years as a research engineer within the USFWS National Fish Hatchery program. He did not study hatcheries from the outside — he worked inside them, developing the equipment and methods that hatcheries now rely on. His 87+ peer-reviewed publications and 15 patents represent a body of work built specifically for aquaculture water treatment challenges.
@@ -171,8 +171,8 @@ export default function HatcherySolutions() {
                   { num: "15", label: "U.S. Patents", sub: "Gas management innovations" },
                   { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy" },
                 ].map((s) => (
-                  <div key={s.num} className="p-4 text-center" style={{ borderTop: "2px solid rgba(14,155,138,0.35)", backgroundColor: "rgba(255,255,255,0.03)" }}>
-                    <p className="font-display font-bold" style={{ fontSize: "2rem", color: "#0E9B8A", lineHeight: 1 }}>{s.num}</p>
+                  <div key={s.num} className="p-4 text-center" style={{ borderTop: "2px solid rgba(58,140,63,0.35)", backgroundColor: "rgba(255,255,255,0.03)" }}>
+                    <p className="font-display font-bold" style={{ fontSize: "2rem", color: "#3A8C3F", lineHeight: 1 }}>{s.num}</p>
                     <p className="font-display text-white mt-1" style={{ fontSize: "0.82rem", lineHeight: 1.3 }}>{s.label}</p>
                     <p className="font-body text-white/40 mt-0.5" style={{ fontSize: "0.7rem" }}>{s.sub}</p>
                   </div>
@@ -201,9 +201,9 @@ export default function HatcherySolutions() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
             {hatcheryPriorities.map((item, i) => (
               <RevealSection key={item.title} delay={i * 55}>
-                <div className="p-6 h-full bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #0E9B8A", borderRadius: "2px" }}>
+                <div className="p-6 h-full bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
                   <div className="flex items-center gap-3 mb-3">
-                    <div style={{ color: "#0E9B8A" }}>{item.icon}</div>
+                    <div style={{ color: "#3A8C3F" }}>{item.icon}</div>
                     <h3 className="font-display" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{item.title}</h3>
                   </div>
                   <p className="font-body" style={{ color: "#5A7080", fontSize: "0.84rem", lineHeight: "1.6" }}>{item.desc}</p>
@@ -230,7 +230,7 @@ export default function HatcherySolutions() {
               <div className="flex flex-col gap-4">
                 {hatcheryApplications.map((app, i) => (
                   <RevealSection key={app.title} delay={i * 50}>
-                    <div className="p-5 bg-white" style={{ borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
+                    <div className="p-5 bg-white" style={{ borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
                       <h3 className="font-display mb-1.5" style={{ fontSize: "1.05rem", color: "#1C2B3A" }}>{app.title}</h3>
                       <p className="font-body" style={{ color: "#5A7080", fontSize: "0.83rem", lineHeight: "1.6" }}>{app.desc}</p>
                     </div>
@@ -250,14 +250,14 @@ export default function HatcherySolutions() {
               </RevealSection>
               <RevealSection delay={120}>
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>
-                  <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Designed Around Real Hatchery Constraints</p>
+                  <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Designed Around Real Hatchery Constraints</p>
                   <p className="font-body text-white/65 mb-5" style={{ fontSize: "0.85rem", lineHeight: "1.65" }}>
                     VATN's principals have direct experience working within the USFWS National Fish Hatchery program. This background informs how VATN approaches hatchery projects — with an understanding of the infrastructure, budget, and operational realities that shape what is actually feasible in the field.
                   </p>
                   <div className="flex flex-col gap-2">
                     {realWorldConstraints.map((c) => (
                       <div key={c} className="flex items-start gap-2">
-                        <CheckCircle2 size={13} style={{ color: "#0E9B8A", marginTop: "3px", flexShrink: 0 }} />
+                        <CheckCircle2 size={13} style={{ color: "#3A8C3F", marginTop: "3px", flexShrink: 0 }} />
                         <span className="font-body text-white/60" style={{ fontSize: "0.8rem", lineHeight: "1.5" }}>{c}</span>
                       </div>
                     ))}
@@ -275,7 +275,7 @@ export default function HatcherySolutions() {
         <div className="container relative z-10">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <RevealSection>
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Technical Support</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Technical Support</p>
               <span className="teal-rule mb-5" />
               <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", lineHeight: 1.1 }}>
                 Technical Support for Agency and Engineering Teams
@@ -295,7 +295,7 @@ export default function HatcherySolutions() {
                   { title: "Agency Decision-Makers", desc: "Technical documentation, cost-benefit analysis, and procurement support for capital equipment decisions." },
                   { title: "Engineering Firms", desc: "Gas-transfer modeling, equipment sizing, specification development, and design review support." },
                 ].map((item, i) => (
-                  <div key={item.title} className="p-5" style={{ backgroundColor: "rgba(255,255,255,0.05)", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px" }}>
+                  <div key={item.title} className="p-5" style={{ backgroundColor: "rgba(255,255,255,0.05)", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px" }}>
                     <h3 className="font-display text-white mb-2" style={{ fontSize: "1.05rem" }}>{item.title}</h3>
                     <p className="font-body text-white/55" style={{ fontSize: "0.82rem", lineHeight: "1.55" }}>{item.desc}</p>
                   </div>
@@ -321,7 +321,7 @@ export default function HatcherySolutions() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-7 bg-white text-left" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #0E9B8A", borderRadius: "2px" }}>
+              <div className="p-7 bg-white text-left" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #3A8C3F", borderRadius: "2px" }}>
                 <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <input type="text" placeholder="Your Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
