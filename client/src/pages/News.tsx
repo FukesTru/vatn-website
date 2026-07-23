@@ -58,15 +58,15 @@ export default function News() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)
+              linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)
             `,
             backgroundSize: "48px 48px",
           }}
         />
         <div className="container relative z-10 text-center">
           <RevealSection>
-            <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Latest Updates</p>
+            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Latest Updates</p>
             <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h1
               className="font-display text-white mb-4"
@@ -93,7 +93,7 @@ export default function News() {
                 borderRadius: "6px",
                 overflow: "hidden",
                 boxShadow: "0 2px 16px rgba(0,0,0,0.07)",
-                border: "1px solid rgba(58,140,63,0.12)",
+                border: "1px solid rgba(14,155,138,0.12)",
                 marginBottom: "32px",
               }}
             >
@@ -114,11 +114,11 @@ export default function News() {
                     fontSize: "0.65rem",
                     letterSpacing: "0.1em",
                     textTransform: "uppercase",
-                    color: "#3A8C3F",
-                    backgroundColor: "rgba(58,140,63,0.12)",
+                    color: "#0E9B8A",
+                    backgroundColor: "rgba(14,155,138,0.12)",
                     padding: "3px 10px",
                     borderRadius: "2px",
-                    border: "1px solid rgba(58,140,63,0.25)",
+                    border: "1px solid rgba(14,155,138,0.25)",
                   }}
                 >
                   Conference
@@ -150,7 +150,7 @@ export default function News() {
                   style={{
                     width: "48px",
                     height: "3px",
-                    backgroundColor: "#3A8C3F",
+                    backgroundColor: "#0E9B8A",
                     marginBottom: "20px",
                     borderRadius: "2px",
                   }}
@@ -174,7 +174,7 @@ export default function News() {
                 borderRadius: "6px",
                 overflow: "hidden",
                 boxShadow: "0 2px 16px rgba(0,0,0,0.07)",
-                border: "1px solid rgba(58,140,63,0.12)",
+                border: "1px solid rgba(14,155,138,0.12)",
                 marginBottom: "32px",
               }}
             >
@@ -195,11 +195,11 @@ export default function News() {
                     fontSize: "0.65rem",
                     letterSpacing: "0.1em",
                     textTransform: "uppercase",
-                    color: "#3A8C3F",
-                    backgroundColor: "rgba(58,140,63,0.12)",
+                    color: "#0E9B8A",
+                    backgroundColor: "rgba(14,155,138,0.12)",
                     padding: "3px 10px",
                     borderRadius: "2px",
-                    border: "1px solid rgba(58,140,63,0.25)",
+                    border: "1px solid rgba(14,155,138,0.25)",
                   }}
                 >
                   Research Update
@@ -231,7 +231,7 @@ export default function News() {
                   style={{
                     width: "48px",
                     height: "3px",
-                    backgroundColor: "#3A8C3F",
+                    backgroundColor: "#0E9B8A",
                     marginBottom: "20px",
                     borderRadius: "2px",
                   }}
@@ -271,8 +271,8 @@ export default function News() {
                 className="absolute inset-0 pointer-events-none"
                 style={{
                   backgroundImage: `
-                    linear-gradient(rgba(58,140,63,0.05) 1px, transparent 1px),
-                    linear-gradient(90deg, rgba(58,140,63,0.05) 1px, transparent 1px)
+                    linear-gradient(rgba(14,155,138,0.05) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(14,155,138,0.05) 1px, transparent 1px)
                   `,
                   backgroundSize: "40px 40px",
                 }}
@@ -280,7 +280,7 @@ export default function News() {
               <div className="relative z-10">
                 <p
                   className="font-display font-bold mb-2"
-                  style={{ fontSize: "0.7rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#3A8C3F" }}
+                  style={{ fontSize: "0.7rem", letterSpacing: "0.1em", textTransform: "uppercase", color: "#0E9B8A" }}
                 >
                   Stay Informed
                 </p>
@@ -297,7 +297,7 @@ export default function News() {
                   href="tel:2252294711"
                   className="font-display font-bold inline-flex items-center gap-2 transition-all duration-200"
                   style={{
-                    backgroundColor: "#3A8C3F",
+                    backgroundColor: "#0E9B8A",
                     color: "#FFFFFF",
                     padding: "12px 24px",
                     borderRadius: "3px",

@@ -54,7 +54,7 @@ export default function UVDisinfection() {
         }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
         <div className="container relative z-10 text-center">
           <Link href="/products">
             <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
@@ -65,7 +65,7 @@ export default function UVDisinfection() {
           <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Ultraqua UV Systems<br />
-            <span style={{ color: "#3A8C3F" }}>for Hatchery Water Treatment</span>
+            <span style={{ color: "#0E9B8A" }}>for Hatchery Water Treatment</span>
           </h1>
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Chemical-free pathogen control for fish hatchery and aquaculture water supplies. Ultraqua UV systems inactivate bacteria, viruses, and parasites without altering water chemistry or leaving residuals.
@@ -89,9 +89,9 @@ export default function UVDisinfection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
             {features.map((f) => (
-              <div key={f.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
+              <div key={f.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #0E9B8A", borderRadius: "2px" }}>
                 <div className="flex items-center gap-3 mb-3">
-                  <div style={{ color: "#3A8C3F" }}>{f.icon}</div>
+                  <div style={{ color: "#0E9B8A" }}>{f.icon}</div>
                   <h3 className="font-display" style={{ fontSize: "1.05rem", color: "#1C2B3A", lineHeight: 1.2 }}>{f.title}</h3>
                 </div>
                 <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{f.body}</p>
@@ -110,14 +110,14 @@ export default function UVDisinfection() {
               <div className="flex flex-col gap-3">
                 {applications.map((app) => (
                   <div key={app} className="flex items-start gap-3">
-                    <CheckCircle2 size={15} style={{ color: "#3A8C3F", marginTop: "2px", flexShrink: 0 }} />
+                    <CheckCircle2 size={15} style={{ color: "#0E9B8A", marginTop: "2px", flexShrink: 0 }} />
                     <span className="font-body" style={{ fontSize: "0.88rem", color: "#3A5068", lineHeight: "1.6" }}>{app}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>
-              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Important Note on Specifications</p>
+              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Important Note on Specifications</p>
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 UV system sizing depends on your specific flow rate, water quality (UV transmittance), target log reduction, and the organisms of concern. VATN evaluates these parameters for each application before recommending a system configuration.
               </p>
@@ -133,7 +133,7 @@ export default function UVDisinfection() {
       <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
         <div className="container">
           <div className="mb-10 text-center">
-            <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Ultraqua UV Product Line</p>
+            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Ultraqua UV Product Line</p>
             <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h2 className="font-display text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", lineHeight: 1.1 }}>
               UV System Configurations
@@ -141,7 +141,7 @@ export default function UVDisinfection() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {/* Vertical Channel UV */}
-            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden" }}>
+            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "220px", overflow: "hidden" }}>
                 <img
                   src="/manus-storage/vatn-uv-vertical-channel_6a98b7e7.jpg"
@@ -155,7 +155,7 @@ export default function UVDisinfection() {
               </div>
             </div>
             {/* Incline Channel UV */}
-            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden" }}>
+            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "220px", overflow: "hidden" }}>
                 <img
                   src="/manus-storage/vatn-uv-incline-channel_9a05164a.webp"
@@ -169,7 +169,7 @@ export default function UVDisinfection() {
               </div>
             </div>
             {/* Closed UV Reactors */}
-            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden" }}>
+            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "220px", overflow: "hidden", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
                   src="/manus-storage/vatn-uv-general-system-docx_80166a50.jpg"
@@ -183,7 +183,7 @@ export default function UVDisinfection() {
               </div>
             </div>
             {/* General UV Disinfection System — full width on last row */}
-            <div className="md:col-span-2 lg:col-span-3" style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden", display: "flex", flexDirection: "row", alignItems: "stretch" }}>
+            <div className="md:col-span-2 lg:col-span-3" style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(14,155,138,0.2)", borderRadius: "2px", overflow: "hidden", display: "flex", flexDirection: "row", alignItems: "stretch" }}>
               <div style={{ width: "340px", flexShrink: 0, backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
                   src="/manus-storage/vatn-uv-open-channel-horizontal_6c69c38b.jpg"

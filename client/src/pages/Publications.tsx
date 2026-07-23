@@ -178,15 +178,15 @@ export default function Publications() {
           className="absolute inset-0 pointer-events-none"
           style={{
             backgroundImage: `
-              linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px),
-              linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)
+              linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px),
+              linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)
             `,
             backgroundSize: "48px 48px",
           }}
         />
         <div className="container relative z-10 text-center">
           <RevealSection>
-            <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Research &amp; Technical Record</p>
+            <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Research &amp; Technical Record</p>
             <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h1
               className="font-display text-white mb-4"
@@ -211,7 +211,7 @@ export default function Publications() {
                 <div key={stat.label} className="flex flex-col">
                   <span
                     className="font-display font-bold"
-                    style={{ fontSize: "1.8rem", color: "#3A8C3F", lineHeight: 1 }}
+                    style={{ fontSize: "1.8rem", color: "#0E9B8A", lineHeight: 1 }}
                   >
                     {stat.value}
                   </span>
@@ -226,7 +226,7 @@ export default function Publications() {
       </section>
 
       {/* Topic nav */}
-      <div style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.15)" }}>
+      <div style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.15)" }}>
         <div className="container">
           <div className="flex flex-wrap gap-1 py-3">
             {publications.map((section) => (
@@ -244,9 +244,9 @@ export default function Publications() {
                   textTransform: "uppercase",
                   padding: "6px 14px",
                   borderRadius: "3px",
-                  backgroundColor: "rgba(58,140,63,0.1)",
-                  color: "#3A8C3F",
-                  border: "1px solid rgba(58,140,63,0.2)",
+                  backgroundColor: "rgba(14,155,138,0.1)",
+                  color: "#0E9B8A",
+                  border: "1px solid rgba(14,155,138,0.2)",
                   cursor: "pointer",
                 }}
               >
@@ -269,7 +269,7 @@ export default function Publications() {
                 {/* Section header */}
                 <div
                   className="flex items-center gap-4 mb-6 pb-4"
-                  style={{ borderBottom: "2px solid #3A8C3F" }}
+                  style={{ borderBottom: "2px solid #0E9B8A" }}
                 >
                   <div
                     className="font-display font-bold"
@@ -285,13 +285,13 @@ export default function Publications() {
                     className="font-body"
                     style={{
                       fontSize: "0.72rem",
-                      color: "#3A8C3F",
+                      color: "#0E9B8A",
                       letterSpacing: "0.08em",
                       textTransform: "uppercase",
-                      backgroundColor: "rgba(58,140,63,0.1)",
+                      backgroundColor: "rgba(14,155,138,0.1)",
                       padding: "3px 10px",
                       borderRadius: "2px",
-                      border: "1px solid rgba(58,140,63,0.2)",
+                      border: "1px solid rgba(14,155,138,0.2)",
                       whiteSpace: "nowrap",
                     }}
                   >
@@ -308,7 +308,7 @@ export default function Publications() {
                       style={{
                         padding: "14px 18px",
                         backgroundColor: "#FFFFFF",
-                        borderLeft: "3px solid #3A8C3F",
+                        borderLeft: "3px solid #0E9B8A",
                         borderRadius: "0 6px 6px 0",
                         boxShadow: "0 1px 6px rgba(0,0,0,0.07)",
                       }}
@@ -317,7 +317,7 @@ export default function Publications() {
                         className="font-display font-bold shrink-0"
                         style={{
                           fontSize: "0.65rem",
-                          color: "#3A8C3F",
+                          color: "#0E9B8A",
                           letterSpacing: "0.06em",
                           marginTop: "3px",
                           minWidth: "28px",
@@ -348,7 +348,7 @@ export default function Publications() {
               style={{
                 padding: "16px 20px",
                 backgroundColor: "#FFFFFF",
-                border: "1px solid rgba(58,140,63,0.2)",
+                border: "1px solid rgba(14,155,138,0.2)",
                 borderRadius: "4px",
                 marginTop: "8px",
               }}

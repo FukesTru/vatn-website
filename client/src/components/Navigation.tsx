@@ -98,7 +98,7 @@ export default function Navigation() {
         style={{
           backgroundColor: scrolled ? "rgba(10, 22, 40, 0.97)" : "rgba(10, 22, 40, 0.15)",
           backdropFilter: scrolled ? "blur(12px)" : "blur(4px)",
-          borderBottom: scrolled ? "1px solid rgba(58, 140, 63, 0.2)" : "1px solid transparent",
+          borderBottom: scrolled ? "1px solid rgba(14, 155, 138, 0.2)" : "1px solid transparent",
         }}
       >
         <div className="container">
@@ -124,7 +124,7 @@ export default function Navigation() {
                     fontSize: "0.92rem",
                     letterSpacing: "0.07em",
                     textTransform: "uppercase",
-                    color: location === "/" ? "#3A8C3F" : "rgba(255,255,255,0.85)",
+                    color: location === "/" ? "#0E9B8A" : "rgba(255,255,255,0.85)",
                   }}
                 >
                   Home
@@ -139,7 +139,7 @@ export default function Navigation() {
                     fontSize: "0.92rem",
                     letterSpacing: "0.07em",
                     textTransform: "uppercase",
-                    color: isProductsActive ? "#3A8C3F" : "rgba(255,255,255,0.85)",
+                    color: isProductsActive ? "#0E9B8A" : "rgba(255,255,255,0.85)",
                     background: "none",
                     border: "none",
                     cursor: "pointer",
@@ -167,7 +167,7 @@ export default function Navigation() {
                       marginTop: "12px",
                       width: "640px",
                       backgroundColor: "#0A1628",
-                      border: "1px solid rgba(58,140,63,0.25)",
+                      border: "1px solid rgba(14,155,138,0.25)",
                       borderRadius: "4px",
                       boxShadow: "0 20px 60px rgba(0,0,0,0.5)",
                       zIndex: 100,
@@ -177,11 +177,11 @@ export default function Navigation() {
                     {/* Mega menu header */}
                     <div
                       className="flex items-center justify-between px-5 py-3"
-                      style={{ borderBottom: "1px solid rgba(58,140,63,0.15)" }}
+                      style={{ borderBottom: "1px solid rgba(14,155,138,0.15)" }}
                     >
                       <span
                         className="font-display font-bold"
-                        style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "#3A8C3F" }}
+                        style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "#0E9B8A" }}
                       >
                         Products &amp; Solutions
                       </span>
@@ -203,7 +203,7 @@ export default function Navigation() {
                             className="flex flex-col gap-0.5 px-3 py-3 rounded transition-colors duration-150 group"
                             style={{ cursor: "pointer" }}
                             onMouseEnter={(e) => {
-                              (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(58,140,63,0.08)";
+                              (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(14,155,138,0.08)";
                             }}
                             onMouseLeave={(e) => {
                               (e.currentTarget as HTMLDivElement).style.backgroundColor = "transparent";
@@ -213,7 +213,7 @@ export default function Navigation() {
                               className="font-display font-semibold"
                               style={{
                             fontSize: "0.9rem",
-                              color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.9)",
+                              color: location === item.href ? "#0E9B8A" : "rgba(255,255,255,0.9)",
                               letterSpacing: "0.02em",
                               }}
                             >
@@ -242,7 +242,7 @@ export default function Navigation() {
                       fontSize: "0.92rem",
                       letterSpacing: "0.07em",
                       textTransform: "uppercase",
-                      color: location === link.href ? "#3A8C3F" : "rgba(255,255,255,0.85)",
+                      color: location === link.href ? "#0E9B8A" : "rgba(255,255,255,0.85)",
                     }}
                   >
                     {link.label}
@@ -257,10 +257,10 @@ export default function Navigation() {
                 href="tel:2252294711"
                 className="flex items-center gap-2 transition-all duration-200"
                 style={{ fontSize: "0.95rem", fontFamily: "Inter, sans-serif", fontWeight: 600, color: "rgba(255,255,255,0.9)", letterSpacing: "0.01em" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#3A8C3F"; }}
+                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#0E9B8A"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.9)"; }}
               >
-                <Phone size={16} style={{ color: "#3A8C3F", flexShrink: 0 }} />
+                <Phone size={16} style={{ color: "#0E9B8A", flexShrink: 0 }} />
                 (225) 229-4711
               </a>
               <a
@@ -271,7 +271,7 @@ export default function Navigation() {
                   fontSize: "0.9rem",
                   fontWeight: 700,
                   letterSpacing: "0.07em",
-                  boxShadow: "0 0 0 2px rgba(58,140,63,0.4), 0 4px 18px rgba(58,140,63,0.3)",
+                  boxShadow: "0 0 0 2px rgba(14,155,138,0.4), 0 4px 18px rgba(14,155,138,0.3)",
                 }}
               >
                 Contact
@@ -301,7 +301,7 @@ export default function Navigation() {
             <Link href="/">
               <span
                 className="font-display font-bold block py-3 border-b border-white/10"
-                style={{ fontSize: "1.4rem", letterSpacing: "0.04em", color: location === "/" ? "#3A8C3F" : "rgba(255,255,255,0.9)" }}
+                style={{ fontSize: "1.4rem", letterSpacing: "0.04em", color: location === "/" ? "#0E9B8A" : "rgba(255,255,255,0.9)" }}
               >
                 Home
               </span>
@@ -316,7 +316,7 @@ export default function Navigation() {
               >
                 <span
                   className="font-display font-bold"
-                  style={{ fontSize: "1.4rem", letterSpacing: "0.04em", color: isProductsActive ? "#3A8C3F" : "rgba(255,255,255,0.9)" }}
+                  style={{ fontSize: "1.4rem", letterSpacing: "0.04em", color: isProductsActive ? "#0E9B8A" : "rgba(255,255,255,0.9)" }}
                 >
                   Products &amp; Solutions
                 </span>
@@ -331,7 +331,7 @@ export default function Navigation() {
                     <Link key={item.href} href={item.href}>
                       <span
                         className="font-display block py-2.5"
-                        style={{ fontSize: "1rem", color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.7)", letterSpacing: "0.03em" }}
+                        style={{ fontSize: "1rem", color: location === item.href ? "#0E9B8A" : "rgba(255,255,255,0.7)", letterSpacing: "0.03em" }}
                       >
                         {item.label}
                       </span>
@@ -349,7 +349,7 @@ export default function Navigation() {
                   style={{
                     fontSize: "1.4rem",
                     letterSpacing: "0.04em",
-                    color: location === link.href ? "#3A8C3F" : "rgba(255,255,255,0.9)",
+                    color: location === link.href ? "#0E9B8A" : "rgba(255,255,255,0.9)",
                     animationDelay: `${i * 50}ms`,
                   }}
                 >

@@ -186,12 +186,12 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
       </section>
 
       {/* ── COMBINED CREDENTIALS STRIP ── */}
-      <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
+      <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
         <div className="container py-4">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
             {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "VATN Founded 2019 by Dr. Watten"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
-                <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#3A8C3F" }} />
+                <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#0E9B8A" }} />
                 <span className="font-body text-white/65" style={{ fontSize: "0.82rem" }}>{item}</span>
               </div>
             ))}
@@ -221,7 +221,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
               </div>
               {/* Info column */}
               <div className="lg:col-span-3 p-8 lg:p-12 flex flex-col justify-center" style={{ backgroundColor: "#060E1A" }}>
-                <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Founder &amp; Principal Scientist</p>
+                <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Founder &amp; Principal Scientist</p>
                 <span className="teal-rule mb-5" />
                 <h2 className="font-display text-white mb-2" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.0 }}>
                   Barnaby J. Watten, Ph.D.
@@ -234,7 +234,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
                 <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
                   {barnabyStats.map((s, i) => (
                     <div key={s.label} className="text-center">
-                      <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#3A8C3F", lineHeight: 1 }}>
+                      <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#0E9B8A", lineHeight: 1 }}>
                         <CountUp target={s.val} suffix={s.suffix} duration={1600 + i * 200} />
                       </div>
                       <div className="font-display text-white" style={{ fontSize: "0.8rem", marginTop: "3px", letterSpacing: "0.04em" }}>{s.label}</div>
@@ -269,13 +269,13 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             <RevealSection delay={80}>
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
-                  <Award size={17} style={{ color: "#3A8C3F" }} />
+                  <Award size={17} style={{ color: "#0E9B8A" }} />
                   <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Awards &amp; Recognition</h3>
                 </div>
                 <div className="flex flex-col gap-4">
                   {barnabyAwards.map((a) => (
                     <div key={a.award + a.year} className="flex items-start gap-3">
-                      <div className="shrink-0 mt-0.5 w-8 h-8 flex items-center justify-center font-display font-bold text-white" style={{ backgroundColor: "#3A8C3F", borderRadius: "2px", fontSize: "0.82rem" }}>{a.year}</div>
+                      <div className="shrink-0 mt-0.5 w-8 h-8 flex items-center justify-center font-display font-bold text-white" style={{ backgroundColor: "#0E9B8A", borderRadius: "2px", fontSize: "0.82rem" }}>{a.year}</div>
                       <div>
                         <div className="font-body" style={{ fontSize: "0.84rem", color: "#1C2B3A", lineHeight: "1.4" }}>{a.award}</div>
                         <div className="font-body" style={{ fontSize: "0.82rem", color: "#8A9BB0", marginTop: "2px" }}>{a.org}</div>
@@ -289,19 +289,19 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             <RevealSection delay={120}>
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
-                  <Users size={17} style={{ color: "#3A8C3F" }} />
+                  <Users size={17} style={{ color: "#0E9B8A" }} />
                   <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Professional Service</h3>
                 </div>
                 <div className="flex flex-col gap-2.5 mb-8">
                   {barnabyProfessional.map((item) => (
                     <div key={item} className="flex items-start gap-2">
-                      <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#3A8C3F" }} />
+                      <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#0E9B8A" }} />
                       <span className="font-body" style={{ fontSize: "0.84rem", color: "#3A5068", lineHeight: "1.5" }}>{item}</span>
                     </div>
                   ))}
                 </div>
                 <div className="flex items-center gap-2.5 mb-4">
-                  <GraduationCap size={17} style={{ color: "#3A8C3F" }} />
+                  <GraduationCap size={17} style={{ color: "#0E9B8A" }} />
                   <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Education</h3>
                 </div>
                 {[
@@ -309,7 +309,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
                   { d: "M.S.", f: "Aquaculture / Ion Exchange", i: "Penn State / U. Virgin Islands", y: "1980" },
                   { d: "B.S.", f: "Aquatic Biology / Chemistry", i: "Bemidji State University", y: "1976" },
                 ].map((e) => (
-                  <div key={e.d} className="p-3 mb-2" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
+                  <div key={e.d} className="p-3 mb-2" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
                     <div className="font-display font-bold" style={{ fontSize: "0.92rem", color: "#1C2B3A" }}>{e.d} — {e.f}</div>
                     <div className="font-body" style={{ fontSize: "0.78rem", color: "#5A7080", marginTop: "2px" }}>{e.i}, {e.y}</div>
                   </div>
@@ -320,14 +320,14 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             <RevealSection delay={160}>
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
-                  <BookOpen size={17} style={{ color: "#3A8C3F" }} />
+                  <BookOpen size={17} style={{ color: "#0E9B8A" }} />
                   <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Graduate Students Mentored (Engineering and Fisheries programs)</h3>
                 </div>
                 <p className="font-body mb-4" style={{ fontSize: "0.82rem", color: "#5A7080", lineHeight: "1.5" }}>14 graduate students across 6 universities (PhD and MS programs):</p>
                 <div className="flex flex-col gap-2">
                   {["Auburn University — 1 PhD", "Cornell University — 2 PhD, 2 MS", "Virginia Tech — 1 PhD, 3 MS", "Penn State University — 1 PhD", "West Virginia University — 1 MS", "University of Idaho — 3 MS"].map((item) => (
                     <div key={item} className="flex items-start gap-2">
-                      <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#3A8C3F" }} />
+                      <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#0E9B8A" }} />
                       <span className="font-body" style={{ fontSize: "0.83rem", color: "#3A5068", lineHeight: "1.5" }}>{item}</span>
                     </div>
                   ))}
@@ -340,18 +340,18 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
           <RevealSection delay={100}>
             <div>
               <div className="flex items-center gap-2.5 mb-6">
-                <Briefcase size={17} style={{ color: "#3A8C3F" }} />
+                <Briefcase size={17} style={{ color: "#0E9B8A" }} />
                 <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Career History</h3>
               </div>
               <div className="flex flex-col">
                 {barnabyCareer.map((item, i) => (
                   <div key={item.role + item.org} className="grid grid-cols-1 lg:grid-cols-4" style={{ borderBottom: i < barnabyCareer.length - 1 ? "1px solid #E8EEF4" : "none" }}>
                     <div className="lg:col-span-1 py-5 pr-6" style={{ borderRight: "1px solid #E8EEF4" }}>
-                      <div className="font-body" style={{ fontSize: "0.8rem", color: "#3A8C3F", letterSpacing: "0.08em", textTransform: "uppercase" }}>{item.period}</div>
+                      <div className="font-body" style={{ fontSize: "0.8rem", color: "#0E9B8A", letterSpacing: "0.08em", textTransform: "uppercase" }}>{item.period}</div>
                       <div className="font-display font-bold mt-1" style={{ fontSize: "0.92rem", color: "#1C2B3A", lineHeight: "1.3" }}>{item.role}</div>
                     </div>
                     <div className="lg:col-span-3 py-5 lg:pl-6">
-                      <div className="font-body mb-1" style={{ fontSize: "0.8rem", color: "#3A8C3F", fontWeight: 600 }}>{item.org}</div>
+                      <div className="font-body mb-1" style={{ fontSize: "0.8rem", color: "#0E9B8A", fontWeight: 600 }}>{item.org}</div>
                       <div className="font-body" style={{ fontSize: "0.84rem", color: "#5A7080", lineHeight: "1.6" }}>{item.desc}</div>
                     </div>
                   </div>
@@ -364,7 +364,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
       </section>
 
       {/* ── DIVIDER ── */}
-      <div style={{ height: "6px", background: "linear-gradient(to right, #060E1A, #3A8C3F, #060E1A)" }} />
+      <div style={{ height: "6px", background: "linear-gradient(to right, #060E1A, #0E9B8A, #060E1A)" }} />
 
       {/* ══════════════════════════════════════════════════════════════════════
           TERRY McCARTHY — FULL PROFILE
@@ -393,7 +393,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
                     { val: 24, suffix: "+", label: "Years Running WMT", sub: "State & federal hatcheries" },
                   ].map((s, i) => (
                     <div key={s.label} className="text-center">
-                      <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#3A8C3F", lineHeight: 1 }}>
+                      <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#0E9B8A", lineHeight: 1 }}>
                         <CountUp target={s.val} suffix={s.suffix} duration={1600 + i * 200} />
                       </div>
                       <div className="font-display text-white" style={{ fontSize: "0.8rem", marginTop: "3px", letterSpacing: "0.04em" }}>{s.label}</div>
@@ -435,13 +435,13 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             <RevealSection delay={80}>
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
-                  <FlaskConical size={17} style={{ color: "#3A8C3F" }} />
+                  <FlaskConical size={17} style={{ color: "#0E9B8A" }} />
                   <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Equipment &amp; Industry Expertise</h3>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                   {terryExpertise.map((item) => (
                     <div key={item} className="flex items-start gap-2">
-                      <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#3A8C3F" }} />
+                      <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#0E9B8A" }} />
                       <span className="font-body" style={{ fontSize: "0.83rem", color: "#3A5068", lineHeight: "1.5" }}>{item}</span>
                     </div>
                   ))}
@@ -451,14 +451,14 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             <RevealSection delay={120}>
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
-                  <GraduationCap size={17} style={{ color: "#3A8C3F" }} />
+                  <GraduationCap size={17} style={{ color: "#0E9B8A" }} />
                   <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Education</h3>
                 </div>
                 {[
                   { d: "MBA", f: "Business Administration", i: "Tulane University", y: "1989" },
                   { d: "B.S.", f: "Undergraduate", i: "Tulane University", y: "1981" },
                 ].map((e) => (
-                  <div key={e.d} className="p-4 mb-3 bg-white" style={{ borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
+                  <div key={e.d} className="p-4 mb-3 bg-white" style={{ borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
                     <div className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>{e.d} — {e.f}</div>
                     <div className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "2px" }}>{e.i}, {e.y}</div>
                   </div>
@@ -471,18 +471,18 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
           <RevealSection delay={100}>
             <div>
               <div className="flex items-center gap-2.5 mb-6">
-                <Briefcase size={17} style={{ color: "#3A8C3F" }} />
+                <Briefcase size={17} style={{ color: "#0E9B8A" }} />
                 <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Career History</h3>
               </div>
               <div className="flex flex-col bg-white" style={{ borderRadius: "2px", boxShadow: "0 1px 8px rgba(10,22,40,0.06)" }}>
                 {terryCareer.map((item, i) => (
                   <div key={item.role + item.org} className="grid grid-cols-1 lg:grid-cols-4" style={{ borderBottom: i < terryCareer.length - 1 ? "1px solid #E8EEF4" : "none" }}>
                     <div className="lg:col-span-1 p-5 pr-6" style={{ borderRight: "1px solid #E8EEF4" }}>
-                      <div className="font-body" style={{ fontSize: "0.8rem", color: "#3A8C3F", letterSpacing: "0.08em", textTransform: "uppercase" }}>{item.period}</div>
+                      <div className="font-body" style={{ fontSize: "0.8rem", color: "#0E9B8A", letterSpacing: "0.08em", textTransform: "uppercase" }}>{item.period}</div>
                       <div className="font-display font-bold mt-1" style={{ fontSize: "0.92rem", color: "#1C2B3A", lineHeight: "1.3" }}>{item.role}</div>
                     </div>
                     <div className="lg:col-span-3 p-5 lg:pl-6">
-                      <div className="font-body mb-1" style={{ fontSize: "0.8rem", color: "#3A8C3F", fontWeight: 600 }}>{item.org}</div>
+                      <div className="font-body mb-1" style={{ fontSize: "0.8rem", color: "#0E9B8A", fontWeight: 600 }}>{item.org}</div>
                       <div className="font-body" style={{ fontSize: "0.84rem", color: "#5A7080", lineHeight: "1.6" }}>{item.desc}</div>
                     </div>
                   </div>
@@ -500,7 +500,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
         <div className="container relative z-10">
           <RevealSection>
             <div className="max-w-2xl mb-12">
-              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Why It Matters</p>
+              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Why It Matters</p>
               <span className="teal-rule mb-5" />
               <h2 className="font-display text-white" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", lineHeight: 1.05 }}>
                 Research Depth. Commercial Experience. Built Into Every System.
@@ -523,12 +523,12 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
               },
             ].map((col, i) => (
               <RevealSection key={col.label} delay={i * 70}>
-                <div className="p-6 h-full" style={{ borderLeft: "2px solid rgba(58,140,63,0.4)", backgroundColor: "rgba(255,255,255,0.03)" }}>
-                  <p className="section-label mb-4" style={{ color: "#3A8C3F" }}>{col.label}</p>
+                <div className="p-6 h-full" style={{ borderLeft: "2px solid rgba(14,155,138,0.4)", backgroundColor: "rgba(255,255,255,0.03)" }}>
+                  <p className="section-label mb-4" style={{ color: "#0E9B8A" }}>{col.label}</p>
                   <div className="flex flex-col gap-2.5">
                     {col.points.map((pt) => (
                       <div key={pt} className="flex items-start gap-2.5">
-                        <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#3A8C3F" }} />
+                        <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#0E9B8A" }} />
                         <span className="font-body text-white/65" style={{ fontSize: "0.84rem", lineHeight: "1.55" }}>{pt}</span>
                       </div>
                     ))}
@@ -555,10 +555,10 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-7" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #3A8C3F", borderRadius: "2px" }}>
+              <div className="p-7" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #0E9B8A", borderRadius: "2px" }}>
                 {contactSubmitted ? (
                   <div className="flex flex-col items-start gap-3">
-                    <CheckCircle2 size={26} style={{ color: "#3A8C3F" }} />
+                    <CheckCircle2 size={26} style={{ color: "#0E9B8A" }} />
                     <p className="font-display font-bold" style={{ fontSize: "1.1rem", color: "#1C2B3A" }}>Inquiry Received</p>
                     <p className="font-body" style={{ color: "#3A5068", fontSize: "0.88rem", lineHeight: "1.6" }}>Thank you for reaching out. Barnaby or Terry will be in contact with you shortly.</p>
                   </div>
@@ -585,23 +585,23 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             {/* Direct Contact Cards */}
             <RevealSection delay={120}>
               <div className="flex flex-col gap-5">
-                <p className="section-label" style={{ color: "#3A8C3F" }}>Direct Contact</p>
+                <p className="section-label" style={{ color: "#0E9B8A" }}>Direct Contact</p>
                 <span className="teal-rule" />
                 {/* Terry */}
-                <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #3A8C3F" }}>
+                <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #0E9B8A" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Terry McCarthy</p>
-                  <p className="font-body mb-4" style={{ color: "#3A8C3F", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Director of Sales</p>
+                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Director of Sales</p>
                   <a href="tel:2252294711" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
-                    <Phone size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
+                    <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
                     (225) 229-4711
                   </a>
                 </div>
                 {/* Barnaby */}
-                <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #3A8C3F" }}>
+                <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #0E9B8A" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Dr. Barnaby J. Watten</p>
-                  <p className="font-body mb-4" style={{ color: "#3A8C3F", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Founder &amp; Principal Scientist</p>
+                  <p className="font-body mb-4" style={{ color: "#0E9B8A", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Founder &amp; Principal Scientist</p>
                   <a href="tel:5403336859" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
-                    <Phone size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
+                    <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
                     (540) 333-6859
                   </a>
                 </div>

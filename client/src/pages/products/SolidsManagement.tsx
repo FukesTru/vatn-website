@@ -47,7 +47,7 @@ export default function SolidsManagement() {
         }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
         <div className="container relative z-10 text-center">
           <Link href="/products">
             <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
@@ -58,7 +58,7 @@ export default function SolidsManagement() {
           <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             NP Drum &amp; Disc Filters<br />
-            <span style={{ color: "#3A8C3F" }}>Microscreen Solids Removal</span>
+            <span style={{ color: "#0E9B8A" }}>Microscreen Solids Removal</span>
           </h1>
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Compact, low-maintenance microscreen filters for fine solids removal in RAS and flow-through aquaculture systems. Drum and disc configurations available to match your facility's flow requirements and footprint constraints.
@@ -86,7 +86,7 @@ export default function SolidsManagement() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
             {filterTypes.map((f) => (
-              <div key={f.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
+              <div key={f.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #0E9B8A", borderRadius: "2px" }}>
                 <h3 className="font-display mb-3" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{f.title}</h3>
                 <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{f.body}</p>
               </div>
@@ -128,14 +128,14 @@ export default function SolidsManagement() {
               <div className="flex flex-col gap-3">
                 {benefits.map((b) => (
                   <div key={b} className="flex items-start gap-3">
-                    <CheckCircle2 size={15} style={{ color: "#3A8C3F", marginTop: "2px", flexShrink: 0 }} />
+                    <CheckCircle2 size={15} style={{ color: "#0E9B8A", marginTop: "2px", flexShrink: 0 }} />
                     <span className="font-body" style={{ fontSize: "0.88rem", color: "#3A5068", lineHeight: "1.6" }}>{b}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>
-              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>System Sizing Note</p>
+              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>System Sizing Note</p>
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 Microscreen filter sizing depends on your system's flow rate, solids loading, and target effluent quality. Drum and disc filter configurations are available in a range of sizes. VATN evaluates your system requirements to recommend the appropriate filter type and capacity.
               </p>

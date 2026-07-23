@@ -35,7 +35,7 @@ export default function BioMedia() {
         }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
         <div className="container relative z-10 text-center">
           <Link href="/products">
             <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
@@ -46,7 +46,7 @@ export default function BioMedia() {
           <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             B100 Bio Media<br />
-            <span style={{ color: "#3A8C3F" }}>for RAS Biofiltration</span>
+            <span style={{ color: "#0E9B8A" }}>for RAS Biofiltration</span>
           </h1>
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Structured bio media designed for biological filtration in recirculating aquaculture systems. High specific surface area supports stable nitrification and consistent water quality in RAS applications.
@@ -105,7 +105,7 @@ export default function BioMedia() {
               <div className="flex flex-col gap-3">
                 {features.map((f) => (
                   <div key={f} className="flex items-start gap-3">
-                    <CheckCircle2 size={15} style={{ color: "#3A8C3F", marginTop: "2px", flexShrink: 0 }} />
+                    <CheckCircle2 size={15} style={{ color: "#0E9B8A", marginTop: "2px", flexShrink: 0 }} />
                     <span className="font-body" style={{ fontSize: "0.88rem", color: "#3A5068", lineHeight: "1.6" }}>{f}</span>
                   </div>
                 ))}
@@ -134,22 +134,22 @@ export default function BioMedia() {
                     </tr>
                     <tr style={{ backgroundColor: "#F9FAFB" }}>
                       <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Origin</td>
-                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#3A8C3F", fontWeight: 600 }}>Made in the USA</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#0E9B8A", fontWeight: 600 }}>Made in the USA</td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>
                 <div className="flex items-center gap-3 mb-3">
-                  <Layers size={20} style={{ color: "#3A8C3F" }} />
+                  <Layers size={20} style={{ color: "#0E9B8A" }} />
                   <h3 className="font-display text-white" style={{ fontSize: "1.05rem" }}>Biofilter Configuration</h3>
                 </div>
                 <p className="font-body text-white/60" style={{ fontSize: "0.85rem", lineHeight: "1.65" }}>
                   B100 media is compatible with moving bed biofilm reactor (MBBR) and fixed bed filter configurations. The appropriate configuration depends on your system's hydraulic design, loading rates, and available footprint. VATN evaluates these parameters to recommend the right approach for your RAS.
                 </p>
               </div>
-              <div className="p-6" style={{ backgroundColor: "#F4F6F8", border: "1px solid #E8EEF4", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
-                <p className="section-label mb-2" style={{ color: "#3A8C3F" }}>Note on Specifications</p>
+              <div className="p-6" style={{ backgroundColor: "#F4F6F8", border: "1px solid #E8EEF4", borderLeft: "2px solid #0E9B8A", borderRadius: "2px" }}>
+                <p className="section-label mb-2" style={{ color: "#0E9B8A" }}>Note on Specifications</p>
                 <p className="font-body" style={{ fontSize: "0.85rem", color: "#5A7080", lineHeight: "1.65" }}>
                   Biofilter sizing depends on your system's ammonia loading, target effluent quality, temperature, and hydraulic conditions. Contact VATN to discuss your RAS design and we will provide an honest assessment of media requirements for your specific application.
                 </p>
