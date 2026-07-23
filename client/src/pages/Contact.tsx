@@ -145,12 +145,12 @@ export default function Contact() {
                   className="p-7 flex flex-col items-start gap-4"
                   style={{
                     backgroundColor: "#F0FAF8",
-                    border: "1px solid rgba(14,155,138,0.35)",
-                    borderLeft: "3px solid #0E9B8A",
+                    border: "1px solid rgba(58,140,63,0.35)",
+                    borderLeft: "3px solid #3A8C3F",
                     borderRadius: "2px",
                   }}
                 >
-                  <CheckCircle2 size={28} style={{ color: "#0E9B8A" }} />
+                  <CheckCircle2 size={28} style={{ color: "#3A8C3F" }} />
                   <div>
                     <p
                       className="font-display font-bold"
@@ -171,7 +171,7 @@ export default function Contact() {
                   className="p-7"
                   style={{
                     backgroundColor: "#F4F6F8",
-                    borderLeft: "3px solid #0E9B8A",
+                    borderLeft: "3px solid #3A8C3F",
                     borderRadius: "2px",
                   }}
                 >
@@ -276,7 +276,7 @@ export default function Contact() {
             <RevealSection delay={80}>
               <div className="flex flex-col gap-8">
                 <div>
-                  <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Direct Contact</p>
+                  <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Direct Contact</p>
                   <span className="teal-rule mb-5" />
                   <p
                     className="font-body"
@@ -292,7 +292,7 @@ export default function Contact() {
                   style={{
                     backgroundColor: "#0A1628",
                     borderRadius: "2px",
-                    borderLeft: "3px solid #0E9B8A",
+                    borderLeft: "3px solid #3A8C3F",
                   }}
                 >
                   <p
@@ -304,7 +304,7 @@ export default function Contact() {
                   <p
                     className="font-body mb-4"
                     style={{
-                      color: "#0E9B8A",
+                      color: "#3A8C3F",
                       fontSize: "0.82rem",
                       letterSpacing: "0.08em",
                       textTransform: "uppercase",
@@ -317,7 +317,7 @@ export default function Contact() {
                     className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors"
                     style={{ fontSize: "0.9rem" }}
                   >
-                    <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
+                    <Phone size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
                     (225) 229-4711
                   </a>
                 </div>
@@ -328,7 +328,7 @@ export default function Contact() {
                   style={{
                     backgroundColor: "#0A1628",
                     borderRadius: "2px",
-                    borderLeft: "3px solid #0E9B8A",
+                    borderLeft: "3px solid #3A8C3F",
                   }}
                 >
                   <p
@@ -340,7 +340,7 @@ export default function Contact() {
                   <p
                     className="font-body mb-4"
                     style={{
-                      color: "#0E9B8A",
+                      color: "#3A8C3F",
                       fontSize: "0.82rem",
                       letterSpacing: "0.08em",
                       textTransform: "uppercase",
@@ -353,7 +353,7 @@ export default function Contact() {
                     className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors"
                     style={{ fontSize: "0.9rem" }}
                   >
-                    <Phone size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
+                    <Phone size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
                     (540) 333-6859
                   </a>
                 </div>
@@ -364,7 +364,7 @@ export default function Contact() {
                   style={{
                     backgroundColor: "#F4F6F8",
                     borderRadius: "2px",
-                    borderTop: "2px solid rgba(14,155,138,0.3)",
+                    borderTop: "2px solid rgba(58,140,63,0.3)",
                   }}
                 >
                   <p
@@ -386,7 +386,7 @@ export default function Contact() {
                           width: "5px",
                           height: "5px",
                           borderRadius: "50%",
-                          backgroundColor: "#0E9B8A",
+                          backgroundColor: "#3A8C3F",
                           marginTop: "7px",
                         }}
                       />

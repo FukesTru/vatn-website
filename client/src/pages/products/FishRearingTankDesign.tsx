@@ -55,7 +55,7 @@ export default function FishRearingTankDesign() {
         }}
       >
         <div className="absolute inset-0" style={{ background: "linear-gradient(to right, rgba(6,14,26,0.96) 0%, rgba(10,22,40,0.90) 55%, rgba(10,22,40,0.60) 100%)" }} />
-        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(14,155,138,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(14,155,138,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
+        <div className="absolute inset-0 pointer-events-none" style={{ backgroundImage: "linear-gradient(rgba(58,140,63,0.04) 1px, transparent 1px), linear-gradient(90deg, rgba(58,140,63,0.04) 1px, transparent 1px)", backgroundSize: "48px 48px" }} />
         <div className="container relative z-10 text-center">
           <Link href="/products">
             <span className="flex items-center justify-center gap-1 font-body text-white/40 hover:text-white/70 transition-colors mb-4" style={{ fontSize: "0.78rem" }}>
@@ -66,7 +66,7 @@ export default function FishRearingTankDesign() {
           <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
             Fish Rearing Tank Design<br />
-            <span style={{ color: "#0E9B8A" }}>Hydraulics &amp; Water Quality</span>
+            <span style={{ color: "#3A8C3F" }}>Hydraulics &amp; Water Quality</span>
           </h1>
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Mixed-cell raceway and rearing unit design based on decades of hydraulic research. Uniform water quality distribution, effective solids removal, and practical hatchery operation.
@@ -93,7 +93,7 @@ export default function FishRearingTankDesign() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             {designPrinciples.map((p) => (
-              <div key={p.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #0E9B8A", borderRadius: "2px" }}>
+              <div key={p.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
                 <h3 className="font-display mb-3" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{p.title}</h3>
                 <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{p.body}</p>
               </div>
@@ -111,14 +111,14 @@ export default function FishRearingTankDesign() {
               <div className="flex flex-col gap-3">
                 {applications.map((app) => (
                   <div key={app} className="flex items-start gap-3">
-                    <CheckCircle2 size={15} style={{ color: "#0E9B8A", marginTop: "2px", flexShrink: 0 }} />
+                    <CheckCircle2 size={15} style={{ color: "#3A8C3F", marginTop: "2px", flexShrink: 0 }} />
                     <span className="font-body" style={{ fontSize: "0.88rem", color: "#3A5068", lineHeight: "1.6" }}>{app}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Research Background</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Research Background</p>
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 Dr. Barnaby Watten's published research on rearing unit hydraulics includes peer-reviewed studies on rectangular cross-flow rearing units, mixed-cell raceway design, and the relationship between tank hydraulics, fish behavior, growth, and metabolism. This research forms the technical foundation for VATN's rearing unit design work.
               </p>
@@ -127,7 +127,7 @@ export default function FishRearingTankDesign() {
               </p>
               <div className="mt-4">
                 <Link href="/publications">
-                  <span className="flex items-center gap-1 font-display font-semibold" style={{ fontSize: "0.78rem", color: "#0E9B8A", letterSpacing: "0.06em", textTransform: "uppercase" }}>
+                  <span className="flex items-center gap-1 font-display font-semibold" style={{ fontSize: "0.78rem", color: "#3A8C3F", letterSpacing: "0.06em", textTransform: "uppercase" }}>
                     View Publications <ArrowRight size={12} />
                   </span>
                 </Link>
@@ -140,7 +140,7 @@ export default function FishRearingTankDesign() {
       {/* Placeholder note */}
       <section className="py-12 lg:py-14" style={{ backgroundColor: "#F4F6F8", borderTop: "1px solid #E0E8F0" }}>
         <div className="container">
-          <div className="max-w-2xl mx-auto p-6" style={{ backgroundColor: "#fff", border: "1px solid #E0E8F0", borderLeft: "4px solid #0E9B8A", borderRadius: "2px" }}>
+          <div className="max-w-2xl mx-auto p-6" style={{ backgroundColor: "#fff", border: "1px solid #E0E8F0", borderLeft: "4px solid #3A8C3F", borderRadius: "2px" }}>
             <p className="font-display mb-2" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Illustrations Coming Soon</p>
             <p className="font-body" style={{ fontSize: "0.85rem", color: "#5A7080", lineHeight: "1.7" }}>
               Diagrams and illustrations of mixed-cell raceway design and rearing unit hydraulics are being prepared for this page. Contact VATN directly to discuss your facility's rearing unit configuration and hydraulic requirements.

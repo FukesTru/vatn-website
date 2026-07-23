@@ -68,7 +68,7 @@ export default function Home() {
             <RevealSection delay={80}>
               <h1 className="font-display text-white mb-6" style={{ fontSize: "clamp(3.2rem, 7vw, 5.5rem)", fontWeight: 800, lineHeight: 1.0 }}>
                 Science-Driven Experts.<br />
-                <span style={{ color: "#0E9B8A" }}>Real Hatchery Solutions.</span>
+                <span style={{ color: "#3A8C3F" }}>Real Hatchery Solutions.</span>
               </h1>
             </RevealSection>
             <RevealSection delay={160}>
@@ -95,7 +95,7 @@ export default function Home() {
       </section>
 
       {/* ── TRUST STRIP ── */}
-      <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(14,155,138,0.2)" }}>
+      <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container py-5">
           <div className="flex flex-wrap items-center justify-between gap-4">
             {[
@@ -106,7 +106,7 @@ export default function Home() {
               "Site-Specific Engineering",
             ].map((item, i) => (
               <div key={i} className="flex items-center gap-2.5">
-                <CheckCircle2 size={14} style={{ color: "#0E9B8A", flexShrink: 0 }} />
+                <CheckCircle2 size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
                 <span className="font-body text-white/70" style={{ fontSize: "0.78rem" }}>{item}</span>
               </div>
             ))}
@@ -143,7 +143,7 @@ export default function Home() {
               <div className="relative">
                 <img src={HATCHERY_IMG} alt="Aquaculture hatchery systems" className="w-full object-cover" style={{ borderRadius: "2px", aspectRatio: "4/3" }} />
                 {/* Credential callout */}
-                <div className="absolute -bottom-4 -left-4 p-5" style={{ backgroundColor: "#0A1628", borderLeft: "3px solid #0E9B8A", maxWidth: "280px" }}>
+                <div className="absolute -bottom-4 -left-4 p-5" style={{ backgroundColor: "#0A1628", borderLeft: "3px solid #3A8C3F", maxWidth: "280px" }}>
                   <p className="font-display text-white font-bold" style={{ fontSize: "1.4rem", lineHeight: 1.1 }}>90+ Publications</p>
                   <p className="font-body text-white/60 mt-1" style={{ fontSize: "0.78rem", lineHeight: "1.5" }}>Peer-reviewed research spanning oxygenation, CO₂ control, nitrogen supersaturation, and RAS design.</p>
                 </div>
@@ -164,8 +164,8 @@ export default function Home() {
               { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
             ].map((stat, i) => (
               <RevealSection key={stat.num} delay={i * 70}>
-                <div className="text-center p-5" style={{ borderTop: "2px solid rgba(14,155,138,0.4)" }}>
-                  <p className="font-display font-bold" style={{ fontSize: "clamp(2.2rem, 4vw, 3rem)", color: "#0E9B8A", lineHeight: 1 }}>{stat.num}</p>
+                <div className="text-center p-5" style={{ borderTop: "2px solid rgba(58,140,63,0.4)" }}>
+                  <p className="font-display font-bold" style={{ fontSize: "clamp(2.2rem, 4vw, 3rem)", color: "#3A8C3F", lineHeight: 1 }}>{stat.num}</p>
                   <p className="font-display text-white mt-1" style={{ fontSize: "0.9rem", lineHeight: 1.3 }}>{stat.label}</p>
                   <p className="font-body text-white/45 mt-1" style={{ fontSize: "0.72rem" }}>{stat.sub}</p>
                 </div>
@@ -212,10 +212,10 @@ export default function Home() {
               },
             ].map((item, i) => (
               <RevealSection key={item.step} delay={i * 80}>
-                <div className="p-7 h-full bg-white" style={{ borderTop: "2px solid #0E9B8A", borderRadius: "2px", boxShadow: "0 1px 4px rgba(10,22,40,0.06)" }}>
+                <div className="p-7 h-full bg-white" style={{ borderTop: "2px solid #3A8C3F", borderRadius: "2px", boxShadow: "0 1px 4px rgba(10,22,40,0.06)" }}>
                   <div className="flex items-center gap-3 mb-4">
-                    <div className="p-2.5 rounded-sm" style={{ backgroundColor: "rgba(14,155,138,0.1)", color: "#0E9B8A" }}>{item.icon}</div>
-                    <span className="font-display font-bold" style={{ fontSize: "1.8rem", color: "rgba(14,155,138,0.25)", lineHeight: 1 }}>{item.step}</span>
+                    <div className="p-2.5 rounded-sm" style={{ backgroundColor: "rgba(58,140,63,0.1)", color: "#3A8C3F" }}>{item.icon}</div>
+                    <span className="font-display font-bold" style={{ fontSize: "1.8rem", color: "rgba(58,140,63,0.25)", lineHeight: 1 }}>{item.step}</span>
                   </div>
                   <h3 className="font-display mb-2" style={{ fontSize: "1.2rem", color: "#1C2B3A", lineHeight: 1.2 }}>{item.title}</h3>
                   <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{item.desc}</p>
@@ -232,7 +232,7 @@ export default function Home() {
         <div className="container">
           <RevealSection>
             <div className="max-w-xl mb-12">
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Solution Areas</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Solution Areas</p>
               <span className="teal-rule mb-5" />
               <h2 className="font-display text-white" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", lineHeight: 1.1 }}>
                 The Tools VATN Uses to Solve Your Problem
@@ -248,19 +248,19 @@ export default function Home() {
                 <Link href={sol.href}>
                   <div
                     className="group h-full p-6 cursor-pointer transition-all duration-200"
-                    style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(14,155,138,0.15)", borderRadius: "2px" }}
-                    onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(14,155,138,0.08)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(14,155,138,0.4)"; }}
-                    onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(255,255,255,0.04)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(14,155,138,0.15)"; }}
+                    style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(58,140,63,0.15)", borderRadius: "2px" }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(58,140,63,0.08)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.4)"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(255,255,255,0.04)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.15)"; }}
                   >
                     <div className="flex items-start gap-4 mb-3">
-                      <div className="p-2.5 rounded-sm" style={{ backgroundColor: "rgba(14,155,138,0.12)", color: "#0E9B8A" }}>{sol.icon}</div>
+                      <div className="p-2.5 rounded-sm" style={{ backgroundColor: "rgba(58,140,63,0.12)", color: "#3A8C3F" }}>{sol.icon}</div>
                       <div>
-                        <p className="section-label" style={{ color: "#4A7A70", fontSize: "0.65rem" }}>{sol.label}</p>
+                        <p className="section-label" style={{ color: "#5BA3D9", fontSize: "0.65rem" }}>{sol.label}</p>
                         <h3 className="font-display text-white" style={{ fontSize: "1.15rem", lineHeight: 1.2, marginTop: "2px" }}>{sol.title}</h3>
                       </div>
                     </div>
                     <p className="font-body text-white/50" style={{ fontSize: "0.84rem", lineHeight: "1.6" }}>{sol.desc}</p>
-                    <div className="mt-4 flex items-center gap-1.5" style={{ color: "#0E9B8A" }}>
+                    <div className="mt-4 flex items-center gap-1.5" style={{ color: "#3A8C3F" }}>
                       <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>Learn More</span>
                       <ArrowRight size={13} />
                     </div>
@@ -295,8 +295,8 @@ export default function Home() {
                   { icon: <Users size={18} />, label: "Industry Experience", value: "36+ years, Terry McCarthy", desc: "Co-founded WMT, Inc. in 1994. Served state and federal hatchery programs for over two decades." },
                 ].map((item, i) => (
                   <RevealSection key={item.label} delay={i * 60}>
-                    <div className="flex gap-4 p-5" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #0E9B8A", borderRadius: "0 2px 2px 0" }}>
-                      <div className="shrink-0 mt-0.5" style={{ color: "#0E9B8A" }}>{item.icon}</div>
+                    <div className="flex gap-4 p-5" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #3A8C3F", borderRadius: "0 2px 2px 0" }}>
+                      <div className="shrink-0 mt-0.5" style={{ color: "#3A8C3F" }}>{item.icon}</div>
                       <div>
                         <p className="section-label mb-0.5" style={{ fontSize: "0.65rem" }}>{item.label}</p>
                         <p className="font-display" style={{ fontSize: "1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{item.value}</p>
@@ -338,7 +338,7 @@ export default function Home() {
         <div className="container relative z-10">
           <RevealSection>
             <div className="max-w-xl mb-12">
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Who VATN Works With</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Who VATN Works With</p>
               <span className="teal-rule mb-5" />
               <h2 className="font-display text-white" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", lineHeight: 1.1 }}>
                 Built for the Teams Running Aquatic Systems
@@ -355,9 +355,9 @@ export default function Home() {
               { icon: <CheckCircle2 size={18} />, title: "Conservation & Restoration Programs", desc: "Native species and broodstock programs with specific water quality requirements and limited infrastructure." },
             ].map((aud, i) => (
               <RevealSection key={aud.title} delay={i * 55}>
-                <div className="p-6 h-full" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(14,155,138,0.12)", borderRadius: "2px" }}>
+                <div className="p-6 h-full" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(58,140,63,0.12)", borderRadius: "2px" }}>
                   <div className="flex items-center gap-3 mb-3">
-                    <div style={{ color: "#0E9B8A" }}>{aud.icon}</div>
+                    <div style={{ color: "#3A8C3F" }}>{aud.icon}</div>
                     <h3 className="font-display text-white" style={{ fontSize: "1.05rem", lineHeight: 1.2 }}>{aud.title}</h3>
                   </div>
                   <p className="font-body text-white/50" style={{ fontSize: "0.83rem", lineHeight: "1.6" }}>{aud.desc}</p>
@@ -392,7 +392,7 @@ export default function Home() {
         <div className="container relative z-10">
           <div className="max-w-2xl">
             <RevealSection>
-              <p className="section-label mb-3" style={{ color: "#0E9B8A" }}>Start a Conversation</p>
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Start a Conversation</p>
               <span className="teal-rule mb-5" />
               <h2 className="font-display text-white mb-3" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.05 }}>
                 Bring VATN Your Water Treatment Challenge
@@ -402,7 +402,7 @@ export default function Home() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-7" style={{ backgroundColor: "rgba(10,22,40,0.75)", borderLeft: "3px solid #0E9B8A", backdropFilter: "blur(8px)" }}>
+              <div className="p-7" style={{ backgroundColor: "rgba(10,22,40,0.75)", borderLeft: "3px solid #3A8C3F", backdropFilter: "blur(8px)" }}>
                 <h3 className="font-display text-white mb-4" style={{ fontSize: "1.3rem" }}>Request a Technical Consultation</h3>
                 <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
