@@ -110,7 +110,11 @@ export default function Navigation() {
                 <img
                     src={LOGO_URL}
                     alt="VATN Science and Technology"
-                    style={{ height: "92px", width: "auto", objectFit: "contain", maxWidth: "320px" }}
+                    width={320}
+                    height={92}
+                    loading="eager"
+                    fetchPriority="high"
+                    style={{ height: "92px", width: "auto", objectFit: "contain", maxWidth: "320px", display: "block" }}
                   />
               </div>
             </Link>
