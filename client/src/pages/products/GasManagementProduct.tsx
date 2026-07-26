@@ -223,10 +223,6 @@ export default function GasManagementProduct() {
                 alt="Hatchery water treatment valve installation"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
-              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Hatchery Field Installation</p>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Aquaculture water treatment valve installation at a hatchery site.</p>
-              </div>
             </div>
           </div>
         </div>
