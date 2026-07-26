@@ -256,7 +256,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
                 From 1982 to 1987, Dr. Watten led aquacultural engineering research in gas transfer and rearing unit hydraulics at Pennsylvania Power and Light Company's waste heat recovery and aquaculture project. Following completion of his Ph.D. at Auburn University in 1989 — focused on oxygen transfer technologies — he was recruited to manage bioengineering research at the USFWS Wellsboro Research and Development Laboratory in Pennsylvania.
               </p>
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Over a 31-year career with the U.S. Department of the Interior, Dr. Watten progressed from Principal Investigator to Section Leader, Branch Chief, Laboratory Director of the Conte Anadromous Fish Research Center (MA), and ultimately Deputy Director of the USGS Leetown Science Center. His research program addressed oxygenation, nitrogen and CO₂ stripping, rearing unit hydraulics, biological filtration, and dissolved gas instrumentation — all aimed at reducing the labor, energy, and water requirements of the USFWS National Fish Hatchery Program.
+                Over a distinguished career spanning 49+ years in the aquaculture water treatment industry, Dr. Watten progressed from Principal Investigator to Section Leader, Branch Chief, Laboratory Director of the Conte Anadromous Fish Research Center (MA), and ultimately Deputy Director of the USGS Leetown Science Center. His research program addressed oxygenation, nitrogen and CO₂ stripping, rearing unit hydraulics, biological filtration, and dissolved gas instrumentation — all aimed at reducing the labor, energy, and water requirements of the USFWS National Fish Hatchery Program.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
                 Dr. Watten's research also produced new methods for invasive species control in hatcheries and the international shipping industry, new approaches to improving fish passage rates around dams, fish-friendly hydropower generation methods, and low-cost treatment of acidic coal mine drainage. He retired from the U.S. DOI research program in 2018 and founded VATN Science and Technology, LLC in 2019.
@@ -511,7 +511,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             {[
               {
                 label: "Dr. Watten brings",
-                points: ["31 years of USFWS / USGS research", "15 patents and provisional patents in gas transfer technology", "87 publications, 63 peer-reviewed", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
+                points: ["49+ years of industry experience", "15 patents and provisional patents in gas transfer technology", "90+ publications, 63 peer-reviewed", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
               },
               {
                 label: "Terry McCarthy brings",

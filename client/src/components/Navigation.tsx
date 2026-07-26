@@ -1,13 +1,13 @@
 /**
  * VATN Navigation Component
  * Style: Field-Grade Precision — deep navy, teal accent, Barlow Condensed
- * Nav order: Home | Products & Solutions (dropdown) | Our Team | Publications | News | CTA
+ * Nav order: Home | Products & Solutions (dropdown) | Our Team | Publications | News | Partnerships | CTA
  */
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown, ArrowRight } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/vatn-logo-white-text_fbb8237d.png";
+const LOGO_URL = "/manus-storage/vatn-logo-new_c33514aa.png";
 
 const productDropdown = [
   {
@@ -56,6 +56,7 @@ const rightNavLinks = [
   { label: "Our Team", href: "/our-team" },
   { label: "Publications", href: "/publications" },
   { label: "News", href: "/news" },
+  { label: "Partnerships", href: "/engineering-partners" },
 ];
 
 export default function Navigation() {
@@ -102,7 +103,7 @@ export default function Navigation() {
         }}
       >
         <div className="container">
-          <div className="flex items-center justify-between h-16 lg:h-18">
+          <div className="flex items-center justify-between" style={{ height: "76px" }}>
             {/* Logo */}
             <Link href="/">
               <div className="flex items-center group">
@@ -115,13 +116,13 @@ export default function Navigation() {
             </Link>
 
             {/* Desktop Nav */}
-            <nav className="hidden lg:flex items-center gap-5">
+            <nav className="hidden lg:flex items-center gap-6">
               {/* Home */}
               <Link href="/">
                 <span
                   className="font-display font-semibold transition-colors duration-200"
                   style={{
-                    fontSize: "0.92rem",
+                    fontSize: "1rem",
                     letterSpacing: "0.07em",
                     textTransform: "uppercase",
                     color: location === "/" ? "#3A8C3F" : "rgba(255,255,255,0.85)",
@@ -136,7 +137,7 @@ export default function Navigation() {
                 <button
                   className="flex items-center gap-1 font-display font-semibold transition-colors duration-200"
                   style={{
-                    fontSize: "0.92rem",
+                    fontSize: "1rem",
                     letterSpacing: "0.07em",
                     textTransform: "uppercase",
                     color: isProductsActive ? "#3A8C3F" : "rgba(255,255,255,0.85)",
@@ -150,7 +151,7 @@ export default function Navigation() {
                 >
                   Products &amp; Solutions
                   <ChevronDown
-                    size={13}
+                    size={14}
                     style={{
                       transition: "transform 0.2s ease",
                       transform: dropdownOpen ? "rotate(180deg)" : "rotate(0deg)",
@@ -165,7 +166,7 @@ export default function Navigation() {
                     style={{
                       transform: "translateX(-50%)",
                       marginTop: "12px",
-                      width: "640px",
+                      width: "660px",
                       backgroundColor: "#0A1628",
                       border: "1px solid rgba(58,140,63,0.25)",
                       borderRadius: "4px",
@@ -181,14 +182,14 @@ export default function Navigation() {
                     >
                       <span
                         className="font-display font-bold"
-                        style={{ fontSize: "0.7rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "#3A8C3F" }}
+                        style={{ fontSize: "0.75rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "#3A8C3F" }}
                       >
                         Products &amp; Solutions
                       </span>
                       <Link href="/products">
                         <span
                           className="flex items-center gap-1 font-body text-white/50 hover:text-white/80 transition-colors"
-                          style={{ fontSize: "0.8rem" }}
+                          style={{ fontSize: "0.85rem" }}
                         >
                           View All <ArrowRight size={11} />
                         </span>
@@ -212,16 +213,16 @@ export default function Navigation() {
                             <span
                               className="font-display font-semibold"
                               style={{
-                            fontSize: "0.9rem",
-                              color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.9)",
-                              letterSpacing: "0.02em",
+                                fontSize: "0.95rem",
+                                color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.9)",
+                                letterSpacing: "0.02em",
                               }}
                             >
                               {item.label}
                             </span>
                             <span
                               className="font-body"
-                              style={{ fontSize: "0.82rem", color: "rgba(255,255,255,0.4)", lineHeight: "1.4" }}
+                              style={{ fontSize: "0.84rem", color: "rgba(255,255,255,0.4)", lineHeight: "1.4" }}
                             >
                               {item.desc}
                             </span>
@@ -239,7 +240,7 @@ export default function Navigation() {
                   <span
                     className="font-display font-semibold transition-colors duration-200"
                     style={{
-                      fontSize: "0.92rem",
+                      fontSize: "1rem",
                       letterSpacing: "0.07em",
                       textTransform: "uppercase",
                       color: location === link.href ? "#3A8C3F" : "rgba(255,255,255,0.85)",
@@ -331,7 +332,7 @@ export default function Navigation() {
                     <Link key={item.href} href={item.href}>
                       <span
                         className="font-display block py-2.5"
-                        style={{ fontSize: "1rem", color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.7)", letterSpacing: "0.03em" }}
+                        style={{ fontSize: "1.05rem", color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.7)", letterSpacing: "0.03em" }}
                       >
                         {item.label}
                       </span>
@@ -359,7 +360,7 @@ export default function Navigation() {
             ))}
 
             <div className="pt-5 flex flex-col gap-3">
-              <a href="tel:2252294711" className="flex items-center gap-2 text-white/60" style={{ fontSize: "0.9rem" }}>
+              <a href="tel:2252294711" className="flex items-center gap-2 text-white/60" style={{ fontSize: "0.95rem" }}>
                 <Phone size={14} />
                 (225) 229-4711
               </a>

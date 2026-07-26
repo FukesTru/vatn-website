@@ -160,8 +160,8 @@ export default function GasManagementProduct() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div style={{ backgroundColor: "#fff", borderRadius: "2px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", padding: "1.5rem" }}>
               <img
-                src="/manus-storage/vatn-lho-illustration_1d6f48c6.webp"
-                alt="Low Head Oxygenator (LHO) — patented design by Dr. Barnaby Watten"
+                src="/manus-storage/lho-diagram-conservation-fund_2b149543.jpg"
+                alt="Low Head Oxygenator (LHO) diagram — Courtesy of The Conservation Fund Freshwater Institute"
                 style={{ width: "100%", maxHeight: "400px", objectFit: "contain" }}
               />
             </div>
@@ -179,7 +179,7 @@ export default function GasManagementProduct() {
                   </span>
                 ))}
               </div>
-              <p className="font-body text-white/40 mt-4" style={{ fontSize: "0.75rem" }}>Illustration: Low Head Oxygenator — patented design by Dr. Barnaby Watten</p>
+              <p className="font-body text-white/40 mt-4" style={{ fontSize: "0.75rem" }}>Courtesy of The Conservation Fund Freshwater Institute</p>
             </div>
           </div>
         </div>
@@ -212,13 +212,13 @@ export default function GasManagementProduct() {
             </div>
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
-                src="/manus-storage/vatn-water-jet-exhauster-cropped_67e34a3a.jpg"
-                alt="Water jet exhauster (Figure 5) — sidewall application on vacuum degasser column"
+                src="/manus-storage/vatn-valve-tank-photo_98c1b775.png"
+                alt="Hatchery water treatment valve installation"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Water Jet Exhauster</p>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Figure 5 — Water jet exhauster: sidewall application using a small sidestream flow of raw water, under pressure, to remove nitrogen-rich off-gas from the operating degasser.</p>
+                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Hatchery Field Installation</p>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Aquaculture water treatment valve installation at a hatchery site.</p>
               </div>
             </div>
           </div>
