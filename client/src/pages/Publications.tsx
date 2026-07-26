@@ -206,7 +206,7 @@ export default function Publications() {
                 { value: "90+", label: "Publications" },
                 { value: "15", label: "U.S. & International Patents" },
                 { value: "6", label: "Research Topic Areas" },
-                { value: "45+", label: "Years of Research" },
+                { value: "45+", label: "Years of Industry Experience" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col">
                   <span

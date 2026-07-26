@@ -219,8 +219,8 @@ export default function GasManagementProduct() {
             </div>
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
-                src="/manus-storage/vatn-valve-tank-photo_98c1b775.png"
-                alt="Hatchery water treatment valve installation"
+                src="/manus-storage/portable-sidestream-vacuum-degasser-dworshak_23d446f1.png"
+                alt="Portable sidestream vacuum degasser tested at Dworshak National Fish Hatchery"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
             </div>

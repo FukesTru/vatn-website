@@ -61,3 +61,12 @@
 - [x] FishRearingTankDesign: heading + staggered designPrinciples card grid — fully animated
 - [x] ProductOverview: staggered products card grid — fully animated
 - [x] BioMedia: CTA section wrapped (features are checklist items, not cards — no stagger needed)
+
+## Website Edits — WebsiteEdits(1).docx
+
+- [x] Our Team page: change "researcher" to "scientist" in first paragraph
+- [x] Our Team page: 49+ years of industry experience already present — confirmed
+- [x] Publications page: change "45+ Years of Research" to "Years of Industry Experience"
+- [x] Gas Management product page: replace right valve photo with portable sidestream vacuum degasser (Dworshak NFH)
+- [x] Hatcheries page: replace old degasser photo with new portable sidestream vacuum degasser photo
+- [x] Navigation: add "Hatcheries" link pointing to /hatchery-solutions

@@ -176,7 +176,7 @@ export default function OurTeam() {
               Our Team
             </h1>
             <p className="font-body text-white/70 max-w-2xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.6" }}>
-VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States.
+VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States.
             </p>
             <a href="#contact" className="btn-primary">
               Contact Our Team <ArrowRight size={15} />

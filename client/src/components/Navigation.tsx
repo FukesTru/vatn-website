@@ -56,6 +56,7 @@ const rightNavLinks = [
   { label: "Our Team", href: "/our-team" },
   { label: "Publications", href: "/publications" },
   { label: "News", href: "/news" },
+  { label: "Hatcheries", href: "/hatchery-solutions" },
   { label: "Partnerships", href: "/engineering-partners" },
 ];
 
