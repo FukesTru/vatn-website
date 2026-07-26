@@ -141,7 +141,7 @@ export default function Home() {
             </RevealSection>
             <RevealSection delay={100}>
               <div className="flex flex-col gap-4">
-                <img src={HATCHERY_IMG} alt="Aquaculture hatchery systems" className="w-full object-cover" style={{ borderRadius: "2px", aspectRatio: "4/3" }} />
+                <img src={HATCHERY_IMG} alt="Aquaculture hatchery systems" className="w-full" style={{ borderRadius: "2px", display: "block", objectFit: "contain" }} />
                 {/* Credential callout — placed below image so it never overlaps */}
                 <div className="p-5" style={{ backgroundColor: "#0A1628", borderLeft: "3px solid #3A8C3F" }}>
                   <p className="font-display text-white font-bold" style={{ fontSize: "1.4rem", lineHeight: 1.1 }}>90+ Publications</p>
