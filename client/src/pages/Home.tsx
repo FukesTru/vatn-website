@@ -73,7 +73,7 @@ export default function Home() {
             </RevealSection>
             <RevealSection delay={160}>
               <p className="font-body text-white/75 mb-8" style={{ fontSize: "1.15rem", lineHeight: "1.7", maxWidth: "680px", margin: "0 auto 2rem" }}>
-                VATN is led by one of the most published researchers in aquaculture water treatment. With 90+ publications, 15 patents, and 49+ years of hands-on hatchery work, VATN's team brings a depth of expertise that no equipment catalog can replicate.
+                VATN is led by two of the most experienced professionals in aquaculture water treatment. With 90+ publications, 15 patents, and a combined 85+ years of hands-on hatchery work, VATN's team brings a depth of expertise that no equipment catalog can replicate.
               </p>
             </RevealSection>
             <RevealSection delay={220}>
@@ -101,7 +101,7 @@ export default function Home() {
             {[
               "90+ Publications",
               "15 Patents",
-              "49+ Yrs Industry Experience",
+              "85+ Yrs Combined Industry Experience",
               "Federal & State Hatchery Programs",
               "Site-Specific Engineering",
             ].map((item, i) => (
@@ -160,8 +160,8 @@ export default function Home() {
             {[
               { num: "90+", label: "Publications", sub: "Dr. Barnaby J. Watten" },
               { num: "15", label: "U.S. Patents Held", sub: "Gas management & water treatment" },
-              { num: "49+", label: "Yrs Industry Experience", sub: "Dr. Barnaby J. Watten" },
-              { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
+              { num: "85+", label: "Yrs Combined Experience", sub: "Dr. Watten (49+) & Terry McCarthy (36+)" },
+              { num: "36+", label: "Yrs Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
             ].map((stat, i) => (
               <RevealSection key={stat.num} delay={i * 70}>
                 <div className="text-center p-5" style={{ borderTop: "2px solid rgba(58,140,63,0.4)" }}>
