@@ -107,13 +107,11 @@ export default function Navigation() {
             {/* Logo */}
             <Link href="/">
               <div className="flex items-center group">
-                <div style={{ backgroundColor: "#ffffff", borderRadius: "6px", padding: "6px 14px", display: "inline-flex", alignItems: "center" }}>
-                  <img
+                <img
                     src={LOGO_URL}
                     alt="VATN Science and Technology"
                     style={{ height: "92px", width: "auto", objectFit: "contain", maxWidth: "320px" }}
                   />
-                </div>
               </div>
             </Link>
 

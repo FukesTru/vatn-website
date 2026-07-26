@@ -43,9 +43,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="mb-5">
-              <div style={{ backgroundColor: "#ffffff", borderRadius: "6px", padding: "4px 10px", display: "inline-flex", alignItems: "center" }}>
-                <img src={LOGO_URL} alt="VATN Science and Technology" style={{ height: "56px", width: "auto", objectFit: "contain", maxWidth: "190px" }} />
-              </div>
+              <img src={LOGO_URL} alt="VATN Science and Technology" style={{ height: "70px", width: "auto", objectFit: "contain", maxWidth: "240px" }} />
             </div>
             <p className="font-body text-white/50" style={{ fontSize: "0.88rem", lineHeight: "1.65" }}>
               Engineered gas management and water treatment solutions for aquaculture, fish hatcheries, and wastewater applications.
