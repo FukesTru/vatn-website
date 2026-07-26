@@ -128,7 +128,7 @@ export default function Home() {
                 VATN was founded in 2019 by Dr. Barnaby J. Watten — a researcher whose career has been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States. Terry McCarthy serves as Director of Sales, bringing 36 years of practical hatchery industry experience to the firm's commercial operations.
               </p>
               <p className="font-body mb-6" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                Dr. Watten spent 49+ years in the aquaculture water treatment industry, authoring more than 90+ publications and holding 15 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in February 2019. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
+                Dr. Watten spent 49+ years in the aquaculture water treatment industry, authoring 90+ publications and holding 15 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in February 2019. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/our-team">
@@ -140,12 +140,12 @@ export default function Home() {
               </div>
             </RevealSection>
             <RevealSection delay={100}>
-              <div className="relative">
+              <div className="flex flex-col gap-4">
                 <img src={HATCHERY_IMG} alt="Aquaculture hatchery systems" className="w-full object-cover" style={{ borderRadius: "2px", aspectRatio: "4/3" }} />
-                {/* Credential callout */}
-                <div className="absolute -bottom-4 -left-4 p-5" style={{ backgroundColor: "#0A1628", borderLeft: "3px solid #3A8C3F", maxWidth: "280px" }}>
+                {/* Credential callout — placed below image so it never overlaps */}
+                <div className="p-5" style={{ backgroundColor: "#0A1628", borderLeft: "3px solid #3A8C3F" }}>
                   <p className="font-display text-white font-bold" style={{ fontSize: "1.4rem", lineHeight: 1.1 }}>90+ Publications</p>
-                  <p className="font-body text-white/60 mt-1" style={{ fontSize: "0.78rem", lineHeight: "1.5" }}>Peer-reviewed research spanning oxygenation, CO₂ control, nitrogen supersaturation, and RAS design.</p>
+                  <p className="font-body text-white/60 mt-1" style={{ fontSize: "0.78rem", lineHeight: "1.5" }}>Research spanning oxygenation, CO₂ control, nitrogen supersaturation, and RAS design.</p>
                 </div>
               </div>
             </RevealSection>
@@ -158,7 +158,7 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { num: "90+", label: "Peer-Reviewed Publications", sub: "Dr. Barnaby J. Watten" },
+              { num: "90+", label: "Publications", sub: "Dr. Barnaby J. Watten" },
               { num: "15", label: "U.S. Patents Held", sub: "Gas management & water treatment" },
               { num: "49+", label: "Yrs Industry Experience", sub: "Dr. Barnaby J. Watten" },
               { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },

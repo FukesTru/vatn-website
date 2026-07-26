@@ -31,14 +31,14 @@
 
 ## Website Edits — WebsiteEdits.docx
 
-- [ ] Edit 1: Replace hatchery photo in "People Behind VATN" section on Homepage with the NP CO2-degasser cascade-type image from the docx
-- [ ] Edit 2: Move the old hatchery photo (removed from homepage) to Gas Management page — replace the water jet exhauster photo with it
-- [ ] Edit 3: On Gas Management page under "Patented Technology", replace the LHO photo with the new LHO diagram (with Conservation Fund citation)
-- [ ] Edit 4: Replace all "87+/90+ peer-reviewed publications" text site-wide with "90+ Publications"
-- [ ] Edit 5: Replace the website logo with the new VATN Science and Technology logo from the docx
-- [ ] Edit 6a: Make the Navigation bar bigger overall including all tab text
-- [ ] Edit 6b: Add a "Partnerships" tab to the navigation bar linking to the Engineering Partners page
-- [ ] Edit 7: Copy all content from /hatchery-solutions page and place it on the Other / Custom Solutions page
-- [ ] Edit 8: Change all mentions of Dr. Barnaby's experience to "49+ years industry experience" site-wide
-- [ ] Edit 9: Center the product overview page content on the Products & Solutions overview page
-- [ ] Edit 10: Remove the "Learn More About Ultraqua / Manufacturer Resource" section from the UV Disinfection page
+- [x] Edit 1: Replace hatchery photo in "People Behind VATN" section on Homepage with the NP CO2-degasser cascade-type image from the docx
+- [x] Edit 2: Move the old hatchery photo (removed from homepage) to Gas Management page — replace the water jet exhauster photo with it
+- [x] Edit 3: On Gas Management page under "Patented Technology", replace the LHO photo with the new LHO diagram (with Conservation Fund citation)
+- [x] Edit 4: Replace all "87+/90+ peer-reviewed publications" text site-wide with "90+ Publications"
+- [x] Edit 5: Replace the website logo with the new VATN Science and Technology logo from the docx
+- [x] Edit 6a: Make the Navigation bar bigger overall including all tab text
+- [x] Edit 6b: Add a "Partnerships" tab to the navigation bar linking to the Engineering Partners page
+- [x] Edit 7: Copy all content from /hatchery-solutions page and place it on the Other / Custom Solutions page
+- [x] Edit 8: Change all mentions of Dr. Barnaby's experience to "49+ years industry experience" site-wide
+- [x] Edit 9: Center the product overview page content on the Products & Solutions overview page
+- [x] Edit 10: Remove the "Learn More About Ultraqua / Manufacturer Resource" section from the UV Disinfection page

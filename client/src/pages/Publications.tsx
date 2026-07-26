@@ -201,7 +201,7 @@ export default function Publications() {
 
           {/* Stats row */}
           <RevealSection delay={120}>
-            <div className="flex flex-wrap gap-8 mt-8">
+            <div className="flex flex-wrap gap-8 mt-8 justify-center">
               {[
                 { value: "90+", label: "Publications" },
                 { value: "15", label: "U.S. & International Patents" },

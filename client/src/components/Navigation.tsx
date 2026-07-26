@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, Phone, ChevronDown, ArrowRight } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/vatn-logo-new_c33514aa.png";
+const LOGO_URL = "/manus-storage/vatn-logo-science-tech_0b54503e.png";
 
 const productDropdown = [
   {
@@ -103,14 +103,14 @@ export default function Navigation() {
         }}
       >
         <div className="container">
-          <div className="flex items-center justify-between" style={{ height: "76px" }}>
+          <div className="flex items-center justify-between" style={{ height: "88px" }}>
             {/* Logo */}
             <Link href="/">
               <div className="flex items-center group">
                 <img
                   src={LOGO_URL}
                   alt="VATN Science and Technology"
-                  style={{ height: "64px", width: "auto", objectFit: "contain" }}
+                  style={{ height: "76px", width: "auto", objectFit: "contain", maxWidth: "220px" }}
                 />
               </div>
             </Link>

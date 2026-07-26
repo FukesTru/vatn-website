@@ -64,8 +64,8 @@ function CountUp({ target, suffix = "", duration = 1800 }: { target: number; suf
 // ── BARNABY DATA ─────────────────────────────────────────────────────────────
 const barnabyStats = [
   { val: 15, suffix: "", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
-  { val: 87, suffix: "", label: "Publications", sub: "63 peer-reviewed" },
-  { val: 31, suffix: "", label: "Years at U.S. DOI", sub: "Retired 2018" },
+  { val: 90, suffix: "+", label: "Publications", sub: "Gas management & water treatment" },
+  { val: 49, suffix: "+", label: "Years Industry Experience", sub: "Aquaculture water treatment" },
   { val: 14, suffix: "", label: "Graduate Students", sub: "Mentored" },
 ];
 
@@ -189,7 +189,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
       <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container py-4">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-            {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "87 Publications (63 Peer-Reviewed)", "Federal & State Hatchery Programs", "VATN Founded 2019 by Dr. Watten"].map((item, i) => (
+            {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "90+ Publications", "Federal & State Hatchery Programs", "VATN Founded 2019 by Dr. Watten"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#3A8C3F" }} />
                 <span className="font-body text-white/65" style={{ fontSize: "0.82rem" }}>{item}</span>
@@ -259,7 +259,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
                 Over a distinguished career spanning 49+ years in the aquaculture water treatment industry, Dr. Watten progressed from Principal Investigator to Section Leader, Branch Chief, Laboratory Director of the Conte Anadromous Fish Research Center (MA), and ultimately Deputy Director of the USGS Leetown Science Center. His research program addressed oxygenation, nitrogen and CO₂ stripping, rearing unit hydraulics, biological filtration, and dissolved gas instrumentation — all aimed at reducing the labor, energy, and water requirements of the USFWS National Fish Hatchery Program.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Dr. Watten's research also produced new methods for invasive species control in hatcheries and the international shipping industry, new approaches to improving fish passage rates around dams, fish-friendly hydropower generation methods, and low-cost treatment of acidic coal mine drainage. He retired from the U.S. DOI research program in 2018 and founded VATN Science and Technology, LLC in 2019.
+                Dr. Watten's research also produced new methods for invasive species control in hatcheries and the international shipping industry, new approaches to improving fish passage rates around dams, fish-friendly hydropower generation methods, and low-cost treatment of acidic coal mine drainage. After 49+ years in the aquaculture water treatment industry, he founded VATN Science and Technology, LLC in 2019.
               </p>
             </div>
           </RevealSection>
@@ -511,7 +511,7 @@ VATN was founded by Dr. Barnaby J. Watten, a researcher whose career has been sp
             {[
               {
                 label: "Dr. Watten brings",
-                points: ["49+ years of industry experience", "15 patents and provisional patents in gas transfer technology", "90+ publications, 63 peer-reviewed", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
+                points: ["49+ years of industry experience", "15 patents and provisional patents in gas transfer technology", "90+ Publications", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
               },
               {
                 label: "Terry McCarthy brings",
