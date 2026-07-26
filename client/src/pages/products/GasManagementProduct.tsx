@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { ArrowRight, Droplets, Wind, FlaskConical, Layers, Zap, BarChart3 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RevealSection from "@/components/RevealSection";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -93,8 +94,10 @@ export default function GasManagementProduct() {
       {/* Problems addressed */}
       <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container">
-          <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Common Gas Management Problems</p>
-          <span className="teal-rule mb-8" />
+          <RevealSection>
+            <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Common Gas Management Problems</p>
+            <span className="teal-rule mb-8" />
+          </RevealSection>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {[
               { problem: "Low Dissolved Oxygen", impact: "Stress, reduced growth, and mortality in fish populations. Limits production density in RAS and raceway systems." },
@@ -103,11 +106,13 @@ export default function GasManagementProduct() {
               { problem: "Hydraulic Constraints", impact: "Limited available head restricts equipment options. Many sites cannot support conventional treatment approaches." },
               { problem: "Limited Footprint", impact: "Existing infrastructure leaves minimal space for new treatment equipment. Compact solutions are required." },
               { problem: "High Oxygen or Energy Costs", impact: "Inefficient oxygenation systems consume excess oxygen and energy. Proper modeling reduces both." },
-            ].map((item) => (
-              <div key={item.problem} className="p-5" style={{ backgroundColor: "rgba(255,255,255,0.04)", borderLeft: "2px solid rgba(58,140,63,0.4)", borderRadius: "2px" }}>
+            ].map((item, i) => (
+              <RevealSection key={item.problem} delay={i * 60}>
+              <div className="p-5" style={{ backgroundColor: "rgba(255,255,255,0.04)", borderLeft: "2px solid rgba(58,140,63,0.4)", borderRadius: "2px" }}>
                 <h3 className="font-display text-white mb-2" style={{ fontSize: "1rem" }}>{item.problem}</h3>
                 <p className="font-body text-white/55" style={{ fontSize: "0.83rem", lineHeight: "1.6" }}>{item.impact}</p>
               </div>
+              </RevealSection>
             ))}
           </div>
         </div>
@@ -116,7 +121,7 @@ export default function GasManagementProduct() {
       {/* Technologies */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <div className="mb-12">
+          <RevealSection className="mb-12">
             <p className="section-label mb-3">Technologies &amp; Equipment</p>
             <span className="teal-rule mb-5" />
             <h2 className="font-display" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
@@ -125,10 +130,11 @@ export default function GasManagementProduct() {
             <p className="font-body mt-4 max-w-2xl" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
               VATN does not recommend equipment from a catalog. Each solution is modeled against your actual site conditions — water chemistry, flow rates, temperature, available head, and production targets — before equipment is specified.
             </p>
-          </div>
+          </RevealSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            {technologies.map((tech) => (
-              <div key={tech.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
+            {technologies.map((tech, i) => (
+              <RevealSection key={tech.title} delay={i * 70}>
+              <div className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
                 <div className="flex items-center gap-3 mb-3">
                   <div style={{ color: "#3A8C3F" }}>{tech.icon}</div>
                   <h3 className="font-display" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{tech.title}</h3>
@@ -142,6 +148,7 @@ export default function GasManagementProduct() {
                   ))}
                 </div>
               </div>
+              </RevealSection>
             ))}
           </div>
         </div>
@@ -150,13 +157,13 @@ export default function GasManagementProduct() {
       {/* LHO Illustration */}
       <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
         <div className="container">
-          <div className="mb-8 text-center">
+          <RevealSection className="mb-8 text-center">
             <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Patented Technology</p>
             <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h2 className="font-display text-white" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", lineHeight: 1.1 }}>
               Low Head Oxygenator (LHO)
             </h2>
-          </div>
+          </RevealSection>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div style={{ backgroundColor: "#fff", borderRadius: "2px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", padding: "1.5rem" }}>
               <img
@@ -188,7 +195,7 @@ export default function GasManagementProduct() {
       {/* Vacuum Degassing Tower & Water Jet Exhauster */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <div className="mb-12 text-center">
+          <RevealSection className="mb-12 text-center">
             <p className="section-label mb-3">Signature Product</p>
             <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
             <h2 className="font-display" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
@@ -197,7 +204,7 @@ export default function GasManagementProduct() {
             <p className="font-body mt-4 max-w-3xl mx-auto" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
               In the early 90's Watten developed a vacuum degasser design for removal of gas supersaturation common in well water and spring water hatchery supplies. Design conditions including packing depth and gas (oxygen) feed rate are based on reactor theory with vacuum levels identified that result in product water TGP levels that circumvent gas bubble disease. Oxygen feed rates allow for DO levels above saturation while concurrently reducing dissolved nitrogen (N2) well below saturation. The design employs a unique method for control of column vacuum level regardless of changes in water fed rates. This method is based on a sidewall application of water jet exhausters that use a very small sidestream flow of raw water, under pressure, to remove nitrogen rich column off-gas from the operating degasser. The design has provided years of trouble free service at numerous state, federal and commercial sites.
             </p>
-          </div>
+          </RevealSection>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
@@ -228,6 +235,7 @@ export default function GasManagementProduct() {
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
+          <RevealSection>
           <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", lineHeight: 1.1 }}>
             Ready to Evaluate Your Gas Management System?
           </h2>
@@ -238,6 +246,7 @@ export default function GasManagementProduct() {
             Contact VATN
             <ArrowRight size={15} />
           </a>
+          </RevealSection>
         </div>
       </section>
 

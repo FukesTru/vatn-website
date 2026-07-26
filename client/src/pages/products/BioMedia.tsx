@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import { ArrowRight, Layers, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RevealSection from "@/components/RevealSection";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -162,6 +163,7 @@ export default function BioMedia() {
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
+          <RevealSection>
           <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", lineHeight: 1.1 }}>
             Discuss Bio Media for Your RAS
           </h2>
@@ -172,6 +174,7 @@ export default function BioMedia() {
             Contact VATN
             <ArrowRight size={15} />
           </a>
+          </RevealSection>
         </div>
       </section>
 

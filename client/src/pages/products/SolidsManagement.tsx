@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RevealSection from "@/components/RevealSection";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -73,7 +74,7 @@ export default function SolidsManagement() {
       {/* Content */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <div className="mb-12">
+          <RevealSection className="mb-12">
             <p className="section-label mb-3">Why Solids Management Matters</p>
             <span className="teal-rule mb-5" />
             <h2 className="font-display mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
@@ -82,14 +83,16 @@ export default function SolidsManagement() {
             <p className="font-body max-w-2xl" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.7" }}>
               Suspended solids accumulation in recirculating aquaculture systems increases biological oxygen demand, degrades water quality, and can impair gill function in fish. Effective solids removal is a foundational component of RAS design and is also important in flow-through systems where effluent quality must be managed.
             </p>
-          </div>
+          </RevealSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">
-            {filterTypes.map((f) => (
-              <div key={f.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
-                <h3 className="font-display mb-3" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{f.title}</h3>
-                <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{f.body}</p>
-              </div>
+            {filterTypes.map((f, i) => (
+              <RevealSection key={f.title} delay={i * 70}>
+                <div className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
+                  <h3 className="font-display mb-3" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{f.title}</h3>
+                  <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{f.body}</p>
+                </div>
+              </RevealSection>
             ))}
           </div>
 
@@ -175,6 +178,7 @@ export default function SolidsManagement() {
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
+          <RevealSection>
           <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", lineHeight: 1.1 }}>
             Discuss Solids Management for Your System
           </h2>
@@ -185,6 +189,7 @@ export default function SolidsManagement() {
             Contact VATN
             <ArrowRight size={15} />
           </a>
+          </RevealSection>
         </div>
       </section>
 

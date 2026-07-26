@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import { ArrowRight, Shield, Zap, Droplets, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RevealSection from "@/components/RevealSection";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -80,22 +81,24 @@ export default function UVDisinfection() {
       {/* Features */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <div className="mb-12">
+          <RevealSection className="mb-12">
             <p className="section-label mb-3">Ultraqua UV — Key Features</p>
             <span className="teal-rule mb-5" />
             <h2 className="font-display" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
               Reliable Pathogen Control for Aquaculture Applications
             </h2>
-          </div>
+          </RevealSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            {features.map((f) => (
-              <div key={f.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
-                <div className="flex items-center gap-3 mb-3">
-                  <div style={{ color: "#3A8C3F" }}>{f.icon}</div>
-                  <h3 className="font-display" style={{ fontSize: "1.05rem", color: "#1C2B3A", lineHeight: 1.2 }}>{f.title}</h3>
+            {features.map((f, i) => (
+              <RevealSection key={f.title} delay={i * 70}>
+                <div className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
+                  <div className="flex items-center gap-3 mb-3">
+                    <div style={{ color: "#3A8C3F" }}>{f.icon}</div>
+                    <h3 className="font-display" style={{ fontSize: "1.05rem", color: "#1C2B3A", lineHeight: 1.2 }}>{f.title}</h3>
+                  </div>
+                  <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{f.body}</p>
                 </div>
-                <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{f.body}</p>
-              </div>
+              </RevealSection>
             ))}
           </div>
 
@@ -204,6 +207,7 @@ export default function UVDisinfection() {
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
+          <RevealSection>
           <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", lineHeight: 1.1 }}>
             Discuss UV Disinfection for Your Facility
           </h2>
@@ -214,6 +218,7 @@ export default function UVDisinfection() {
             Contact VATN
             <ArrowRight size={15} />
           </a>
+          </RevealSection>
         </div>
       </section>
 

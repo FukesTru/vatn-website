@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RevealSection from "@/components/RevealSection";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -130,57 +131,58 @@ export default function ProductOverview() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {products.map((product) => (
-              <div
-                key={product.href}
-                className="flex flex-col bg-white"
-                style={{
-                  border: "1px solid #E8EEF4",
-                  borderTop: "3px solid #3A8C3F",
-                  borderRadius: "2px",
-                  padding: "1.5rem",
-                }}
-              >
-                <h3
-                  className="font-display mb-3"
-                  style={{ fontSize: "1.15rem", color: "#1C2B3A", lineHeight: 1.2 }}
+            {products.map((product, i) => (
+              <RevealSection key={product.href} delay={i * 70}>
+                <div
+                  className="flex flex-col bg-white"
+                  style={{
+                    border: "1px solid #E8EEF4",
+                    borderTop: "3px solid #3A8C3F",
+                    borderRadius: "2px",
+                    padding: "1.5rem",
+                  }}
                 >
-                  {product.title}
-                </h3>
-                <p
-                  className="font-body mb-4 flex-1"
-                  style={{ fontSize: "0.85rem", color: "#5A7080", lineHeight: "1.65" }}
-                >
-                  {product.desc}
-                </p>
-                <div className="flex flex-wrap gap-1.5 mb-5">
-                  {product.tags.map((tag) => (
-                    <span
-                      key={tag}
-                      className="font-body"
-                      style={{
-                        fontSize: "0.78rem",
-                        color: "#3A8C3F",
-                        backgroundColor: "rgba(58,140,63,0.08)",
-                        border: "1px solid rgba(58,140,63,0.2)",
-                        borderRadius: "2px",
-                        padding: "2px 8px",
-                        letterSpacing: "0.04em",
-                      }}
-                    >
-                      {tag}
-                    </span>
-                  ))}
-                </div>
-                <Link href={product.href}>
-                  <span
-                    className="flex items-center gap-1.5 font-display font-semibold transition-colors duration-200"
-                    style={{ fontSize: "0.8rem", color: "#3A8C3F", letterSpacing: "0.06em", textTransform: "uppercase" }}
+                  <h3
+                    className="font-display mb-3"
+                    style={{ fontSize: "1.15rem", color: "#1C2B3A", lineHeight: 1.2 }}
                   >
-                    Learn More <ArrowRight size={13} />
-                  </span>
-                </Link>
-              </div>
+                    {product.title}
+                  </h3>
+                  <p
+                    className="font-body mb-4 flex-1"
+                    style={{ fontSize: "0.85rem", color: "#5A7080", lineHeight: "1.65" }}
+                  >
+                    {product.desc}
+                  </p>
+                  <div className="flex flex-wrap gap-1.5 mb-5">
+                    {product.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="font-body"
+                        style={{
+                          fontSize: "0.78rem",
+                          color: "#3A8C3F",
+                          backgroundColor: "rgba(58,140,63,0.08)",
+                          border: "1px solid rgba(58,140,63,0.2)",
+                          borderRadius: "2px",
+                          padding: "2px 8px",
+                          letterSpacing: "0.04em",
+                        }}
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                  <Link href={product.href}>
+                    <span
+                      className="flex items-center gap-1.5 font-display font-semibold transition-colors duration-200"
+                      style={{ fontSize: "0.8rem", color: "#3A8C3F", letterSpacing: "0.06em", textTransform: "uppercase" }}
+                    >
+                      Learn More <ArrowRight size={13} />
+                    </span>
+                  </Link>
+                </div>
+              </RevealSection>
             ))}
           </div>
         </div>

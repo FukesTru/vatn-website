@@ -7,6 +7,7 @@ import { Link } from "wouter";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import RevealSection from "@/components/RevealSection";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -93,19 +94,21 @@ export default function AlkalinityEnhancement() {
       {/* Technologies */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <div className="mb-12">
+          <RevealSection className="mb-12">
             <p className="section-label mb-3">Treatment Technologies</p>
             <span className="teal-rule mb-5" />
             <h2 className="font-display" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
               Limestone-Based Alkalinity Enhancement Systems
             </h2>
-          </div>
+          </RevealSection>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-            {technologies.map((t) => (
-              <div key={t.title} className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
-                <h3 className="font-display mb-3" style={{ fontSize: "1.05rem", color: "#1C2B3A", lineHeight: 1.2 }}>{t.title}</h3>
-                <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{t.body}</p>
-              </div>
+            {technologies.map((t, i) => (
+              <RevealSection key={t.title} delay={i * 70}>
+                <div className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
+                  <h3 className="font-display mb-3" style={{ fontSize: "1.05rem", color: "#1C2B3A", lineHeight: 1.2 }}>{t.title}</h3>
+                  <p className="font-body" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{t.body}</p>
+                </div>
+              </RevealSection>
             ))}
           </div>
 
@@ -142,6 +145,7 @@ export default function AlkalinityEnhancement() {
       {/* CTA */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
+          <RevealSection>
           <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", lineHeight: 1.1 }}>
             Discuss Your Alkalinity Challenge
           </h2>
@@ -152,6 +156,7 @@ export default function AlkalinityEnhancement() {
             Contact VATN
             <ArrowRight size={15} />
           </a>
+          </RevealSection>
         </div>
       </section>
 

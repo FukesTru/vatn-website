@@ -42,3 +42,22 @@
 - [x] Edit 8: Change all mentions of Dr. Barnaby's experience to "49+ years industry experience" site-wide
 - [x] Edit 9: Center the product overview page content on the Products & Solutions overview page
 - [x] Edit 10: Remove the "Learn More About Ultraqua / Manufacturer Resource" section from the UV Disinfection page
+
+## Scroll-Reveal Animations
+
+- [x] Created shared RevealSection component (client/src/components/RevealSection.tsx) — IntersectionObserver fade-in + slide-up, accepts delay prop for staggering
+- [x] Added RevealSection import to all 14 pages
+- [x] OurTeam: 17 RevealSection wrappers — fully animated
+- [x] HatcherySolutions: 13 RevealSection wrappers — fully animated
+- [x] EngineeringPartners: 13 RevealSection wrappers — fully animated
+- [x] CustomSolutions: 10 RevealSection wrappers — fully animated
+- [x] News: 4 RevealSection wrappers — fully animated
+- [x] Publications: 4 RevealSection wrappers — fully animated
+- [x] Contact: 2 RevealSection wrappers — fully animated
+- [x] GasManagementProduct: 7+ RevealSection wrappers including staggered card grids — fully animated
+- [x] SolidsManagement: heading + staggered filterTypes card grid — fully animated
+- [x] UVDisinfection: heading + staggered features card grid — fully animated
+- [x] AlkalinityEnhancement: heading + staggered technologies card grid — fully animated
+- [x] FishRearingTankDesign: heading + staggered designPrinciples card grid — fully animated
+- [x] ProductOverview: staggered products card grid — fully animated
+- [x] BioMedia: CTA section wrapped (features are checklist items, not cards — no stagger needed)
