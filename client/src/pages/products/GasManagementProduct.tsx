@@ -223,6 +223,10 @@ export default function GasManagementProduct() {
                 alt="Portable sidestream vacuum degasser tested at Dworshak National Fish Hatchery"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
+              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
+                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Portable Sidestream Vacuum Degasser</p>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Portable sidestream vacuum degasser during field testing at Dworshak National Fish Hatchery. This design is covered in Dr. Watten's published research on vacuum degassing for removal of gas supersaturation in hatchery water supplies.</p>
+              </div>
             </div>
           </div>
         </div>
