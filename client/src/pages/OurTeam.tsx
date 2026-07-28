@@ -64,7 +64,7 @@ function CountUp({ target, suffix = "", duration = 1800 }: { target: number; suf
 // ── BARNABY DATA ─────────────────────────────────────────────────────────────
 const barnabyStats = [
   { val: 15, suffix: "", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
-  { val: 90, suffix: "+", label: "Publications", sub: "Gas management & water treatment" },
+  { val: 80, suffix: "+", label: "Publications", sub: "Gas management & water treatment" },
   { val: 49, suffix: "+", label: "Years Industry Experience", sub: "Aquaculture water treatment" },
   { val: 14, suffix: "", label: "Graduate Students", sub: "Mentored" },
 ];
@@ -106,7 +106,7 @@ const terryExpertise = [
   "Turnkey RAS system design & delivery",
   "CO₂ stripping and LHO-based oxygenation",
   "Speece cones and vacuum degassing",
-  "Disk and drum microscreen solids removal",
+  "Disc and drum microscreen solids removal",
   "PSA oxygen generation systems",
   "VSA oxygen generation systems",
   "Automated water quality monitoring & control",
@@ -189,7 +189,8 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
       <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
         <div className="container py-4">
           <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-            {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "90+ Publications", "Federal & State Hatchery Programs", "VATN Founded 2019 by Dr. Watten"].map((item, i) => (
+            {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "80+ Publications",
+                  "Federal & State Hatchery Programs", "VATN Founded 2019 by Dr. Watten"].map((item, i) => (
               <div key={i} className="flex items-center gap-2">
                 <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#3A8C3F" }} />
                 <span className="font-body text-white/65" style={{ fontSize: "0.82rem" }}>{item}</span>
@@ -270,7 +271,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
                   <Award size={17} style={{ color: "#3A8C3F" }} />
-                  <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Awards &amp; Recognition</h3>
+                  <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Selected Awards &amp; Recognition</h3>
                 </div>
                 <div className="flex flex-col gap-4">
                   {barnabyAwards.map((a) => (
@@ -306,7 +307,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </div>
                 {[
                   { d: "Ph.D.", f: "Fisheries & Allied Aquacultures", i: "Auburn University", y: "1989" },
-                  { d: "M.S.", f: "Aquaculture / Ion Exchange", i: "Penn State / U. Virgin Islands", y: "1980" },
+                  { d: "M.S.", f: "Aquaculture / Ion Exchange", i: "Oregon State U. / U. Virgin Islands", y: "1980" },
                   { d: "B.S.", f: "Aquatic Biology / Chemistry", i: "Bemidji State University", y: "1976" },
                 ].map((e) => (
                   <div key={e.d} className="p-3 mb-2" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
@@ -321,7 +322,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
               <div>
                 <div className="flex items-center gap-2.5 mb-5">
                   <BookOpen size={17} style={{ color: "#3A8C3F" }} />
-                  <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Graduate Students Mentored (Engineering and Fisheries programs)</h3>
+                  <h3 className="font-display" style={{ fontSize: "0.9rem", color: "#1C2B3A", letterSpacing: "0.06em", textTransform: "uppercase" }}>Graduate Students Mentored (Fisheries and Engineering programs)</h3>
                 </div>
                 <p className="font-body mb-4" style={{ fontSize: "0.82rem", color: "#5A7080", lineHeight: "1.5" }}>14 graduate students across 6 universities (PhD and MS programs):</p>
                 <div className="flex flex-col gap-2">
@@ -422,10 +423,10 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 Terry McCarthy holds a B.S. (1981) and MBA (1989) from Tulane University. He began his career in aquaculture with Zeigler Brothers Inc. as a Sales Manager within a newly developed equipment division focused on intensive fish culture operations — including LHO manufacturing, fish pumps and graders, solids removal via microscreens, demand and belt fish feeders, and automated water quality monitoring and control instruments.
               </p>
               <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                In 1994, Terry co-founded Water Management Technologies (WMT), which specialized in the development, marketing, and servicing of equipment widely used in state and federal hatchery programs as well as private aquaculture. WMT's product line included turnkey RAS systems, water management towers coupling CO₂ stripping with LHO-based oxygenation, Speece cones, disk and drum microscreens, PSA and VSA oxygen generators, automated monitoring and control systems, fish rearing tanks, and UV disinfection equipment. WMT was acquired by Innovasea in February 2019.
+                In 1994, Terry co-founded Water Management Technologies (WMT), which specialized in the development, marketing, and servicing of equipment widely used in state and federal hatchery programs as well as private aquaculture. WMT's product line included turnkey RAS systems, water management towers coupling CO₂ stripping with LHO-based oxygenation, Speece cones, disc and drum microscreens, PSA and VSA oxygen generators, automated monitoring and control systems, fish rearing tanks, and UV disinfection equipment. WMT was acquired by Innovasea in February 2019.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Terry then served as General Manager and VP of Business Development of Innovasea's Land Based Business Unit in Baton Rouge, LA, retiring in January 2024. He joined VATN Science and Technology, LLC as Director of Sales, bringing 36+ years of aquaculture industry experience — including deep knowledge of state and federal hatchery procurement — to VATN's commercial operations.
+                Terry then served as General Manager and VP of Business Development of Innovasea's Land Based Business Unit in Baton Rouge, LA, retiring in January 2024. He joined VATN Science and Technology, LLC as Director of Sales, bringing 36+ years of aquaculture industry experience — including deep knowledge of state and federal hatchery procurement — to VATN's commercial operations. Two of Terry's strongest areas of expertise are Solids Management and UV Disinfection, developed through decades of hands-on equipment work with state and federal hatchery programs.
               </p>
             </div>
           </RevealSection>
@@ -511,7 +512,8 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
             {[
               {
                 label: "Dr. Watten brings",
-                points: ["49+ years of industry experience", "15 patents and provisional patents in gas transfer technology", "90+ Publications", "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
+                points: ["49+ years of industry experience", "15 patents and provisional patents in gas transfer technology", "80+ Publications",
+                  "Direct experience with the USFWS National Fish Hatchery Program", "Proprietary modeling software developed through decades of applied research"],
               },
               {
                 label: "Terry McCarthy brings",

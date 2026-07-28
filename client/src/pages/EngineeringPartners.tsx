@@ -166,7 +166,7 @@ export default function EngineeringPartners() {
               <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Who You Are Working With</p>
               <span className="teal-rule mb-5" />
               <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
-                When engineering firms bring VATN into a project, they are working directly with Dr. Barnaby Watten — the researcher who developed and patented the Low Head Oxygenator in 1989, authored 90+ publications on aquaculture gas management, and spent 49+ years in the aquaculture water treatment industry. His computer modeling approach for oxygenation and degassing equipment is the same methodology that has been applied and refined through decades of field research.
+                When engineering firms bring VATN into a project, they are working directly with Dr. Barnaby Watten — the researcher who developed and patented the Low Head Oxygenator in 1989, authored 80+ publications on aquaculture gas management, and spent 49+ years in the aquaculture water treatment industry. His computer modeling approach for oxygenation and degassing equipment is the same methodology that has been applied and refined through decades of field research.
               </p>
               <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
                 Terry McCarthy brings 36+ years of practical experience supplying and supporting state and federal hatchery programs. He understands procurement processes, project timelines, and what engineering teams need to move a project forward efficiently.

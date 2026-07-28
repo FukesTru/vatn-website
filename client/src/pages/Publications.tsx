@@ -203,10 +203,10 @@ export default function Publications() {
           <RevealSection delay={120}>
             <div className="flex flex-wrap gap-8 mt-8 justify-center">
               {[
-                { value: "90+", label: "Publications" },
+                { value: "80+", label: "Publications" },
                 { value: "15", label: "U.S. & International Patents" },
                 { value: "6", label: "Research Topic Areas" },
-                { value: "45+", label: "Years of Industry Experience" },
+                { value: "49+", label: "Years of Industry Experience" },
               ].map((stat) => (
                 <div key={stat.label} className="flex flex-col">
                   <span

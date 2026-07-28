@@ -99,7 +99,7 @@ export default function Home() {
         <div className="container py-5">
           <div className="flex flex-wrap items-center justify-between gap-4">
             {[
-              "90+ Publications",
+              "80+ Publications",
               "15 Patents",
               "85+ Yrs Combined Industry Experience",
               "Federal & State Hatchery Programs",
@@ -128,7 +128,7 @@ export default function Home() {
                 VATN was founded in 2019 by Dr. Barnaby J. Watten — a researcher whose career has been spent developing, testing, and deploying aquaculture water treatment systems in federal hatchery programs and commercial facilities across the United States. Terry McCarthy serves as Director of Sales, bringing 36 years of practical hatchery industry experience to the firm's commercial operations.
               </p>
               <p className="font-body mb-6" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                Dr. Watten spent 49+ years in the aquaculture water treatment industry, authoring 90+ publications and holding 15 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in February 2019. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
+                Dr. Watten spent 49+ years in the aquaculture water treatment industry, authoring 80+ publications and holding 15 patents. Terry McCarthy co-founded WMT, Inc. in 1994 — a specialized aquaculture equipment firm that served state and federal hatcheries for over two decades before being acquired by Innovasea in February 2019. Together, they bring a combination of scientific depth and practical hatchery experience that is rare in this industry.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/our-team">
@@ -144,7 +144,7 @@ export default function Home() {
                 <img src={HATCHERY_IMG} alt="Aquaculture hatchery systems" className="mx-auto" style={{ borderRadius: "2px", display: "block", objectFit: "contain", maxWidth: "80%", width: "100%" }} />
                 {/* Credential callout — placed below image so it never overlaps */}
                 <div className="p-5" style={{ backgroundColor: "#0A1628", borderLeft: "3px solid #3A8C3F" }}>
-                  <p className="font-display text-white font-bold" style={{ fontSize: "1.4rem", lineHeight: 1.1 }}>90+ Publications</p>
+                  <p className="font-display text-white font-bold" style={{ fontSize: "1.4rem", lineHeight: 1.1 }}>80+ Publications</p>
                   <p className="font-body text-white/60 mt-1" style={{ fontSize: "0.78rem", lineHeight: "1.5" }}>Research spanning oxygenation, CO₂ control, nitrogen supersaturation, and RAS design.</p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ export default function Home() {
         <div className="container">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
-              { num: "90+", label: "Publications", sub: "Dr. Barnaby J. Watten" },
+              { num: "80+", label: "Publications", sub: "Dr. Barnaby J. Watten" },
               { num: "15", label: "U.S. Patents Held", sub: "Gas management & water treatment" },
               { num: "85+", label: "Yrs Combined Experience", sub: "Dr. Watten (49+) & Terry McCarthy (36+)" },
               { num: "36+", label: "Yrs Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
@@ -289,7 +289,7 @@ export default function Home() {
             <RevealSection delay={100}>
               <div className="grid grid-cols-1 gap-4">
                 {[
-                  { icon: <BookOpen size={18} />, label: "Publications", value: "90+ publications", desc: "Covering oxygenation, CO₂ stripping, nitrogen supersaturation, RAS design, fish physiology, and more." },
+                  { icon: <BookOpen size={18} />, label: "Publications", value: "80+ publications", desc: "Covering oxygenation, CO₂ stripping, nitrogen supersaturation, RAS design, fish physiology, and more." },
                   { icon: <Award size={18} />, label: "Patents", value: "15 Patents and Provisional Patents", desc: "Including the patented Low Head Oxygenator (1989) and multiple gas management innovations." },
                   { icon: <Microscope size={18} />, label: "Research Background", value: "Auburn Ph.D. (1989)", desc: "Dr. Watten's doctoral research at Auburn University laid the foundation for modern aquaculture gas management." },
                   { icon: <Users size={18} />, label: "Industry Experience", value: "36+ years, Terry McCarthy", desc: "Co-founded WMT, Inc. in 1994. Served state and federal hatchery programs for over two decades." },
@@ -317,7 +317,7 @@ export default function Home() {
                 The science behind VATN's approach is not borrowed from other industries. It was developed specifically for aquaculture — through decades of field research, controlled experiments, and direct collaboration with the hatchery programs that depend on it.
               </p>
               <p className="font-body mb-6" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                Dr. Watten's 90+ publications represent one of the most comprehensive bodies of work in aquaculture water treatment. When VATN recommends a system configuration, it is backed by research — not a sales pitch.
+                Dr. Watten's 80+ publications represent one of the most comprehensive bodies of work in aquaculture water treatment. When VATN recommends a system configuration, it is backed by research — not a sales pitch.
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link href="/publications">
