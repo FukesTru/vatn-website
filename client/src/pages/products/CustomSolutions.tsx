@@ -264,7 +264,7 @@ export default function CustomSolutions() {
                 {[
                   { num: "49+", label: "Yrs Industry Experience", sub: "Dr. Barnaby J. Watten" },
                   { num: "80+", label: "Publications", sub: "Peer-reviewed research" },
-                  { num: "15", label: "U.S. Patents", sub: "Gas management innovations" },
+                  { num: "15", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
                   { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy" },
                 ].map((s) => (
                   <div key={s.num} className="p-4 text-center" style={{ borderTop: "2px solid rgba(58,140,63,0.35)", backgroundColor: "rgba(255,255,255,0.03)" }}>

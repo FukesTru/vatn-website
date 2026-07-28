@@ -159,7 +159,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
             {[
               { num: "80+", label: "Publications", sub: "Dr. Barnaby J. Watten" },
-              { num: "15", label: "U.S. Patents Held", sub: "Gas management & water treatment" },
+              { num: "15", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
               { num: "85+", label: "Yrs Combined Experience", sub: "Dr. Watten (49+) & Terry McCarthy (36+)" },
               { num: "36+", label: "Yrs Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
             ].map((stat, i) => (
