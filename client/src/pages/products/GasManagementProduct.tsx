@@ -230,9 +230,9 @@ export default function GasManagementProduct() {
             </div>
           </div>
 
-          {/* Third photo — Craig Brook 900 GPM vacuum degasser — centered below the two above */}
-          <div className="mt-8 flex justify-center">
-            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)", maxWidth: "600px", width: "100%" }}>
+          {/* Craig Brook + Water Jet Exhauster — side by side */}
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
                 src="/manus-storage/craig-brook-900gpm-vacuum-degasser_a38c76b1.png"
                 alt="900 GPM vacuum degasser tanks at Craig Brook National Fish Hatchery"
@@ -243,11 +243,7 @@ export default function GasManagementProduct() {
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Two 900 GPM vacuum degasser tanks installed at Craig Brook National Fish Hatchery, Maine. This installation is part of the same research program documented in Dr. Watten's published work on vacuum degassing for hatchery water supplies.</p>
               </div>
             </div>
-          </div>
-
-          {/* Fourth photo — Water Jet Exhauster — centered below Craig Brook photo */}
-          <div className="mt-8 flex justify-center">
-            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)", maxWidth: "600px", width: "100%" }}>
+            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
                 src="/manus-storage/water-jet-exhauster-valve_88b0f540.png"
                 alt="Water jet exhauster valve used in vacuum degassing system"
