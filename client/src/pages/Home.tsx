@@ -73,7 +73,7 @@ export default function Home() {
             </RevealSection>
             <RevealSection delay={160}>
               <p className="font-body text-white/75 mb-8" style={{ fontSize: "1.15rem", lineHeight: "1.7", maxWidth: "680px", margin: "0 auto 2rem" }}>
-                VATN is led by two of the most experienced professionals in aquaculture water treatment. With 90+ publications, 15 patents, and a combined 85+ years of hands-on hatchery work, VATN's team brings a depth of expertise that no equipment catalog can replicate.
+                VATN provides expert aquaculture water treatment solutions tailored to modern hatchery operations. The team delivers hands-on, practical guidance to design, optimize, and manage water systems. VATN's team brings a depth of expertise that no equipment catalog can replicate.
               </p>
             </RevealSection>
             <RevealSection delay={220}>
