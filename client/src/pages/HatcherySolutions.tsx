@@ -314,10 +314,10 @@ export default function HatcherySolutions() {
               <p className="section-label mb-3">Start a Hatchery Evaluation</p>
               <span className="teal-rule mb-5 mx-auto" />
               <h2 className="font-display mb-4" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
-                Plan a Hatchery System Evaluation
+                Contact Us
               </h2>
               <p className="font-body mb-8" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Describe your facility, species, and the water treatment challenge you're facing. VATN will provide a technical assessment of the options for your site.
+                Describe your facility, species, and the water treatment challenge you're facing. VATN will follow up to discuss your situation.
               </p>
             </RevealSection>
             <RevealSection delay={80}>
