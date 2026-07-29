@@ -138,7 +138,7 @@ export default function HatcherySolutions() {
             </p>
             <div className="flex flex-wrap gap-3">
               <a href="#contact" className="btn-primary">
-                Plan a Hatchery System Evaluation
+                Plan a Hatchery System Review
                 <ArrowRight size={15} />
               </a>
               <Link href="/products/gas-management">
@@ -311,7 +311,7 @@ export default function HatcherySolutions() {
         <div className="container">
           <div className="max-w-2xl mx-auto text-center">
             <RevealSection>
-              <p className="section-label mb-3">Start a Hatchery Evaluation</p>
+              <p className="section-label mb-3">Get in Touch</p>
               <span className="teal-rule mb-5 mx-auto" />
               <h2 className="font-display mb-4" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
                 Contact Us
@@ -341,7 +341,7 @@ export default function HatcherySolutions() {
                   </select>
                   <textarea rows={4} placeholder="Describe your facility, species, current water treatment challenges, and any specific treatment objectives..." className="font-body px-4 py-3 outline-none resize-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
                   <button type="submit" className="btn-primary w-fit">
-                    Request Hatchery Evaluation
+                    Send Message
                     <ArrowRight size={15} />
                   </button>
                 </form>
