@@ -321,30 +321,24 @@ export default function HatcherySolutions() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-7 bg-white text-left" style={{ boxShadow: "0 2px 16px rgba(10,22,40,0.08)", borderTop: "3px solid #3A8C3F", borderRadius: "2px" }}>
-                <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <input type="text" placeholder="Your Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                    <input type="text" placeholder="Hatchery / Agency Name" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                  </div>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <input type="email" placeholder="Email Address" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                    <input type="tel" placeholder="Phone Number" className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                  </div>
-                  <select className="font-body px-4 py-3 outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#3A5068", backgroundColor: "#ffffff" }}>
-                    <option value="federal">Federal Fish Hatchery</option>
-                    <option value="state">State Fish Hatchery</option>
-                    <option value="tribal">Tribal Hatchery</option>
-                    <option value="conservation">Conservation / Restoration Program</option>
-                    <option value="private">Private Aquaculture Facility</option>
-                    <option value="engineering">Engineering Firm / Consultant</option>
-                  </select>
-                  <textarea rows={4} placeholder="Describe your facility, species, current water treatment challenges, and any specific treatment objectives..." className="font-body px-4 py-3 outline-none resize-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                  <button type="submit" className="btn-primary w-fit">
-                    Send Message
-                    <ArrowRight size={15} />
-                  </button>
-                </form>
+              <div style={{ width: "100%", minHeight: "551px" }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                  id="inline-EixvLXvkzStptg4CDAf0"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form of VATN"
+                  data-height="551"
+                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                  data-form-id="EixvLXvkzStptg4CDAf0"
+                  title="Form of VATN"
+                />
               </div>
             </RevealSection>
           </div>

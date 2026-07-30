@@ -140,136 +140,25 @@ export default function Contact() {
                 Every project starts with understanding your site — your water source, species, infrastructure, and the specific challenge you need to solve. Use the form below to start that conversation.
               </p>
 
-              {submitted ? (
-                <div
-                  className="p-7 flex flex-col items-start gap-4"
-                  style={{
-                    backgroundColor: "#F0FAF8",
-                    border: "1px solid rgba(58,140,63,0.35)",
-                    borderLeft: "3px solid #3A8C3F",
-                    borderRadius: "2px",
-                  }}
-                >
-                  <CheckCircle2 size={28} style={{ color: "#3A8C3F" }} />
-                  <div>
-                    <p
-                      className="font-display font-bold"
-                      style={{ fontSize: "1.2rem", color: "#1C2B3A", lineHeight: 1.2 }}
-                    >
-                      Inquiry Received
-                    </p>
-                    <p
-                      className="font-body mt-2"
-                      style={{ color: "#3A5068", fontSize: "0.9rem", lineHeight: "1.6" }}
-                    >
-                      Thank you for reaching out. Barnaby or Terry will be in contact with you shortly.
-                    </p>
-                  </div>
-                </div>
-              ) : (
-                <div
-                  className="p-7"
-                  style={{
-                    backgroundColor: "#F4F6F8",
-                    borderLeft: "3px solid #3A8C3F",
-                    borderRadius: "2px",
-                  }}
-                >
-                  <form className="flex flex-col gap-3" onSubmit={handleSubmit}>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      <input
-                        type="text"
-                        name="name"
-                        value={formData.name}
-                        onChange={handleChange}
-                        placeholder="Your Name *"
-                        required
-                        className="font-body px-4 py-3 bg-white outline-none"
-                        style={{
-                          border: "1px solid #D4DDE8",
-                          borderRadius: "2px",
-                          fontSize: "0.88rem",
-                          color: "#1C2B3A",
-                        }}
-                      />
-                      <input
-                        type="text"
-                        name="organization"
-                        value={formData.organization}
-                        onChange={handleChange}
-                        placeholder="Organization / Facility"
-                        className="font-body px-4 py-3 bg-white outline-none"
-                        style={{
-                          border: "1px solid #D4DDE8",
-                          borderRadius: "2px",
-                          fontSize: "0.88rem",
-                          color: "#1C2B3A",
-                        }}
-                      />
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      <input
-                        type="email"
-                        name="email"
-                        value={formData.email}
-                        onChange={handleChange}
-                        placeholder="Email Address *"
-                        required
-                        className="font-body px-4 py-3 bg-white outline-none"
-                        style={{
-                          border: "1px solid #D4DDE8",
-                          borderRadius: "2px",
-                          fontSize: "0.88rem",
-                          color: "#1C2B3A",
-                        }}
-                      />
-                      <input
-                        type="tel"
-                        name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
-                        placeholder="Phone Number"
-                        className="font-body px-4 py-3 bg-white outline-none"
-                        style={{
-                          border: "1px solid #D4DDE8",
-                          borderRadius: "2px",
-                          fontSize: "0.88rem",
-                          color: "#1C2B3A",
-                        }}
-                      />
-                    </div>
-                    <textarea
-                      name="message"
-                      value={formData.message}
-                      onChange={handleChange}
-                      rows={4}
-                      placeholder="Describe your facility and the challenge you are working through..."
-                      className="font-body px-4 py-3 bg-white outline-none resize-none"
-                      style={{
-                        border: "1px solid #D4DDE8",
-                        borderRadius: "2px",
-                        fontSize: "0.88rem",
-                        color: "#1C2B3A",
-                      }}
-                    />
-                    {error && (
-                      <p className="font-body" style={{ color: "#C0392B", fontSize: "0.84rem" }}>
-                        {error}
-                      </p>
-                    )}
-                    <button
-                      type="submit"
-                      className="btn-primary w-fit"
-                      disabled={submitContact.isPending}
-                      style={{ opacity: submitContact.isPending ? 0.7 : 1 }}
-                    >
-                      {submitContact.isPending ? "Sending..." : (
-                        <>Send Your Inquiry <ArrowRight size={15} /></>
-                      )}
-                    </button>
-                  </form>
-                </div>
-              )}
+              <div style={{ width: "100%", minHeight: "551px" }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                  id="inline-EixvLXvkzStptg4CDAf0"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form of VATN"
+                  data-height="551"
+                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                  data-form-id="EixvLXvkzStptg4CDAf0"
+                  title="Form of VATN"
+                />
+              </div>
             </RevealSection>
 
             {/* ── DIRECT CONTACT ── */}

@@ -557,30 +557,24 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-7" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #3A8C3F", borderRadius: "2px" }}>
-                {contactSubmitted ? (
-                  <div className="flex flex-col items-start gap-3">
-                    <CheckCircle2 size={26} style={{ color: "#3A8C3F" }} />
-                    <p className="font-display font-bold" style={{ fontSize: "1.1rem", color: "#1C2B3A" }}>Inquiry Received</p>
-                    <p className="font-body" style={{ color: "#3A5068", fontSize: "0.88rem", lineHeight: "1.6" }}>Thank you for reaching out. Barnaby or Terry will be in contact with you shortly.</p>
-                  </div>
-                ) : (
-                  <form className="flex flex-col gap-3" onSubmit={handleContactSubmit}>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      <input type="text" name="name" value={contactForm.name} onChange={handleContactChange} placeholder="Your Name *" required className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                      <input type="text" name="organization" value={contactForm.organization} onChange={handleContactChange} placeholder="Organization / Facility" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                    </div>
-                    <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                      <input type="email" name="email" value={contactForm.email} onChange={handleContactChange} placeholder="Email Address *" required className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                      <input type="tel" name="phone" value={contactForm.phone} onChange={handleContactChange} placeholder="Phone Number" className="font-body px-4 py-3 bg-white outline-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                    </div>
-                    <textarea name="message" value={contactForm.message} onChange={handleContactChange} rows={3} placeholder="Describe your facility and the challenge you're working through..." className="font-body px-4 py-3 bg-white outline-none resize-none" style={{ border: "1px solid #D4DDE8", borderRadius: "2px", fontSize: "0.88rem", color: "#1C2B3A" }} />
-                    {contactError && <p className="font-body" style={{ color: "#C0392B", fontSize: "0.84rem" }}>{contactError}</p>}
-                    <button type="submit" className="btn-primary w-fit" disabled={submitContact.isPending} style={{ opacity: submitContact.isPending ? 0.7 : 1 }}>
-                      {submitContact.isPending ? "Sending..." : (<>Send Your Inquiry <ArrowRight size={15} /></>)}
-                    </button>
-                  </form>
-                )}
+              <div style={{ width: "100%", minHeight: "551px" }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                  id="inline-EixvLXvkzStptg4CDAf0"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form of VATN"
+                  data-height="551"
+                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                  data-form-id="EixvLXvkzStptg4CDAf0"
+                  title="Form of VATN"
+                />
               </div>
             </RevealSection>
 

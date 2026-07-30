@@ -402,20 +402,24 @@ export default function Home() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <div className="p-7" style={{ backgroundColor: "rgba(10,22,40,0.75)", borderLeft: "3px solid #3A8C3F", backdropFilter: "blur(8px)" }}>
-                <h3 className="font-display text-white mb-4" style={{ fontSize: "1.3rem" }}>Request a Technical Consultation</h3>
-                <form className="flex flex-col gap-3" onSubmit={(e) => e.preventDefault()}>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    <input type="text" placeholder="Your Name" className="font-body px-4 py-3 text-white placeholder-white/40 outline-none" style={{ backgroundColor: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", fontSize: "0.88rem" }} />
-                    <input type="text" placeholder="Organization / Facility" className="font-body px-4 py-3 text-white placeholder-white/40 outline-none" style={{ backgroundColor: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", fontSize: "0.88rem" }} />
-                  </div>
-                  <input type="email" placeholder="Email Address" className="font-body px-4 py-3 text-white placeholder-white/40 outline-none" style={{ backgroundColor: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", fontSize: "0.88rem" }} />
-                  <input type="tel" placeholder="Phone Number (optional)" className="font-body px-4 py-3 text-white placeholder-white/40 outline-none" style={{ backgroundColor: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", fontSize: "0.88rem" }} />
-                  <textarea rows={3} placeholder="Describe your water treatment challenge or project..." className="font-body px-4 py-3 text-white placeholder-white/40 outline-none resize-none" style={{ backgroundColor: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.15)", borderRadius: "2px", fontSize: "0.88rem" }} />
-                  <button type="submit" className="btn-primary w-fit mt-1">
-                    Send Your Inquiry <ArrowRight size={15} />
-                  </button>
-                </form>
+              <div style={{ width: "100%", minHeight: "551px" }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                  id="inline-EixvLXvkzStptg4CDAf0"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form of VATN"
+                  data-height="551"
+                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                  data-form-id="EixvLXvkzStptg4CDAf0"
+                  title="Form of VATN"
+                />
               </div>
             </RevealSection>
           </div>
