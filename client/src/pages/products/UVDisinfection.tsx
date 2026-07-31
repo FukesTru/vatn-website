@@ -71,10 +71,15 @@ export default function UVDisinfection() {
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
             Chemical-free pathogen control for fish hatchery and aquaculture water supplies. Ultraqua UV systems inactivate bacteria, viruses, and parasites without altering water chemistry or leaving residuals.
           </p>
-          <a href="/contact" className="btn-primary">
-            Discuss UV Disinfection for Your Facility
-            <ArrowRight size={15} />
-          </a>
+          <div className="flex flex-wrap gap-3 justify-center">
+            <a href="/contact" className="btn-primary">
+              Discuss UV Disinfection for Your Facility
+              <ArrowRight size={15} />
+            </a>
+            <a href="https://www.ultraqua.com" target="_blank" rel="noopener noreferrer" className="btn-outline" style={{ color: "#ffffff", borderColor: "rgba(255,255,255,0.4)" }}>
+              Visit Ultraqua.com <ArrowRight size={15} />
+            </a>
+          </div>
         </div>
       </section>
 

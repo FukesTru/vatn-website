@@ -307,7 +307,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </div>
                 {[
                   { d: "Ph.D.", f: "Fisheries & Allied Aquacultures", i: "Auburn University", y: "1989" },
-                  { d: "M.S.", f: "Aquaculture / Ion Exchange", i: "Oregon State U. / U. Virgin Islands", y: "1980" },
+                  { d: "M.Ag.", f: "Aquaculture / Ion Exchange", i: "Oregon State U. / U. Virgin Islands", y: "1980" },
                   { d: "B.S.", f: "Aquatic Biology / Chemistry", i: "Bemidji State University", y: "1976" },
                 ].map((e) => (
                   <div key={e.d} className="p-3 mb-2" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
@@ -387,9 +387,8 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                   B.S. &amp; MBA — Tulane University (1981, 1989)
                 </p>
                 <p className="font-display mb-4" style={{ fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-2 gap-6">
                   {[
-                    { val: 36, suffix: "+", label: "Years of Experience", sub: "Hatchery Industry" },
                     { val: 1994, suffix: "", label: "Co-Founded WMT", sub: "Sold to Innovasea 2019" },
                     { val: 24, suffix: "+", label: "Years Running WMT", sub: "State & federal hatcheries" },
                   ].map((s, i) => (
@@ -546,6 +545,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
       <section id="contact" className="py-20 lg:py-24" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
+            {/* Left column: heading + direct contact cards */}
             <RevealSection>
               <p className="section-label mb-3">Get in Touch</p>
               <span className="teal-rule mb-5" />
@@ -555,31 +555,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
               <p className="font-body mb-8" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.6" }}>
                 Describe your facility and the water treatment challenge you're facing. Barnaby and Terry will respond directly.
               </p>
-            </RevealSection>
-            <RevealSection delay={80}>
-              <div style={{ width: "100%", minHeight: "551px" }}>
-                <iframe
-                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
-                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
-                  id="inline-EixvLXvkzStptg4CDAf0"
-                  data-layout="{'id':'INLINE'}"
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Form of VATN"
-                  data-height="551"
-                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
-                  data-form-id="EixvLXvkzStptg4CDAf0"
-                  title="Form of VATN"
-                />
-              </div>
-            </RevealSection>
-
-            {/* Direct Contact Cards */}
-            <RevealSection delay={120}>
+              {/* Direct Contact Cards — raised into left column */}
               <div className="flex flex-col gap-5">
                 <p className="section-label" style={{ color: "#3A8C3F" }}>Direct Contact</p>
                 <span className="teal-rule" />
@@ -601,6 +577,28 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                     (540) 333-6859
                   </a>
                 </div>
+              </div>
+            </RevealSection>
+            {/* Right column: GHL form */}
+            <RevealSection delay={80}>
+              <div style={{ width: "100%", minHeight: "551px" }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                  id="inline-EixvLXvkzStptg4CDAf0"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form of VATN"
+                  data-height="551"
+                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                  data-form-id="EixvLXvkzStptg4CDAf0"
+                  title="Form of VATN"
+                />
               </div>
             </RevealSection>
           </div>
