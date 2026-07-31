@@ -189,20 +189,6 @@ export default function GasManagementProduct() {
               <p className="font-body text-white/40 mt-4" style={{ fontSize: "0.75rem" }}>Courtesy of The Conservation Fund Freshwater Institute</p>
             </div>
           </div>
-          {/* Low Profile Oxygenator photo */}
-          <div className="mt-10 flex justify-center">
-            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.18)", border: "1px solid rgba(58,140,63,0.2)", maxWidth: "600px", width: "100%" }}>
-              <img
-                src="/manus-storage/low-profile-oxygenator_e8220503.png"
-                alt="Low profile oxygenator field installation"
-                style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
-              />
-              <div style={{ padding: "16px 20px", backgroundColor: "#0D1F38", borderTop: "2px solid #3A8C3F" }}>
-                <p className="font-display font-bold text-white" style={{ fontSize: "0.95rem" }}>Low Profile Oxygenator</p>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "rgba(255,255,255,0.55)", marginTop: "4px", lineHeight: "1.5" }}>Low profile oxygenator installed at a hatchery site. The compact design reduces volume requirements by approximately 50% compared to standard LHO configurations while maintaining the same no-moving-parts operation.</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
@@ -247,28 +233,15 @@ export default function GasManagementProduct() {
               </a>
             </RevealSection>
             <RevealSection delay={100}>
-              <div className="flex flex-col gap-6">
-                <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-                  <img
-                    src="/manus-storage/np-oil-degasser-co2-stripper_026065a3.png"
-                    alt="NP CO2 Degasser — forced-air cascade-type CO2 stripping unit"
-                    style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "24px" }}
-                  />
-                  <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                    <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>NP CO₂-Degasser</p>
-                    <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Cascade-type forced-air CO₂ stripping unit with self-cleaning packing. A centrifugal blower forces air countercurrent to the falling water film, stripping dissolved CO₂ efficiently with minimal maintenance requirements.</p>
-                  </div>
-                </div>
-                <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-                  <img
-                    src="/manus-storage/leetown-packed-columns_b77190c6.png"
-                    alt="Packed column CO2 stripping towers at Leetown Science Center"
-                    style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
-                  />
-                  <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                    <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Packed Column CO₂ Stripping — Leetown Science Center</p>
-                    <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Forced-air packed column CO₂ stripping towers installed at Leetown Science Center, West Virginia. These units demonstrate the full-scale application of packed bed stripping technology for hatchery water treatment.</p>
-                  </div>
+              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
+                <img
+                  src="/manus-storage/np-oil-degasser-co2-stripper_026065a3.png"
+                  alt="NP CO2 Degasser — forced-air cascade-type CO2 stripping unit"
+                  style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "24px" }}
+                />
+                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
+                  <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>NP CO₂-Degasser</p>
+                  <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Cascade-type forced-air CO₂ stripping unit with self-cleaning packing. A centrifugal blower forces air countercurrent to the falling water film, stripping dissolved CO₂ efficiently with minimal maintenance requirements.</p>
                 </div>
               </div>
             </RevealSection>

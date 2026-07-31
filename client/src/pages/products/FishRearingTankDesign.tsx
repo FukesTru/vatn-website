@@ -140,61 +140,14 @@ export default function FishRearingTankDesign() {
         </div>
       </section>
 
-      {/* Mixed-Cell Raceway Diagrams & CFD */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: "#F4F6F8", borderTop: "1px solid #E0E8F0" }}>
+      {/* Placeholder note */}
+      <section className="py-12 lg:py-14" style={{ backgroundColor: "#F4F6F8", borderTop: "1px solid #E0E8F0" }}>
         <div className="container">
-          <RevealSection className="mb-10 text-center">
-            <p className="section-label mb-3">Research Illustrations</p>
-            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
-            <h2 className="font-display" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
-              Mixed-Cell Raceway Design &amp; CFD Analysis
-            </h2>
-            <p className="font-body mt-4 max-w-2xl mx-auto" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.7" }}>
-              These diagrams and computational fluid dynamics (CFD) visualizations are drawn from Dr. Watten's published research on mixed-cell raceway hydraulics and rearing unit design.
+          <div className="max-w-2xl mx-auto p-6" style={{ backgroundColor: "#fff", border: "1px solid #E0E8F0", borderLeft: "4px solid #3A8C3F", borderRadius: "2px" }}>
+            <p className="font-display mb-2" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Illustrations Coming Soon</p>
+            <p className="font-body" style={{ fontSize: "0.85rem", color: "#5A7080", lineHeight: "1.7" }}>
+              Diagrams and illustrations of mixed-cell raceway design and rearing unit hydraulics are being prepared for this page. Contact VATN directly to discuss your facility's rearing unit configuration and hydraulic requirements.
             </p>
-          </RevealSection>
-          {/* Mixed-Cell Raceway Water Flow Diagram — full width */}
-          <RevealSection className="mb-8">
-            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-              <img
-                src="/manus-storage/mixed-cell-raceway-flow_60033831.png"
-                alt="Mixed-cell raceway water flow diagram"
-                style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#0A1628", padding: "16px" }}
-              />
-              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Mixed-Cell Raceway — Water Flow Pattern</p>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Diagram illustrating the water circulation pattern in a mixed-cell raceway design. The mixed-cell configuration promotes uniform water quality distribution and reduces dead zones compared to conventional plug-flow raceways.</p>
-              </div>
-            </div>
-          </RevealSection>
-          {/* CFD photos side by side */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <RevealSection>
-              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-                <img
-                  src="/manus-storage/cfd-velocity-contour_eeb19cdc.png"
-                  alt="CFD velocity contour plot of raceway hydraulics"
-                  style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "8px" }}
-                />
-                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                  <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>CFD Velocity Contour Analysis</p>
-                  <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Computational fluid dynamics velocity contour plot showing flow distribution within a rearing unit. CFD modeling allows VATN to evaluate hydraulic performance before construction.</p>
-                </div>
-              </div>
-            </RevealSection>
-            <RevealSection delay={80}>
-              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-                <img
-                  src="/manus-storage/cfd-3d-streamline_f09f86c4.png"
-                  alt="CFD 3D particle trace and streamline visualization of raceway hydraulics"
-                  style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "8px" }}
-                />
-                <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                  <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>CFD 3D Streamline Visualization</p>
-                  <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Three-dimensional particle trace and streamline visualization from CFD analysis of rearing unit hydraulics. This type of analysis identifies recirculation zones and optimizes inlet/outlet placement for uniform fish distribution.</p>
-                </div>
-              </div>
-            </RevealSection>
           </div>
         </div>
       </section>

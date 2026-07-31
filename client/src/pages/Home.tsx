@@ -226,7 +226,61 @@ export default function Home() {
         </div>
       </section>
 
-
+      {/* ── SOLUTIONS ── */}
+      <section className="py-20 lg:py-28" style={{ backgroundColor: "#060E1A" }}>
+        <div className="absolute inset-0 blueprint-cross pointer-events-none" style={{ position: "relative" }} />
+        <div className="container">
+          <RevealSection>
+            <div className="max-w-xl mb-12">
+              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Solution Areas</p>
+              <span className="teal-rule mb-5" />
+              <h2 className="font-display text-white" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", lineHeight: 1.1 }}>
+                The Tools VATN Uses to Solve Your Problem
+              </h2>
+              <p className="font-body text-white/55 mt-4" style={{ fontSize: "0.92rem", lineHeight: "1.65" }}>
+                These are not off-the-shelf products. They are engineered systems that VATN selects, sizes, and configures based on your specific water quality challenge.
+              </p>
+            </div>
+          </RevealSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+            {solutions.map((sol, i) => (
+              <RevealSection key={sol.title} delay={i * 60}>
+                <Link href={sol.href}>
+                  <div
+                    className="group h-full p-6 cursor-pointer transition-all duration-200"
+                    style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(58,140,63,0.15)", borderRadius: "2px" }}
+                    onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(58,140,63,0.08)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.4)"; }}
+                    onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(255,255,255,0.04)"; (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.15)"; }}
+                  >
+                    <div className="flex items-start gap-4 mb-3">
+                      <div className="p-2.5 rounded-sm" style={{ backgroundColor: "rgba(58,140,63,0.12)", color: "#3A8C3F" }}>{sol.icon}</div>
+                      <div>
+                        <p className="section-label" style={{ color: "#5BA3D9", fontSize: "0.65rem" }}>{sol.label}</p>
+                        <h3 className="font-display text-white" style={{ fontSize: "1.15rem", lineHeight: 1.2, marginTop: "2px" }}>{sol.title}</h3>
+                      </div>
+                    </div>
+                    <p className="font-body text-white/50" style={{ fontSize: "0.84rem", lineHeight: "1.6" }}>{sol.desc}</p>
+                    <div className="mt-4 flex items-center gap-1.5" style={{ color: "#3A8C3F" }}>
+                      <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>Learn More</span>
+                      <ArrowRight size={13} />
+                    </div>
+                  </div>
+                </Link>
+              </RevealSection>
+            ))}
+          </div>
+          <RevealSection delay={200}>
+            <div className="mt-10 flex flex-wrap gap-3">
+              <Link href="/gas-management">
+                <span className="btn-primary">Gas Management Solutions <ArrowRight size={15} /></span>
+              </Link>
+              <Link href="/contact">
+                <span className="btn-outline">Discuss Your Requirements <ArrowRight size={15} /></span>
+              </Link>
+            </div>
+          </RevealSection>
+        </div>
+      </section>
 
       {/* ── PUBLICATIONS CREDIBILITY SECTION ── */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
