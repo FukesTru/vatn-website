@@ -10,7 +10,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const AERIAL_BG = "/manus-storage/leavenworth-nfh-aerial-usfws_b8b9094a.jpg";
-const EQUIPMENT_IMG = "/manus-storage/portable-sidestream-vacuum-degasser-dworshak_23d446f1.png";
+const EQUIPMENT_IMG = "/manus-storage/aerial-hatchery_46381f8f.png";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -146,40 +146,6 @@ export default function HatcherySolutions() {
               </Link>
             </div>
           </RevealSection>
-        </div>
-      </section>
-
-      {/* ── EXPERT CREDIBILITY INTRO ── */}
-      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <RevealSection>
-              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Why VATN Understands Hatcheries</p>
-              <span className="teal-rule mb-5" />
-              <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Dr. Barnaby Watten spent 49+ years in the aquaculture water treatment industry. He did not study hatcheries from the outside — he worked inside them, developing the equipment and methods that hatcheries now rely on. His 80+ publications and 15 patents represent a body of work built specifically for aquaculture water treatment challenges.
-              </p>
-              <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-                Terry McCarthy spent 36+ years supplying and supporting state and federal hatchery programs through Water Management Technologies (WMT), which he co-founded in 1994. He understands how hatchery procurement works, what hatchery managers actually need, and how to translate technical requirements into practical equipment solutions.
-              </p>
-            </RevealSection>
-            <RevealSection delay={80}>
-              <div className="grid grid-cols-2 gap-3">
-                {[
-                  { num: "49+", label: "Yrs Industry Experience", sub: "Dr. Barnaby J. Watten" },
-                  { num: "80+", label: "Publications", sub: "Peer-reviewed research" },
-                  { num: "15", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
-                  { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy" },
-                ].map((s) => (
-                  <div key={s.num} className="p-4 text-center" style={{ borderTop: "2px solid rgba(58,140,63,0.35)", backgroundColor: "rgba(255,255,255,0.03)" }}>
-                    <p className="font-display font-bold" style={{ fontSize: "2rem", color: "#3A8C3F", lineHeight: 1 }}>{s.num}</p>
-                    <p className="font-display text-white mt-1" style={{ fontSize: "0.82rem", lineHeight: 1.3 }}>{s.label}</p>
-                    <p className="font-body text-white/40 mt-0.5" style={{ fontSize: "0.7rem" }}>{s.sub}</p>
-                  </div>
-                ))}
-              </div>
-            </RevealSection>
-          </div>
         </div>
       </section>
 

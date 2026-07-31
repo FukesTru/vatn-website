@@ -50,7 +50,7 @@ const technologies = [
     icon: <Droplets size={24} />,
     title: "Oxygenation & Degassing Equipment",
     body: "Reactor performance is modeled against your site's actual DO, N₂, temperature, barometric pressure, alpha factor, and hydraulic conditions. VATN's proprietary software identifies operating conditions that minimize capital and variable costs while hitting target dissolved gas levels.",
-    specs: ["Spray towers", "Hooded surface agitators", "Packed columns", "U-tubes", "Vacuum degassers"],
+    specs: ["Spray towers", "Hooded surface agitators", "Packed columns", "U-tubes", "Vacuum degassers", "Low profile oxygenator"],
   },
   {
     icon: <Layers size={24} />,
@@ -136,34 +136,6 @@ export default function GasManagement() {
               </Link>
             </div>
           </RevealSection>
-        </div>
-      </section>
-
-      {/* ── EXPERT CREDIBILITY INTRO ── */}
-      <section className="py-14 lg:py-18" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-            <RevealSection className="lg:col-span-2">
-              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>The Expertise Behind the Engineering</p>
-              <span className="teal-rule mb-5" />
-              <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
-                VATN's gas management capabilities are built on decades of original research. Dr. Barnaby Watten spent 49+ years in the aquaculture water treatment industry, developing and patenting the Low Head Oxygenator in 1989 and authoring more than 80+ publications on aquaculture water treatment. His computer modeling approach — which evaluates reactor performance against your site's specific water chemistry, hydraulic conditions, and treatment objectives — is the foundation of every VATN system recommendation.
-              </p>
-              <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-                Terry McCarthy brings 36+ years of practical hatchery industry experience, including co-founding Water Management Technologies (WMT) in 1994 and building it into a recognized supplier of turnkey RAS systems for state and federal hatchery programs before its acquisition by Innovasea in 2018.
-              </p>
-            </RevealSection>
-            <RevealSection delay={80}>
-              <div className="p-5 coord-corner" style={{ border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px" }}>
-                <p className="data-label mb-3">Research Credentials</p>
-                <div className="spec-row"><span className="spec-key">Publications</span><span className="spec-val">80+ Publications</span></div>
-                <div className="spec-row"><span className="spec-key">Patents</span><span className="spec-val">15 Patents and Provisional Patents</span></div>
-                <div className="spec-row"><span className="spec-key">USFWS Career</span><span className="spec-val">49+ years</span></div>
-                <div className="spec-row"><span className="spec-key">Ph.D.</span><span className="spec-val">Auburn University, 1989</span></div>
-                <div className="spec-row"><span className="spec-key">LHO Patent</span><span className="spec-val">1989</span></div>
-              </div>
-            </RevealSection>
-          </div>
         </div>
       </section>
 

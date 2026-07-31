@@ -140,14 +140,61 @@ export default function FishRearingTankDesign() {
         </div>
       </section>
 
-      {/* Placeholder note */}
-      <section className="py-12 lg:py-14" style={{ backgroundColor: "#F4F6F8", borderTop: "1px solid #E0E8F0" }}>
+      {/* Mixed-Cell Raceway Illustrations */}
+      <section className="py-16 lg:py-20" style={{ backgroundColor: "#F4F6F8", borderTop: "1px solid #E0E8F0" }}>
         <div className="container">
-          <div className="max-w-2xl mx-auto p-6" style={{ backgroundColor: "#fff", border: "1px solid #E0E8F0", borderLeft: "4px solid #3A8C3F", borderRadius: "2px" }}>
-            <p className="font-display mb-2" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Illustrations Coming Soon</p>
-            <p className="font-body" style={{ fontSize: "0.85rem", color: "#5A7080", lineHeight: "1.7" }}>
-              Diagrams and illustrations of mixed-cell raceway design and rearing unit hydraulics are being prepared for this page. Contact VATN directly to discuss your facility's rearing unit configuration and hydraulic requirements.
-            </p>
+          <RevealSection>
+            <div className="mb-10">
+              <p className="section-label mb-3">Mixed-Cell Raceway Design</p>
+              <span className="teal-rule mb-5" />
+              <h2 className="font-display" style={{ fontSize: "clamp(1.6rem, 3vw, 2.2rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
+                Hydraulic Flow Diagrams &amp; CFD Analysis
+              </h2>
+            </div>
+          </RevealSection>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <RevealSection delay={0}>
+              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
+                <div style={{ backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
+                  <img
+                    src="/manus-storage/mixed-cell-raceway-diagram_38364c80.png"
+                    alt="Mixed-Cell Raceway Water Flow Diagram"
+                    style={{ width: "100%", display: "block", objectFit: "contain", maxHeight: "280px" }}
+                  />
+                </div>
+                <div style={{ padding: "14px 18px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
+                  <p className="font-display font-bold" style={{ fontSize: "0.9rem", color: "#1C2B3A" }}>Mixed-Cell Raceway Water Flow</p>
+                </div>
+              </div>
+            </RevealSection>
+            <RevealSection delay={80}>
+              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
+                <div style={{ backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
+                  <img
+                    src="/manus-storage/cfd-contour-velocity_9a992ed4.png"
+                    alt="Application of Computational Fluid Dynamics — contour velocity"
+                    style={{ width: "100%", display: "block", objectFit: "contain", maxHeight: "280px" }}
+                  />
+                </div>
+                <div style={{ padding: "14px 18px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
+                  <p className="font-display font-bold" style={{ fontSize: "0.9rem", color: "#1C2B3A" }}>Application of Computational Fluid Dynamics</p>
+                </div>
+              </div>
+            </RevealSection>
+            <RevealSection delay={160}>
+              <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
+                <div style={{ backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
+                  <img
+                    src="/manus-storage/cfd-3d-streamline_3ce4073b.png"
+                    alt="CFD 3D streamline analysis of raceway hydraulics"
+                    style={{ width: "100%", display: "block", objectFit: "contain", maxHeight: "280px" }}
+                  />
+                </div>
+                <div style={{ padding: "14px 18px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
+                  <p className="font-display font-bold" style={{ fontSize: "0.9rem", color: "#1C2B3A" }}>CFD 3D Streamline Analysis</p>
+                </div>
+              </div>
+            </RevealSection>
           </div>
         </div>
       </section>

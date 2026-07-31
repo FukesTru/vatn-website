@@ -156,12 +156,11 @@ export default function Home() {
       {/* ── CREDIBILITY STATS ── */}
       <section className="py-16" style={{ backgroundColor: "#0A1628" }}>
         <div className="container">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { num: "80+", label: "Publications", sub: "Dr. Barnaby J. Watten" },
               { num: "15", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
               { num: "85+", label: "Yrs Combined Experience", sub: "Dr. Watten (49+) & Terry McCarthy (36+)" },
-              { num: "36+", label: "Yrs Hatchery Industry", sub: "Terry McCarthy, WMT & VATN" },
             ].map((stat, i) => (
               <RevealSection key={stat.num} delay={i * 70}>
                 <div className="text-center p-5" style={{ borderTop: "2px solid rgba(58,140,63,0.4)" }}>
@@ -276,102 +275,6 @@ export default function Home() {
               </Link>
               <Link href="/contact">
                 <span className="btn-outline">Discuss Your Requirements <ArrowRight size={15} /></span>
-              </Link>
-            </div>
-          </RevealSection>
-        </div>
-      </section>
-
-      {/* ── PUBLICATIONS CREDIBILITY SECTION ── */}
-      <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
-            <RevealSection delay={100}>
-              <div className="grid grid-cols-1 gap-4">
-                {[
-                  { icon: <BookOpen size={18} />, label: "Publications", value: "80+ publications", desc: "Covering oxygenation, CO₂ stripping, nitrogen supersaturation, RAS design, fish physiology, and more." },
-                  { icon: <Award size={18} />, label: "Patents", value: "15 Patents and Provisional Patents", desc: "Including the patented Low Head Oxygenator (1989) and multiple gas management innovations." },
-                  { icon: <Microscope size={18} />, label: "Research Background", value: "Auburn Ph.D. (1989)", desc: "Dr. Watten's doctoral research at Auburn University laid the foundation for modern aquaculture gas management." },
-                  { icon: <Users size={18} />, label: "Industry Experience", value: "36+ years, Terry McCarthy", desc: "Co-founded WMT, Inc. in 1994. Served state and federal hatchery programs for over two decades." },
-                ].map((item, i) => (
-                  <RevealSection key={item.label} delay={i * 60}>
-                    <div className="flex gap-4 p-5" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #3A8C3F", borderRadius: "0 2px 2px 0" }}>
-                      <div className="shrink-0 mt-0.5" style={{ color: "#3A8C3F" }}>{item.icon}</div>
-                      <div>
-                        <p className="section-label mb-0.5" style={{ fontSize: "0.65rem" }}>{item.label}</p>
-                        <p className="font-display" style={{ fontSize: "1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{item.value}</p>
-                        <p className="font-body mt-1" style={{ color: "#5A7080", fontSize: "0.82rem", lineHeight: "1.55" }}>{item.desc}</p>
-                      </div>
-                    </div>
-                  </RevealSection>
-                ))}
-              </div>
-            </RevealSection>
-            <RevealSection>
-              <p className="section-label mb-3">Scientific Credibility</p>
-              <span className="teal-rule mb-5" />
-              <h2 className="font-display mb-5" style={{ fontSize: "clamp(2rem, 4vw, 2.8rem)", color: "#1C2B3A", lineHeight: 1.1 }}>
-                The Research Behind the Results
-              </h2>
-              <p className="font-body mb-4" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                The science behind VATN's approach is not borrowed from other industries. It was developed specifically for aquaculture — through decades of field research, controlled experiments, and direct collaboration with the hatchery programs that depend on it.
-              </p>
-              <p className="font-body mb-6" style={{ color: "#3A5068", fontSize: "0.95rem", lineHeight: "1.7" }}>
-                Dr. Watten's 80+ publications represent one of the most comprehensive bodies of work in aquaculture water treatment. When VATN recommends a system configuration, it is backed by research — not a sales pitch.
-              </p>
-              <div className="flex flex-wrap gap-3">
-                <Link href="/publications">
-                  <span className="btn-navy">Browse Publications <ArrowRight size={15} /></span>
-                </Link>
-                <Link href="/our-team">
-                  <span className="btn-outline" style={{ color: "#1C2B3A", borderColor: "#1C2B3A" }}>Meet the Team <ArrowRight size={15} /></span>
-                </Link>
-              </div>
-            </RevealSection>
-          </div>
-        </div>
-      </section>
-
-      {/* ── WHO WE SERVE ── */}
-      <section className="py-20 lg:py-28 relative" style={{ backgroundColor: "#060E1A" }}>
-        <div className="absolute inset-0 blueprint-cross pointer-events-none" />
-        <div className="container relative z-10">
-          <RevealSection>
-            <div className="max-w-xl mb-12">
-              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Who VATN Works With</p>
-              <span className="teal-rule mb-5" />
-              <h2 className="font-display text-white" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", lineHeight: 1.1 }}>
-                Built for the Teams Running Aquatic Systems
-              </h2>
-            </div>
-          </RevealSection>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
-            {[
-              { icon: <CheckCircle2 size={18} />, title: "Federal Fish Hatcheries", desc: "USFWS and federal agency programs requiring reliable, field-maintainable systems with full technical support." },
-              { icon: <CheckCircle2 size={18} />, title: "State Fish Hatcheries", desc: "State fisheries agencies managing coldwater and warmwater production across diverse facility types and water sources." },
-              { icon: <CheckCircle2 size={18} />, title: "Aquaculture Engineering Firms", desc: "Design firms who need a technical gas-transfer partner for equipment selection, sizing, and modeling support." },
-              { icon: <CheckCircle2 size={18} />, title: "RAS & Raceway Operators", desc: "Facilities where dissolved gas control is critical to fish health, survival, and production efficiency." },
-              { icon: <CheckCircle2 size={18} />, title: "Fisheries Biologists & Managers", desc: "Technical staff who need equipment that performs reliably without constant intervention or specialized maintenance." },
-              { icon: <CheckCircle2 size={18} />, title: "Conservation & Restoration Programs", desc: "Native species and broodstock programs with specific water quality requirements and limited infrastructure." },
-            ].map((aud, i) => (
-              <RevealSection key={aud.title} delay={i * 55}>
-                <div className="p-6 h-full" style={{ backgroundColor: "rgba(255,255,255,0.03)", border: "1px solid rgba(58,140,63,0.12)", borderRadius: "2px" }}>
-                  <div className="flex items-center gap-3 mb-3">
-                    <div style={{ color: "#3A8C3F" }}>{aud.icon}</div>
-                    <h3 className="font-display text-white" style={{ fontSize: "1.05rem", lineHeight: 1.2 }}>{aud.title}</h3>
-                  </div>
-                  <p className="font-body text-white/50" style={{ fontSize: "0.83rem", lineHeight: "1.6" }}>{aud.desc}</p>
-                </div>
-              </RevealSection>
-            ))}
-          </div>
-          <RevealSection delay={200}>
-            <div className="mt-10 flex flex-wrap gap-3">
-              <Link href="/hatchery-solutions">
-                <span className="btn-primary">Hatchery Solutions <ArrowRight size={15} /></span>
-              </Link>
-              <Link href="/engineering-partners">
-                <span className="btn-outline">Engineering Partners <ArrowRight size={15} /></span>
               </Link>
             </div>
           </RevealSection>

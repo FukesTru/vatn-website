@@ -64,27 +64,27 @@ export default function BioMedia() {
         <div className="container">
           {/* Photos row */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
-            <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
-              <div style={{ backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.07)" }}>
+              <div style={{ backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center", minHeight: "320px" }}>
                 <img
                   src="/manus-storage/vatn-bio-media-photo_415f2c30.jpg"
                   alt="VATN B100 and MB3 Bio Media — black and white"
-                  style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
+                  style={{ width: "100%", height: "320px", display: "block", objectFit: "contain", padding: "1rem" }}
                 />
               </div>
-              <div style={{ padding: "0.75rem 1rem" }}>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>B 100 = Black, MB3 = White in this picture, Both available in black or white.</p>
+              <div style={{ padding: "0.75rem 1rem", borderTop: "2px solid #3A8C3F" }}>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>B 100 = Black, MB3 = White in this picture. Both available in black or white.</p>
               </div>
             </div>
-            <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
-              <div style={{ backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.07)" }}>
+              <div style={{ backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center", minHeight: "320px" }}>
                 <img
                   src="/manus-storage/vatn-bio-media-usa_929c566e.png"
                   alt="VATN B100 Bio Media — Made in the USA"
-                  style={{ width: "100%", height: "auto", display: "block", objectFit: "contain" }}
+                  style={{ width: "100%", height: "320px", display: "block", objectFit: "contain", padding: "1rem" }}
                 />
               </div>
-              <div style={{ padding: "0.75rem 1rem" }}>
+              <div style={{ padding: "0.75rem 1rem", borderTop: "2px solid #3A8C3F" }}>
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>B100 Bio Media — manufactured in the United States</p>
               </div>
             </div>
@@ -127,7 +127,7 @@ export default function BioMedia() {
                     </tr>
                     <tr style={{ borderBottom: "1px solid #E8EEF4", backgroundColor: "#F9FAFB" }}>
                       <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Media Type</td>
-                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>Structured Plastic</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>HDPE High density Polyethylene</td>
                     </tr>
                     <tr style={{ borderBottom: "1px solid #E8EEF4" }}>
                       <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Compatible Configurations</td>

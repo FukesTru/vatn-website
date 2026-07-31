@@ -70,3 +70,38 @@
 - [x] Gas Management product page: replace right valve photo with portable sidestream vacuum degasser (Dworshak NFH)
 - [x] Hatcheries page: replace old degasser photo with new portable sidestream vacuum degasser photo
 - [x] Navigation: add "Hatcheries" link pointing to /hatchery-solutions
+
+## Website Edits — VATNwebsiteEdits.pdf
+
+- [ ] Edit 1: Remove Terry stat block from the Our Team stats row (keep other three stats)
+- [ ] Edit 2: Add "low profile oxygenator" to oxygenation/degassing product lists
+- [ ] Edit 3: Reinsert the two clearer product photos on the Bio Media page
+- [ ] Edit 4: Change Bio Media "Structured Plastic" to "HDPE High density Polyethylene"
+- [ ] Edit 5: Replace the UV CTA section with Ultraqua website link section
+- [ ] Edit 6: Remove the small dark section from Gas Management page
+- [ ] Edit 7: Remove the shown homepage sections
+- [ ] Edit 8: Change Barnaby degree to "M.Ag Agricultural Engineering"
+- [ ] Edit 9: Move Our Team direct contact cards next to the form
+- [ ] Edit 10: Remove Portable Sidestream Vacuum Degasser block from Gas Management product page
+- [ ] Edit 11: Add Craig Brook 900 GPM vacuum degasser photo and description
+- [ ] Edit 12: Add Leetown tower photo beside Water Jet Exhauster with caption
+- [ ] Edit 13: Add three Mixed-Cell Raceway illustrations in order under Fish Rearing Tank Design
+- [ ] Edit 14: Remove dark credibility/stat section from Hatchery Solutions
+- [ ] Edit 15: Replace Hatchery Applications photo with aerial hatchery photo
+- [ ] Edit 16: Add two small LHO photos under description column on Gas Management product page
+
+- [x] Edit 1: Remove Terry's stat (36+ Yrs Hatchery Industry) from Homepage credibility stats, change to 3-col grid
+- [x] Edit 2: Add "Low profile oxygenator" to Oxygenation & Degassing Equipment specs in GasManagement.tsx and GasManagementProduct.tsx
+- [x] Edit 3: Make BioMedia photos display larger and clearer (320px height, padding, better shadow)
+- [x] Edit 4: Change Media Type from "Structured Plastic" to "HDPE High density Polyethylene" in BioMedia.tsx
+- [x] Edit 5: Replace UV Disinfection CTA section with Ultraqua website link section
+- [x] Edit 6: Remove dark EXPERT CREDIBILITY INTRO section from GasManagement.tsx
+- [x] Edit 7: Remove PUBLICATIONS CREDIBILITY SECTION and WHO WE SERVE section from Home.tsx
+- [x] Edit 8: Change M.S. Aquaculture/Ion Exchange to M.Ag Agricultural Engineering in OurTeam.tsx
+- [x] Edit 9: Restructure OurTeam contact section - form + contact cards side by side (3-col grid)
+- [x] Edit 10: Remove Portable Sidestream Vacuum Degasser photo from GasManagementProduct.tsx
+- [x] Edit 12: Add Leetown USGS Gas Management Tower photo next to Water Jet Exhauster in GasManagementProduct.tsx
+- [x] Edit 13: Replace FishRearingTankDesign placeholder with 3 Mixed-Cell Raceway illustration photos
+- [x] Edit 14: Remove EXPERT CREDIBILITY INTRO section from HatcherySolutions.tsx
+- [x] Edit 15: Replace EQUIPMENT_IMG with aerial hatchery photo in HatcherySolutions.tsx
+- [x] Edit 16: Add two small LHO photos below tags row in LHO section of GasManagementProduct.tsx

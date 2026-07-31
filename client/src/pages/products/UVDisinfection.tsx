@@ -204,18 +204,20 @@ export default function UVDisinfection() {
       </section>
 
 
-      {/* CTA */}
+      {/* Ultraqua Link Section */}
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}>
         <div className="container text-center">
           <RevealSection>
+          <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>UV Equipment Partner</p>
+          <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.4rem)", lineHeight: 1.1 }}>
-            Discuss UV Disinfection for Your Facility
+            Ultraqua UV Systems
           </h2>
           <p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>
-            UV system sizing requires site-specific information. Contact VATN to describe your flow rates, water source, and disinfection objectives.
+            VATN works with Ultraqua UV systems for aquaculture disinfection applications. Visit the Ultraqua website to learn more about their UV technology and product range.
           </p>
-          <a href="/contact" className="btn-primary">
-            Contact VATN
+          <a href="https://www.ultraaqua.com" target="_blank" rel="noopener noreferrer" className="btn-primary">
+            Visit Ultraqua Website
             <ArrowRight size={15} />
           </a>
           </RevealSection>

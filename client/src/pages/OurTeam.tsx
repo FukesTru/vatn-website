@@ -307,7 +307,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </div>
                 {[
                   { d: "Ph.D.", f: "Fisheries & Allied Aquacultures", i: "Auburn University", y: "1989" },
-                  { d: "M.S.", f: "Aquaculture / Ion Exchange", i: "Oregon State U. / U. Virgin Islands", y: "1980" },
+                  { d: "M.Ag", f: "Agricultural Engineering", i: "Oregon State U. / U. Virgin Islands", y: "1980" },
                   { d: "B.S.", f: "Aquatic Biology / Chemistry", i: "Bemidji State University", y: "1976" },
                 ].map((e) => (
                   <div key={e.d} className="p-3 mb-2" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
@@ -545,18 +545,22 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
       {/* ── CTA ── */}
       <section id="contact" className="py-20 lg:py-24" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-start">
-            <RevealSection>
+          {/* Heading row */}
+          <RevealSection>
+            <div className="mb-10">
               <p className="section-label mb-3">Get in Touch</p>
               <span className="teal-rule mb-5" />
               <h2 className="font-display mb-3" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", color: "#1C2B3A", lineHeight: 1.05 }}>
                 Speak Directly With Our Team
               </h2>
-              <p className="font-body mb-8" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.6" }}>
+              <p className="font-body" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.6", maxWidth: "600px" }}>
                 Describe your facility and the water treatment challenge you're facing. Barnaby and Terry will respond directly.
               </p>
-            </RevealSection>
-            <RevealSection delay={80}>
+            </div>
+          </RevealSection>
+          {/* Form + Contact cards side by side */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
+            <RevealSection delay={80} className="lg:col-span-2">
               <div style={{ width: "100%", minHeight: "551px" }}>
                 <iframe
                   src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"

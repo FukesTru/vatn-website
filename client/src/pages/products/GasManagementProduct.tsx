@@ -15,7 +15,7 @@ const technologies = [
     icon: <Droplets size={22} />,
     title: "Oxygenation & Degassing Equipment",
     body: "Reactor performance is modeled against your site's actual DO, N₂, temperature, barometric pressure, alpha factor, and hydraulic conditions. VATN's proprietary software identifies operating conditions that minimize capital and variable costs while hitting target dissolved gas levels.",
-    specs: ["Spray towers", "Hooded surface agitators", "Packed columns", "U-tubes", "Vacuum degassers"],
+    specs: ["Spray towers", "Hooded surface agitators", "Packed columns", "U-tubes", "Vacuum degassers", "Low profile oxygenator"],
   },
   {
     icon: <Layers size={22} />,
@@ -187,6 +187,23 @@ export default function GasManagementProduct() {
                 ))}
               </div>
               <p className="font-body text-white/40 mt-4" style={{ fontSize: "0.75rem" }}>Courtesy of The Conservation Fund Freshwater Institute</p>
+              {/* Small LHO photos */}
+              <div className="grid grid-cols-2 gap-4 mt-6">
+                <div style={{ borderRadius: "2px", overflow: "hidden", border: "1px solid rgba(58,140,63,0.2)" }}>
+                  <img
+                    src="/manus-storage/lho-small-1_36716b91.png"
+                    alt="Low Head Oxygenator unit"
+                    style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "1/1" }}
+                  />
+                </div>
+                <div style={{ borderRadius: "2px", overflow: "hidden", border: "1px solid rgba(58,140,63,0.2)" }}>
+                  <img
+                    src="/manus-storage/lho-small-2_df864e95.png"
+                    alt="Low Head Oxygenator installed at hatchery"
+                    style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "1/1" }}
+                  />
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -274,17 +291,6 @@ export default function GasManagementProduct() {
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Vacuum degasser at NARL following modifications for enhanced radon removal.</p>
               </div>
             </div>
-            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-              <img
-                src="/manus-storage/portable-sidestream-vacuum-degasser-dworshak_23d446f1.png"
-                alt="Portable sidestream vacuum degasser tested at Dworshak National Fish Hatchery"
-                style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
-              />
-              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Portable Sidestream Vacuum Degasser</p>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Portable sidestream vacuum degasser during field testing at Dworshak National Fish Hatchery. This design is covered in Dr. Watten's published research on vacuum degassing for removal of gas supersaturation in hatchery water supplies.</p>
-              </div>
-            </div>
           </div>
 
           {/* Third photo — Craig Brook 900 GPM vacuum degasser — centered below the two above */}
@@ -302,9 +308,9 @@ export default function GasManagementProduct() {
             </div>
           </div>
 
-          {/* Fourth photo — Water Jet Exhauster — centered below Craig Brook photo */}
-          <div className="mt-8 flex justify-center">
-            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)", maxWidth: "600px", width: "100%" }}>
+          {/* Water Jet Exhauster + Leetown Tower side by side */}
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
                 src="/manus-storage/water-jet-exhauster-valve_88b0f540.png"
                 alt="Water jet exhauster valve used in vacuum degassing system"
@@ -313,6 +319,17 @@ export default function GasManagementProduct() {
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
                 <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Water Jet Exhauster</p>
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Water jet exhauster valve used in VATN's vacuum degassing system design. The exhauster uses a small sidestream flow of pressurized raw water to remove nitrogen-rich off-gas from the operating degasser column, providing reliable vacuum control without mechanical pumps.</p>
+              </div>
+            </div>
+            <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
+              <img
+                src="/manus-storage/leetown-tower_b07ef8f0.png"
+                alt="Leetown USGS Gas Management Tower with CO2 Strippers and Vacuum Degassers"
+                style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
+              />
+              <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
+                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Leetown USGS Gas Management Tower</p>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Leetown USGS Gas Management Tower — CO2 Strippers &amp; Vacuum Degassers.</p>
               </div>
             </div>
           </div>
