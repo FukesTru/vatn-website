@@ -201,9 +201,9 @@ export default function FishRearingTankDesign() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
             <RevealSection delay={0}>
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-                <div style={{ height: "320px", overflow: "hidden" }}>
+                <div style={{ height: "280px", overflow: "hidden" }}>
                   <img
-                    src="/manus-storage/mixed-cell-raceway-channel_4555dfc8.png"
+                    src="/manus-storage/raceway-channel-clean_c160a386.png"
                     alt="Mixed-cell raceway channel at hatchery facility"
                     style={{ width: "100%", height: "100%", display: "block", objectFit: "cover", objectPosition: "center" }}
                   />
@@ -215,9 +215,9 @@ export default function FishRearingTankDesign() {
             </RevealSection>
             <RevealSection delay={80}>
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-                <div style={{ height: "320px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <div style={{ height: "280px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   <img
-                    src="/manus-storage/mixed-cell-drain-cover_62944535.png"
+                    src="/manus-storage/drain-cover-clean_54cf8211.png"
                     alt="Circular drain cover in mixed-cell raceway floor"
                     style={{ width: "100%", height: "100%", display: "block", objectFit: "cover", objectPosition: "center" }}
                   />
