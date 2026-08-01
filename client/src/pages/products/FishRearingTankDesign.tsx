@@ -185,7 +185,7 @@ export default function FishRearingTankDesign() {
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <div style={{ backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
                   <img
-                    src="/manus-storage/cfd-3d-streamline_3ce4073b.png"
+                    src="/manus-storage/cfd-3d-streamline-v2_2dce73a5.png"
                     alt="CFD 3D streamline analysis of raceway hydraulics"
                     style={{ width: "100%", display: "block", objectFit: "contain", maxHeight: "280px" }}
                   />

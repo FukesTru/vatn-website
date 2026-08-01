@@ -297,7 +297,7 @@ export default function GasManagementProduct() {
           <div className="mt-8 flex justify-center">
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)", maxWidth: "600px", width: "100%" }}>
               <img
-                src="/manus-storage/craig-brook-900gpm-vacuum-degasser_a38c76b1.png"
+                src="/manus-storage/craig-brook-900gpm-vacuum-degasser_22e8de47.png"
                 alt="900 GPM vacuum degasser tanks at Craig Brook National Fish Hatchery"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />

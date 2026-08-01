@@ -62,29 +62,29 @@ export default function BioMedia() {
       {/* Content */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          {/* Photos row */}
+          {/* Photos row — equal-height side-by-side */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.07)" }}>
-              <div style={{ backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center", minHeight: "320px" }}>
+              <div style={{ height: "340px", overflow: "hidden" }}>
                 <img
                   src="/manus-storage/vatn-bio-media-photo_415f2c30.jpg"
                   alt="VATN B100 and MB3 Bio Media — black and white"
-                  style={{ width: "100%", height: "320px", display: "block", objectFit: "contain", padding: "1rem" }}
+                  style={{ width: "100%", height: "100%", display: "block", objectFit: "cover", objectPosition: "center" }}
                 />
               </div>
-              <div style={{ padding: "0.75rem 1rem", borderTop: "2px solid #3A8C3F" }}>
+              <div style={{ padding: "0.75rem 1rem", borderTop: "2px solid #3A8C3F", backgroundColor: "#ffffff" }}>
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>B 100 = Black, MB3 = White in this picture. Both available in black or white.</p>
               </div>
             </div>
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.07)" }}>
-              <div style={{ backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center", minHeight: "320px" }}>
+              <div style={{ height: "340px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
                   src="/manus-storage/vatn-bio-media-usa_929c566e.png"
                   alt="VATN B100 Bio Media — Made in the USA"
-                  style={{ width: "100%", height: "320px", display: "block", objectFit: "contain", padding: "1rem" }}
+                  style={{ width: "100%", height: "100%", display: "block", objectFit: "contain", padding: "1.5rem" }}
                 />
               </div>
-              <div style={{ padding: "0.75rem 1rem", borderTop: "2px solid #3A8C3F" }}>
+              <div style={{ padding: "0.75rem 1rem", borderTop: "2px solid #3A8C3F", backgroundColor: "#ffffff" }}>
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080" }}>B100 Bio Media — manufactured in the United States</p>
               </div>
             </div>

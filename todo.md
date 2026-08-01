@@ -73,22 +73,22 @@
 
 ## Website Edits — VATNwebsiteEdits.pdf
 
-- [ ] Edit 1: Remove Terry stat block from the Our Team stats row (keep other three stats)
-- [ ] Edit 2: Add "low profile oxygenator" to oxygenation/degassing product lists
-- [ ] Edit 3: Reinsert the two clearer product photos on the Bio Media page
-- [ ] Edit 4: Change Bio Media "Structured Plastic" to "HDPE High density Polyethylene"
-- [ ] Edit 5: Replace the UV CTA section with Ultraqua website link section
-- [ ] Edit 6: Remove the small dark section from Gas Management page
-- [ ] Edit 7: Remove the shown homepage sections
-- [ ] Edit 8: Change Barnaby degree to "M.Ag Agricultural Engineering"
-- [ ] Edit 9: Move Our Team direct contact cards next to the form
-- [ ] Edit 10: Remove Portable Sidestream Vacuum Degasser block from Gas Management product page
-- [ ] Edit 11: Add Craig Brook 900 GPM vacuum degasser photo and description
-- [ ] Edit 12: Add Leetown tower photo beside Water Jet Exhauster with caption
-- [ ] Edit 13: Add three Mixed-Cell Raceway illustrations in order under Fish Rearing Tank Design
-- [ ] Edit 14: Remove dark credibility/stat section from Hatchery Solutions
-- [ ] Edit 15: Replace Hatchery Applications photo with aerial hatchery photo
-- [ ] Edit 16: Add two small LHO photos under description column on Gas Management product page
+- [x] Edit 1: Remove Terry stat block from the Our Team stats row (keep other three stats)
+- [x] Edit 2: Add "low profile oxygenator" to oxygenation/degassing product lists
+- [x] Edit 3: Reinsert the two clearer product photos on the Bio Media page
+- [x] Edit 4: Change Bio Media "Structured Plastic" to "HDPE High density Polyethylene"
+- [x] Edit 5: Replace the UV CTA section with Ultraqua website link section
+- [x] Edit 6: Remove the small dark section from Gas Management page
+- [x] Edit 7: Remove the shown homepage sections
+- [x] Edit 8: Change Barnaby degree to "M.Ag Agricultural Engineering"
+- [x] Edit 9: Move Our Team direct contact cards next to the form
+- [x] Edit 10: Remove Portable Sidestream Vacuum Degasser block from Gas Management product page
+- [x] Edit 11: Add Craig Brook 900 GPM vacuum degasser photo and description
+- [x] Edit 12: Add Leetown tower photo beside Water Jet Exhauster with caption
+- [x] Edit 13: Add three Mixed-Cell Raceway illustrations in order under Fish Rearing Tank Design
+- [x] Edit 14: Remove dark credibility/stat section from Hatchery Solutions
+- [x] Edit 15: Replace Hatchery Applications photo with aerial hatchery photo
+- [x] Edit 16: Add two small LHO photos under description column on Gas Management product page
 
 - [x] Edit 1: Remove Terry's stat (36+ Yrs Hatchery Industry) from Homepage credibility stats, change to 3-col grid
 - [x] Edit 2: Add "Low profile oxygenator" to Oxygenation & Degassing Equipment specs in GasManagement.tsx and GasManagementProduct.tsx
@@ -105,3 +105,11 @@
 - [x] Edit 14: Remove EXPERT CREDIBILITY INTRO section from HatcherySolutions.tsx
 - [x] Edit 15: Replace EQUIPMENT_IMG with aerial hatchery photo in HatcherySolutions.tsx
 - [x] Edit 16: Add two small LHO photos below tags row in LHO section of GasManagementProduct.tsx
+
+## VATNwebsiteEditsUPDATED.pdf — Follow-up Corrections
+
+- [x] Remove homepage dark "The Tools VATN Uses to Solve Your Problem" solutions grid section
+- [x] BioMedia photos: clean 2-up side-by-side layout (not stacked/jumbled)
+- [x] Replace removed Portable Sidestream section with Craig Brook 900 GPM Vacuum Degasser photo + description
+- [x] Mixed-Cell Raceway: ensure all 3 illustrations are present in correct order
+- [x] LHO small photos: reposition as clean side-by-side pair aligned with description area
