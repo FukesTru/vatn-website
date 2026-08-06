@@ -201,7 +201,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 <img
                   src={BARNABY_PHOTO}
                   alt="Dr. Barnaby J. Watten"
-                  className="w-full object-cover object-top"
+                  className="w-full object-cover object-center"
                   style={{ width: "100%", height: "100%", display: "block" }}
                 />
                 {/* Gradient overlay on photo */}
@@ -395,7 +395,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 <img
                   src={TERRY_PHOTO}
                   alt="Terry McCarthy"
-                  className="w-full object-cover object-top"
+                  className="w-full object-cover object-center"
                   style={{ width: "100%", height: "100%", display: "block" }}
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to left, transparent 60%, rgba(30,77,123,0.3) 100%)" }} />
