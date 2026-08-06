@@ -294,7 +294,7 @@ export default function News() {
                   VATN regularly participates in aquaculture engineering conferences and industry events. Reach out directly to learn about upcoming appearances or to arrange a technical consultation.
                 </p>
                 <a
-                  href="tel:2252294711"
+                  href="/contact"
                   className="font-display font-bold inline-flex items-center gap-2 transition-all duration-200"
                   style={{
                     backgroundColor: "#3A8C3F",
@@ -307,7 +307,7 @@ export default function News() {
                     textDecoration: "none",
                   }}
                 >
-                  Call Terry: (225) 229-4711
+                  Contact VATN
                 </a>
               </div>
             </div>

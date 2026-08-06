@@ -171,7 +171,7 @@ export default function CustomSolutions() {
           <p className="section-label mb-3">Site-Specific Engineering</p>
           <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
           <h1 className="font-display text-white mb-5" style={{ fontSize: "clamp(2.4rem, 5vw, 3.8rem)", fontWeight: 800, lineHeight: 1.05 }}>
-            Other &amp; Custom Solutions<br />
+            Other / Custom Solutions<br />
             <span style={{ color: "#3A8C3F" }}>When the Problem Doesn't Fit a Catalog</span>
           </h1>
           <p className="font-body text-white/70 max-w-xl mx-auto mb-8" style={{ fontSize: "1rem", lineHeight: "1.65" }}>
@@ -241,43 +241,7 @@ export default function CustomSolutions() {
 
       {/* ── FEDERAL & STATE HATCHERY SOLUTIONS (from /hatchery-solutions) ── */}
 
-      {/* Expert Credibility Intro */}
-      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
-        <div className="container">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
-            <RevealSection>
-              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Federal &amp; State Hatchery Programs</p>
-              <span className="teal-rule mb-5" />
-              <h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", lineHeight: 1.1 }}>
-                Water Treatment &amp; Gas Management<br />
-                <span style={{ color: "#3A8C3F" }}>for Federal &amp; State Fish Hatcheries</span>
-              </h2>
-              <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
-                Dr. Barnaby Watten spent 49+ years in the aquaculture water treatment industry. He did not study hatcheries from the outside — he worked inside them, developing the equipment and methods that hatcheries now rely on. His 80+ publications and 15 patents represent a body of work built specifically for aquaculture water treatment challenges.
-              </p>
-              <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-                Terry McCarthy spent 36+ years supplying and supporting state and federal hatchery programs through Water Management Technologies (WMT), which he co-founded in 1994. He understands how hatchery procurement works, what hatchery managers actually need, and how to translate technical requirements into practical equipment solutions.
-              </p>
-            </RevealSection>
-            <RevealSection delay={80}>
-              <div className="grid grid-cols-2 gap-3">
-                {[
-                  { num: "49+", label: "Yrs Industry Experience", sub: "Dr. Barnaby J. Watten" },
-                  { num: "80+", label: "Publications", sub: "Peer-reviewed research" },
-                  { num: "15", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
-                  { num: "36+", label: "Years Hatchery Industry", sub: "Terry McCarthy" },
-                ].map((s) => (
-                  <div key={s.num} className="p-4 text-center" style={{ borderTop: "2px solid rgba(58,140,63,0.35)", backgroundColor: "rgba(255,255,255,0.03)" }}>
-                    <p className="font-display font-bold" style={{ fontSize: "2rem", color: "#3A8C3F", lineHeight: 1 }}>{s.num}</p>
-                    <p className="font-display text-white mt-1" style={{ fontSize: "0.82rem", lineHeight: 1.3 }}>{s.label}</p>
-                    <p className="font-body text-white/40 mt-0.5" style={{ fontSize: "0.7rem" }}>{s.sub}</p>
-                  </div>
-                ))}
-              </div>
-            </RevealSection>
-          </div>
-        </div>
-      </section>
+
 
       {/* Hatchery Priorities */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#F4F6F8" }}>

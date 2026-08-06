@@ -113,3 +113,24 @@
 - [x] Replace removed Portable Sidestream section with Craig Brook 900 GPM Vacuum Degasser photo + description
 - [x] Mixed-Cell Raceway: ensure all 3 illustrations are present in correct order
 - [x] LHO small photos: reposition as clean side-by-side pair aligned with description area
+
+## VATN Final Edits (VATNFINALEDITS.pdf)
+- [x] Edit 1: Remove all phone numbers from every page except the top-right nav header; remove "Talk With a VATN Specialist" section from bottom of every page
+- [x] Edit 2: Remove entire homepage trust/credibility strip (80+ Publications, 15 Patents, 85+ Yrs Combined, Federal & State Hatchery Programs, Site-Specific Engineering)
+- [x] Edit 3: Remove black stats box under NP CO2 Degasser illustration on Gas Management page
+- [x] Edit 4: Remove stats block under NP Degasser illustration on Gas Management Product page
+- [x] Edit 5: Reduce Our Team page photos approximately 50% in size
+- [x] Edit 5b: Our Team Barnaby education fixes (M.Ag Oregon State 1980, delete Virgin Islands, add University to Virginia Tech, delete Undergraduate from B.S.)
+- [x] Edit 6: Delete "Common Gas Management Problems" section from Gas Management page
+- [x] Edit 7: Gas Management Vacuum Degassing - replace Craig Brook photo with AI-cleaned version; caption: "3, 900 gpm vacuum degassers installed at Craig Brook National Fish Hatchery"
+- [x] Edit 8: Change Leetown caption to "Leetown Gas Management Towers. Co2 Strippers & Vacuum Degassers"
+- [x] Edit 9: Remove Water Jet Exhauster photo; insert portable Vacuum degasser photo in its place
+- [x] Edit 10: Add "Winchester, VA 22602 USA" to absolute bottom right of every page
+- [x] Edit 11: Update footer bottom-left text (remove names/phone numbers, add VATN Science and Technology LLC address block)
+- [x] Edit 12: Remove "Who you are working with" section from Partnerships page
+- [x] Edit 13: Replace sentence in Partnerships "Why Engineering Firms work with VATN" section
+- [x] Edit 14: Add photo credit under hatchery photo on Hatcheries page
+- [x] Edit 15: Other & Custom Solutions - change heading, delete Federal & State Hatchery Programs black section, swap exhauster photo
+- [x] Edit 16: UV Disinfection - add polypropylene closed reactor photo
+- [x] Edit 17: Gas Management CO2 Scrubbing - add CO2 Scrubbing benefits text (slide images pending user upload of PowerPoint)
+- [x] Edit 18: Solids Management - amend System Sizing Note black box text

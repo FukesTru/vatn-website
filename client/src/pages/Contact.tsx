@@ -201,14 +201,6 @@ export default function Contact() {
                   >
                     Director of Sales
                   </p>
-                  <a
-                    href="tel:2252294711"
-                    className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors"
-                    style={{ fontSize: "0.9rem" }}
-                  >
-                    <Phone size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
-                    (225) 229-4711
-                  </a>
                 </div>
 
                 {/* Barnaby */}
@@ -237,14 +229,6 @@ export default function Contact() {
                   >
                     Founder &amp; Principal Scientist
                   </p>
-                  <a
-                    href="tel:5403336859"
-                    className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors"
-                    style={{ fontSize: "0.9rem" }}
-                  >
-                    <Phone size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
-                    (540) 333-6859
-                  </a>
                 </div>
 
                 {/* What to expect */}

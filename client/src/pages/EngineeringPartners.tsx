@@ -158,23 +158,7 @@ export default function EngineeringPartners() {
         </div>
       </section>
 
-      {/* ── EXPERT CREDIBILITY INTRO ── */}
-      <section className="py-12 lg:py-16" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
-        <div className="container">
-          <RevealSection>
-            <div className="max-w-3xl">
-              <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Who You Are Working With</p>
-              <span className="teal-rule mb-5" />
-              <p className="font-body text-white/70" style={{ fontSize: "0.95rem", lineHeight: "1.75" }}>
-                When engineering firms bring VATN into a project, they are working directly with Dr. Barnaby Watten — the researcher who developed and patented the Low Head Oxygenator in 1989, authored 80+ publications on aquaculture gas management, and spent 49+ years in the aquaculture water treatment industry. His computer modeling approach for oxygenation and degassing equipment is the same methodology that has been applied and refined through decades of field research.
-              </p>
-              <p className="font-body text-white/55 mt-3" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-                Terry McCarthy brings 36+ years of practical experience supplying and supporting state and federal hatchery programs. He understands procurement processes, project timelines, and what engineering teams need to move a project forward efficiently.
-              </p>
-            </div>
-          </RevealSection>
-        </div>
-      </section>
+
 
       {/* ── INTRO ── */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
@@ -190,7 +174,7 @@ export default function EngineeringPartners() {
                 DO, N₂, CO₂, and total gas pressure interact in ways that are highly site-dependent. Equipment not sized against those conditions will underperform or be unnecessarily expensive to build and operate.
               </p>
               <p className="font-body" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.7" }}>
-                VATN provides the specialized gas-transfer expertise to make informed equipment decisions — proprietary modeling software, applied experience across reactor types, and direct knowledge of the environments where this equipment operates.
+                VATN offers specialized gas-transfer expertise to help customers select the correct equipment. The company combines advanced software, practical experience, and environmental knowledge to optimize industrial reactor operations.
               </p>
             </RevealSection>
             <RevealSection delay={80}>

@@ -91,32 +91,7 @@ export default function GasManagementProduct() {
         </div>
       </section>
 
-      {/* Problems addressed */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
-        <div className="container">
-          <RevealSection>
-            <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Common Gas Management Problems</p>
-            <span className="teal-rule mb-8" />
-          </RevealSection>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {[
-              { problem: "Low Dissolved Oxygen", impact: "Stress, reduced growth, and mortality in fish populations. Limits production density in RAS and raceway systems." },
-              { problem: "Elevated CO₂", impact: "Respiratory acidosis, reduced feed conversion, and chronic fish health issues. Often underestimated in high-density RAS." },
-              { problem: "Excess Nitrogen / High TGP", impact: "Gas bubble trauma in fish. Total dissolved gas pressure must be managed carefully relative to ambient barometric pressure." },
-              { problem: "Hydraulic Constraints", impact: "Limited available head restricts equipment options. Many sites cannot support conventional treatment approaches." },
-              { problem: "Limited Footprint", impact: "Existing infrastructure leaves minimal space for new treatment equipment. Compact solutions are required." },
-              { problem: "High Oxygen or Energy Costs", impact: "Inefficient oxygenation systems consume excess oxygen and energy. Proper modeling reduces both." },
-            ].map((item, i) => (
-              <RevealSection key={item.problem} delay={i * 60}>
-              <div className="p-5" style={{ backgroundColor: "rgba(255,255,255,0.04)", borderLeft: "2px solid rgba(58,140,63,0.4)", borderRadius: "2px" }}>
-                <h3 className="font-display text-white mb-2" style={{ fontSize: "1rem" }}>{item.problem}</h3>
-                <p className="font-body text-white/55" style={{ fontSize: "0.83rem", lineHeight: "1.6" }}>{item.impact}</p>
-              </div>
-              </RevealSection>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* Technologies */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
@@ -245,7 +220,11 @@ export default function GasManagementProduct() {
                   </div>
                 ))}
               </div>
-              <a href="/contact" className="btn-navy" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
+              <div className="mt-6 p-5" style={{ backgroundColor: "#F4F6F8", borderLeft: "3px solid #3A8C3F", borderRadius: "2px" }}>
+                <p className="font-display font-bold mb-2" style={{ fontSize: "0.92rem", color: "#1C2B3A" }}>CO₂ Scrubbing Benefits</p>
+                <p className="font-body" style={{ fontSize: "0.88rem", color: "#3A5068", lineHeight: "1.65" }}>Pump Once to accomplish Oxygen injection and CO₂ Scrubbing. Concurrent N₂ reduction makes Oxygen injection more affordable.</p>
+              </div>
+              <a href="/contact" className="btn-navy mt-6" style={{ display: "inline-flex", alignItems: "center", gap: "6px" }}>
                 Discuss Your CO₂ Problem <ArrowRight size={15} />
               </a>
             </RevealSection>
@@ -298,8 +277,8 @@ export default function GasManagementProduct() {
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>900 GPM Vacuum Degasser — Craig Brook National Fish Hatchery</p>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Two 900 GPM vacuum degasser tanks installed at Craig Brook National Fish Hatchery, Maine.</p>
+                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>3, 900 gpm vacuum degassers installed at Craig Brook National Fish Hatchery</p>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Three 900 gpm vacuum degasser tanks installed at Craig Brook National Fish Hatchery, Maine.</p>
               </div>
             </div>
           </div>
@@ -308,13 +287,13 @@ export default function GasManagementProduct() {
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
-                src="/manus-storage/water-jet-exhauster-valve_88b0f540.png"
-                alt="Water jet exhauster valve used in vacuum degassing system"
+                src="/manus-storage/portable-sidestream-vacuum-degasser-dworshak_6b7b014d.png"
+                alt="Portable sidestream vacuum degasser at Dworshak National Fish Hatchery"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Water Jet Exhauster</p>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Water jet exhauster valve used in VATN's vacuum degassing system design. The exhauster uses a small sidestream flow of pressurized raw water to remove nitrogen-rich off-gas from the operating degasser column, providing reliable vacuum control without mechanical pumps.</p>
+                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Portable Vacuum Degasser</p>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Portable sidestream vacuum degasser at Dworshak National Fish Hatchery. Designed for flexible deployment across hatchery sites where fixed installations are not practical.</p>
               </div>
             </div>
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
@@ -324,8 +303,8 @@ export default function GasManagementProduct() {
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
-                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Leetown USGS Gas Management Tower</p>
-                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Leetown USGS Gas Management Tower — CO2 Strippers &amp; Vacuum Degassers.</p>
+                <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Leetown Gas Management Towers. Co2 Strippers &amp; Vacuum Degassers</p>
+                <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Leetown Gas Management Towers featuring CO2 strippers and vacuum degassers.</p>
               </div>
             </div>
           </div>

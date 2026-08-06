@@ -140,10 +140,10 @@ export default function SolidsManagement() {
             <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>
               <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>System Sizing Note</p>
               <p className="font-body text-white/65 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.7" }}>
-                Microscreen filter sizing depends on your system's flow rate, solids loading, and target effluent quality. Drum and disc filter configurations are available in a range of sizes. VATN evaluates your system requirements to recommend the appropriate filter type and capacity.
+                Microscreen filter sizing depends on your system's water flow rate, solids loading expressed in ml/L, Filter element size expressed in microns, and target effluent quality. Drum and disc filter configurations are available in a range of sizes. VATN and NP evaluates your system requirements to recommend the appropriate filter type and capacity.
               </p>
               <p className="font-body text-white/50" style={{ fontSize: "0.9rem", lineHeight: "1.65" }}>
-                Contact VATN to describe your facility, flow rates, and solids management objectives. We will provide an honest assessment of what is appropriate for your application.
+                Contact VATN to describe your Filter application. We can provide measured drawings, technical specs and pricing for the filter, controls and backwash system that is appropriate for your application.
               </p>
             </div>
           </div>

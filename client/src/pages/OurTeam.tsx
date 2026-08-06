@@ -185,20 +185,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
         </div>
       </section>
 
-      {/* ── COMBINED CREDENTIALS STRIP ── */}
-      <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
-        <div className="container py-4">
-          <div className="flex flex-wrap items-center gap-x-8 gap-y-2">
-            {["80+ Years Combined Industry Experience", "15 Patents and Provisional Patents", "80+ Publications",
-                  "Federal & State Hatchery Programs", "VATN Founded 2019 by Dr. Watten"].map((item, i) => (
-              <div key={i} className="flex items-center gap-2">
-                <div className="w-1 h-1 rounded-full shrink-0" style={{ backgroundColor: "#3A8C3F" }} />
-                <span className="font-body text-white/65" style={{ fontSize: "0.82rem" }}>{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* ══════════════════════════════════════════════════════════════════════
           BARNABY J. WATTEN, Ph.D. — FULL PROFILE
@@ -215,7 +202,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                   src={BARNABY_PHOTO}
                   alt="Dr. Barnaby J. Watten"
                   className="w-full h-full object-cover object-top"
-                  style={{ minHeight: "320px", maxHeight: "480px", display: "block" }}
+                  style={{ minHeight: "160px", maxHeight: "240px", display: "block" }}
                 />
                 {/* Gradient overlay on photo */}
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to right, transparent 60%, rgba(10,22,40,0.4) 100%)" }} />
@@ -307,7 +294,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </div>
                 {[
                   { d: "Ph.D.", f: "Fisheries & Allied Aquacultures", i: "Auburn University", y: "1989" },
-                  { d: "M.Ag", f: "Agricultural Engineering", i: "Oregon State U. / U. Virgin Islands", y: "1980" },
+                  { d: "M. Ag", f: "Agricultural Engineering", i: "Oregon State University", y: "1980" },
                   { d: "B.S.", f: "Aquatic Biology / Chemistry", i: "Bemidji State University", y: "1976" },
                 ].map((e) => (
                   <div key={e.d} className="p-3 mb-2" style={{ backgroundColor: "#F4F6F8", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
@@ -326,7 +313,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </div>
                 <p className="font-body mb-4" style={{ fontSize: "0.82rem", color: "#5A7080", lineHeight: "1.5" }}>14 graduate students across 6 universities (PhD and MS programs):</p>
                 <div className="flex flex-col gap-2">
-                  {["Auburn University — 1 PhD", "Cornell University — 2 PhD, 2 MS", "Virginia Tech — 1 PhD, 3 MS", "Penn State University — 1 PhD", "West Virginia University — 1 MS", "University of Idaho — 3 MS"].map((item) => (
+                  {["Auburn University — 1 PhD", "Cornell University — 2 PhD, 2 MS", "Virginia Tech University — 1 PhD, 3 MS", "Penn State University — 1 PhD", "West Virginia University — 1 MS", "University of Idaho — 3 MS"].map((item) => (
                     <div key={item} className="flex items-start gap-2">
                       <div className="w-1 h-1 rounded-full shrink-0 mt-2" style={{ backgroundColor: "#3A8C3F" }} />
                       <span className="font-body" style={{ fontSize: "0.83rem", color: "#3A5068", lineHeight: "1.5" }}>{item}</span>
@@ -409,7 +396,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                   src={TERRY_PHOTO}
                   alt="Terry McCarthy"
                   className="w-full h-full object-cover object-top"
-                  style={{ minHeight: "320px", maxHeight: "480px", display: "block" }}
+                  style={{ minHeight: "160px", maxHeight: "240px", display: "block" }}
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to left, transparent 60%, rgba(30,77,123,0.3) 100%)" }} />
               </div>
@@ -457,7 +444,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </div>
                 {[
                   { d: "MBA", f: "Business Administration", i: "Tulane University", y: "1989" },
-                  { d: "B.S.", f: "Undergraduate", i: "Tulane University", y: "1981" },
+                  { d: "B.S.", f: "British & American History", i: "Tulane University", y: "1981" },
                 ].map((e) => (
                   <div key={e.d} className="p-4 mb-3 bg-white" style={{ borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
                     <div className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>{e.d} — {e.f}</div>
@@ -591,19 +578,11 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #3A8C3F" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Terry McCarthy</p>
                   <p className="font-body mb-4" style={{ color: "#3A8C3F", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Director of Sales</p>
-                  <a href="tel:2252294711" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
-                    <Phone size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
-                    (225) 229-4711
-                  </a>
                 </div>
                 {/* Barnaby */}
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #3A8C3F" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Dr. Barnaby J. Watten</p>
                   <p className="font-body mb-4" style={{ color: "#3A8C3F", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Founder &amp; Principal Scientist</p>
-                  <a href="tel:5403336859" className="flex items-center gap-2.5 text-white/70 hover:text-white transition-colors" style={{ fontSize: "0.88rem" }}>
-                    <Phone size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
-                    (540) 333-6859
-                  </a>
                 </div>
               </div>
             </RevealSection>

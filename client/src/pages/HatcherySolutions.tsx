@@ -209,10 +209,11 @@ export default function HatcherySolutions() {
               <RevealSection delay={80}>
                 <img
                   src={EQUIPMENT_IMG}
-                  alt="Aquaculture water treatment equipment"
-                  className="w-full object-cover mb-6"
+                  alt="Leavenworth National Fish Hatchery — USFWS"
+                  className="w-full object-cover"
                   style={{ borderRadius: "2px", aspectRatio: "4/3" }}
                 />
+                <p className="font-body mt-2 mb-6" style={{ fontSize: "0.72rem", color: "#8A9BAA" }}>Photo: Leavenworth National Fish Hatchery — Credit: USFWS / U.S. Fish &amp; Wildlife Service (Public Domain)</p>
               </RevealSection>
               <RevealSection delay={120}>
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px" }}>

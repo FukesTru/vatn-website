@@ -185,6 +185,20 @@ export default function UVDisinfection() {
                 <p className="font-body text-white/50" style={{ fontSize: "0.8rem", lineHeight: "1.6" }}>Closed vessel UV contactors in stainless steel and polypropylene. Available in low-pressure and medium-pressure lamp configurations.</p>
               </div>
             </div>
+            {/* Polypropylene Closed UV Reactor */}
+            <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden" }}>
+              <div style={{ height: "220px", overflow: "hidden", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                <img
+                  src="/manus-storage/ultraqua-polypropylene-uv-reactor_455d5684.png"
+                  alt="Ultraqua polypropylene closed UV reactor — non-corrosive construction"
+                  style={{ width: "100%", height: "100%", objectFit: "contain", padding: "0.5rem" }}
+                />
+              </div>
+              <div style={{ padding: "1rem 1.25rem 1.25rem" }}>
+                <p className="font-display text-white" style={{ fontSize: "0.95rem", marginBottom: "0.4rem" }}>Polypropylene Closed UV Reactor</p>
+                <p className="font-body text-white/50" style={{ fontSize: "0.8rem", lineHeight: "1.6" }}>Non-corrosive polypropylene closed vessel UV reactor. Suitable for applications where stainless steel is not required or where corrosion resistance is a priority.</p>
+              </div>
+            </div>
             {/* General UV Disinfection System — full width on last row */}
             <div className="md:col-span-2 lg:col-span-3" style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden", display: "flex", flexDirection: "row", alignItems: "stretch" }}>
               <div style={{ width: "340px", flexShrink: 0, backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>

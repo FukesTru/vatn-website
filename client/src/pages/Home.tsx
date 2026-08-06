@@ -83,25 +83,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ── TRUST STRIP ── */}
-      <section style={{ backgroundColor: "#0A1628", borderBottom: "1px solid rgba(58,140,63,0.2)" }}>
-        <div className="container py-5">
-          <div className="flex flex-wrap items-center justify-between gap-4">
-            {[
-              "80+ Publications",
-              "15 Patents",
-              "85+ Yrs Combined Industry Experience",
-              "Federal & State Hatchery Programs",
-              "Site-Specific Engineering",
-            ].map((item, i) => (
-              <div key={i} className="flex items-center gap-2.5">
-                <CheckCircle2 size={14} style={{ color: "#3A8C3F", flexShrink: 0 }} />
-                <span className="font-body text-white/70" style={{ fontSize: "0.78rem" }}>{item}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* ── PEOPLE FIRST — WHO IS VATN ── */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
@@ -131,37 +113,14 @@ export default function Home() {
             <RevealSection delay={100}>
               <div className="flex flex-col gap-4">
                 <img src={HATCHERY_IMG} alt="Aquaculture hatchery systems" className="mx-auto" style={{ borderRadius: "2px", display: "block", objectFit: "contain", maxWidth: "80%", width: "100%" }} />
-                {/* Credential callout — placed below image so it never overlaps */}
-                <div className="p-5" style={{ backgroundColor: "#0A1628", borderLeft: "3px solid #3A8C3F" }}>
-                  <p className="font-display text-white font-bold" style={{ fontSize: "1.4rem", lineHeight: 1.1 }}>80+ Publications</p>
-                  <p className="font-body text-white/60 mt-1" style={{ fontSize: "0.78rem", lineHeight: "1.5" }}>Research spanning oxygenation, CO₂ control, nitrogen supersaturation, and RAS design.</p>
-                </div>
+
               </div>
             </RevealSection>
           </div>
         </div>
       </section>
 
-      {/* ── CREDIBILITY STATS ── */}
-      <section className="py-16" style={{ backgroundColor: "#0A1628" }}>
-        <div className="container">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            {[
-              { num: "80+", label: "Publications", sub: "Dr. Barnaby J. Watten" },
-              { num: "15", label: "Patents and Provisional Patents", sub: "Gas management & water treatment" },
-              { num: "85+", label: "Yrs Combined Experience", sub: "Dr. Watten (49+) & Terry McCarthy (36+)" },
-            ].map((stat, i) => (
-              <RevealSection key={stat.num} delay={i * 70}>
-                <div className="text-center p-5" style={{ borderTop: "2px solid rgba(58,140,63,0.4)" }}>
-                  <p className="font-display font-bold" style={{ fontSize: "clamp(2.2rem, 4vw, 3rem)", color: "#3A8C3F", lineHeight: 1 }}>{stat.num}</p>
-                  <p className="font-display text-white mt-1" style={{ fontSize: "0.9rem", lineHeight: 1.3 }}>{stat.label}</p>
-                  <p className="font-body text-white/45 mt-1" style={{ fontSize: "0.72rem" }}>{stat.sub}</p>
-                </div>
-              </RevealSection>
-            ))}
-          </div>
-        </div>
-      </section>
+
 
       {/* ── HOW VATN WORKS ── */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#F4F6F8" }}>
