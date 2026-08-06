@@ -195,9 +195,10 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
 
           {/* ── PHOTO + NAME HERO BLOCK ── */}
           <RevealSection>
+            <div style={{ maxWidth: "820px" }}>
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 mb-16 overflow-hidden" style={{ borderRadius: "3px", boxShadow: "0 4px 32px rgba(10,22,40,0.12)" }}>
               {/* Photo column */}
-              <div className="lg:col-span-2 relative" style={{ backgroundColor: "#0A1628", maxHeight: "320px", overflow: "hidden" }}>
+              <div className="lg:col-span-2 relative" style={{ backgroundColor: "#0A1628" }}>
                 <img
                   src={BARNABY_PHOTO}
                   alt="Dr. Barnaby J. Watten"
@@ -208,10 +209,10 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to right, transparent 60%, rgba(10,22,40,0.4) 100%)" }} />
               </div>
               {/* Info column */}
-              <div className="lg:col-span-3 p-6 lg:p-8 flex flex-col justify-center" style={{ backgroundColor: "#060E1A" }}>
+              <div className="lg:col-span-3 p-5 lg:p-7 flex flex-col justify-center" style={{ backgroundColor: "#060E1A" }}>
                 <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Founder &amp; Principal Scientist</p>
                 <span className="teal-rule mb-5" />
-                <h2 className="font-display text-white mb-2" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.0 }}>
+                <h2 className="font-display text-white mb-2" style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", lineHeight: 1.0 }}>
                   Barnaby J. Watten, Ph.D.
                 </h2>
                 <p className="font-body mb-8" style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.88rem" }}>
@@ -219,10 +220,10 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </p>
                 {/* Animated stat row */}
                 <p className="font-display mb-4" style={{ fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
-                <div className="grid grid-cols-2 sm:grid-cols-4 gap-6">
+                <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
                   {barnabyStats.map((s, i) => (
                     <div key={s.label} className="text-center">
-                      <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#3A8C3F", lineHeight: 1 }}>
+                      <div className="font-display font-bold" style={{ fontSize: "1.5rem", color: "#3A8C3F", lineHeight: 1 }}>
                         <CountUp target={s.val} suffix={s.suffix} duration={1600 + i * 200} />
                       </div>
                       <div className="font-display text-white" style={{ fontSize: "0.8rem", marginTop: "3px", letterSpacing: "0.04em" }}>{s.label}</div>
@@ -231,6 +232,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                   ))}
                 </div>
               </div>
+            </div>
             </div>
           </RevealSection>
 
@@ -362,26 +364,27 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
 
           {/* ── PHOTO + NAME HERO BLOCK ── */}
           <RevealSection>
+            <div style={{ maxWidth: "820px" }}>
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 mb-16 overflow-hidden" style={{ borderRadius: "3px", boxShadow: "0 4px 32px rgba(10,22,40,0.12)" }}>
               {/* Info column — left this time for visual variety */}
-              <div className="lg:col-span-3 p-8 lg:p-12 flex flex-col justify-center order-2 lg:order-1" style={{ backgroundColor: "#1E4D7B" }}>
+              <div className="lg:col-span-3 p-5 lg:p-7 flex flex-col justify-center order-2 lg:order-1" style={{ backgroundColor: "#1E4D7B" }}>
                 <p className="section-label mb-3" style={{ color: "rgba(255,255,255,0.6)" }}>Director of Sales</p>
                 <span className="teal-rule mb-5" />
-                <h2 className="font-display text-white mb-2" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.0 }}>
+                <h2 className="font-display text-white mb-2" style={{ fontSize: "clamp(1.4rem, 2.5vw, 2rem)", lineHeight: 1.0 }}>
                   Terry McCarthy
                 </h2>
                 <p className="font-body mb-8" style={{ color: "rgba(255,255,255,0.5)", fontSize: "0.88rem" }}>
                   B.S. &amp; MBA — Tulane University (1981, 1989)
                 </p>
                 <p className="font-display mb-4" style={{ fontSize: "0.8rem", letterSpacing: "0.12em", textTransform: "uppercase", color: "rgba(255,255,255,0.35)" }}>Career Highlights</p>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-3 gap-4">
                   {[
                     { val: 36, suffix: "+", label: "Years of Experience", sub: "Hatchery Industry" },
                     { val: 1994, suffix: "", label: "Co-Founded WMT", sub: "Sold to Innovasea 2019" },
                     { val: 24, suffix: "+", label: "Years Running WMT", sub: "State & federal hatcheries" },
                   ].map((s, i) => (
                     <div key={s.label} className="text-center">
-                      <div className="font-display font-bold" style={{ fontSize: "2.2rem", color: "#3A8C3F", lineHeight: 1 }}>
+                      <div className="font-display font-bold" style={{ fontSize: "1.5rem", color: "#3A8C3F", lineHeight: 1 }}>
                         <CountUp target={s.val} suffix={s.suffix} duration={1600 + i * 200} />
                       </div>
                       <div className="font-display text-white" style={{ fontSize: "0.8rem", marginTop: "3px", letterSpacing: "0.04em" }}>{s.label}</div>
@@ -391,7 +394,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </div>
               </div>
               {/* Photo column */}
-              <div className="lg:col-span-2 relative order-1 lg:order-2" style={{ backgroundColor: "#0A1628", maxHeight: "320px", overflow: "hidden" }}>
+              <div className="lg:col-span-2 relative order-1 lg:order-2" style={{ backgroundColor: "#0A1628" }}>
                 <img
                   src={TERRY_PHOTO}
                   alt="Terry McCarthy"
@@ -400,6 +403,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to left, transparent 60%, rgba(30,77,123,0.3) 100%)" }} />
               </div>
+            </div>
             </div>
           </RevealSection>
 
