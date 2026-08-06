@@ -197,18 +197,18 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
           <RevealSection>
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-0 mb-16 overflow-hidden" style={{ borderRadius: "3px", boxShadow: "0 4px 32px rgba(10,22,40,0.12)" }}>
               {/* Photo column */}
-              <div className="lg:col-span-2 relative min-h-72 lg:min-h-0" style={{ backgroundColor: "#0A1628" }}>
+              <div className="lg:col-span-2 relative" style={{ backgroundColor: "#0A1628", maxHeight: "320px", overflow: "hidden" }}>
                 <img
                   src={BARNABY_PHOTO}
                   alt="Dr. Barnaby J. Watten"
                   className="w-full h-full object-cover object-top"
-                  style={{ minHeight: "160px", maxHeight: "240px", display: "block" }}
+                  style={{ width: "100%", height: "100%", display: "block" }}
                 />
                 {/* Gradient overlay on photo */}
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to right, transparent 60%, rgba(10,22,40,0.4) 100%)" }} />
               </div>
               {/* Info column */}
-              <div className="lg:col-span-3 p-8 lg:p-12 flex flex-col justify-center" style={{ backgroundColor: "#060E1A" }}>
+              <div className="lg:col-span-3 p-6 lg:p-8 flex flex-col justify-center" style={{ backgroundColor: "#060E1A" }}>
                 <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Founder &amp; Principal Scientist</p>
                 <span className="teal-rule mb-5" />
                 <h2 className="font-display text-white mb-2" style={{ fontSize: "clamp(2rem, 4vw, 3rem)", lineHeight: 1.0 }}>
@@ -391,12 +391,12 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 </div>
               </div>
               {/* Photo column */}
-              <div className="lg:col-span-2 relative min-h-72 lg:min-h-0 order-1 lg:order-2" style={{ backgroundColor: "#0A1628" }}>
+              <div className="lg:col-span-2 relative order-1 lg:order-2" style={{ backgroundColor: "#0A1628", maxHeight: "320px", overflow: "hidden" }}>
                 <img
                   src={TERRY_PHOTO}
                   alt="Terry McCarthy"
                   className="w-full h-full object-cover object-top"
-                  style={{ minHeight: "160px", maxHeight: "240px", display: "block" }}
+                  style={{ width: "100%", height: "100%", display: "block" }}
                 />
                 <div className="absolute inset-0" style={{ background: "linear-gradient(to left, transparent 60%, rgba(30,77,123,0.3) 100%)" }} />
               </div>
