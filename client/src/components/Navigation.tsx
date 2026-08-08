@@ -21,6 +21,36 @@ const productDropdown = [
     desc: "Oxygenation, degassing, CO₂ control, and total gas pressure",
   },
   {
+    label: "— Low Head Oxygenators (LHO)",
+    href: "/products/gas-management#lho",
+    desc: "Patented 1989. No moving parts. Operates on 9\" hydraulic gradient.",
+    sub: true,
+  },
+  {
+    label: "— CO₂ Control Methods",
+    href: "/products/gas-management#co2-stripping",
+    desc: "Forced-air stripping, spray reactors, and hydroxide scrubbing.",
+    sub: true,
+  },
+  {
+    label: "— Vacuum Degassing",
+    href: "/products/gas-management#vacuum-degassing",
+    desc: "Computer-modeled vacuum degassers for nitrogen supersaturation.",
+    sub: true,
+  },
+  {
+    label: "— New Products Coming",
+    href: "/products/gas-management#new-products",
+    desc: "Side-stream & modeling innovations — patent pending.",
+    sub: true,
+  },
+  {
+    label: "— Oxygenation & Degassing",
+    href: "/products/oxygenation-degassing",
+    desc: "New products under construction.",
+    sub: true,
+  },
+  {
     label: "UV Disinfection",
     href: "/products/uv-disinfection",
     desc: "Ultraqua UV systems for pathogen control in hatchery water",
@@ -204,10 +234,10 @@ export default function Navigation() {
                     {/* Grid of items */}
                     <div className="grid grid-cols-2 gap-0 p-3">
                       {productDropdown.map((item) => (
-                        <Link key={item.href} href={item.href}>
+                        <Link key={item.href} href={item.href as string}>
                           <div
                             className="flex flex-col gap-0.5 px-3 py-3 rounded transition-colors duration-150 group"
-                            style={{ cursor: "pointer" }}
+                            style={{ cursor: "pointer", paddingLeft: (item as any).sub ? "20px" : "12px" }}
                             onMouseEnter={(e) => {
                               (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(58,140,63,0.08)";
                             }}
@@ -216,12 +246,12 @@ export default function Navigation() {
                             }}
                           >
                             <span
-                              className="font-display font-semibold"
-                              style={{
-                                fontSize: "0.95rem",
-                                color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.9)",
-                                letterSpacing: "0.02em",
-                              }}
+                             className="font-display font-semibold"
+                             style={{
+                               fontSize: (item as any).sub ? "0.82rem" : "0.95rem",
+                               letterSpacing: "0.02em",
+                               color: (item as any).sub ? "rgba(255,255,255,0.65)" : (location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.9)"),
+                             }}
                             >
                               {item.label}
                             </span>

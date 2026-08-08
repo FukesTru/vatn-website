@@ -130,7 +130,7 @@ export default function GasManagementProduct() {
       </section>
 
       {/* LHO Illustration */}
-      <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
+      <section id="lho" className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
         <div className="container">
           <RevealSection className="mb-8 text-center">
             <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Patented Technology</p>
@@ -185,7 +185,7 @@ export default function GasManagementProduct() {
       </section>
 
       {/* CO2 Stripping */}
-      <section className="py-20 lg:py-28" style={{ backgroundColor: "#F4F6F8" }}>
+      <section id="co2-stripping" className="py-20 lg:py-28" style={{ backgroundColor: "#F4F6F8" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <RevealSection>
@@ -268,8 +268,56 @@ export default function GasManagementProduct() {
         </div>
       </section>
 
+      {/* New Products Coming */}
+      <section id="new-products" className="py-20 lg:py-28" style={{ backgroundColor: "#060E1A" }}>
+        <div className="container">
+          <RevealSection className="mb-10 text-center">
+            <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Innovation in Progress</p>
+            <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
+            <h2 className="font-display text-white" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.5rem)", lineHeight: 1.1 }}>
+              New Products Coming
+            </h2>
+            <p className="font-display font-bold mt-2" style={{ fontSize: "0.85rem", color: "#3A8C3F", letterSpacing: "0.12em", textTransform: "uppercase" }}>Patent Pending</p>
+          </RevealSection>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <RevealSection delay={0}>
+              <div className="p-7" style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(58,140,63,0.2)", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
+                <div style={{ filter: "blur(5px)", userSelect: "none", pointerEvents: "none", marginBottom: "12px" }}>
+                  <div style={{ height: "14px", backgroundColor: "rgba(58,140,63,0.25)", borderRadius: "2px", width: "60%", marginBottom: "8px" }} />
+                  <div style={{ height: "10px", backgroundColor: "rgba(255,255,255,0.1)", borderRadius: "2px", width: "90%", marginBottom: "5px" }} />
+                  <div style={{ height: "10px", backgroundColor: "rgba(255,255,255,0.1)", borderRadius: "2px", width: "75%" }} />
+                </div>
+                <h3 className="font-display text-white mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.2 }}>Side-Stream Treatment</h3>
+                <p className="font-body text-white/60 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.65" }}>
+                  Dr. Watten is actively completing patents on a new generation of side-stream treatment technologies. These innovations represent some of the most advanced work of his career — highly efficient, compact, and designed specifically for modern hatchery and RAS operations.
+                </p>
+                <p className="font-body text-white/40" style={{ fontSize: "0.8rem", lineHeight: "1.55" }}>
+                  Full product details will be published here once the patent process is finalized. Contact VATN to learn more.
+                </p>
+              </div>
+            </RevealSection>
+            <RevealSection delay={80}>
+              <div className="p-7" style={{ backgroundColor: "rgba(255,255,255,0.04)", border: "1px solid rgba(58,140,63,0.2)", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
+                <div style={{ filter: "blur(5px)", userSelect: "none", pointerEvents: "none", marginBottom: "12px" }}>
+                  <div style={{ height: "14px", backgroundColor: "rgba(58,140,63,0.25)", borderRadius: "2px", width: "60%", marginBottom: "8px" }} />
+                  <div style={{ height: "10px", backgroundColor: "rgba(255,255,255,0.1)", borderRadius: "2px", width: "90%", marginBottom: "5px" }} />
+                  <div style={{ height: "10px", backgroundColor: "rgba(255,255,255,0.1)", borderRadius: "2px", width: "75%" }} />
+                </div>
+                <h3 className="font-display text-white mb-3" style={{ fontSize: "1.15rem", lineHeight: 1.2 }}>Computer Modeling &amp; System Design</h3>
+                <p className="font-body text-white/60 mb-4" style={{ fontSize: "0.88rem", lineHeight: "1.65" }}>
+                  New proprietary modeling tools are in development and pending patent protection. These systems will offer a level of precision and site-specific performance prediction that goes well beyond anything currently available in the aquaculture industry.
+                </p>
+                <p className="font-body text-white/40" style={{ fontSize: "0.8rem", lineHeight: "1.55" }}>
+                  Full product details will be published here once the patent process is finalized. Contact VATN to learn more.
+                </p>
+              </div>
+            </RevealSection>
+          </div>
+        </div>
+      </section>
+
       {/* Vacuum Degassing Tower & Water Jet Exhauster */}
-      <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
+      <section id="vacuum-degassing" className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <RevealSection className="mb-12 text-center">
             <p className="section-label mb-3">Signature Product</p>
