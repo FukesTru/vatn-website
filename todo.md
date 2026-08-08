@@ -134,3 +134,9 @@
 - [x] Edit 16: UV Disinfection - add polypropylene closed reactor photo
 - [x] Edit 17: Gas Management CO2 Scrubbing - add CO2 Scrubbing benefits text (slide images pending user upload of PowerPoint)
 - [x] Edit 18: Solids Management - amend System Sizing Note black box text
+
+## VATNFINALEDITS(1).pdf — Applied Aug 8 2026
+- [x] Replace Craig Brook photo in Gas Management Vacuum Degassing section with new clearer photo
+- [x] Replace Custom Solutions equipment photo with new brass valve/fitting photo
+- [x] Add CO2 Scrubbing diagram (Concurrent Carbon Dioxide Stripper Process) to Gas Management CO2 section
+- [x] Add CO2 Scrubber photo to Gas Management CO2 section
