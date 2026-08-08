@@ -14,50 +14,38 @@ const technologies = [
   {
     icon: <Droplets size={22} />,
     title: "Oxygenation & Degassing Equipment",
-    href: "/products/oxygenation-degassing",
     body: "Reactor performance is modeled against your site's actual DO, N₂, temperature, barometric pressure, alpha factor, and hydraulic conditions. VATN's proprietary software identifies operating conditions that minimize capital and variable costs while hitting target dissolved gas levels.",
     specs: ["Spray towers", "Hooded surface agitators", "Packed columns", "U-tubes", "Vacuum degassers", "Low profile oxygenator"],
-    newProducts: false,
   },
   {
     icon: <Layers size={22} />,
     title: "Low Head Oxygenators (LHO)",
-    href: "#lho",
     body: "Developed and patented in 1989. No moving parts. Operates on hydraulic gradients as low as 9 inches. Widely applied at RAS and raceway facilities across the United States.",
     specs: ["No moving parts", "Operates on 9\" hydraulic gradient", "Multi-stage configuration", "Patented 1989", "RAS and raceway compatible"],
-    newProducts: false,
   },
   {
     icon: <Wind size={22} />,
     title: "CO₂ Control Methods",
-    href: "#co2-stripping",
     body: "Forced air packed beds, spray nozzle reactors, surface agitators, and hydroxide base scrubbing — each evaluated against your site conditions. Scrubber use also reduces dissolved N₂, lowering oxygenation costs.",
     specs: ["Forced air packed beds", "Spray nozzle reactors", "Surface agitators", "Hydroxide base scrubbing", "Concurrent N₂ reduction"],
-    newProducts: false,
   },
   {
     icon: <FlaskConical size={22} />,
     title: "Vacuum Degassing",
-    href: "#vacuum-degassing",
     body: "Computer-modeled for each site. Eductor-based off-gas removal eliminates mechanical vacuum pumps. Portable and fixed configurations. Side-stream blending reduces equipment scale by approximately 70–75%.",
     specs: ["Eductor-based off-gas removal", "3–5 ft. standard vacuum operation", "13–15 ft. side-stream configurations", "Portable designs available", "Automated performance control"],
-    newProducts: false,
   },
   {
     icon: <Zap size={22} />,
     title: "Side-Stream Treatment",
-    href: "#side-stream",
     body: "Treat 25–30% of bulk flow at high intensity. Blend back with untreated flow to hit targets. Reduces required equipment scale by ~70%. New low-profile reactor reduces volume requirements by an additional 50%.",
     specs: ["25–30% of bulk flow treated", "~70% reduction in equipment scale", "Packing-free operation", "O₂, O₃, CO₂, and N₂ capable", "New low-profile reactor design"],
-    newProducts: true,
   },
   {
     icon: <BarChart3 size={22} />,
     title: "Computer Modeling & System Design",
-    href: "#computer-modeling",
     body: "VATN uses proprietary software to model gas transfer performance before equipment is specified. This eliminates guesswork, reduces capital cost, and ensures the selected equipment will perform under your actual operating conditions.",
     specs: ["Site-specific modeling", "Multi-gas simulation", "Seasonal performance analysis", "Capital cost optimization", "Performance documentation"],
-    newProducts: true,
   },
 ];
 
@@ -124,15 +112,7 @@ export default function GasManagementProduct() {
               <div className="p-6 bg-white" style={{ border: "1px solid #E8EEF4", borderTop: "2px solid #3A8C3F", borderRadius: "2px" }}>
                 <div className="flex items-center gap-3 mb-3">
                   <div style={{ color: "#3A8C3F" }}>{tech.icon}</div>
-                  {tech.href.startsWith("/") ? (
-                    <Link href={tech.href}>
-                      <h3 className="font-display hover:underline cursor-pointer" style={{ fontSize: "1.1rem", color: "#3A8C3F", lineHeight: 1.2 }}>{tech.title}</h3>
-                    </Link>
-                  ) : (
-                    <a href={tech.href}>
-                      <h3 className="font-display hover:underline cursor-pointer" style={{ fontSize: "1.1rem", color: "#3A8C3F", lineHeight: 1.2 }}>{tech.title}</h3>
-                    </a>
-                  )}
+                  <h3 className="font-display" style={{ fontSize: "1.1rem", color: "#1C2B3A", lineHeight: 1.2 }}>{tech.title}</h3>
                 </div>
                 <p className="font-body mb-4" style={{ color: "#5A7080", fontSize: "0.85rem", lineHeight: "1.65" }}>{tech.body}</p>
                 <div className="flex flex-wrap gap-1.5">
@@ -142,30 +122,6 @@ export default function GasManagementProduct() {
                     </span>
                   ))}
                 </div>
-                {tech.newProducts && (
-                  <div className="mt-5 relative overflow-hidden" style={{ borderRadius: "4px", border: "1px solid rgba(58,140,63,0.25)" }}>
-                    <div style={{ filter: "blur(6px)", userSelect: "none", pointerEvents: "none", padding: "16px", backgroundColor: "#F4F6F8" }}>
-                      <div className="flex gap-3 mb-2">
-                        <div style={{ width: "48px", height: "48px", backgroundColor: "#E0E8F0", borderRadius: "4px" }} />
-                        <div style={{ flex: 1 }}>
-                          <div style={{ height: "12px", backgroundColor: "#C8D8E8", borderRadius: "2px", marginBottom: "6px", width: "70%" }} />
-                          <div style={{ height: "10px", backgroundColor: "#D8E4EE", borderRadius: "2px", width: "90%" }} />
-                          <div style={{ height: "10px", backgroundColor: "#D8E4EE", borderRadius: "2px", width: "60%", marginTop: "4px" }} />
-                        </div>
-                      </div>
-                      <div className="flex gap-2 mt-3">
-                        {[1,2,3].map(n => <div key={n} style={{ height: "22px", width: "70px", backgroundColor: "#C8D8E8", borderRadius: "2px" }} />)}
-                      </div>
-                    </div>
-                    <div className="absolute inset-0 flex flex-col items-center justify-center text-center" style={{ backgroundColor: "rgba(10,22,40,0.75)", backdropFilter: "blur(2px)", padding: "16px" }}>
-                      <span className="font-display font-bold text-white mb-1" style={{ fontSize: "0.95rem", letterSpacing: "0.04em" }}>New Products Coming</span>
-                      <span className="font-body mb-2" style={{ fontSize: "0.72rem", color: "#3A8C3F", letterSpacing: "0.1em", textTransform: "uppercase" }}>Patent Pending</span>
-                      <p className="font-body text-white/70" style={{ fontSize: "0.78rem", lineHeight: "1.55", maxWidth: "280px" }}>
-                        Dr. Watten is actively completing patents on several highly innovative technologies in this area. These products represent some of the most advanced work of his career and will be available here once the patent process is finalized.
-                      </p>
-                    </div>
-                  </div>
-                )}
               </div>
               </RevealSection>
             ))}
@@ -174,7 +130,7 @@ export default function GasManagementProduct() {
       </section>
 
       {/* LHO Illustration */}
-      <section id="lho" className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
+      <section className="py-16 lg:py-20" style={{ backgroundColor: "#0A1628" }}>
         <div className="container">
           <RevealSection className="mb-8 text-center">
             <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Patented Technology</p>
@@ -229,7 +185,7 @@ export default function GasManagementProduct() {
       </section>
 
       {/* CO2 Stripping */}
-      <section id="co2-stripping" className="py-20 lg:py-28" style={{ backgroundColor: "#F4F6F8" }}>
+      <section className="py-20 lg:py-28" style={{ backgroundColor: "#F4F6F8" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-14 items-center">
             <RevealSection>
@@ -313,7 +269,7 @@ export default function GasManagementProduct() {
       </section>
 
       {/* Vacuum Degassing Tower & Water Jet Exhauster */}
-      <section id="vacuum-degassing" className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
+      <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
           <RevealSection className="mb-12 text-center">
             <p className="section-label mb-3">Signature Product</p>
