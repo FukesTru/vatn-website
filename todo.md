@@ -140,3 +140,11 @@
 - [x] Replace Custom Solutions equipment photo with new brass valve/fitting photo
 - [x] Add CO2 Scrubbing diagram (Concurrent Carbon Dioxide Stripper Process) to Gas Management CO2 section
 - [x] Add CO2 Scrubber photo to Gas Management CO2 section
+
+## Gas Management Card Links & New Sections
+- [x] Add section IDs to LHO, CO2 Stripping, and Vacuum Degassing sections in GasManagementProduct.tsx
+- [x] Update all 6 technology card headings to anchor/page links
+- [x] Create new /products/oxygenation-degassing Under Construction page
+- [x] Register new route in App.tsx
+- [x] Add blurred New Products Coming section to Side-Stream Treatment card
+- [x] Add blurred New Products Coming section to Computer Modeling & System Design card
