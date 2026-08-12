@@ -157,3 +157,4 @@
 - [x] Remove the Terms and Conditions section from the homepage
 - [x] Create a dedicated Terms and Conditions page using the supplied VATN terms document
 - [x] Add the only Terms and Conditions site link beneath info@vatnusa.com in the footer
+- [x] Make the footer Terms & Conditions of Sale link bold and fully white

@@ -34,7 +34,7 @@ export default function Footer() {
                 info@vatnusa.com
               </a>
               <Link href="/terms-and-conditions">
-                <span className="font-body text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.82rem", marginLeft: "23px", textDecoration: "underline", textUnderlineOffset: "3px", cursor: "pointer" }}>
+                <span className="font-body font-bold text-white hover:text-white transition-colors" style={{ fontSize: "0.82rem", marginLeft: "23px", textDecoration: "underline", textUnderlineOffset: "3px", cursor: "pointer" }}>
                   Terms &amp; Conditions of Sale
                 </span>
               </Link>
