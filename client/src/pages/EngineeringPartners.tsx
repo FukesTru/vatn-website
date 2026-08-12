@@ -234,7 +234,7 @@ export default function EngineeringPartners() {
                 Why Engineering Firms Should Involve VATN Early in the Design Process
               </h2>
               <p className="font-body text-white/60 mt-4" style={{ fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Gas management decisions made early can affect capital cost, footprint, and long-term operation. Involving VATN during concept development can help inform site-specific design decisions before procurement.
+                Gas management decisions made early can affect capital and operating costs, footprint, and long-term operation. Involving VATN during concept development can help inform site-specific design decisions before procurement.
               </p>
             </div>
           </RevealSection>

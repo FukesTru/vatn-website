@@ -158,3 +158,6 @@
 - [x] Create a dedicated Terms and Conditions page using the supplied VATN terms document
 - [x] Add the only Terms and Conditions site link beneath info@vatnusa.com in the footer
 - [x] Make the footer Terms & Conditions of Sale link bold and fully white
+
+## Engineering Partners Wording Refinement
+- [x] Update the Early Engagement sentence to include both capital and operating costs
