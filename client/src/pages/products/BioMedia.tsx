@@ -62,14 +62,14 @@ export default function BioMedia() {
       {/* Content */}
       <section className="py-20 lg:py-28" style={{ backgroundColor: "#ffffff" }}>
         <div className="container">
-          {/* Photos row — equal-height side-by-side */}
+          {/* Photos row — full B100 / MB3 media pieces are intentionally uncropped */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-16">
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.07)" }}>
-              <div style={{ height: "340px", overflow: "hidden" }}>
+              <div style={{ height: "460px", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
                 <img
                   src="/manus-storage/vatn-bio-media-photo_415f2c30.jpg"
                   alt="VATN B100 and MB3 Bio Media — black and white"
-                  style={{ width: "100%", height: "100%", display: "block", objectFit: "cover", objectPosition: "center" }}
+                  style={{ width: "100%", height: "100%", display: "block", objectFit: "contain" }}
                 />
               </div>
               <div style={{ padding: "0.75rem 1rem", borderTop: "2px solid #3A8C3F", backgroundColor: "#ffffff" }}>
@@ -77,7 +77,7 @@ export default function BioMedia() {
               </div>
             </div>
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.07)" }}>
-              <div style={{ height: "340px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div style={{ height: "460px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
                   src="/manus-storage/vatn-bio-media-usa_929c566e.png"
                   alt="VATN B100 Bio Media — Made in the USA"
@@ -114,28 +114,36 @@ export default function BioMedia() {
             </div>
 
             <div className="flex flex-col gap-5">
-              {/* Specs table */}
+              {/* Technical specifications supplied by VATN */}
               <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
                 <div style={{ backgroundColor: "#0A1628", padding: "0.75rem 1rem" }}>
-                  <p className="font-display text-white" style={{ fontSize: "0.9rem" }}>B100 Media Specifications</p>
+                  <p className="font-display text-white" style={{ fontSize: "0.9rem" }}>B 100 Technical Specifications</p>
                 </div>
                 <table style={{ width: "100%", borderCollapse: "collapse" }}>
                   <tbody>
                     <tr style={{ borderBottom: "1px solid #E8EEF4" }}>
-                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080", width: "55%" }}>Protected Surface Area</td>
-                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>500 m²/m³</td>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080", width: "55%" }}>Length, L (in/mm)</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>0.472 / 11.99</td>
                     </tr>
                     <tr style={{ borderBottom: "1px solid #E8EEF4", backgroundColor: "#F9FAFB" }}>
-                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Media Type</td>
-                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>HDPE High density Polyethylene</td>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Bulk Density (kg/m³)</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>118</td>
                     </tr>
                     <tr style={{ borderBottom: "1px solid #E8EEF4" }}>
-                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Compatible Configurations</td>
-                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>MBBR &amp; Fixed Bed</td>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Total Surface Area (m²/m³)</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>634</td>
+                    </tr>
+                    <tr style={{ borderBottom: "1px solid #E8EEF4", backgroundColor: "#F9FAFB" }}>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Protected Surface Area (m²/m³)</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>499</td>
+                    </tr>
+                    <tr style={{ borderBottom: "1px solid #E8EEF4" }}>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>B 100 Material</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>HDPE</td>
                     </tr>
                     <tr style={{ backgroundColor: "#F9FAFB" }}>
-                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Origin</td>
-                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#3A8C3F", fontWeight: 600 }}>Made in the USA</td>
+                      <td className="font-body" style={{ padding: "0.65rem 1rem", fontSize: "0.83rem", color: "#5A7080" }}>Specific Gravity</td>
+                      <td className="font-display" style={{ padding: "0.65rem 1rem", fontSize: "0.88rem", color: "#1C2B3A", fontWeight: 600 }}>0.96</td>
                     </tr>
                   </tbody>
                 </table>
@@ -146,7 +154,7 @@ export default function BioMedia() {
                   <h3 className="font-display text-white" style={{ fontSize: "1.05rem" }}>Biofilter Configuration</h3>
                 </div>
                 <p className="font-body text-white/60" style={{ fontSize: "0.85rem", lineHeight: "1.65" }}>
-                  B100 media is compatible with moving bed biofilm reactor (MBBR) and fixed bed filter configurations. The appropriate configuration depends on your system's hydraulic design, loading rates, and available footprint. VATN evaluates these parameters to recommend the right approach for your RAS.
+                  B100 media is compatible with moving bed biofilm reactor (MBBR) and fixed bed filter configurations. The appropriate configuration depends on your system's hydraulic design, loading rates, and available footprint.
                 </p>
               </div>
               <div className="p-6" style={{ backgroundColor: "#F4F6F8", border: "1px solid #E8EEF4", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>

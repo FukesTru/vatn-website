@@ -161,3 +161,8 @@
 
 ## Engineering Partners Wording Refinement
 - [x] Update the Early Engagement sentence to include both capital and operating costs
+
+## VATNEdits.docx — Bio Media Update
+- [x] Enlarge the Bio Media product photo so the full B100 and MB3 media pieces, length, and diameter are visible
+- [x] Remove the sentence "VATN evaluates these parameters to recommend the right approach for your RAS." from the Bio Media black box
+- [x] Add the supplied B100 technical specifications: 0.472/11.99 in/mm length, 118 kg/m3 bulk density, 634 m2/m3 total surface area, 499 m2/m3 protected surface area, HDPE material, and 0.96 specific gravity
