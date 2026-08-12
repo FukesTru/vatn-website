@@ -27,7 +27,7 @@
 
 ## Pending Items
 
-- [ ] Dr. Watten's description text for the vacuum degassing tower section on the Gas Management page — waiting for client to provide actual copy (currently uses client-provided paragraph from previous session)
+- [ ] Confirm whether the existing Dr. Watten vacuum degassing paragraph is final approved copy for the new standalone Vacuum Degassing page, or provide replacement wording
 
 ## Website Edits — WebsiteEdits.docx
 
@@ -152,3 +152,8 @@
 - [x] Create a standalone CO2 Scrubbing page that expands the existing relevant photos with a title and CTA
 - [x] Post the attached VATN Terms and Conditions of Sale at the bottom of the homepage below info@vatnusa.com
 - [x] Revise Partnerships collaboration wording for CO2 Stripping Evaluations and Early Engagement to avoid unintended liability or performance guarantees
+
+## Terms and Conditions Placement Correction
+- [x] Remove the Terms and Conditions section from the homepage
+- [x] Create a dedicated Terms and Conditions page using the supplied VATN terms document
+- [x] Add the only Terms and Conditions site link beneath info@vatnusa.com in the footer

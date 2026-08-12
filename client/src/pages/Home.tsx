@@ -11,7 +11,6 @@ import {
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import TermsAndConditions from "@/components/TermsAndConditions";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 const HATCHERY_IMG = "/manus-storage/np-co2-degasser-cascade_afdeae3c.png";
@@ -224,7 +223,6 @@ export default function Home() {
       </section>
 
       <Footer />
-      <TermsAndConditions />
     </div>
   );
 }

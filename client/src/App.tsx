@@ -28,6 +28,7 @@ import SolidsManagement from "./pages/products/SolidsManagement";
 import CustomSolutions from "./pages/products/CustomSolutions";
 import Contact from "./pages/Contact";
 import OxygenationDegassing from "./pages/products/OxygenationDegassing";
+import TermsAndConditionsPage from "./pages/TermsAndConditions";
 
 // Scroll to top whenever the route changes
 function ScrollToTop() {
@@ -65,6 +66,7 @@ function Router() {
         <Route path="/products/solids-management" component={SolidsManagement} />
         <Route path="/products/custom-solutions" component={CustomSolutions} />
         <Route path="/products/oxygenation-degassing" component={OxygenationDegassing} />
+        <Route path="/terms-and-conditions" component={TermsAndConditionsPage} />
         <Route path="/contact" component={Contact} />
         <Route path="/404" component={NotFound} />
         <Route component={NotFound} />
