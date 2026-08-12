@@ -55,7 +55,7 @@ const collaborationAreas = [
   {
     icon: <Wind size={22} />,
     title: "CO₂ Stripping Evaluations",
-    desc: "CO₂ is often underestimated in early RAS design. VATN evaluates stripping options across the full range of operating conditions.",
+    desc: "CO₂ is often underestimated in early RAS design. VATN can help evaluate stripping options across the range of operating conditions identified for a project.",
   },
   {
     icon: <RefreshCw size={22} />,
@@ -94,7 +94,7 @@ const whyEarly = [
   },
   {
     title: "Improve Treatment Performance",
-    desc: "Generic selections may meet targets under average conditions but fail at seasonal extremes. Site-specific modeling ensures performance across the full range.",
+    desc: "Generic selections may not account for seasonal extremes. Site-specific modeling can help inform equipment selection across the operating conditions considered for a project.",
   },
   {
     title: "Account for Site-Specific Gas Conditions",
@@ -234,7 +234,7 @@ export default function EngineeringPartners() {
                 Why Engineering Firms Should Involve VATN Early in the Design Process
               </h2>
               <p className="font-body text-white/60 mt-4" style={{ fontSize: "0.92rem", lineHeight: "1.65" }}>
-                Gas management decisions made early have downstream consequences for capital cost, footprint, and long-term performance. Involving VATN at concept — not procurement — produces better outcomes.
+                Gas management decisions made early can affect capital cost, footprint, and long-term operation. Involving VATN during concept development can help inform site-specific design decisions before procurement.
               </p>
             </div>
           </RevealSection>

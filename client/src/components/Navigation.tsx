@@ -9,76 +9,29 @@ import { Menu, X, Phone, ChevronDown, ArrowRight } from "lucide-react";
 
 const LOGO_URL = "/manus-storage/vatn-logo-v4_5ddd5c23.png";
 
-const productDropdown = [
+const productGroups = [
   {
-    label: "Product Overview",
-    href: "/products",
-    desc: "Full overview of VATN's aquaculture and hatchery solutions",
+    title: "Gas Management Products",
+    items: [
+      { label: "Product Overview", href: "/products/gas-management" },
+      { label: "New Products Coming", href: "/products/gas-management/new-products" },
+      { label: "Vacuum Degassing", href: "/products/gas-management/vacuum-degassing" },
+      { label: "Low Head Oxygen (LHO)", href: "/products/gas-management/low-head-oxygen" },
+      { label: "CO₂ Stripping", href: "/products/gas-management/co2-stripping" },
+      { label: "CO₂ Scrubbing", href: "/products/gas-management/co2-scrubbing" },
+    ],
   },
   {
-    label: "Gas Management",
-    href: "/products/gas-management",
-    desc: "Oxygenation, degassing, CO₂ control, and total gas pressure",
-  },
-  {
-    label: "— Low Head Oxygenators (LHO)",
-    href: "/products/gas-management#lho",
-    desc: "Patented 1989. No moving parts. Operates on 9\" hydraulic gradient.",
-    sub: true,
-  },
-  {
-    label: "— CO₂ Control Methods",
-    href: "/products/gas-management#co2-stripping",
-    desc: "Forced-air stripping, spray reactors, and hydroxide scrubbing.",
-    sub: true,
-  },
-  {
-    label: "— Vacuum Degassing",
-    href: "/products/gas-management#vacuum-degassing",
-    desc: "Computer-modeled vacuum degassers for nitrogen supersaturation.",
-    sub: true,
-  },
-  {
-    label: "— New Products Coming",
-    href: "/products/gas-management#new-products",
-    desc: "Side-stream & modeling innovations — patent pending.",
-    sub: true,
-  },
-  {
-    label: "— Oxygenation & Degassing",
-    href: "/products/oxygenation-degassing",
-    desc: "New products under construction.",
-    sub: true,
-  },
-  {
-    label: "UV Disinfection",
-    href: "/products/uv-disinfection",
-    desc: "Ultraqua UV systems for pathogen control in hatchery water",
-  },
-  {
-    label: "Bio Media",
-    href: "/products/bio-media",
-    desc: "B100 structured bio media for biological filtration in RAS",
-  },
-  {
-    label: "Fish Rearing Tank Design",
-    href: "/products/fish-rearing-tank-design",
-    desc: "Mixed-cell raceways and rearing unit hydraulics",
-  },
-  {
-    label: "Alkalinity Enhancement",
-    href: "/products/alkalinity-enhancement",
-    desc: "Limestone-based pH and alkalinity control for acid-impacted water",
-  },
-  {
-    label: "Solids Management",
-    href: "/products/solids-management",
-    desc: "NP Drum & Disc microscreen filters for solids removal",
-  },
-  {
-    label: "Other / Custom Solutions",
-    href: "/products/custom-solutions",
-    desc: "Site-specific water quality, hydraulic, and treatment challenges",
+    title: "Other Products & Solutions",
+    items: [
+      { label: "Product Overview", href: "/products" },
+      { label: "Solids Management", href: "/products/solids-management" },
+      { label: "UV Disinfection", href: "/products/uv-disinfection" },
+      { label: "Bio-Media", href: "/products/bio-media" },
+      { label: "Fish Rearing Tank Design", href: "/products/fish-rearing-tank-design" },
+      { label: "Alkalinity Enhancement", href: "/products/alkalinity-enhancement" },
+      { label: "Other / Custom Solutions", href: "/products/custom-solutions" },
+    ],
   },
 ];
 
@@ -201,7 +154,7 @@ export default function Navigation() {
                     style={{
                       transform: "translateX(-50%)",
                       marginTop: "12px",
-                      width: "660px",
+                      width: "720px",
                       backgroundColor: "#0A1628",
                       border: "1px solid rgba(58,140,63,0.25)",
                       borderRadius: "4px",
@@ -221,48 +174,43 @@ export default function Navigation() {
                       >
                         Products &amp; Solutions
                       </span>
-                      <Link href="/products">
-                        <span
-                          className="flex items-center gap-1 font-body text-white/50 hover:text-white/80 transition-colors"
-                          style={{ fontSize: "0.85rem" }}
-                        >
-                          View All <ArrowRight size={11} />
-                        </span>
-                      </Link>
                     </div>
 
-                    {/* Grid of items */}
-                    <div className="grid grid-cols-2 gap-0 p-3">
-                      {productDropdown.map((item) => (
-                        <Link key={item.href} href={item.href as string}>
-                          <div
-                            className="flex flex-col gap-0.5 px-3 py-3 rounded transition-colors duration-150 group"
-                            style={{ cursor: "pointer", paddingLeft: (item as any).sub ? "20px" : "12px" }}
-                            onMouseEnter={(e) => {
-                              (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(58,140,63,0.08)";
-                            }}
-                            onMouseLeave={(e) => {
-                              (e.currentTarget as HTMLDivElement).style.backgroundColor = "transparent";
-                            }}
-                          >
-                            <span
-                             className="font-display font-semibold"
-                             style={{
-                               fontSize: (item as any).sub ? "0.82rem" : "0.95rem",
-                               letterSpacing: "0.02em",
-                               color: (item as any).sub ? "rgba(255,255,255,0.65)" : (location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.9)"),
-                             }}
-                            >
-                              {item.label}
-                            </span>
-                            <span
-                              className="font-body"
-                              style={{ fontSize: "0.84rem", color: "rgba(255,255,255,0.4)", lineHeight: "1.4" }}
-                            >
-                              {item.desc}
-                            </span>
+                    {/* Two primary product groups */}
+                    <div className="grid grid-cols-2 gap-0 p-4">
+                      {productGroups.map((group, groupIndex) => (
+                        <div
+                          key={group.title}
+                          className={groupIndex === 0 ? "pr-4" : "pl-4"}
+                          style={groupIndex === 0 ? { borderRight: "1px solid rgba(58,140,63,0.16)" } : undefined}
+                        >
+                          <p className="font-display font-bold mb-2 px-3" style={{ fontSize: "0.9rem", letterSpacing: "0.05em", color: "#3A8C3F" }}>
+                            {group.title}
+                          </p>
+                          <div className="flex flex-col gap-0.5">
+                            {group.items.map((item) => (
+                              <Link key={item.href} href={item.href}>
+                                <div
+                                  className="px-3 py-2.5 rounded transition-colors duration-150"
+                                  style={{ cursor: "pointer" }}
+                                  onMouseEnter={(e) => {
+                                    (e.currentTarget as HTMLDivElement).style.backgroundColor = "rgba(58,140,63,0.08)";
+                                  }}
+                                  onMouseLeave={(e) => {
+                                    (e.currentTarget as HTMLDivElement).style.backgroundColor = "transparent";
+                                  }}
+                                >
+                                  <span
+                                    className="font-display font-semibold"
+                                    style={{ fontSize: "0.9rem", letterSpacing: "0.02em", color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.86)" }}
+                                  >
+                                    {item.label}
+                                  </span>
+                                </div>
+                              </Link>
+                            ))}
                           </div>
-                        </Link>
+                        </div>
                       ))}
                     </div>
                   </div>
@@ -363,15 +311,20 @@ export default function Navigation() {
               </button>
               {mobileProductsOpen && (
                 <div className="pl-4 flex flex-col gap-0 py-2" style={{ borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
-                  {productDropdown.map((item) => (
-                    <Link key={item.href} href={item.href}>
-                      <span
-                        className="font-display block py-2.5"
-                        style={{ fontSize: "1.05rem", color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.7)", letterSpacing: "0.03em" }}
-                      >
-                        {item.label}
-                      </span>
-                    </Link>
+                  {productGroups.map((group) => (
+                    <div key={group.title} className="py-2">
+                      <p className="font-display font-bold py-2" style={{ fontSize: "1.05rem", color: "#3A8C3F", letterSpacing: "0.03em" }}>{group.title}</p>
+                      {group.items.map((item) => (
+                        <Link key={item.href} href={item.href}>
+                          <span
+                            className="font-display block py-2 pl-3"
+                            style={{ fontSize: "0.98rem", color: location === item.href ? "#3A8C3F" : "rgba(255,255,255,0.7)", letterSpacing: "0.03em" }}
+                          >
+                            {item.label}
+                          </span>
+                        </Link>
+                      ))}
+                    </div>
                   ))}
                 </div>
               )}

@@ -140,3 +140,15 @@
 - [x] Replace Custom Solutions equipment photo with new brass valve/fitting photo
 - [x] Add CO2 Scrubbing diagram (Concurrent Carbon Dioxide Stripper Process) to Gas Management CO2 section
 - [x] Add CO2 Scrubber photo to Gas Management CO2 section
+
+## VATNFINALEDITS.docx — Major Products & Solutions Restructure
+- [x] Reconstruct the Products & Solutions dropdown into two primary groups: Gas Management Products and Other Products & Solutions
+- [x] Create individual Other Products & Solutions pages: Product Overview, Solids Management, UV Disinfection, Bio-Media, Fish Rearing Tank Design, Alkalinity Enhancement, and Other / Custom Solutions, preserving the existing content for each named product
+- [x] Replace the Other Products Product Overview content with the exact two-paragraph copy supplied in VATNFINALEDITS.docx
+- [x] Create individual Gas Management Products pages: Product Overview, New Products Coming, Vacuum Degassing, Low Head Oxygen (LHO), CO2 Stripping, and CO2 Scrubbing
+- [x] Preserve the current Gas Management Product Overview content on its own page and use a clean white presentation with the established accent color lettering
+- [x] Create the New Products Coming page using the supplied VATN in-house research copy about CO2 stripping and side-stream reactors
+- [x] Create separate Vacuum Degassing, LHO, and CO2 Stripping pages using only their respective existing subsection content, each with a title and CTA
+- [x] Create a standalone CO2 Scrubbing page that expands the existing relevant photos with a title and CTA
+- [x] Post the attached VATN Terms and Conditions of Sale at the bottom of the homepage below info@vatnusa.com
+- [x] Revise Partnerships collaboration wording for CO2 Stripping Evaluations and Early Engagement to avoid unintended liability or performance guarantees

@@ -14,7 +14,12 @@ import Publications from "./pages/Publications";
 import News from "./pages/News";
 // Products & Solutions pages
 import ProductOverview from "./pages/products/ProductOverview";
-import GasManagementProduct from "./pages/products/GasManagementProduct";
+import GasManagementOverview from "./pages/products/GasManagementOverview";
+import GasNewProducts from "./pages/products/GasNewProducts";
+import GasVacuumDegassing from "./pages/products/GasVacuumDegassing";
+import GasLowHeadOxygen from "./pages/products/GasLowHeadOxygen";
+import GasCO2Stripping from "./pages/products/GasCO2Stripping";
+import GasCO2Scrubbing from "./pages/products/GasCO2Scrubbing";
 import UVDisinfection from "./pages/products/UVDisinfection";
 import BioMedia from "./pages/products/BioMedia";
 import FishRearingTankDesign from "./pages/products/FishRearingTankDesign";
@@ -47,7 +52,12 @@ function Router() {
         <Route path="/news" component={News} />
         {/* Products & Solutions */}
         <Route path="/products" component={ProductOverview} />
-        <Route path="/products/gas-management" component={GasManagementProduct} />
+        <Route path="/products/gas-management" component={GasManagementOverview} />
+        <Route path="/products/gas-management/new-products" component={GasNewProducts} />
+        <Route path="/products/gas-management/vacuum-degassing" component={GasVacuumDegassing} />
+        <Route path="/products/gas-management/low-head-oxygen" component={GasLowHeadOxygen} />
+        <Route path="/products/gas-management/co2-stripping" component={GasCO2Stripping} />
+        <Route path="/products/gas-management/co2-scrubbing" component={GasCO2Scrubbing} />
         <Route path="/products/uv-disinfection" component={UVDisinfection} />
         <Route path="/products/bio-media" component={BioMedia} />
         <Route path="/products/fish-rearing-tank-design" component={FishRearingTankDesign} />
