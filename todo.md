@@ -166,6 +166,7 @@
 - [x] Enlarge the Bio Media product photo so the full B100 and MB3 media pieces, length, and diameter are visible
 - [x] Remove the sentence "VATN evaluates these parameters to recommend the right approach for your RAS." from the Bio Media black box
 - [x] Add the supplied B100 technical specifications: 0.472/11.99 in/mm length, 118 kg/m3 bulk density, 634 m2/m3 total surface area, 499 m2/m3 protected surface area, HDPE material, and 0.96 specific gravity
+- [x] Remove the specified Contact VATN sentence from the Bio Media Specifications Note
 
 ## Untitleddocument.pdf — Publications and Product Copy Updates
 - [x] Add a Gas Transfer publication table, publication hyperlink sentence, and Publications button to the Gas Management Product Overview page

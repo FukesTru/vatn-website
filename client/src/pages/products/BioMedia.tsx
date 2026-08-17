@@ -160,7 +160,7 @@ export default function BioMedia() {
               <div className="p-6" style={{ backgroundColor: "#F4F6F8", border: "1px solid #E8EEF4", borderLeft: "2px solid #3A8C3F", borderRadius: "2px" }}>
                 <p className="section-label mb-2" style={{ color: "#3A8C3F" }}>Note on Specifications</p>
                 <p className="font-body" style={{ fontSize: "0.85rem", color: "#5A7080", lineHeight: "1.65" }}>
-                  Biofilter sizing depends on your system's ammonia loading, target effluent quality, temperature, and hydraulic conditions. Contact VATN to discuss your RAS design and we will provide an honest assessment of media requirements for your specific application.
+                  Biofilter sizing depends on your system's ammonia loading, target effluent quality, temperature, and hydraulic conditions.
                 </p>
               </div>
             </div>
