@@ -1,6 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import PublicationReferences from "@/components/PublicationReferences";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -20,7 +21,22 @@ export default function GasManagementOverview() {
         </div>
       </section>
       <section className="py-16 lg:py-20" style={{ backgroundColor: "#ffffff" }}>
-        <div className="container"><div className="max-w-4xl mx-auto text-center"><p className="section-label mb-3">Product Overview</p><span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} /><p className="font-body" style={{ fontSize: "1.05rem", color: "#3A5068", lineHeight: "1.85" }}>Proper management of dissolved gas levels, particularly dissolved oxygen (DO), nitrogen and CO₂ is critical in determining the success of both aquaculture and wastewater/environmental operations. This includes maintaining adequate DO for rapid growth of aquaculture species as well as maintenance of environmental DO levels that allow for biological wastewater treatment or transport without hydrogen sulfide generation. CO₂ is a byproduct of both fish and microbe respiration and so managing (removal) this gas is also of importance given its effect on water pH and fish health. Well and spring water sources, commonly used at federal and state fish hatcheries, often contain elevated (stressful) levels of CO₂ as well as dissolved nitrogen (N₂) that must also be managed (stripped/scrubbed) prior to aquaculture use. Dissolved gas monitoring equipment is used to control gas management equipment so that gas transfer needs match gas transfer rates. Hence dissolved gas sensors play an important role in treatment solution packages. The required manipulation of dissolved gas levels and the number of monitoring sites is related in part to fish rearing unit design (tank hydraulics) including the state-of-the-art mixed cell rearing unit, biofilter type and performance and solids removal operations. VATN products address the needs outlined above:</p></div></div>
+        <div className="container">
+          <div className="max-w-4xl mx-auto text-center">
+            <p className="section-label mb-3">Product Overview</p><span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
+            <p className="font-body" style={{ fontSize: "1.05rem", color: "#3A5068", lineHeight: "1.85" }}>Proper management of dissolved gas levels, particularly dissolved oxygen (DO), nitrogen and CO₂ is critical in determining the success of both aquaculture and wastewater/environmental operations. This includes maintaining adequate DO for rapid growth of aquaculture species as well as maintenance of environmental DO levels that allow for biological wastewater treatment or transport without hydrogen sulfide generation. CO₂ is a byproduct of both fish and microbe respiration and so managing (removal) this gas is also of importance given its effect on water pH and fish health. Well and spring water sources, commonly used at federal and state fish hatcheries, often contain elevated (stressful) levels of CO₂ as well as dissolved nitrogen (N₂) that must also be managed (stripped/scrubbed) prior to aquaculture use. Dissolved gas monitoring equipment is used to control gas management equipment so that gas transfer needs match gas transfer rates. Hence dissolved gas sensors play an important role in treatment solution packages. The required manipulation of dissolved gas levels and the number of monitoring sites is related in part to fish rearing unit design (tank hydraulics) including the state-of-the-art mixed cell rearing unit, biofilter type and performance and solids removal operations. VATN products address the needs outlined above:</p>
+          </div>
+          <div className="max-w-4xl mx-auto">
+            <PublicationReferences category="Gas Transfer" entries={[
+              { heading: "Portable vacuum degasser", references: "No. 19" },
+              { heading: "Spray Tower", references: "No. 27" },
+              { heading: "LHO", references: "No.'s 1 & 13" },
+              { heading: "Hooded surface oxygenators", references: "No.'s 12 & 22" },
+              { heading: "U-Tube", references: "No.'s 7 & 23" },
+              { heading: "Nitrogen stripping and CO2 stripping", references: "No. 17" },
+            ]} />
+          </div>
+        </div>
       </section>
       <section className="py-20 lg:py-24" style={{ backgroundColor: "#060E1A" }}><div className="container text-center"><p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Ready to Discuss Your Project?</p><span className="teal-rule mb-6" style={{ margin: "0 auto 1.5rem" }} /><h2 className="font-display text-white mb-5" style={{ fontSize: "clamp(1.8rem, 3.5vw, 2.6rem)", lineHeight: 1.1 }}>Every Project Starts With a Site Evaluation</h2><p className="font-body text-white/60 max-w-xl mx-auto mb-8" style={{ fontSize: "0.95rem", lineHeight: "1.7" }}>VATN does not sell from a catalog. Contact us to describe your facility, your water quality conditions, and the challenge you are trying to solve. We will tell you honestly what is feasible and what is not.</p><a href="/contact" className="btn-primary">Contact VATN <ArrowRight size={15} /></a></div></section>
       <Footer />

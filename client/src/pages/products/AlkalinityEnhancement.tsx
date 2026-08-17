@@ -8,6 +8,7 @@ import { ArrowRight, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RevealSection from "@/components/RevealSection";
+import PublicationReferences from "@/components/PublicationReferences";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -138,6 +139,9 @@ export default function AlkalinityEnhancement() {
                 This is not catalog equipment. System design requires evaluation of your source water chemistry, target pH and alkalinity, flow rates, and available infrastructure. Contact VATN to discuss your specific situation.
               </p>
             </div>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <PublicationReferences category="Alkalinity" entries={[{ heading: "Alkalinity", references: "No.'s 16, 17, 18, 19" }]} />
           </div>
         </div>
       </section>

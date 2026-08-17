@@ -27,7 +27,7 @@
 
 ## Pending Items
 
-- [ ] Confirm whether the existing Dr. Watten vacuum degassing paragraph is final approved copy for the new standalone Vacuum Degassing page, or provide replacement wording
+- [x] Confirm whether the existing Dr. Watten vacuum degassing paragraph is final approved copy for the new standalone Vacuum Degassing page, or provide replacement wording — user approved the supplied corrected replacement wording
 
 ## Website Edits — WebsiteEdits.docx
 
@@ -166,3 +166,12 @@
 - [x] Enlarge the Bio Media product photo so the full B100 and MB3 media pieces, length, and diameter are visible
 - [x] Remove the sentence "VATN evaluates these parameters to recommend the right approach for your RAS." from the Bio Media black box
 - [x] Add the supplied B100 technical specifications: 0.472/11.99 in/mm length, 118 kg/m3 bulk density, 634 m2/m3 total surface area, 499 m2/m3 protected surface area, HDPE material, and 0.96 specific gravity
+
+## Untitleddocument.pdf — Publications and Product Copy Updates
+- [x] Add a Gas Transfer publication table, publication hyperlink sentence, and Publications button to the Gas Management Product Overview page
+- [x] Add a CO₂ Scrubbing publication table, publication hyperlink sentence, button, and the full approved explanatory paragraph below the existing scrubber photos
+- [x] Add a CO₂ Stripping / Packed Column Design publication table, publication hyperlink sentence, and button to the CO₂ Stripping page
+- [x] Add a Mixed Cell Raceway publication table, publication hyperlink sentence, and button to the Fish Rearing Tank Design page
+- [x] Add an Alkalinity publication table, publication hyperlink sentence, and button to the Alkalinity Enhancement page
+- [x] Replace the Vacuum Degassing paragraph with the approved corrected wording in entirely black text
+- [x] Add two matching "Photos Coming Soon" placeholders to the New Products page without changing the existing New Products content

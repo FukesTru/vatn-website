@@ -1,4 +1,5 @@
 import GasPageShell from "./GasPageShell";
+import PublicationReferences from "@/components/PublicationReferences";
 
 export default function GasCO2Scrubbing() {
   return (
@@ -24,6 +25,12 @@ export default function GasCO2Scrubbing() {
               <img src="/manus-storage/co2-scrubber-photo_a8d2683c.png" alt="CO2 scrubber unit installed at hatchery facility" style={{ width: "100%", display: "block", objectFit: "cover", minHeight: "330px", aspectRatio: "4/3" }} />
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}><p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>CO₂ Scrubber</p></div>
             </div>
+          </div>
+          <div className="max-w-5xl mx-auto mt-12">
+            <p className="font-body" style={{ color: "#000000", fontSize: "0.94rem", lineHeight: "1.8" }}>
+              In pure oxygen absorption equipment. The high solubility of carbon dioxide produces significant desorption within commercial oxygen absorption equipment. This operating characteristic of the equipment has limited its application in fish husbandry operations despite its ability to significantly increase allowable fish loading rates (kg/L/min). Carbon dioxide is typically removed by air stripping. This process requires a significant energy input for moving air, air heating in cold climates and water pumping. Dr. Watten developed a modification for a spray tower that provides for carbon dioxide desorption as well as oxygen absorption. Elimination of the air-stripping step reduces pumping costs while allowing dissolved nitrogen to drop below saturation concentrations. This latter response provides for an improvement in oxygen absorption efficiency. Carbon dioxide desorption is achieved by directing head-space gases from the spray tower (O₂, N₂, CO₂) through a sealed packed tower scrubber receiving a 2N NaOH solution. Carbon dioxide is selectively removed from the gas stream, by chemical reaction, forming the product Na₂CO₃. Scrubber off-gas, lean with regard to carbon dioxide but still rich with oxygen, is redirected through the spray tower for further stripping of carbon dioxide and absorption of oxygen. Make-up NaOH is metered into the scrubbing solution sump on an as needed basis as directed by a feedback control loop programmed to maintain a scrubbing solution pH of 11.4-11.8. The spent NaOH solution is collected, then regenerated for reuse, in a batch process that requires relatively inexpensive hydrated lime (Ca(OH)₂). A by-product of the regeneration step is an alkaline filter cake, which may have use in bio-solids stabilization. Given the enhanced gas transfer rates possible with chemical reaction, the required NaOH solution flow rate through the scrubber represents a fraction of the spray.
+            </p>
+            <PublicationReferences category="CO₂ Scrubbing" entries={[{ heading: "CO₂ Scrubbing", references: "No. 31" }]} />
           </div>
         </div>
       </section>

@@ -1,4 +1,5 @@
 import GasPageShell from "./GasPageShell";
+import PublicationReferences from "@/components/PublicationReferences";
 
 export default function GasCO2Stripping() {
   return (
@@ -29,6 +30,12 @@ export default function GasCO2Stripping() {
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Cascade-type forced-air CO₂ stripping unit with self-cleaning packing. A centrifugal blower forces air countercurrent to the falling water film, stripping dissolved CO₂ efficiently with minimal maintenance requirements.</p>
               </div>
             </div>
+          </div>
+          <div className="max-w-5xl mx-auto">
+            <PublicationReferences category="CO2 Stripping" entries={[
+              { heading: "CO₂ Stripping", references: "No.'s 33, 34, 35, 28, 29, 30" },
+              { heading: "Packed Column Design", references: "No.'s 10, 13, 14" },
+            ]} />
           </div>
         </div>
       </section>
