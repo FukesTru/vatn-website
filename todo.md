@@ -175,3 +175,8 @@
 - [x] Add an Alkalinity publication table, publication hyperlink sentence, and button to the Alkalinity Enhancement page
 - [x] Replace the Vacuum Degassing paragraph with the approved corrected wording in entirely black text
 - [x] Add two matching "Photos Coming Soon" placeholders to the New Products page without changing the existing New Products content
+
+## Final Recheck — Untitleddocument.pdf
+- [x] Recheck every approved publication table, publication link, and Publications button against the source document
+- [x] Recheck the CO₂ Scrubbing paragraph, Vacuum Degassing black-text paragraph, and New Products placeholders against the approved wording and placement
+- [x] Recheck all affected pages on desktop and mobile before reporting completion
