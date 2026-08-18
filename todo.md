@@ -194,5 +194,22 @@
 - [x] Link each cited product-page reference directly to its corresponding overall-number publication entry
 - [x] Verify direct-link scrolling and targets on desktop and mobile
 
+## PageSpeed Performance Audit — No Design or Copy Changes Without Approval
+- [x] Review the supplied PageSpeed report and record its desktop findings
+- [x] Audit the current frontend and backend performance characteristics without changing website copy, design, imagery, or layout
+- [x] Present a prioritized performance improvement plan for user approval before making any optimization edits
+
+## News Update — August 2026 Field Trials
+- [x] Add the supplied August 2026 USGS Eastern Ecological Science Center and Freshwater Institute field-trials News entry
+- [x] Set the Rastech in Florida News item date to May 2026
+- [x] Set the Freshwater Institute News item date to March 2026
+
+## Approved No-Design Performance Optimizations
+- [x] Create visually identical optimized versions of oversized logo and homepage product image assets
+- [x] Add intrinsic image dimensions for the homepage product image and footer logo without changing rendered sizing
+- [x] Implement route-level code splitting without altering routes, copy, or design
+- [x] Load GoHighLevel embed resources only on pages that render a GHL form, preserving every form’s behavior and appearance
+- [x] Remove unused native contact-form client logic and reduce unused global resource hints without altering visible content
+
 ## Mixed Cell Raceway Insert
 - [x] Add the complete user-supplied Mixed Cell Raceway Insert below the existing slides and photo captions on the Fish Rearing Tank Design page

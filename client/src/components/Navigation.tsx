@@ -93,9 +93,11 @@ export default function Navigation() {
               <div className="flex items-center group">
                 <img
                     src={LOGO_URL}
+                    srcSet="/manus-storage/vatn-logo-v4-320_b01373fd.webp 320w, /manus-storage/vatn-logo-v4-640_691ee9c4.webp 640w"
+                    sizes="(max-width: 1024px) 200px, 320px"
                     alt="VATN Science and Technology"
                     width={320}
-                    height={92}
+                    height={213}
                     loading="eager"
                     fetchPriority="high"
                     style={{ height: "92px", width: "auto", objectFit: "contain", maxWidth: "320px", display: "block" }}

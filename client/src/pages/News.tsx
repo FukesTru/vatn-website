@@ -82,10 +82,86 @@ export default function News() {
       </section>
 
       {/* News content */}
-      <div className="container py-16">
-        <div className="max-w-3xl">
+	      <div className="container py-16">
+	        <div className="max-w-3xl">
 
-          {/* RASTECH 2026 article */}
+	          {/* August 2026 field trials article */}
+	          <RevealSection>
+	            <article
+	              style={{
+	                backgroundColor: "#FFFFFF",
+	                borderRadius: "6px",
+	                overflow: "hidden",
+	                boxShadow: "0 2px 16px rgba(0,0,0,0.07)",
+	                border: "1px solid rgba(58,140,63,0.12)",
+	                marginBottom: "32px",
+	              }}
+	            >
+	              <div
+	                style={{
+	                  backgroundColor: "#0A1628",
+	                  padding: "12px 24px",
+	                  display: "flex",
+	                  alignItems: "center",
+	                  gap: "16px",
+	                  flexWrap: "wrap",
+	                }}
+	              >
+	                <span
+	                  className="font-display font-bold"
+	                  style={{
+	                    fontSize: "0.65rem",
+	                    letterSpacing: "0.1em",
+	                    textTransform: "uppercase",
+	                    color: "#3A8C3F",
+	                    backgroundColor: "rgba(58,140,63,0.12)",
+	                    padding: "3px 10px",
+	                    borderRadius: "2px",
+	                    border: "1px solid rgba(58,140,63,0.25)",
+	                  }}
+	                >
+	                  Field Trials
+	                </span>
+	                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+	                  <Calendar size={13} />
+	                  <span className="font-body">August 2026</span>
+	                </div>
+	                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+	                  <MapPin size={13} />
+	                  <span className="font-body">USGS Eastern Ecological Science Center &amp; Freshwater Institute</span>
+	                </div>
+	              </div>
+
+	              <div style={{ padding: "32px 28px" }}>
+	                <h2
+	                  className="font-display font-bold mb-4"
+	                  style={{
+	                    fontSize: "clamp(1.4rem, 3vw, 1.9rem)",
+	                    color: "#060E1A",
+	                    lineHeight: 1.15,
+	                  }}
+	                >
+	                  VATN Field Trials Completed in Cooperation with the USGS Eastern Ecological Science Center and the Conservation Fund&apos;s Freshwater Institute
+	                </h2>
+
+	                <div
+	                  style={{
+	                    width: "48px",
+	                    height: "3px",
+	                    backgroundColor: "#3A8C3F",
+	                    marginBottom: "20px",
+	                    borderRadius: "2px",
+	                  }}
+	                />
+
+	                <p className="font-body" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
+	                  A series of large flow reactor trials were completed in August 2026 based on treatment of high alkalinity (280 mg/l) spring water oversaturated with dissolved carbon dioxide (DC = 68 mg/l), dissolved nitrogen gas (DN = 107.2% of saturation) and undersaturated with dissolved oxygen (DO = 70.9% of saturation). Test variables included water flow rate/pressure drop as well as changes in 3D printed reactor components. Changes in dissolved gas levels measured served to validate scale-up performance models. DC was reduced 46 -55% despite challenging inlet conditions and without blower assisted air feeds. The DO deficits were reduced by 75 -85 % while concurrently reducing DN oversaturation by 73 - 90%. Our trial results suggest the VATN proprietary degasser design has great potential as a dissolved gas management tool in single pass, PRAS and RAS applications. Further trials at a commercial aquaculture facility are planned for Fall 2026.
+	                </p>
+	              </div>
+	            </article>
+	          </RevealSection>
+
+	          {/* RASTECH 2026 article */}
           <RevealSection>
             <article
               style={{
@@ -125,7 +201,7 @@ export default function News() {
                 </span>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <Calendar size={13} />
-                  <span className="font-body">May 19 – 21, 2026</span>
+	                  <span className="font-body">May 2026</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <MapPin size={13} />
@@ -206,7 +282,7 @@ export default function News() {
                 </span>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <Calendar size={13} />
-                  <span className="font-body">2025</span>
+	                  <span className="font-body">March 2026</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <MapPin size={13} />
@@ -224,7 +300,7 @@ export default function News() {
                     lineHeight: 1.15,
                   }}
                 >
-                  Field Trials of New Methods for CO&#x2082; Degassing and Oxygen Absorption Completed in 2025
+	                  Field Trials of New Methods for CO&#x2082; Degassing and Oxygen Absorption Completed in March 2026
                 </h2>
 
                 <div
@@ -238,19 +314,19 @@ export default function News() {
                 />
 
                 <p className="font-body mb-5" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
-                  Field trials of new methods for CO&#x2082; degassing and oxygen absorption were completed in 2025 in cooperation with Dr. Brian Vinci and Scott Tsukuda of the Freshwater Institute, Shepherdstown WV.
+	                  Field trials of new methods for CO&#x2082; degassing and oxygen absorption were completed in March 2026 in cooperation with Dr. Brian Vinci and Scott Tsukuda of the Freshwater Institute, Shepherdstown WV.
                 </p>
 
                 <p className="font-body mb-5" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
-                  Exploiting past research experience in gas transfer VATN has develop[ed and tested two new and unique approaches to CO&#x2082; stripping and oxygen absorption that offers a number of advantages over current technologies.  These include (1) the elimination of expensive plastic packing that is known to restrict airflow and is subject to biological fouling, the later in some cases requiring complex cleaning cycles and (2), the ability to operate without blower assisted air feeds, i.e., the new CO&#x2082; degasser induces airflow passively providing gas to liquid ratio's in the 5-7 range which is adequate for good stripping efficiencies.  Our 2025 laboratory trials, conducted in cooperation with Dr. Brian Vinci and Scott Tsukuda of the Freshwater Institute, have shown CO&#x2082; stripping efficiencies range from 45 to 55% at 13C in water with very high alkalinity.  This blower free operating feature reduces capital, maintenance and energy requirements.  Further the reactor volume and height has been reduced by about 90% and 60%, respectively when compared to a conventional packed column operating at similar stripping efficiencies.  The  prototype  evaluated had, for example, a height of just 0.57m.  Given the new stripper design eliminates packing, the reactor reduced wetted surface areas by about 95% and maintained a high hydraulic loading rate representing just 47% of the packed column alternative.  Water delivery pressure requirements at the inlet to the prototype were low and in the 3-5 psig range.  A larger scale reactor has been assembled and is now entering  an evaluation stage with Industry cooperators.
+	                  Exploiting past research experience in gas transfer VATN has develop[ed and tested two new and unique approaches to CO&#x2082; stripping and oxygen absorption that offers a number of advantages over current technologies.  These include (1) the elimination of expensive plastic packing that is known to restrict airflow and is subject to biological fouling, the later in some cases requiring complex cleaning cycles and (2), the ability to operate without blower assisted air feeds, i.e., the new CO&#x2082; degasser induces airflow passively providing gas to liquid ratio's in the 5-7 range which is adequate for good stripping efficiencies.  Our March 2026 laboratory trials, conducted in cooperation with Dr. Brian Vinci and Scott Tsukuda of the Freshwater Institute, have shown CO&#x2082; stripping efficiencies range from 45 to 55% at 13C in water with very high alkalinity.  This blower free operating feature reduces capital, maintenance and energy requirements.  Further the reactor volume and height has been reduced by about 90% and 60%, respectively when compared to a conventional packed column operating at similar stripping efficiencies.  The  prototype  evaluated had, for example, a height of just 0.57m.  Given the new stripper design eliminates packing, the reactor reduced wetted surface areas by about 95% and maintained a high hydraulic loading rate representing just 47% of the packed column alternative.  Water delivery pressure requirements at the inlet to the prototype were low and in the 3-5 psig range.  A larger scale reactor has been assembled and is now entering  an evaluation stage with Industry cooperators.
                 </p>
 
                 <p className="font-body mb-5" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
-                  VATN's new oxygen/ozone  absorber evaluated, an alternative to the downflow bubble contactor, is a very low profile horizontal design that allows exploitation of hydrostatic pressure available when coupled to tanks and sumps to passively accelerate gas absorption.  Again, no plastic packing or perforated plates to foul, very short retention time, no potential for gas void stalling and no moving parts. Mass transfer coefficients established in our 2025 trials, coupled with VATN proprietary modeling software, demonstrated effluent DO's increase from 20 -30 mg.L when operating at near atmospheric pressure to 30-45 mg/l at 1/2 bar and 45-60 mg/l at 1 bar (14C).  This reactor type can be operated at high vacuum levels in a nitrogen (N&#x2082;) degassing configuration.
+	                  VATN's new oxygen/ozone  absorber evaluated, an alternative to the downflow bubble contactor, is a very low profile horizontal design that allows exploitation of hydrostatic pressure available when coupled to tanks and sumps to passively accelerate gas absorption.  Again, no plastic packing or perforated plates to foul, very short retention time, no potential for gas void stalling and no moving parts. Mass transfer coefficients established in the March 2026 trials, coupled with VATN proprietary modeling software, demonstrated effluent DO's increase from 20 -30 mg.L when operating at near atmospheric pressure to 30-45 mg/l at 1/2 bar and 45-60 mg/l at 1 bar (14C).  This reactor type can be operated at high vacuum levels in a nitrogen (N&#x2082;) degassing configuration.
                 </p>
 
                 <p className="font-body" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
-                  Both reactor types evaluated employ a common method for creating gas-liquid interfacial areas needed to accelerate gas transfer.  Reactor geometry involved here was altered via CAD and use of 3D printing efforts that in the end resulted in a 40% reduction in energy (pressure drop) requirements for a target water flow rate as per laboratory trial data.  Scale up of the new geometry that evolved is currently underway.
+	                  Both reactor types evaluated employ a common method for creating gas-liquid interfacial areas needed to accelerate gas transfer.  Reactor geometry involved here was altered via CAD and use of 3D printing efforts that in the end resulted in a 40% reduction in energy (pressure drop) requirements for a target water flow rate as per laboratory trial data.  Scale up of the new geometry that evolved is currently underway.
                 </p>
               </div>
             </article>

@@ -9,7 +9,7 @@ import { Link } from "wouter";
 import { ArrowRight, BookOpen, Award, FlaskConical, Briefcase, GraduationCap, Users, ChevronDown, Phone, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import { trpc } from "@/lib/trpc";
+import GHLForm from "@/components/GHLForm";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 const BARNABY_PHOTO = "/manus-storage/barnaby-watten_38b4a593.png";
@@ -117,40 +117,6 @@ const terryExpertise = [
 ];
 
 export default function OurTeam() {
-  const [contactForm, setContactForm] = useState({ name: "", organization: "", email: "", phone: "", message: "" });
-  const [contactSubmitted, setContactSubmitted] = useState(false);
-  const [contactError, setContactError] = useState("");
-
-  const submitContact = trpc.contact.submit.useMutation({
-    onSuccess: () => {
-      setContactSubmitted(true);
-      setContactForm({ name: "", organization: "", email: "", phone: "", message: "" });
-    },
-    onError: () => {
-      setContactError("There was a problem sending your inquiry. Please try again or call us directly.");
-    },
-  });
-
-  function handleContactChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
-    setContactForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-    setContactError("");
-  }
-
-  function handleContactSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    if (!contactForm.name.trim() || !contactForm.email.trim()) {
-      setContactError("Please provide your name and email address.");
-      return;
-    }
-    submitContact.mutate({
-      name: contactForm.name.trim(),
-      organization: contactForm.organization.trim(),
-      email: contactForm.email.trim(),
-      phone: contactForm.phone.trim(),
-      message: contactForm.message.trim(),
-    });
-  }
-
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F4F6F8" }}>
       <Navigation />
@@ -548,25 +514,7 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
           {/* Form + Contact cards side by side */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
             <RevealSection delay={80} className="lg:col-span-2">
-              <div style={{ width: "100%", minHeight: "551px" }}>
-                <iframe
-                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
-                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
-                  id="inline-EixvLXvkzStptg4CDAf0"
-                  data-layout="{'id':'INLINE'}"
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Form of VATN"
-                  data-height="551"
-                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
-                  data-form-id="EixvLXvkzStptg4CDAf0"
-                  title="Form of VATN"
-                />
-              </div>
+              <GHLForm />
             </RevealSection>
 
             {/* Direct Contact Cards */}
