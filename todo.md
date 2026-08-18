@@ -196,3 +196,9 @@
 
 ## Mixed Cell Raceway Insert
 - [x] Add the complete user-supplied Mixed Cell Raceway Insert below the existing slides and photo captions on the Fish Rearing Tank Design page
+
+## Restored News Update — August 2026 Field Trials
+- [x] Add the supplied August 2026 large-flow reactor trials News entry
+- [x] Display the News item dates first and chronologically
+- [x] Set the Rastech in Florida News date to May 2026
+- [x] Set the Freshwater Institute News date to March 2026

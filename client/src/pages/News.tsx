@@ -85,6 +85,82 @@ export default function News() {
       <div className="container py-16">
         <div className="max-w-3xl">
 
+          {/* August 2026 field trials article */}
+          <RevealSection>
+            <article
+              style={{
+                backgroundColor: "#FFFFFF",
+                borderRadius: "6px",
+                overflow: "hidden",
+                boxShadow: "0 2px 16px rgba(0,0,0,0.07)",
+                border: "1px solid rgba(58,140,63,0.12)",
+                marginBottom: "32px",
+              }}
+            >
+              <div
+                style={{
+                  backgroundColor: "#0A1628",
+                  padding: "12px 24px",
+                  display: "flex",
+                  alignItems: "center",
+                  gap: "16px",
+                  flexWrap: "wrap",
+                }}
+              >
+                <span
+                  className="font-display font-bold"
+                  style={{
+                    fontSize: "0.65rem",
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    color: "#3A8C3F",
+                    backgroundColor: "rgba(58,140,63,0.12)",
+                    padding: "3px 10px",
+                    borderRadius: "2px",
+                    border: "1px solid rgba(58,140,63,0.25)",
+                  }}
+                >
+                  Field Trials
+                </span>
+                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+                  <Calendar size={13} />
+                  <span className="font-body">August 2026</span>
+                </div>
+                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+                  <MapPin size={13} />
+                  <span className="font-body">USGS Eastern Ecological Science Center &amp; Freshwater Institute</span>
+                </div>
+              </div>
+
+              <div style={{ padding: "32px 28px" }}>
+                <h2
+                  className="font-display font-bold mb-4"
+                  style={{
+                    fontSize: "clamp(1.4rem, 3vw, 1.9rem)",
+                    color: "#060E1A",
+                    lineHeight: 1.15,
+                  }}
+                >
+                  VATN Field Trials Completed in Cooperation with the USGS Eastern Ecological Science Center and the Conservation Fund&apos;s Freshwater Institute
+                </h2>
+
+                <div
+                  style={{
+                    width: "48px",
+                    height: "3px",
+                    backgroundColor: "#3A8C3F",
+                    marginBottom: "20px",
+                    borderRadius: "2px",
+                  }}
+                />
+
+                <p className="font-body" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
+                  A series of large flow reactor trials were completed in August 2026 based on treatment of high alkalinity (280 mg/l) spring water oversaturated with dissolved carbon dioxide (DC = 68 mg/l), dissolved nitrogen gas (DN = 107.2% of saturation) and undersaturated with dissolved oxygen (DO = 70.9% of saturation). Test variables included water flow rate/pressure drop as well as changes in 3D printed reactor components. Changes in dissolved gas levels measured served to validate scale-up performance models. DC was reduced 46 -55% despite challenging inlet conditions and without blower assisted air feeds. The DO deficits were reduced by 75 -85 % while concurrently reducing DN oversaturation by 73 - 90%. Our trial results suggest the VATN proprietary degasser design has great potential as a dissolved gas management tool in single pass, PRAS and RAS applications. Further trials at a commercial aquaculture facility are planned for Fall 2026.
+                </p>
+              </div>
+            </article>
+          </RevealSection>
+
           {/* RASTECH 2026 article */}
           <RevealSection>
             <article
@@ -125,7 +201,7 @@ export default function News() {
                 </span>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <Calendar size={13} />
-                  <span className="font-body">May 19 – 21, 2026</span>
+                  <span className="font-body">May 2026</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <MapPin size={13} />
@@ -206,7 +282,7 @@ export default function News() {
                 </span>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <Calendar size={13} />
-                  <span className="font-body">2025</span>
+                  <span className="font-body">March 2026</span>
                 </div>
                 <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
                   <MapPin size={13} />
