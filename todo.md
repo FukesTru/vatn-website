@@ -202,3 +202,8 @@
 - [x] Display the News item dates first and chronologically
 - [x] Set the Rastech in Florida News date to May 2026
 - [x] Set the Freshwater Institute News date to March 2026
+
+## Strictly Nonvisual Delivery Optimization
+- [x] Establish a source and rendered-page baseline to confirm all words, layout, images, styling, and interactions remain unchanged
+- [x] Apply only safe runtime, server-delivery, and resource-loading improvements that preserve immediate route rendering
+- [x] Recompare visual output and core interactions before checkpointing
