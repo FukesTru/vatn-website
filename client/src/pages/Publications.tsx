@@ -4,7 +4,7 @@
  * All publication entries are reproduced EXACTLY as provided in the source document.
  * No text has been altered, reworded, condensed, or reformatted.
  */
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -160,6 +160,18 @@ export default function Publications() {
 
   const totalEntries = publications.reduce((sum, s) => sum + s.entries.length, 0);
 
+  useEffect(() => {
+    const scrollToPublication = () => {
+      const targetId = window.location.hash.slice(1);
+      if (!targetId.startsWith("publication-")) return;
+      window.requestAnimationFrame(() => document.getElementById(targetId)?.scrollIntoView({ behavior: "auto", block: "start" }));
+    };
+
+    scrollToPublication();
+    window.addEventListener("hashchange", scrollToPublication);
+    return () => window.removeEventListener("hashchange", scrollToPublication);
+  }, []);
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F7F9FB" }}>
       <Navigation />
@@ -301,9 +313,12 @@ export default function Publications() {
 
                 {/* Entries */}
                 <div className="flex flex-col gap-4">
-                  {section.entries.map((entry, ei) => (
+                  {section.entries.map((entry, ei) => {
+                    const overallNumber = publications.slice(0, si).reduce((sum, priorSection) => sum + priorSection.entries.length, 0) + ei + 1;
+                    return (
                     <div
                       key={ei}
+                      id={`publication-${overallNumber}`}
                       className="flex gap-4"
                       style={{
                         padding: "14px 18px",
@@ -311,6 +326,7 @@ export default function Publications() {
                         borderLeft: "3px solid #3A8C3F",
                         borderRadius: "0 6px 6px 0",
                         boxShadow: "0 1px 6px rgba(0,0,0,0.07)",
+                        scrollMarginTop: "110px",
                       }}
                     >
                       <span
@@ -323,7 +339,7 @@ export default function Publications() {
                           minWidth: "28px",
                         }}
                       >
-                        {String(ei + 1).padStart(2, "0")}
+                        {String(overallNumber).padStart(2, "0")}
                       </span>
                       <p
                         className="font-body"
@@ -336,7 +352,8 @@ export default function Publications() {
                         {entry}
                       </p>
                     </div>
-                  ))}
+                    );
+                  })}
                 </div>
               </div>
             </RevealSection>

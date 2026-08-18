@@ -3,7 +3,7 @@ import { Link } from "wouter";
 
 type PublicationReference = {
   heading: string;
-  references: string;
+  numbers: number[];
 };
 
 type PublicationReferencesProps = {
@@ -12,6 +12,20 @@ type PublicationReferencesProps = {
 };
 
 export default function PublicationReferences({ category, entries }: PublicationReferencesProps) {
+  const renderNumberLinks = (numbers: number[]) => (
+    <span>
+      {numbers.length > 1 ? "No.'s " : "No. "}
+      {numbers.map((number, index) => (
+        <span key={number}>
+          <Link href={`/publications#publication-${number}`}>
+            <span style={{ color: "#247B35", fontWeight: 700, textDecoration: "underline", textUnderlineOffset: "3px", cursor: "pointer" }}>{number}</span>
+          </Link>
+          {index < numbers.length - 1 && (index === numbers.length - 2 ? " & " : ", ")}
+        </span>
+      ))}
+    </span>
+  );
+
   return (
     <section className="mt-12" aria-labelledby={`${category.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-publications`}>
       <div className="mb-6">
@@ -41,7 +55,7 @@ export default function PublicationReferences({ category, entries }: Publication
             {entries.map((entry, index) => (
               <tr key={entry.heading} style={{ backgroundColor: index % 2 === 0 ? "#FFFFFF" : "#F7F9FA", borderTop: "1px solid #E3EAF0" }}>
                 <td className="font-body" style={{ padding: "0.7rem 1rem", fontSize: "0.87rem", color: "#1C2B3A" }}>{entry.heading}</td>
-                <td className="font-body" style={{ padding: "0.7rem 1rem", fontSize: "0.87rem", color: "#3A5068" }}>{entry.references}</td>
+                <td className="font-body" style={{ padding: "0.7rem 1rem", fontSize: "0.87rem", color: "#3A5068" }}>{renderNumberLinks(entry.numbers)}</td>
               </tr>
             ))}
           </tbody>

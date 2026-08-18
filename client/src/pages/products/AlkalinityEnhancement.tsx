@@ -141,7 +141,7 @@ export default function AlkalinityEnhancement() {
             </div>
           </div>
           <div className="max-w-5xl mx-auto">
-            <PublicationReferences category="Alkalinity" entries={[{ heading: "Alkalinity", references: "No.'s 16, 17, 18, 19" }]} />
+            <PublicationReferences category="Alkalinity" entries={[{ heading: "Alkalinity", numbers: [51, 52, 53, 54] }]} />
           </div>
         </div>
       </section>

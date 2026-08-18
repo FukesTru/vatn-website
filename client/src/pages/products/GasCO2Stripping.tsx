@@ -33,8 +33,8 @@ export default function GasCO2Stripping() {
           </div>
           <div className="max-w-5xl mx-auto">
             <PublicationReferences category="CO2 Stripping" entries={[
-              { heading: "CO₂ Stripping", references: "No.'s 33, 34, 35, 28, 29, 30" },
-              { heading: "Packed Column Design", references: "No.'s 10, 13, 14" },
+              { heading: "CO₂ Stripping", numbers: [33, 34, 35, 28, 29, 30] },
+              { heading: "Packed Column Design", numbers: [10, 13, 14] },
             ]} />
           </div>
         </div>

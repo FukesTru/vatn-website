@@ -241,7 +241,7 @@ export default function FishRearingTankDesign() {
           </RevealSection>
 
           <div className="max-w-5xl mx-auto">
-            <PublicationReferences category="Hydraulics" entries={[{ heading: "Mixed Cell Raceway", references: "No.'s 12 & 16" }]} />
+            <PublicationReferences category="Hydraulics" entries={[{ heading: "Mixed Cell Raceway", numbers: [84, 88] }]} />
           </div>
         </div>
       </section>

@@ -28,12 +28,12 @@ export default function GasManagementOverview() {
           </div>
           <div className="max-w-4xl mx-auto">
             <PublicationReferences category="Gas Transfer" entries={[
-              { heading: "Portable vacuum degasser", references: "No. 19" },
-              { heading: "Spray Tower", references: "No. 27" },
-              { heading: "LHO", references: "No.'s 1 & 13" },
-              { heading: "Hooded surface oxygenators", references: "No.'s 12 & 22" },
-              { heading: "U-Tube", references: "No.'s 7 & 23" },
-              { heading: "Nitrogen stripping and CO2 stripping", references: "No. 17" },
+              { heading: "Portable vacuum degasser", numbers: [19] },
+              { heading: "Spray Tower", numbers: [27] },
+              { heading: "LHO", numbers: [1, 13] },
+              { heading: "Hooded surface oxygenators", numbers: [12, 22] },
+              { heading: "U-Tube", numbers: [7, 23] },
+              { heading: "Nitrogen stripping and CO2 stripping", numbers: [17] },
             ]} />
           </div>
         </div>

@@ -188,5 +188,11 @@
 - [x] Report the verified mapping and obtain approval before adding direct publication-specific links
 - [x] Add and verify direct links from each cited number to the correct publication entry — user elected to leave the existing references unchanged
 
+## Overall-Number Publication Hyperlinks
+- [x] Map every cited product-page publication reference to its correct overall master-list publication number, including Mixed Cell Raceway 84 and 88 and Alkalinity 51–54
+- [x] Add stable overall-number anchors to every master Publications entry
+- [x] Link each cited product-page reference directly to its corresponding overall-number publication entry
+- [x] Verify direct-link scrolling and targets on desktop and mobile
+
 ## Mixed Cell Raceway Insert
 - [x] Add the complete user-supplied Mixed Cell Raceway Insert below the existing slides and photo captions on the Fish Rearing Tank Design page
