@@ -112,7 +112,14 @@ export default function Home() {
             </RevealSection>
             <RevealSection delay={100}>
               <div className="flex flex-col gap-4">
-                <img src={HATCHERY_IMG} alt="Aquaculture hatchery systems" className="mx-auto" style={{ borderRadius: "2px", display: "block", objectFit: "contain", maxWidth: "80%", width: "100%" }} />
+                <img
+                  src="/manus-storage/np-co2-degasser-cascade-1200_d47d1a1f.webp"
+                  srcSet="/manus-storage/np-co2-degasser-cascade-640_0345ef2e.webp 640w, /manus-storage/np-co2-degasser-cascade-1200_d47d1a1f.webp 1200w"
+                  sizes="(max-width: 768px) 80vw, 640px"
+                  alt="Aquaculture hatchery systems"
+                  className="mx-auto"
+                  style={{ borderRadius: "2px", display: "block", objectFit: "contain", maxWidth: "80%", width: "100%" }}
+                />
 
               </div>
             </RevealSection>

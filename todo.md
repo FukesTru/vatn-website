@@ -211,3 +211,18 @@
 ## Logo and Navigation Enlargement
 - [x] Enlarge the VATN logo and navigation bar on desktop and mobile without changing navigation content or behavior
 - [x] Verify desktop fit, dropdown behavior, and mobile-menu presentation after resizing
+
+## Updated PageSpeed Audit — Approval Required Before Edits
+- [x] Review the updated supplied PageSpeed report and record its current findings
+- [x] Analyze delivery bottlenecks without changing copy, layout, images, styling, routes, or interactions
+- [x] Present a prioritized strictly nonvisual optimization plan for user approval before implementation
+
+## PageSpeed Clarification — Forms Excluded
+- [x] Preserve every existing form and all form-loading behavior without modification
+- [x] Explain the remaining nonvisual PageSpeed options and obtain approval before editing
+
+## Approved No-Form Delivery Optimization
+- [x] Replace remote font delivery with the exact locally hosted font files and preload them
+- [x] Create visually matched optimized delivery copies of PageSpeed-flagged images without changing crops, dimensions, or apparent quality
+- [x] Preserve every form, form script, form iframe, and form-loading behavior unchanged
+- [x] Compare before-and-after visuals and production payloads before checkpointing
