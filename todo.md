@@ -207,3 +207,7 @@
 - [x] Establish a source and rendered-page baseline to confirm all words, layout, images, styling, and interactions remain unchanged
 - [x] Apply only safe runtime, server-delivery, and resource-loading improvements that preserve immediate route rendering
 - [x] Recompare visual output and core interactions before checkpointing
+
+## Logo and Navigation Enlargement
+- [x] Enlarge the VATN logo and navigation bar on desktop and mobile without changing navigation content or behavior
+- [x] Verify desktop fit, dropdown behavior, and mobile-menu presentation after resizing

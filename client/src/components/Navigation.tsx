@@ -87,18 +87,18 @@ export default function Navigation() {
         }}
       >
         <div className="container">
-          <div className="flex items-center justify-between" style={{ height: "110px" }}>
+          <div className="flex items-center justify-between" style={{ height: "120px" }}>
             {/* Logo */}
             <Link href="/">
               <div className="flex items-center group">
                 <img
                     src={LOGO_URL}
                     alt="VATN Science and Technology"
-                    width={320}
-                    height={92}
+                    width={360}
+                    height={104}
                     loading="eager"
                     fetchPriority="high"
-                    style={{ height: "92px", width: "auto", objectFit: "contain", maxWidth: "320px", display: "block" }}
+                    style={{ height: "104px", width: "auto", objectFit: "contain", maxWidth: "360px", display: "block" }}
                   />
               </div>
             </Link>
@@ -110,7 +110,7 @@ export default function Navigation() {
                 <span
                   className="font-display font-semibold transition-colors duration-200"
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "1.06rem",
                     letterSpacing: "0.07em",
                     textTransform: "uppercase",
                     color: location === "/" ? "#3A8C3F" : "rgba(255,255,255,0.85)",
@@ -125,7 +125,7 @@ export default function Navigation() {
                 <button
                   className="flex items-center gap-1 font-display font-semibold transition-colors duration-200"
                   style={{
-                    fontSize: "1rem",
+                    fontSize: "1.06rem",
                     letterSpacing: "0.07em",
                     textTransform: "uppercase",
                     color: isProductsActive ? "#3A8C3F" : "rgba(255,255,255,0.85)",
@@ -223,7 +223,7 @@ export default function Navigation() {
                   <span
                     className="font-display font-semibold transition-colors duration-200"
                     style={{
-                      fontSize: "1rem",
+                      fontSize: "1.06rem",
                       letterSpacing: "0.07em",
                       textTransform: "uppercase",
                       color: location === link.href ? "#3A8C3F" : "rgba(255,255,255,0.85)",
@@ -240,19 +240,19 @@ export default function Navigation() {
               <a
                 href="tel:2252294711"
                 className="flex items-center gap-2 transition-all duration-200"
-                style={{ fontSize: "0.95rem", fontFamily: "Inter, sans-serif", fontWeight: 600, color: "rgba(255,255,255,0.9)", letterSpacing: "0.01em" }}
+                style={{ fontSize: "1rem", fontFamily: "Inter, sans-serif", fontWeight: 600, color: "rgba(255,255,255,0.9)", letterSpacing: "0.01em" }}
                 onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#3A8C3F"; }}
                 onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.9)"; }}
               >
-                <Phone size={16} style={{ color: "#3A8C3F", flexShrink: 0 }} />
+                <Phone size={17} style={{ color: "#3A8C3F", flexShrink: 0 }} />
                 (225) 229-4711
               </a>
               <a
                 href="/contact"
                 className="btn-primary"
                 style={{
-                  padding: "0.7rem 1.75rem",
-                  fontSize: "0.9rem",
+                  padding: "0.78rem 1.9rem",
+                  fontSize: "0.95rem",
                   fontWeight: 700,
                   letterSpacing: "0.07em",
                   boxShadow: "0 0 0 2px rgba(58,140,63,0.4), 0 4px 18px rgba(58,140,63,0.3)",
@@ -268,7 +268,7 @@ export default function Navigation() {
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
-              {menuOpen ? <X size={22} /> : <Menu size={22} />}
+              {menuOpen ? <X size={25} /> : <Menu size={25} />}
             </button>
           </div>
         </div>
