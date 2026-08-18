@@ -181,3 +181,12 @@
 - [x] Recheck every approved publication table, publication link, and Publications button against the source document
 - [x] Recheck the CO₂ Scrubbing paragraph, Vacuum Degassing black-text paragraph, and New Products placeholders against the approved wording and placement
 - [x] Recheck all affected pages on desktop and mobile before reporting completion
+
+## Publication-Specific Hyperlink Audit
+- [x] Inventory every publication number cited on VATN product pages
+- [x] Verify each cited number against the ordered Publications page entry
+- [x] Report the verified mapping and obtain approval before adding direct publication-specific links
+- [x] Add and verify direct links from each cited number to the correct publication entry — user elected to leave the existing references unchanged
+
+## Mixed Cell Raceway Insert
+- [x] Add the complete user-supplied Mixed Cell Raceway Insert below the existing slides and photo captions on the Fish Rearing Tank Design page
