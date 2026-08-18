@@ -6,11 +6,11 @@
  */
 import { useEffect, useRef } from "react";
 import { Link } from "wouter";
-import { ArrowRight, ChevronDown, CheckCircle2, BookOpen, Microscope, Wrench
+import {
+  ArrowRight, ChevronDown, CheckCircle2, BookOpen, Microscope, Wrench
 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import GHLForm from "@/components/GHLForm";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 const HATCHERY_IMG = "/manus-storage/np-co2-degasser-cascade_afdeae3c.png";
@@ -112,23 +112,7 @@ export default function Home() {
             </RevealSection>
             <RevealSection delay={100}>
               <div className="flex flex-col gap-4">
-                <picture>
-                  <source
-                    type="image/webp"
-                    srcSet="/manus-storage/np-co2-degasser-cascade-640_9b499faa.webp 640w, /manus-storage/np-co2-degasser-cascade-1200_791a0286.webp 1200w"
-                    sizes="(max-width: 1024px) 80vw, 532px"
-                  />
-                  <img
-                    src={HATCHERY_IMG}
-                    alt="Aquaculture hatchery systems"
-                    width={1173}
-                    height={1341}
-                    loading="lazy"
-                    decoding="async"
-                    className="mx-auto"
-                    style={{ borderRadius: "2px", display: "block", objectFit: "contain", maxWidth: "80%", width: "100%" }}
-                  />
-                </picture>
+                <img src={HATCHERY_IMG} alt="Aquaculture hatchery systems" className="mx-auto" style={{ borderRadius: "2px", display: "block", objectFit: "contain", maxWidth: "80%", width: "100%" }} />
 
               </div>
             </RevealSection>
@@ -214,7 +198,25 @@ export default function Home() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <GHLForm defer />
+              <div style={{ width: "100%", minHeight: "551px" }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                  id="inline-EixvLXvkzStptg4CDAf0"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form of VATN"
+                  data-height="551"
+                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                  data-form-id="EixvLXvkzStptg4CDAf0"
+                  title="Form of VATN"
+                />
+              </div>
             </RevealSection>
           </div>
         </div>

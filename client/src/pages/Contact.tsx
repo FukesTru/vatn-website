@@ -4,10 +4,11 @@
  * A clean, focused contact page that sends visitors directly to the inquiry form.
  * No team bios. No distractions. Just the form and direct contact info.
  */
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
+import { ArrowRight, Phone, CheckCircle2 } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import GHLForm from "@/components/GHLForm";
+import { trpc } from "@/lib/trpc";
 
 const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
 
@@ -36,6 +37,47 @@ function RevealSection({ children, delay = 0, className = "" }: { children: Reac
 }
 
 export default function Contact() {
+  const [formData, setFormData] = useState({
+    name: "",
+    organization: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState("");
+
+  const submitContact = trpc.contact.submit.useMutation({
+    onSuccess: () => {
+      setSubmitted(true);
+      setFormData({ name: "", organization: "", email: "", phone: "", message: "" });
+    },
+    onError: (err: unknown) => {
+      setError("There was a problem sending your inquiry. Please try again or call us directly.");
+      console.error("[Contact Form Error]", err);
+    },
+  });
+
+  function handleChange(e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) {
+    setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+    setError("");
+  }
+
+  function handleSubmit(e: React.FormEvent) {
+    e.preventDefault();
+    if (!formData.name.trim() || !formData.email.trim()) {
+      setError("Please provide your name and email address.");
+      return;
+    }
+    submitContact.mutate({
+      name: formData.name.trim(),
+      organization: formData.organization.trim(),
+      email: formData.email.trim(),
+      phone: formData.phone.trim(),
+      message: formData.message.trim(),
+    });
+  }
+
   return (
     <div className="min-h-screen" style={{ backgroundColor: "#F4F6F8" }}>
       <Navigation />
@@ -98,7 +140,25 @@ export default function Contact() {
                 Every project starts with understanding your site — your water source, species, infrastructure, and the specific challenge you need to solve. Use the form below to start that conversation.
               </p>
 
-              <GHLForm />
+              <div style={{ width: "100%", minHeight: "551px" }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                  id="inline-EixvLXvkzStptg4CDAf0"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form of VATN"
+                  data-height="551"
+                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                  data-form-id="EixvLXvkzStptg4CDAf0"
+                  title="Form of VATN"
+                />
+              </div>
             </RevealSection>
 
             {/* ── DIRECT CONTACT ── */}

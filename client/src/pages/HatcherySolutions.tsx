@@ -8,7 +8,6 @@ import { Link } from "wouter";
 import { ArrowRight, CheckCircle2, Wrench, Shield, BarChart3, Leaf, Clock, DollarSign } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
-import GHLForm from "@/components/GHLForm";
 
 const AERIAL_BG = "/manus-storage/leavenworth-nfh-aerial-usfws_b8b9094a.jpg";
 const EQUIPMENT_IMG = "/manus-storage/aerial-hatchery_46381f8f.png";
@@ -289,7 +288,25 @@ export default function HatcherySolutions() {
               </p>
             </RevealSection>
             <RevealSection delay={80}>
-              <GHLForm />
+              <div style={{ width: "100%", minHeight: "551px" }}>
+                <iframe
+                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                  id="inline-EixvLXvkzStptg4CDAf0"
+                  data-layout="{'id':'INLINE'}"
+                  data-trigger-type="alwaysShow"
+                  data-trigger-value=""
+                  data-activation-type="alwaysActivated"
+                  data-activation-value=""
+                  data-deactivation-type="neverDeactivate"
+                  data-deactivation-value=""
+                  data-form-name="Form of VATN"
+                  data-height="551"
+                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                  data-form-id="EixvLXvkzStptg4CDAf0"
+                  title="Form of VATN"
+                />
+              </div>
             </RevealSection>
           </div>
         </div>

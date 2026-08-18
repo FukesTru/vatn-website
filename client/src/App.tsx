@@ -1,7 +1,10 @@
+import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
 import { Route, Switch, useLocation } from "wouter";
 import { useEffect } from "react";
 import ErrorBoundary from "./components/ErrorBoundary";
+import { ThemeProvider } from "./contexts/ThemeContext";
 import Home from "./pages/Home";
 import GasManagement from "./pages/GasManagement";
 import HatcherySolutions from "./pages/HatcherySolutions";
@@ -9,6 +12,7 @@ import EngineeringPartners from "./pages/EngineeringPartners";
 import OurTeam from "./pages/OurTeam";
 import Publications from "./pages/Publications";
 import News from "./pages/News";
+// Products & Solutions pages
 import ProductOverview from "./pages/products/ProductOverview";
 import GasManagementOverview from "./pages/products/GasManagementOverview";
 import GasNewProducts from "./pages/products/GasNewProducts";
@@ -40,31 +44,32 @@ function Router() {
     <>
       <ScrollToTop />
       <Switch>
-          <Route path="/" component={Home} />
-          <Route path="/gas-management" component={GasManagement} />
-          <Route path="/hatchery-solutions" component={HatcherySolutions} />
-          <Route path="/engineering-partners" component={EngineeringPartners} />
-          <Route path="/our-team" component={OurTeam} />
-          <Route path="/publications" component={Publications} />
-          <Route path="/news" component={News} />
-          <Route path="/products" component={ProductOverview} />
-          <Route path="/products/gas-management" component={GasManagementOverview} />
-          <Route path="/products/gas-management/new-products" component={GasNewProducts} />
-          <Route path="/products/gas-management/vacuum-degassing" component={GasVacuumDegassing} />
-          <Route path="/products/gas-management/low-head-oxygen" component={GasLowHeadOxygen} />
-          <Route path="/products/gas-management/co2-stripping" component={GasCO2Stripping} />
-          <Route path="/products/gas-management/co2-scrubbing" component={GasCO2Scrubbing} />
-          <Route path="/products/uv-disinfection" component={UVDisinfection} />
-          <Route path="/products/bio-media" component={BioMedia} />
-          <Route path="/products/fish-rearing-tank-design" component={FishRearingTankDesign} />
-          <Route path="/products/alkalinity-enhancement" component={AlkalinityEnhancement} />
-          <Route path="/products/solids-management" component={SolidsManagement} />
-          <Route path="/products/custom-solutions" component={CustomSolutions} />
-          <Route path="/products/oxygenation-degassing" component={OxygenationDegassing} />
-          <Route path="/terms-and-conditions" component={TermsAndConditionsPage} />
-          <Route path="/contact" component={Contact} />
-          <Route path="/404" component={NotFound} />
-          <Route component={NotFound} />
+        <Route path="/" component={Home} />
+        <Route path="/gas-management" component={GasManagement} />
+        <Route path="/hatchery-solutions" component={HatcherySolutions} />
+        <Route path="/engineering-partners" component={EngineeringPartners} />
+        <Route path="/our-team" component={OurTeam} />
+        <Route path="/publications" component={Publications} />
+        <Route path="/news" component={News} />
+        {/* Products & Solutions */}
+        <Route path="/products" component={ProductOverview} />
+        <Route path="/products/gas-management" component={GasManagementOverview} />
+        <Route path="/products/gas-management/new-products" component={GasNewProducts} />
+        <Route path="/products/gas-management/vacuum-degassing" component={GasVacuumDegassing} />
+        <Route path="/products/gas-management/low-head-oxygen" component={GasLowHeadOxygen} />
+        <Route path="/products/gas-management/co2-stripping" component={GasCO2Stripping} />
+        <Route path="/products/gas-management/co2-scrubbing" component={GasCO2Scrubbing} />
+        <Route path="/products/uv-disinfection" component={UVDisinfection} />
+        <Route path="/products/bio-media" component={BioMedia} />
+        <Route path="/products/fish-rearing-tank-design" component={FishRearingTankDesign} />
+        <Route path="/products/alkalinity-enhancement" component={AlkalinityEnhancement} />
+        <Route path="/products/solids-management" component={SolidsManagement} />
+        <Route path="/products/custom-solutions" component={CustomSolutions} />
+        <Route path="/products/oxygenation-degassing" component={OxygenationDegassing} />
+        <Route path="/terms-and-conditions" component={TermsAndConditionsPage} />
+        <Route path="/contact" component={Contact} />
+        <Route path="/404" component={NotFound} />
+        <Route component={NotFound} />
       </Switch>
     </>
   );
@@ -73,7 +78,12 @@ function Router() {
 function App() {
   return (
     <ErrorBoundary>
-      <Router />
+      <ThemeProvider defaultTheme="light">
+        <TooltipProvider>
+          <Toaster />
+          <Router />
+        </TooltipProvider>
+      </ThemeProvider>
     </ErrorBoundary>
   );
 }
