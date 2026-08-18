@@ -211,5 +211,10 @@
 - [x] Load GoHighLevel embed resources only on pages that render a GHL form, preserving every form’s behavior and appearance
 - [x] Remove unused native contact-form client logic and reduce unused global resource hints without altering visible content
 
+## Page-Delivery Performance Regression
+- [x] Diagnose the reported lag introduced after the no-design performance optimization checkpoint
+- [x] Restore smooth page delivery with the smallest safe code correction and no copy or visual-design changes
+- [x] Verify desktop and mobile navigation and form-page delivery before checkpointing
+
 ## Mixed Cell Raceway Insert
 - [x] Add the complete user-supplied Mixed Cell Raceway Insert below the existing slides and photo captions on the Fish Rearing Tank Design page
