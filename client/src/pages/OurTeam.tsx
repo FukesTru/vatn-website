@@ -578,11 +578,49 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #3A8C3F" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Terry McCarthy</p>
                   <p className="font-body mb-4" style={{ color: "#3A8C3F", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Director of Sales</p>
+                  <div style={{ width: "100%", minHeight: "551px" }}>
+                    <iframe
+                      src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                      style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                      id="inline-EixvLXvkzStptg4CDAf0-terry"
+                      data-layout="{'id':'INLINE'}"
+                      data-trigger-type="alwaysShow"
+                      data-trigger-value=""
+                      data-activation-type="alwaysActivated"
+                      data-activation-value=""
+                      data-deactivation-type="neverDeactivate"
+                      data-deactivation-value=""
+                      data-form-name="Form of VATN"
+                      data-height="551"
+                      data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0-terry"
+                      data-form-id="EixvLXvkzStptg4CDAf0"
+                      title="Form of VATN"
+                    />
+                  </div>
                 </div>
                 {/* Barnaby */}
                 <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #3A8C3F" }}>
                   <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Dr. Barnaby J. Watten</p>
                   <p className="font-body mb-4" style={{ color: "#3A8C3F", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Founder &amp; Principal Scientist</p>
+                  <div style={{ width: "100%", minHeight: "551px" }}>
+                    <iframe
+                      src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                      style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                      id="inline-EixvLXvkzStptg4CDAf0-barnaby"
+                      data-layout="{'id':'INLINE'}"
+                      data-trigger-type="alwaysShow"
+                      data-trigger-value=""
+                      data-activation-type="alwaysActivated"
+                      data-activation-value=""
+                      data-deactivation-type="neverDeactivate"
+                      data-deactivation-value=""
+                      data-form-name="Form of VATN"
+                      data-height="551"
+                      data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0-barnaby"
+                      data-form-id="EixvLXvkzStptg4CDAf0"
+                      title="Form of VATN"
+                    />
+                  </div>
                 </div>
               </div>
             </RevealSection>

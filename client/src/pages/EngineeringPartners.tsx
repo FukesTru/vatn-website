@@ -255,6 +255,53 @@ export default function EngineeringPartners() {
       </section>
 
       {/* ── VATN CAPABILITIES SUMMARY ── */}
+      {/* ── PRODUCT LINKS ── */}
+      <section className="py-16" style={{ backgroundColor: "#ffffff" }}>
+        <div className="container">
+          <RevealSection>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+              <Link href="/products/solids-management">
+                <div className="p-5 text-center cursor-pointer transition-all duration-200" style={{ backgroundColor: "#0A1628", borderRadius: "2px", border: "1px solid rgba(58,140,63,0.2)" }} onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.5)"; }} onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.2)"; }}>
+                  <p className="font-display text-white font-bold" style={{ fontSize: "1rem" }}>Solids Management</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-2" style={{ color: "#3A8C3F" }}>
+                    <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>View Solutions</span>
+                    <ArrowRight size={13} />
+                  </div>
+                </div>
+              </Link>
+              <Link href="/products/uv-disinfection">
+                <div className="p-5 text-center cursor-pointer transition-all duration-200" style={{ backgroundColor: "#0A1628", borderRadius: "2px", border: "1px solid rgba(58,140,63,0.2)" }} onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.5)"; }} onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.2)"; }}>
+                  <p className="font-display text-white font-bold" style={{ fontSize: "1rem" }}>Ultraqua UV Disinfection</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-2" style={{ color: "#3A8C3F" }}>
+                    <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>View Solutions</span>
+                    <ArrowRight size={13} />
+                  </div>
+                </div>
+              </Link>
+              <Link href="/products/bio-media">
+                <div className="p-5 text-center cursor-pointer transition-all duration-200" style={{ backgroundColor: "#0A1628", borderRadius: "2px", border: "1px solid rgba(58,140,63,0.2)" }} onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.5)"; }} onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.2)"; }}>
+                  <p className="font-display text-white font-bold" style={{ fontSize: "1rem" }}>BioMedia</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-2" style={{ color: "#3A8C3F" }}>
+                    <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>View Solutions</span>
+                    <ArrowRight size={13} />
+                  </div>
+                </div>
+              </Link>
+              <Link href="/products/gas-management/new-products">
+                <div className="p-5 text-center cursor-pointer transition-all duration-200" style={{ backgroundColor: "#0A1628", borderRadius: "2px", border: "1px solid rgba(58,140,63,0.2)" }} onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.5)"; }} onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.2)"; }}>
+                  <p className="font-display text-white font-bold" style={{ fontSize: "1rem" }}>New Products Coming</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-2" style={{ color: "#3A8C3F" }}>
+                    <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>View Products</span>
+                    <ArrowRight size={13} />
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </RevealSection>
+        </div>
+      </section>
+
+      {/* ── VATN CAPABILITIES SUMMARY ── */}
       <section className="py-16" style={{ backgroundColor: "#1E4D7B" }}>
         <div className="container">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">

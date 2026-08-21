@@ -137,12 +137,37 @@ export default function HatcherySolutions() {
               Site-specific oxygenation, degassing, and CO₂ control designed around the real constraints of hatchery infrastructure and fish production objectives.
             </p>
             <div className="flex flex-wrap gap-3">
-              <a href="#contact" className="btn-primary">
-                Plan a Hatchery System Review
-                <ArrowRight size={15} />
-              </a>
               <Link href="/products/gas-management">
                 <span className="btn-outline">Gas Management Solutions</span>
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
+              <Link href="/products/solids-management">
+                <div className="p-5 text-center cursor-pointer transition-all duration-200" style={{ backgroundColor: "#0A1628", borderRadius: "2px", border: "1px solid rgba(58,140,63,0.2)" }} onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.5)"; }} onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.2)"; }}>
+                  <p className="font-display text-white font-bold" style={{ fontSize: "1rem" }}>Solids Management</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-2" style={{ color: "#3A8C3F" }}>
+                    <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>View Solutions</span>
+                    <ArrowRight size={13} />
+                  </div>
+                </div>
+              </Link>
+              <Link href="/products/uv-disinfection">
+                <div className="p-5 text-center cursor-pointer transition-all duration-200" style={{ backgroundColor: "#0A1628", borderRadius: "2px", border: "1px solid rgba(58,140,63,0.2)" }} onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.5)"; }} onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.2)"; }}>
+                  <p className="font-display text-white font-bold" style={{ fontSize: "1rem" }}>Ultraqua UV Disinfection</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-2" style={{ color: "#3A8C3F" }}>
+                    <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>View Solutions</span>
+                    <ArrowRight size={13} />
+                  </div>
+                </div>
+              </Link>
+              <Link href="/products/bio-media">
+                <div className="p-5 text-center cursor-pointer transition-all duration-200" style={{ backgroundColor: "#0A1628", borderRadius: "2px", border: "1px solid rgba(58,140,63,0.2)" }} onMouseEnter={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.5)"; }} onMouseLeave={(e) => { (e.currentTarget as HTMLDivElement).style.borderColor = "rgba(58,140,63,0.2)"; }}>
+                  <p className="font-display text-white font-bold" style={{ fontSize: "1rem" }}>BioMedia</p>
+                  <div className="flex items-center justify-center gap-1.5 mt-2" style={{ color: "#3A8C3F" }}>
+                    <span className="font-display font-semibold" style={{ fontSize: "0.78rem", letterSpacing: "0.06em", textTransform: "uppercase" }}>View Solutions</span>
+                    <ArrowRight size={13} />
+                  </div>
+                </div>
               </Link>
             </div>
           </RevealSection>

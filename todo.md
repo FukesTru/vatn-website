@@ -226,3 +226,17 @@
 - [x] Create visually matched optimized delivery copies of PageSpeed-flagged images without changing crops, dimensions, or apparent quality
 - [x] Preserve every form, form script, form iframe, and form-loading behavior unchanged
 - [x] Compare before-and-after visuals and production payloads before checkpointing
+
+## pasted_content.txt Edits — August 2026
+- [x] 1. Remove ALL cell phone numbers from the entire website — only use info@VATNUSA.com for contact
+- [x] 2. FishRearingTankDesign — Mixed Cell Raceway green heading: delete the word "INSERT"
+- [x] 3. OurTeam — Direct Contact section: remove "Prefer to speak directly?" paragraph
+- [x] 4. OurTeam — Under Terry and Barnaby names: add GHL contact form (iframe ID: EixvLXvkzStptg4CDAf0)
+- [x] 5. GasCO2Stripping — Delete hydroxide base scrubbing paragraph above bullets
+- [x] 6a. GasNewProducts — Delete "PATENT PENDING" in green text
+- [x] 6b. GasNewProducts — Insert new paragraph about SFR and LPO reactors
+- [x] 7. HatcherySolutions — Delete green "Plan a Hatchery System Review" box; add 3 black boxes linking to Solids Management, UV Disinfection, BioMedia
+- [x] 8. EngineeringPartners — Add same black boxes with hyperlinks plus one to New Products Coming
+- [x] 9. GasManagementOverview — Insert Oxygenation/Degassing Equipment paragraph under existing paragraph
+- [x] 10. GasCO2Scrubbing — Replace CO2 sentence with corrected version
+- [x] 11. GasLowHeadOxygen — Replace LHO section text with fully revised paragraph

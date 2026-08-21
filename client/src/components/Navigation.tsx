@@ -5,7 +5,7 @@
  */
 import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
-import { Menu, X, Phone, ChevronDown, ArrowRight } from "lucide-react";
+import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 
 const LOGO_URL = "/manus-storage/vatn-logo-v4-lossless_06f0c92b.webp";
 
@@ -238,16 +238,6 @@ export default function Navigation() {
             {/* Desktop CTA */}
             <div className="hidden lg:flex items-center gap-5">
               <a
-                href="tel:2252294711"
-                className="flex items-center gap-2 transition-all duration-200"
-                style={{ fontSize: "1rem", fontFamily: "Inter, sans-serif", fontWeight: 600, color: "rgba(255,255,255,0.9)", letterSpacing: "0.01em" }}
-                onMouseEnter={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "#3A8C3F"; }}
-                onMouseLeave={(e) => { (e.currentTarget as HTMLAnchorElement).style.color = "rgba(255,255,255,0.9)"; }}
-              >
-                <Phone size={17} style={{ color: "#3A8C3F", flexShrink: 0 }} />
-                (225) 229-4711
-              </a>
-              <a
                 href="/contact"
                 className="btn-primary"
                 style={{
@@ -348,10 +338,6 @@ export default function Navigation() {
             ))}
 
             <div className="pt-5 flex flex-col gap-3">
-              <a href="tel:2252294711" className="flex items-center gap-2 text-white/60" style={{ fontSize: "0.95rem" }}>
-                <Phone size={14} />
-                (225) 229-4711
-              </a>
               <a href="/contact" className="btn-primary w-fit">
                 Contact VATN
               </a>

@@ -167,12 +167,6 @@ export default function Contact() {
                 <div>
                   <p className="section-label mb-3" style={{ color: "#3A8C3F" }}>Direct Contact</p>
                   <span className="teal-rule mb-5" />
-                  <p
-                    className="font-body"
-                    style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.65" }}
-                  >
-                    Prefer to speak directly? Reach Barnaby or Terry by phone. Both are available to discuss your project and answer technical questions.
-                  </p>
                 </div>
 
                 {/* Terry */}
