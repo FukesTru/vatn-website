@@ -534,97 +534,38 @@ VATN was founded by Dr. Barnaby J. Watten, a scientist whose career has been spe
         <div className="container">
           {/* Heading row */}
           <RevealSection>
-            <div className="mb-10">
+            <div className="mb-10 text-center max-w-2xl mx-auto">
               <p className="section-label mb-3">Get in Touch</p>
-              <span className="teal-rule mb-5" />
+              <span className="teal-rule mb-5" style={{ margin: "0 auto 1.25rem" }} />
               <h2 className="font-display mb-3" style={{ fontSize: "clamp(1.9rem, 3.5vw, 2.6rem)", color: "#1C2B3A", lineHeight: 1.05 }}>
                 Speak Directly With Our Team
               </h2>
-              <p className="font-body" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.6", maxWidth: "600px" }}>
+              <p className="font-body" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.6" }}>
                 Describe your facility and the water treatment challenge you're facing. Barnaby and Terry will respond directly.
               </p>
             </div>
           </RevealSection>
-          {/* Form + Contact cards side by side */}
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-10 items-start">
-            <RevealSection delay={80} className="lg:col-span-2">
-              <div style={{ width: "100%", minHeight: "551px" }}>
-                <iframe
-                  src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
-                  style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
-                  id="inline-EixvLXvkzStptg4CDAf0"
-                  data-layout="{'id':'INLINE'}"
-                  data-trigger-type="alwaysShow"
-                  data-trigger-value=""
-                  data-activation-type="alwaysActivated"
-                  data-activation-value=""
-                  data-deactivation-type="neverDeactivate"
-                  data-deactivation-value=""
-                  data-form-name="Form of VATN"
-                  data-height="551"
-                  data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
-                  data-form-id="EixvLXvkzStptg4CDAf0"
-                  title="Form of VATN"
-                />
-              </div>
-            </RevealSection>
-
-            {/* Direct Contact Cards */}
-            <RevealSection delay={120}>
-              <div className="flex flex-col gap-5">
-                <p className="section-label" style={{ color: "#3A8C3F" }}>Direct Contact</p>
-                <span className="teal-rule" />
-                {/* Terry */}
-                <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #3A8C3F" }}>
-                  <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Terry McCarthy</p>
-                  <p className="font-body mb-4" style={{ color: "#3A8C3F", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Director of Sales</p>
-                  <div style={{ width: "100%", minHeight: "551px" }}>
-                    <iframe
-                      src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
-                      style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
-                      id="inline-EixvLXvkzStptg4CDAf0-terry"
-                      data-layout="{'id':'INLINE'}"
-                      data-trigger-type="alwaysShow"
-                      data-trigger-value=""
-                      data-activation-type="alwaysActivated"
-                      data-activation-value=""
-                      data-deactivation-type="neverDeactivate"
-                      data-deactivation-value=""
-                      data-form-name="Form of VATN"
-                      data-height="551"
-                      data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0-terry"
-                      data-form-id="EixvLXvkzStptg4CDAf0"
-                      title="Form of VATN"
-                    />
-                  </div>
-                </div>
-                {/* Barnaby */}
-                <div className="p-6" style={{ backgroundColor: "#0A1628", borderRadius: "2px", borderLeft: "3px solid #3A8C3F" }}>
-                  <p className="font-display text-white font-bold mb-0.5" style={{ fontSize: "1.1rem" }}>Dr. Barnaby J. Watten</p>
-                  <p className="font-body mb-4" style={{ color: "#3A8C3F", fontSize: "0.82rem", letterSpacing: "0.08em", textTransform: "uppercase" }}>Founder &amp; Principal Scientist</p>
-                  <div style={{ width: "100%", minHeight: "551px" }}>
-                    <iframe
-                      src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
-                      style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
-                      id="inline-EixvLXvkzStptg4CDAf0-barnaby"
-                      data-layout="{'id':'INLINE'}"
-                      data-trigger-type="alwaysShow"
-                      data-trigger-value=""
-                      data-activation-type="alwaysActivated"
-                      data-activation-value=""
-                      data-deactivation-type="neverDeactivate"
-                      data-deactivation-value=""
-                      data-form-name="Form of VATN"
-                      data-height="551"
-                      data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0-barnaby"
-                      data-form-id="EixvLXvkzStptg4CDAf0"
-                      title="Form of VATN"
-                    />
-                  </div>
-                </div>
-              </div>
-            </RevealSection>
-          </div>
+          <RevealSection delay={80}>
+            <div className="max-w-2xl mx-auto" style={{ width: "100%", minHeight: "551px" }}>
+              <iframe
+                src="https://api.leadconnectorhq.com/widget/form/EixvLXvkzStptg4CDAf0"
+                style={{ width: "100%", height: "551px", border: "none", borderRadius: "0px" }}
+                id="inline-EixvLXvkzStptg4CDAf0"
+                data-layout="{'id':'INLINE'}"
+                data-trigger-type="alwaysShow"
+                data-trigger-value=""
+                data-activation-type="alwaysActivated"
+                data-activation-value=""
+                data-deactivation-type="neverDeactivate"
+                data-deactivation-value=""
+                data-form-name="Form of VATN"
+                data-height="551"
+                data-layout-iframe-id="inline-EixvLXvkzStptg4CDAf0"
+                data-form-id="EixvLXvkzStptg4CDAf0"
+                title="Form of VATN"
+              />
+            </div>
+          </RevealSection>
         </div>
       </section>
 

@@ -122,11 +122,11 @@ export default function News() {
                 >
                   Field Trials
                 </span>
-                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+                <div className="flex items-center gap-2 text-white" style={{ fontSize: "0.78rem" }}>
                   <Calendar size={13} />
                   <span className="font-body">August 2026</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+                <div className="flex items-center gap-2 text-white" style={{ fontSize: "0.78rem" }}>
                   <MapPin size={13} />
                   <span className="font-body">USGS Eastern Ecological Science Center &amp; Freshwater Institute</span>
                 </div>
@@ -155,7 +155,7 @@ export default function News() {
                 />
 
                 <p className="font-body" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
-                  A series of large flow reactor trials were completed in August 2026 based on treatment of high alkalinity (280 mg/l) spring water oversaturated with dissolved carbon dioxide (DC = 68 mg/l), dissolved nitrogen gas (DN = 107.2% of saturation) and undersaturated with dissolved oxygen (DO = 70.9% of saturation). Test variables included water flow rate/pressure drop as well as changes in 3D printed reactor components. Changes in dissolved gas levels measured served to validate scale-up performance models. DC was reduced 46 -55% despite challenging inlet conditions and without blower assisted air feeds. The DO deficits were reduced by 75 -85 % while concurrently reducing DN oversaturation by 73 - 90%. Our trial results suggest the VATN proprietary degasser design has great potential as a dissolved gas management tool in single pass, PRAS and RAS applications. Further trials at a commercial aquaculture facility are planned for Fall 2026.
+                  VATN's Swirl Flow Reactor (SFR) — A series of large flow reactor trials were completed in August 2026 based on treatment of high alkalinity (280 mg/l) spring water oversaturated with dissolved carbon dioxide (DC = 68 mg/l), dissolved nitrogen gas (DN = 107.2% of saturation) and undersaturated with dissolved oxygen (DO = 70.9% of saturation). Test variables included water flow rate/pressure drop as well as changes in 3D printed reactor components. Changes in dissolved gas levels measured served to validate scale-up performance models. DC was reduced 46 -55% despite challenging inlet conditions and without blower assisted air feeds. The DO deficits were reduced by 75 -85 % while concurrently reducing DN oversaturation by 73 - 90%. Our trial results suggest the VATN proprietary degasser design has great potential as a dissolved gas management tool in single pass, PRAS and RAS applications. Further trials at a commercial aquaculture facility are planned for Fall 2026.
                 </p>
               </div>
             </article>
@@ -199,11 +199,11 @@ export default function News() {
                 >
                   Conference
                 </span>
-                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+                <div className="flex items-center gap-2 text-white" style={{ fontSize: "0.78rem" }}>
                   <Calendar size={13} />
                   <span className="font-body">May 2026</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+                <div className="flex items-center gap-2 text-white" style={{ fontSize: "0.78rem" }}>
                   <MapPin size={13} />
                   <span className="font-body">St. Augustine, FL, USA</span>
                 </div>
@@ -280,11 +280,11 @@ export default function News() {
                 >
                   Research Update
                 </span>
-                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+                <div className="flex items-center gap-2 text-white" style={{ fontSize: "0.78rem" }}>
                   <Calendar size={13} />
-                  <span className="font-body">March 2026</span>
+                  <span className="font-body">December 2025</span>
                 </div>
-                <div className="flex items-center gap-2 text-white/40" style={{ fontSize: "0.78rem" }}>
+                <div className="flex items-center gap-2 text-white" style={{ fontSize: "0.78rem" }}>
                   <MapPin size={13} />
                   <span className="font-body">Freshwater Institute, Shepherdstown, WV</span>
                 </div>
@@ -318,11 +318,11 @@ export default function News() {
                 </p>
 
                 <p className="font-body mb-5" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
-                  Exploiting past research experience in gas transfer VATN has develop[ed and tested two new and unique approaches to CO&#x2082; stripping and oxygen absorption that offers a number of advantages over current technologies.  These include (1) the elimination of expensive plastic packing that is known to restrict airflow and is subject to biological fouling, the later in some cases requiring complex cleaning cycles and (2), the ability to operate without blower assisted air feeds, i.e., the new CO&#x2082; degasser induces airflow passively providing gas to liquid ratio's in the 5-7 range which is adequate for good stripping efficiencies.  Our 2025 laboratory trials, conducted in cooperation with Dr. Brian Vinci and Scott Tsukuda of the Freshwater Institute, have shown CO&#x2082; stripping efficiencies range from 45 to 55% at 13C in water with very high alkalinity.  This blower free operating feature reduces capital, maintenance and energy requirements.  Further the reactor volume and height has been reduced by about 90% and 60%, respectively when compared to a conventional packed column operating at similar stripping efficiencies.  The  prototype  evaluated had, for example, a height of just 0.57m.  Given the new stripper design eliminates packing, the reactor reduced wetted surface areas by about 95% and maintained a high hydraulic loading rate representing just 47% of the packed column alternative.  Water delivery pressure requirements at the inlet to the prototype were low and in the 3-5 psig range.  A larger scale reactor has been assembled and is now entering  an evaluation stage with Industry cooperators.
+                  Swirl Flow Reactor (SFR) — Exploiting past research experience in gas transfer VATN has develop[ed and tested two new and unique approaches to CO&#x2082; stripping and oxygen absorption that offers a number of advantages over current technologies.  These include (1) the elimination of expensive plastic packing that is known to restrict airflow and is subject to biological fouling, the later in some cases requiring complex cleaning cycles and (2), the ability to operate without blower assisted air feeds, i.e., the new CO&#x2082; degasser induces airflow passively providing gas to liquid ratio's in the 5-7 range which is adequate for good stripping efficiencies.  Our 2025 laboratory trials, conducted in cooperation with Dr. Brian Vinci and Scott Tsukuda of the Freshwater Institute, have shown CO&#x2082; stripping efficiencies range from 45 to 55% at 13C in water with very high alkalinity.  This blower free operating feature reduces capital, maintenance and energy requirements.  Further the reactor volume and height has been reduced by about 90% and 60%, respectively when compared to a conventional packed column operating at similar stripping efficiencies.  The SFR prototype evaluated had, for example, a height of just 0.57m.  Given the new stripper design eliminates packing, the reactor reduced wetted surface areas by about 95% and maintained a high hydraulic loading rate representing just 47% of the packed column alternative.  Water delivery pressure requirements at the inlet to the prototype were low and in the 3-5 psig range.  A larger scale reactor has been assembled and is now entering  an evaluation stage with Industry cooperators.
                 </p>
 
                 <p className="font-body mb-5" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
-                  VATN's new oxygen/ozone  absorber evaluated, an alternative to the downflow bubble contactor, is a very low profile horizontal design that allows exploitation of hydrostatic pressure available when coupled to tanks and sumps to passively accelerate gas absorption.  Again, no plastic packing or perforated plates to foul, very short retention time, no potential for gas void stalling and no moving parts. Mass transfer coefficients established in our 2025 trials, coupled with VATN proprietary modeling software, demonstrated effluent DO's increase from 20 -30 mg.L when operating at near atmospheric pressure to 30-45 mg/l at 1/2 bar and 45-60 mg/l at 1 bar (14C).  This reactor type can be operated at high vacuum levels in a nitrogen (N&#x2082;) degassing configuration.
+                  VATN's new oxygen/ozone absorber, Low Profile Oxygenator (LPO) was evaluated, an alternative to the downflow bubble contactor, is a very low profile horizontal design that allows exploitation of hydrostatic pressure available when coupled to tanks and sumps to passively accelerate gas absorption.  Again, no plastic packing or perforated plates to foul, very short retention time, no potential for gas void stalling and no moving parts. Mass transfer coefficients established in our 2025 trials, coupled with VATN proprietary modeling software, demonstrated effluent DO's increase from 20 -30 mg.L when operating at near atmospheric pressure to 30-45 mg/l at 1/2 bar and 45-60 mg/l at 1 bar (14C).  This reactor type can be operated at high vacuum levels in a nitrogen (N&#x2082;) degassing configuration.
                 </p>
 
                 <p className="font-body" style={{ fontSize: "0.975rem", lineHeight: "1.8", color: "#2A3F52" }}>
