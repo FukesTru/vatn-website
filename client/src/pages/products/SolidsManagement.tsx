@@ -83,6 +83,9 @@ export default function SolidsManagement() {
             <p className="font-body max-w-2xl" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.7" }}>
               Suspended solids accumulation in recirculating aquaculture systems increases biological oxygen demand, degrades water quality, and can impair gill function in fish. Effective solids removal is a foundational component of RAS design and is also important in flow-through systems where effluent quality must be managed.
             </p>
+            <p className="font-body max-w-2xl mt-5" style={{ color: "#3A5068", fontSize: "0.92rem", lineHeight: "1.7" }}>
+              With over 30 years of specialized experience in microscreen filtration, Terry is a trusted expert in the aquaculture industry. His career spans foundational roles with Hydrotech and NP Innovations. Today, his deep technical knowledge benefits NP, VATN, and — most importantly — the customers he serves. Terry excels at asking the right questions to fully understand unique applications and deliver optimal filtration solutions.
+            </p>
           </RevealSection>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-10">

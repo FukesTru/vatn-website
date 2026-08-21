@@ -3,7 +3,7 @@
  * Style: Field-Grade Precision — deep navy background, structured columns
  */
 import { Link } from "wouter";
-import { Phone, Mail, MapPin, ArrowRight } from "lucide-react";
+import { Phone, MapPin, ArrowRight } from "lucide-react";
 
 const LOGO_URL = "/manus-storage/vatn-logo-v4_5ddd5c23.png";
 
@@ -29,10 +29,6 @@ export default function Footer() {
                 124 Rockwall Trail<br />
                 Winchester, VA 22602 USA
               </p>
-              <a href="mailto:info@vatnusa.com" className="flex items-center gap-2.5 text-white/50 hover:text-white/80 transition-colors" style={{ fontSize: "0.88rem" }}>
-                <Mail size={13} style={{ color: "#3A8C3F" }} />
-                info@vatnusa.com
-              </a>
               <Link href="/terms-and-conditions">
                 <span className="font-body font-bold text-white hover:text-white transition-colors" style={{ fontSize: "0.82rem", marginLeft: "23px", textDecoration: "underline", textUnderlineOffset: "3px", cursor: "pointer" }}>
                   Terms &amp; Conditions of Sale
