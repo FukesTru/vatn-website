@@ -8,7 +8,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RevealSection from "@/components/RevealSection";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
+const HERO_BG = "/images/hero-background-raceway.webp";
 
 const technologies = [
   {
@@ -142,7 +142,7 @@ export default function GasManagementProduct() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
             <div style={{ backgroundColor: "#fff", borderRadius: "2px", overflow: "hidden", display: "flex", alignItems: "center", justifyContent: "center", padding: "1.5rem" }}>
               <img
-                src="/manus-storage/lho-diagram-conservation-fund_2b149543.jpg"
+                src="/images/lho-process-diagram.webp"
                 alt="Low Head Oxygenator (LHO) diagram — Courtesy of The Conservation Fund Freshwater Institute"
                 style={{ width: "100%", maxHeight: "400px", objectFit: "contain" }}
               />
@@ -166,14 +166,14 @@ export default function GasManagementProduct() {
               <div className="grid grid-cols-2 gap-4 mt-6">
                 <div style={{ borderRadius: "2px", overflow: "hidden", border: "1px solid rgba(58,140,63,0.2)" }}>
                   <img
-                    src="/manus-storage/lho-small-1_36716b91.png"
+                    src="/images/lho-unit.webp"
                     alt="Low Head Oxygenator unit"
                     style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "1/1" }}
                   />
                 </div>
                 <div style={{ borderRadius: "2px", overflow: "hidden", border: "1px solid rgba(58,140,63,0.2)" }}>
                   <img
-                    src="/manus-storage/lho-small-2_df864e95.png"
+                    src="/images/lho-installed-at-hatchery.webp"
                     alt="Low Head Oxygenator installed at hatchery"
                     style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "1/1" }}
                   />
@@ -228,7 +228,7 @@ export default function GasManagementProduct() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
                 <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                   <img
-                    src="/manus-storage/co2-stripper-diagram_6e461e5a.png"
+                    src="/images/oxygen-absorber-co2-stripper-diagram.webp"
                     alt="Oxygen Absorber Modified for Concurrent Carbon Dioxide Stripper — USGS process diagram"
                     style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "12px" }}
                   />
@@ -238,7 +238,7 @@ export default function GasManagementProduct() {
                 </div>
                 <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                   <img
-                    src="/manus-storage/co2-scrubber-photo_a8d2683c.png"
+                    src="/images/co2-scrubber-installed.webp"
                     alt="CO2 scrubber unit installed at hatchery facility"
                     style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
                   />
@@ -254,7 +254,7 @@ export default function GasManagementProduct() {
             <RevealSection delay={100}>
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <img
-                  src="/manus-storage/np-oil-degasser-co2-stripper_026065a3.png"
+                  src="/images/np-co2-degasser-forced-air-cascade.webp"
                   alt="NP CO2 Degasser — forced-air cascade-type CO2 stripping unit"
                   style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "24px" }}
                 />
@@ -332,7 +332,7 @@ export default function GasManagementProduct() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
-                src="/manus-storage/vatn-vacuum-degassing-tower_04866f24.jpg"
+                src="/images/narl-vacuum-degassing-tower.webp"
                 alt="Vacuum degassing tower at NARL"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
@@ -343,7 +343,7 @@ export default function GasManagementProduct() {
             </div>
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
-                src="/manus-storage/craig-brook-new_392a05b3.png"
+                src="/images/craig-brook-900gpm-degasser-tanks.webp"
                 alt="900 GPM vacuum degasser tanks at Craig Brook National Fish Hatchery"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
@@ -358,7 +358,7 @@ export default function GasManagementProduct() {
           <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8">
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
-                src="/manus-storage/portable-sidestream-vacuum-degasser-dworshak_6b7b014d.png"
+                src="/images/dworshak-portable-sidestream-degasser.webp"
                 alt="Portable sidestream vacuum degasser at Dworshak National Fish Hatchery"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />
@@ -369,7 +369,7 @@ export default function GasManagementProduct() {
             </div>
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
               <img
-                src="/manus-storage/leetown-tower_b07ef8f0.png"
+                src="/images/leetown-usgs-gas-management-tower.webp"
                 alt="Leetown USGS Gas Management Tower with CO2 Strippers and Vacuum Degassers"
                 style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
               />

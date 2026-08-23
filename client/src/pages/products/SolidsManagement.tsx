@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RevealSection from "@/components/RevealSection";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
+const HERO_BG = "/images/hero-background-raceway.webp";
 
 const filterTypes = [
   {
@@ -104,7 +104,7 @@ export default function SolidsManagement() {
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "260px", overflow: "hidden", backgroundColor: "#F9FAFB", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
-                  src="/manus-storage/vatn-np-drum-filter_b6b686dd.jpg"
+                  src="/images/np-drum-filters.webp"
                   alt="NP Drum Filters — Family Photo"
                   style={{ width: "100%", height: "100%", objectFit: "contain", padding: "1rem" }}
                 />
@@ -116,7 +116,7 @@ export default function SolidsManagement() {
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "260px", overflow: "hidden", backgroundColor: "#F9FAFB", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
-                  src="/manus-storage/vatn-np-disc-filter_90ee3fe1.png"
+                  src="/images/np-disc-filter.png"
                   alt="NP Disc Filter"
                   style={{ width: "100%", height: "100%", objectFit: "contain", padding: "1rem" }}
                 />

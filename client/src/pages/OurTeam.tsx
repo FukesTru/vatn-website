@@ -11,9 +11,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import { trpc } from "@/lib/trpc";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
-const BARNABY_PHOTO = "/manus-storage/barnaby-watten_38b4a593.png";
-const TERRY_PHOTO = "/manus-storage/terry-mccarthy_61855d64.png";
+const HERO_BG = "/images/hero-background-raceway.webp";
+const BARNABY_PHOTO = "/images/barnaby-watten-portrait.webp";
+const TERRY_PHOTO = "/images/terry-mccarthy-portrait.webp";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);

@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import RevealSection from "@/components/RevealSection";
 import PublicationReferences from "@/components/PublicationReferences";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
+const HERO_BG = "/images/hero-background-raceway.webp";
 
 const technologies = [
   {

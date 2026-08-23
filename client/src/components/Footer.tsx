@@ -5,7 +5,7 @@
 import { Link } from "wouter";
 import { Phone, MapPin, ArrowRight } from "lucide-react";
 
-const LOGO_URL = "/manus-storage/vatn-logo-v4_5ddd5c23.png";
+const LOGO_URL = "/images/vatn-logo.png";
 
 export default function Footer() {
   return (

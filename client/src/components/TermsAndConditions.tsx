@@ -1,7 +1,15 @@
-const TERMS_PDF = "/manus-storage/vatn-terms-and-conditions-of-sale_a86db69a.pdf";
+import { Link } from "wouter";
+
+/**
+ * The two page scans were recovered from the VATN image library. The source
+ * PDF was lost with the Manus deployment and is the only asset with no
+ * replacement, so the download buttons were replaced with a request link
+ * rather than left pointing at a dead file. To restore them, drop the PDF in
+ * `client/public/docs/` and reinstate the two <a> buttons.
+ */
 const TERMS_PAGES = [
-  "/manus-storage/terms-1_932b8f32.png",
-  "/manus-storage/terms-2_d254a395.png",
+  "/images/terms-and-conditions-page-1.webp",
+  "/images/terms-and-conditions-page-2.webp",
 ];
 
 export default function TermsAndConditions() {
@@ -14,12 +22,12 @@ export default function TermsAndConditions() {
             Terms and Conditions of Sale
           </h2>
           <p className="font-body text-white/60 mb-6" style={{ fontSize: "0.9rem", lineHeight: "1.65" }}>
-            Exhibit A — General Terms and Conditions of Sale.
+            Exhibit A — General Terms and Conditions of Sale. A PDF copy is available on{" "}
+            <Link href="/contact">
+              <span style={{ color: "#3A8C3F", textDecoration: "underline", cursor: "pointer" }}>request</span>
+            </Link>
+            .
           </p>
-          <div className="flex flex-wrap gap-3 mb-6">
-            <a href={TERMS_PDF} target="_blank" rel="noreferrer" className="btn-primary">Open Terms &amp; Conditions</a>
-            <a href={TERMS_PDF} download className="btn-outline">Download PDF</a>
-          </div>
           <div className="space-y-6">
             {TERMS_PAGES.map((page, index) => (
               <img
