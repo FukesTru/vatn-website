@@ -10,7 +10,7 @@ import Footer from "@/components/Footer";
 import RevealSection from "@/components/RevealSection";
 import PublicationReferences from "@/components/PublicationReferences";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
+const HERO_BG = "/images/hero-background-raceway.webp";
 
 const designPrinciples = [
   {
@@ -158,7 +158,7 @@ export default function FishRearingTankDesign() {
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <div style={{ backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
                   <img
-                    src="/manus-storage/mixed-cell-raceway-diagram_38364c80.png"
+                    src="/images/mixed-cell-raceway-flow-diagram.webp"
                     alt="Mixed-Cell Raceway Water Flow Diagram"
                     style={{ width: "100%", display: "block", objectFit: "contain", maxHeight: "280px" }}
                   />
@@ -172,7 +172,7 @@ export default function FishRearingTankDesign() {
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <div style={{ backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
                   <img
-                    src="/manus-storage/cfd-contour-velocity_9a992ed4.png"
+                    src="/images/cfd-contour-velocity.webp"
                     alt="Application of Computational Fluid Dynamics — contour velocity"
                     style={{ width: "100%", display: "block", objectFit: "contain", maxHeight: "280px" }}
                   />
@@ -186,7 +186,7 @@ export default function FishRearingTankDesign() {
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <div style={{ backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
                   <img
-                    src="/manus-storage/cfd-3d-streamline-v2_2dce73a5.png"
+                    src="/images/cfd-3d-streamline.webp"
                     alt="CFD 3D streamline analysis of raceway hydraulics"
                     style={{ width: "100%", display: "block", objectFit: "contain", maxHeight: "280px" }}
                   />
@@ -204,7 +204,7 @@ export default function FishRearingTankDesign() {
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <div style={{ height: "280px", overflow: "hidden" }}>
                   <img
-                    src="/manus-storage/raceway-channel-clean_c160a386.png"
+                    src="/images/mixed-cell-raceway-channel.webp"
                     alt="Mixed-cell raceway channel at hatchery facility"
                     style={{ width: "100%", height: "100%", display: "block", objectFit: "cover", objectPosition: "center" }}
                   />
@@ -218,7 +218,7 @@ export default function FishRearingTankDesign() {
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <div style={{ height: "280px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
                   <img
-                    src="/manus-storage/drain-cover-clean_54cf8211.png"
+                    src="/images/raceway-drain-cover.webp"
                     alt="Circular drain cover in mixed-cell raceway floor"
                     style={{ width: "100%", height: "100%", display: "block", objectFit: "cover", objectPosition: "center" }}
                   />

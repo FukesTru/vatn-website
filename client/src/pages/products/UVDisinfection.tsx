@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RevealSection from "@/components/RevealSection";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
+const HERO_BG = "/images/hero-background-raceway.webp";
 
 const features = [
   {
@@ -147,7 +147,7 @@ export default function UVDisinfection() {
             <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "220px", overflow: "hidden" }}>
                 <img
-                  src="/manus-storage/vatn-uv-vertical-channel_6a98b7e7.jpg"
+                  src="/images/uv-vertical-channel.webp"
                   alt="Vertical Channel UV Disinfection System"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
@@ -161,7 +161,7 @@ export default function UVDisinfection() {
             <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "220px", overflow: "hidden" }}>
                 <img
-                  src="/manus-storage/vatn-uv-incline-channel_9a05164a.webp"
+                  src="/images/uv-incline-channel.webp"
                   alt="Incline Channel UV Disinfection System"
                   style={{ width: "100%", height: "100%", objectFit: "cover" }}
                 />
@@ -175,7 +175,7 @@ export default function UVDisinfection() {
             <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "220px", overflow: "hidden", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
-                  src="/manus-storage/vatn-uv-general-system-docx_80166a50.jpg"
+                  src="/images/uv-general-system.webp"
                   alt="Closed UV Reactor — ULTRAQUA Stainless Steel"
                   style={{ width: "100%", height: "100%", objectFit: "contain", padding: "0.5rem" }}
                 />
@@ -189,7 +189,7 @@ export default function UVDisinfection() {
             <div style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden" }}>
               <div style={{ height: "220px", overflow: "hidden", backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
-                  src="/manus-storage/ultraqua-polypropylene-uv-reactor_455d5684.png"
+                  src="/images/ultraaqua-polypropylene-uv-reactor.webp"
                   alt="Ultraqua polypropylene closed UV reactor — non-corrosive construction"
                   style={{ width: "100%", height: "100%", objectFit: "contain", padding: "0.5rem" }}
                 />
@@ -203,7 +203,7 @@ export default function UVDisinfection() {
             <div className="md:col-span-2 lg:col-span-3" style={{ backgroundColor: "#0F1E35", border: "1px solid rgba(58,140,63,0.2)", borderRadius: "2px", overflow: "hidden", display: "flex", flexDirection: "row", alignItems: "stretch" }}>
               <div style={{ width: "340px", flexShrink: 0, backgroundColor: "#fff", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
-                  src="/manus-storage/vatn-uv-open-channel-horizontal_6c69c38b.jpg"
+                  src="/images/uv-open-channel-horizontal.jpg"
                   alt="Open Channel UV Disinfection System — Horizontal"
                   style={{ width: "100%", height: "100%", objectFit: "contain", padding: "1rem" }}
                 />

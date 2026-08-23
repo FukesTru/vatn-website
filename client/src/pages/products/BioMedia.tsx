@@ -9,7 +9,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import RevealSection from "@/components/RevealSection";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
+const HERO_BG = "/images/hero-background-raceway.webp";
 
 const features = [
   "Structured media design provides high specific surface area for biofilm attachment",
@@ -67,7 +67,7 @@ export default function BioMedia() {
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.07)" }}>
               <div style={{ height: "460px", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center", padding: "1rem" }}>
                 <img
-                  src="/manus-storage/vatn-bio-media-photo_415f2c30.jpg"
+                  src="/images/b100-mb3-bio-media.jpg"
                   alt="VATN B100 and MB3 Bio Media — black and white"
                   style={{ width: "100%", height: "100%", display: "block", objectFit: "contain" }}
                 />
@@ -79,7 +79,7 @@ export default function BioMedia() {
             <div style={{ border: "1px solid #E8EEF4", borderRadius: "2px", overflow: "hidden", boxShadow: "0 2px 12px rgba(10,22,40,0.07)" }}>
               <div style={{ height: "460px", overflow: "hidden", backgroundColor: "#F4F6F8", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 <img
-                  src="/manus-storage/vatn-bio-media-usa_929c566e.png"
+                  src="/images/b100-bio-media-made-in-usa.webp"
                   alt="VATN B100 Bio Media — Made in the USA"
                   style={{ width: "100%", height: "100%", display: "block", objectFit: "contain", padding: "1.5rem" }}
                 />

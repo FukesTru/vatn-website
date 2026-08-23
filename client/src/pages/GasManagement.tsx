@@ -9,8 +9,7 @@ import { ArrowRight, AlertTriangle, CheckCircle2, Droplets, Wind, FlaskConical, 
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
-const EQUIPMENT_IMG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hatchery-systems-X4SD42svGcW9x6EL3d4G2s.webp";
+const HERO_BG = "/images/hero-background-raceway.webp";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);
@@ -232,7 +231,7 @@ export default function GasManagement() {
             <RevealSection delay={60}>
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <img
-                  src="/manus-storage/vatn-vacuum-degassing-tower_04866f24.jpg"
+                  src="/images/narl-vacuum-degassing-tower.webp"
                   alt="Vacuum degassing tower at NARL"
                   style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
                 />
@@ -245,7 +244,7 @@ export default function GasManagement() {
             <RevealSection delay={120}>
               <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
                 <img
-                  src="/manus-storage/vatn-water-jet-exhauster_c67582b9.jpg"
+                  src="/images/water-jet-exhauster-packed-column.webp"
                   alt="Water jet exhauster on vacuum degasser packed column"
                   style={{ width: "100%", display: "block", objectFit: "cover", aspectRatio: "4/3" }}
                 />

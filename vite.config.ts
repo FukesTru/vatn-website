@@ -150,7 +150,14 @@ function vitePluginManusDebugCollector(): Plugin {
   };
 }
 
-const plugins = [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
+// The Manus editor/runtime plugins are development-only. They injected a ~367 kB
+// inline <script id="manus-runtime"> into the production index.html, which is dead
+// weight now that the site no longer runs on Manus.
+const isProduction = process.env.NODE_ENV === "production" || process.env.VERCEL === "1";
+
+const plugins = isProduction
+  ? [react(), tailwindcss()]
+  : [react(), tailwindcss(), jsxLocPlugin(), vitePluginManusRuntime(), vitePluginManusDebugCollector()];
 
 export default defineConfig({
   plugins,
