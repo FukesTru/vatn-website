@@ -7,7 +7,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "wouter";
 import { Menu, X, ChevronDown, ArrowRight } from "lucide-react";
 
-const LOGO_URL = "/images/vatn-logo.png";
+const LOGO_URL = "/manus-storage/vatn-logo-v4-lossless_06f0c92b.webp";
 
 const productGroups = [
   {

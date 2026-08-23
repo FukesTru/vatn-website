@@ -9,8 +9,8 @@ import { ArrowRight, CheckCircle2, Ruler, FileText, Calculator, Settings, Refres
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const HERO_BG = "/images/leavenworth-nfh-aerial.webp";
-const AERIAL_IMG = "/images/leavenworth-nfh-aerial.webp";
+const HERO_BG = "/manus-storage/leavenworth-nfh-aerial-usfws_b8b9094a.jpg";
+const AERIAL_IMG = "/manus-storage/leavenworth-nfh-aerial-usfws_b8b9094a.jpg";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);

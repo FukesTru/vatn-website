@@ -9,8 +9,8 @@ import { ArrowRight, CheckCircle2, Wrench, Shield, BarChart3, Leaf, Clock, Dolla
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const AERIAL_BG = "/images/leavenworth-nfh-aerial.webp";
-const EQUIPMENT_IMG = "/images/leavenworth-nfh-aerial-alt.webp";
+const AERIAL_BG = "/manus-storage/leavenworth-nfh-aerial-usfws_b8b9094a.jpg";
+const EQUIPMENT_IMG = "/manus-storage/aerial-hatchery_46381f8f.png";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);

@@ -23,7 +23,7 @@ export default function GasCO2Stripping() {
               </div>
             </div>
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-              <img src="/images/np-co2-degasser-forced-air-cascade.webp" alt="NP CO2 Degasser — forced-air cascade-type CO2 stripping unit" style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "24px" }} />
+              <img src="/manus-storage/np-oil-degasser-co2-stripper_026065a3.png" alt="NP CO2 Degasser — forced-air cascade-type CO2 stripping unit" style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "24px" }} />
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}>
                 <p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>NP CO₂-Degasser</p>
                 <p className="font-body" style={{ fontSize: "0.8rem", color: "#5A7080", marginTop: "4px", lineHeight: "1.5" }}>Cascade-type forced-air CO₂ stripping unit with self-cleaning packing. A centrifugal blower forces air countercurrent to the falling water film, stripping dissolved CO₂ efficiently with minimal maintenance requirements.</p>

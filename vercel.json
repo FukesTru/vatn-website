@@ -5,6 +5,14 @@
   "outputDirectory": "dist/public",
   "rewrites": [
     {
+      "source": "/manus-storage/:path*",
+      "destination": "https://vatntech-rcq5n2zm.manus.space/manus-storage/:path*"
+    },
+    {
+      "source": "/api/:path*",
+      "destination": "https://vatntech-rcq5n2zm.manus.space/api/:path*"
+    },
+    {
       "source": "/:path*",
       "destination": "/index.html"
     }

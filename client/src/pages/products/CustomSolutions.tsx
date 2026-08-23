@@ -9,9 +9,9 @@ import { ArrowRight, CheckCircle2, Wrench, Shield, BarChart3, Leaf, Clock, Dolla
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
-const HERO_BG = "/images/hero-background-raceway.webp";
-const AERIAL_BG = "/images/leavenworth-nfh-aerial.webp";
-const EQUIPMENT_IMG = "/images/custom-solutions-valve.webp";
+const HERO_BG = "https://d2xsxph8kpxj0f.cloudfront.net/310519663303940668/RCq5N2ZMzxq2D3LnowP6W7/vatn-hero-bg-d6qdrLqEtbQveaqmZLT9mn.webp";
+const AERIAL_BG = "/manus-storage/leavenworth-nfh-aerial-usfws_b8b9094a.jpg";
+const EQUIPMENT_IMG = "/manus-storage/custom-solutions-valve_e146bf6c.png";
 
 function RevealSection({ children, delay = 0, className = "" }: { children: React.ReactNode; delay?: number; className?: string }) {
   const ref = useRef<HTMLDivElement>(null);

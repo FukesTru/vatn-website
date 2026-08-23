@@ -18,11 +18,11 @@ export default function GasCO2Scrubbing() {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto">
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-              <img src="/images/oxygen-absorber-co2-stripper-diagram.webp" alt="Oxygen Absorber Modified for Concurrent Carbon Dioxide Stripper — USGS process diagram" style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "24px", minHeight: "330px" }} />
+              <img src="/manus-storage/co2-stripper-diagram_6e461e5a.png" alt="Oxygen Absorber Modified for Concurrent Carbon Dioxide Stripper — USGS process diagram" style={{ width: "100%", display: "block", objectFit: "contain", backgroundColor: "#ffffff", padding: "24px", minHeight: "330px" }} />
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}><p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>Side View — Concurrent Carbon Dioxide Stripper Process</p></div>
             </div>
             <div style={{ borderRadius: "4px", overflow: "hidden", boxShadow: "0 2px 16px rgba(10,22,40,0.09)", border: "1px solid rgba(58,140,63,0.12)" }}>
-              <img src="/images/co2-scrubber-installed.webp" alt="CO2 scrubber unit installed at hatchery facility" style={{ width: "100%", display: "block", objectFit: "cover", minHeight: "330px", aspectRatio: "4/3" }} />
+              <img src="/manus-storage/co2-scrubber-photo_a8d2683c.png" alt="CO2 scrubber unit installed at hatchery facility" style={{ width: "100%", display: "block", objectFit: "cover", minHeight: "330px", aspectRatio: "4/3" }} />
               <div style={{ padding: "16px 20px", backgroundColor: "#F8FAFB", borderTop: "2px solid #3A8C3F" }}><p className="font-display font-bold" style={{ fontSize: "0.95rem", color: "#1C2B3A" }}>CO₂ Scrubber</p></div>
             </div>
           </div>
